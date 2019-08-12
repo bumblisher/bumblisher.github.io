@@ -21,7 +21,7 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # it from the list(Delete '- name: ' and 'url: ', too!)
 navigation:
   - name: Development
-    url: /Development
+    url: /development
   - name: Blog
     url: /
   - name: About
