@@ -51,3 +51,10 @@ table {
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
+
+nav ul > li{position: relative;display:inline-block}
+nav ul > li:before{display:none}
+nav ul li a{margin:0}
+
+nav ul li ul{position: absolute;left:50%;transform:translateX(-50%)}
+nav ul li ul li{margin:0}

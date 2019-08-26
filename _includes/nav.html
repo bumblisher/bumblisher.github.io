@@ -21,8 +21,37 @@
       </nav> -->
 
       <nav>
-    
-          {% assign pages_list = site.pages %}
+        <ul>
+          <li>
+            <a href="/about">About Me</a>
+            
+          </li>
+          <li>
+            <a href="/dev">Dev</a>
+            <ul>
+                <li>
+                    <a class="category-link"
+                    href="/dev/websquare">websquare</a>
+                </li>
+                <li>
+                    <a class="category-link"
+                    href="/dev/c">c언어</a>
+                </li>
+              </ul>
+          </li>
+          <li>
+            <a href="/">Life</a>
+          </li>
+          <li>
+            <a href="/tags">Tags</a>
+          </li>
+          <li>
+            <a href="/archive">archive</a>
+          </li<>
+          
+
+        </ul>
+          <!-- {% assign pages_list = site.pages %}
           {% for node in pages_list %}
             {% if node.title != null %}
               {% if node.layout == "category" %}
@@ -31,7 +60,7 @@
               {% endif %}
             {% endif %}
           {% endfor %}
-          
+           -->
       </nav>
     </header>
   </div>

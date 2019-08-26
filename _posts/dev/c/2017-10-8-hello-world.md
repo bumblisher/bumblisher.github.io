@@ -1,7 +1,7 @@
 ---
 layout: post
 title: You're up and running!
-categories: [dev]
+categories: [dev, c]
 tags:
   - test
   - tags
