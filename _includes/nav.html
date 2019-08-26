@@ -10,7 +10,7 @@
         <p class="site-description">{{ site.description }}</p>
       </div>
 
-      <nav>
+      <!-- <nav>
         {% for nav in site.navigation %}
         {% if nav.url contains 'http://' or nav.url contains 'https://' %}
         <a href="{{ nav.url }}">{{ nav.name }}</a>
@@ -18,21 +18,21 @@
         <a href="{{ site.baseurl }}{{ nav.url }}">{{ nav.name }}</a>
         {% endif %}
         {% endfor %}
-      </nav>
+      </nav> -->
 
-      <ul>
+      <nav>
     
           {% assign pages_list = site.pages %}
           {% for node in pages_list %}
             {% if node.title != null %}
               {% if node.layout == "category" %}
-                <li><a class="category-link {% if page.url == node.url %} active{% endif %}"
-                href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
+                <a class="category-link {% if page.url == node.url %} active{% endif %}"
+                href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
               {% endif %}
             {% endif %}
           {% endfor %}
           
-      </ul>
+      </nav>
     </header>
   </div>
 </div>
