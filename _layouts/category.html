@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<article class="wrap_category">
+fff
+    <ul class="category">
+        {% assign category = page.category | default: page.title %}
+        {% for post in site.categories[category] %}
+        <li>
+          <a href="{{ site.url }}{{ post.url }}">
+            {{ post.title }}
+          </a>
+          <small>{{ page.date | date: "%Y-%m-%d" }}</small>
+        </li>
+        {% endfor %}
+      </ul>
+  
+
+</article>

@@ -13,25 +13,24 @@ description: Front-end Developer
 #
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: /images/jekyll-logo.png
 
 
 # Tabs in header. There are 'Blog', 'About', 'Archive', 'Tags'
 # and URL Link(e.g. 'Theme' tab below) tabs. If you don't need one, just delete
 # it from the list(Delete '- name: ' and 'url: ', too!)
-navigation:
-  - name: Development
-    url: /development
-  - name: Blog
-    url: /
-  - name: About
-    url: /about
-  - name: Archive
-    url: /archive
-  - name: Tags
-    url: /tags
-  - name: Theme
-    url: https://github.com/AWEEKJ/kiko-now
+
+# navigation:
+#   - name: Blog
+#     url: /
+#   - name: About
+#     url: /about
+#   - name: Archive
+#     url: /archive
+#   - name: Tags
+#     url: /tags
+#   - name: Theme
+#     url: https://github.com/AWEEKJ/kiko-now
 
 # Pagination
 paginate: 5
