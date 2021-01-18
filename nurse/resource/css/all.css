@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+.skip a{position:absolute;top:0px;left:-9999px;z-index:100}
+.skip a:focus, #skip a:active{left:0px;width:100%;padding:10px;background:#000;color:#fff;font-weight:bold;text-align:center}
+
+/* layout */
+.header{position:fixed;top:0;z-index:9999;width:100%;height:119px;border-bottom:1px solid #ececec;background:#fff}
+.header_inner{width:1180px;margin:0 auto;padding:0 50px;}
+
+.container{padding-top:120px}
+
+/* header */
+.util_box{position:relative;height:30px}
+.util_box > ul{position:absolute;right:0;top:0;height:30px;}
+.util_box > ul > li{float:left;height:22px;line-height:22px;margin-top:6px;font-size:14px;margin-left:10px;box-sizing:border-box}
+.util_box > ul:after{content:"";display:block;clear:both}
+.util_box > ul > li a{display:block;height:100%}
+.util_box > ul > .mypage{position:relative}
+.util_box > ul > .mypage > a{padding-right:20px;font-size:14px;background:url(../image/ico_mypage.png) right 5px top 7px no-repeat;color:#333333}
+.util_box > ul > .mypage.on .mypage_list{display:block}
+.util_box > ul > li .mypage_list{display:none;position:absolute;top:25px;right:-5px;width:120px;padding:13px 15px;box-sizing:border-box;border:1px solid #333333;background:#fff;z-index: 1001;}
+.util_box > ul > li .mypage_list a{display:block;width:100%;height:28px;line-height:28px;font-size:15px;color:#333333;font-family:'Noto-R'}
+.util_box > ul > li .mypage_list a:hover{text-decoration:underline}
+.util_box ul li.join,
+.util_box ul li.login,
+.util_box ul li.logout{border-radius:3px;font-size:13px;}
+.util_box ul li.join,
+.util_box ul li.login{background:#eef5fb;border:1px solid #a3c4e0}
+.util_box ul li.join a,
+.util_box ul li.login a{padding:0 10px;color:#445fb7}
+.util_box ul li.logout{background:#f7f7f7;border:1px solid #dddddd}
+.util_box ul li.logout a{padding:0 10px;color:#555555}
+.util_box ul li.english a{font-size:15px;text-decoration:underline;color:#888888}
+
+.header_gnb{height:90px}
+.header_gnb::after{content:"";display:block;clear:both}
+.header_gnb .logo, .header_gnb .dep1{float:left}
+.header_gnb .logo{display:inline-block;width:180px;height:70px;margin-top:10px;text-indent: -9999px;}
+.header_gnb .logo a{display:block;width:100%;height:100%;background:url(../image/logo.png) 0 center no-repeat}
+.gnb_box::after{content:"";display:block;clear:both}
+.dep1{margin-left:10px;margin-top:10px}
+.dep1 li{float:left}
+.dep1::after{content:"";display:block;clear:both}
+.dep1 li a{display:block;width:190px;height:69px;line-height:69px;font-weight:500;text-align:center;font-size:18px;color:#111111;font-family:'Roboto-M','Noto-M'}
+
+.site_map{float:right;display:block;width:30px;height:36px;margin-top:27px;background:url(../image/ico_sitemap.png) right center no-repeat;text-indent:-9999px;}
+
+.dep2_box{display:none;position:absolute;left:0;right:0;top:120px;z-index:1000;box-shadow:0 14px 20px rgba(0, 0, 0, 0.2);background:#fff}
+.dep2_inner{width:1180px;height:471px;margin:0 auto;}
+.dep2_inner > ul{height:100%;margin-left:190px}
+.dep2_inner > ul > li{float:left;width:189px;height:100%}
+.dep2_inner > ul > li + li{border-left:1px solid #ececec}
+.dep2_inner > ul > li::after{content:"";display:block;clear:both}
+.dep2_inner > ul > li:hover{background:#ececec}
+
+.dep2{margin-top:10px}
+.dep2 > li > a{display:block;padding:10px 0 10px 20px;line-height:22px;font-size:15px;font-weight:100;color: #333333;}
+.dep2 > li > a:hover{color:#445fb7;text-decoration: underline;}
+.dep2.ele > li > a{background:url(../image/ico_dep2_arrow.png) right 20px center no-repeat}
+.dep2.ele > li.on > a{background-image:url(../image/ico_dep2_arrow_on.png)}
+
+.dep3{display:none;margin-bottom:5px}
+.dep3 > li > a{position:relative;display:block;padding:3px 0 5px 30px;line-height:14px;font-size:14px;font-weight:100;color:#555555}
+.dep3 > li > a::after{content:"";position:absolute;left:23px;top:10px;width:2px;height:2px;background:#555555}
+.dep3 > li > a:hover{text-decoration: underline}
+
+/* footer */
+.footer{width:100%;height:152px;background:#404040}
+.footer_inner{position:relative;width:1180px;height:100%;margin:0 auto;padding-top:33px;box-sizing: border-box}
+.foot_logo,
+.foot_util{position:absolute}
+
+.foot_info{margin-left:215px}
+.foot_info *{font-size:14px;font-weight:100;color:#aaaaaa}
+.foot_info > *{padding-top:10px}
+.foot_info .foot_num span{display:inline-block}
+
+.foot_util{right:0;top:38px} 
+.foot_util ul li{float:left;position:relative}
+.foot_util ul li + li:before{content:"";display:inline-block;width:1px;height:12px;background:#555555;margin-top:3px;vertical-align:top;}
+.foot_util ul li a{font-size:15px;font-weight:100;padding:0 15px;color:#aaaaaa}

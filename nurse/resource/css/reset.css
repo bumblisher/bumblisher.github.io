@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family:'Noto-DL';
+    src : url(../font/NotoSansCJKkr-DemiLight.otf);
+    font-style: normal;
+}
+@font-face{
+    font-family:'Noto-R';
+    src : url(../font/NotoSansCJKkr-Regular.otf);
+    font-style: normal;
+}
+@font-face{
+    font-family:'Noto-M';
+    src : url(../font/NotoSansCJKkr-Medium.otf);
+    font-style: normal;
+}
+@font-face{
+    font-family:'Noto-B';
+    src : url(../font/NotoSansCJKkr-Bold.otf);
+    font-style: normal;
+}
+@font-face{
+    font-family:'Roboto';
+    src : url(../font/Roboto-Regular.ttf);
+    font-style: normal;
+}
+@font-face{
+    font-family:'Roboto-M';
+    src : url(../font/Roboto-Medium.ttf);
+    font-style: normal;
+}
+@font-face{
+    font-family:'Roboto-B';
+    src : url(../font/Roboto-Bold.ttf);
+    font-style: normal;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video,button{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: 'Roboto', 'Noto-DL', sans-serif;
+    color:#333333;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, header {
+	display: block;
+}
+a{text-decoration: none;}
+button{border:none;border-radius:0;cursor: pointer;background-color: transparent}
+html, body{height:100%;}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+textarea{resize: none;display: block;width: 100%;box-sizing: border-box;}
+select {
+    -webkit-appearance: none;  /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+    /* background: url(이미지 경로) no-repeat 95% 50%;  화살표 모양의 이미지 */
+}
+
+/* IE 10, 11의 네이티브 화살표 숨기기 */
+select::-ms-expand {
+    display: none;
+}
+/* ::selection{background: #2f2fd3;color:#fff}
+::-moz-selection{background: #2f2fd3;color:#fff} */
+
+/* ios input */
+input[type="text"],
+input[type="password"]{-webkit-appearance: none;}
+
+.per50{width:50%}
+.per100{width:100%}
+
+.mt0{margin-top: 0px !important;}
+.mt5{margin-top: 5px !important;}
+.mt10{margin-top: 10px !important;}
+.mt20{margin-top: 20px !important;}
+.mt30{margin-top: 30px !important;}
+.mt40{margin-top: 40px !important;}
+.mt50{margin-top:50px !important}
+.mt100{margin-top:100px !important}
+
+.mb10{margin-bottom: 10px;}
+
+.w80{width: 80px !important;}
+.w150{width: 150px !important;}
+.w200{width: 200px !important;}
+
+.fwb{font-weight: bold !important;}
+.fwn{font-weight: normal !important;}
+
+.fs16{font-size:16px !important}
+.fs18{font-size:18px !important}
+.fs20{font-size:20px !important}
+
+.cl_blue{color:#2f2fd3 !important}
+.cl_red{color:#ff4040 !important}
+
+.tal{text-align:left !important}
+.tac{text-align:center !important}
+.tar{text-align:right !important}
+
+.cb::after{content:"";display:block;clear:both}
