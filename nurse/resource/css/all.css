@@ -73,9 +73,9 @@ nav .dep3 > li > a:hover{text-decoration: underline}
 .lnb{min-width: 1280px;height: 50px;border-bottom: 1px solid #eee;box-sizing: border-box;background-color:#fff;}
 .lnb_inner{width:1180px;height:100%;margin:0 auto;padding: 18px 0;box-sizing: border-box;}
 .lnb_inner .step li{display: inline-block;position: relative;font-size: 15px}
-.lnb_inner .step li:first-child{width:14px;height: 13px;margin-left: 1px;background: url(/resource/image/ico_home.png) no-repeat center;text-indent: -9999px;}
+.lnb_inner .step li:first-child{width:14px;height: 13px;margin-left: 1px;background: url(../image/ico_home.png) no-repeat center;text-indent: -9999px;}
 .lnb_inner .step li + li{margin-left:7px;padding-left:13px;}
-.lnb_inner .step li + li::before{content:'';display: inline-block;position: absolute;left: 0;top:4px;width:4px;height: 5px;background:url(/resource/image/ico_lnb_arrow.png) no-repeat center;}
+.lnb_inner .step li + li::before{content:'';display: inline-block;position: absolute;left: 0;top:4px;width:4px;height: 5px;background:url(../image/ico_lnb_arrow.png) no-repeat center;}
 
 /* footer */
 .footer{height:152px;background:#404040}
