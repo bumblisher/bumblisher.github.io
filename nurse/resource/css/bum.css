@@ -1,15 +1,17 @@
 @charset "UTF-8";
 
-.lnb{height: 50px;border-bottom: 1px solid #eee;box-sizing: border-box;background-color:#fff;}
+.lnb{min-width: 1280px;height: 50px;border-bottom: 1px solid #eee;box-sizing: border-box;background-color:#fff;}
 .lnb_inner{width:1180px;height:100%;margin:0 auto;padding: 18px 0;box-sizing: border-box;}
-.lnb_inner .step{}
+
 .lnb_inner .step li{display: inline-block;position: relative;font-size: 15px}
 .lnb_inner .step li:first-child{width:14px;height: 13px;margin-left: 1px;background: url(/resource/image/ico_home.png) no-repeat center;text-indent: -9999px;}
 .lnb_inner .step li + li{margin-left:7px;padding-left:13px;}
 .lnb_inner .step li + li::before{content:'';display: inline-block;position: absolute;left: 0;top:4px;width:4px;height: 5px;background:url(/resource/image/ico_lnb_arrow.png) no-repeat center;}
 
-.container.bg_gray{background-color: #f7f7f7;min-height: calc(100vh - 272px);}
-.content_inner{width:1180px;margin:0 auto;padding:50px 0;box-sizing: border-box;}
+.container{position: relative;min-height: calc(100vh - 272px);}
+.content_inner{width:1280px;margin:0 auto;padding:50px;box-sizing: border-box;}
+.container.bg_gray{background-color: #f7f7f7;}
+.container.bg_gray .content_inner{background-color: #f7f7f7;}
 
 .titarea{padding:29px 0;text-align: center;}
 .titarea h2{font-size: 48px;font-family: 'Roboto', 'Noto-M', sans-serif;}
@@ -44,7 +46,7 @@ section.w600{width:600px;}
 .btn_login.mint{background: #01b5af;}
 
 .boxbtn_login{margin-top: 60px;text-align: center;overflow: hidden;}
-.boxbtn_login li{display: inline-block;float: left;}
+.boxbtn_login li{float:left;display:block;}
 .boxbtn_login li + li{margin-left:20px}
 
 .txt_list > li{position: relative;padding-left: 10px;color:#333} 
@@ -55,3 +57,10 @@ section.w600{width:600px;}
 .txt_list.login > li::before{background-color: #555;}
 
 .tbbox.publist .tb td{height: 30px;padding:15px;}
+
+.btn_top{position: fixed;left:50%;bottom:50px;display: none;width:46px;height:46px;margin-left:590px;border-radius: 50%;box-shadow:0 5px 15px rgba(0, 0, 0, 0.2);text-indent: -9999px;background:#fff url(../image/ico_btntop.png) center no-repeat;z-index: 10;}
+.btn_top.fix{position: absolute;}
+
+
+
+h3 > span[id*='focus']{display: block;margin-top: -150px;padding-bottom: 150px;}

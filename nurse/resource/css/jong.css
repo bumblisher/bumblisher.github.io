@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
-.container{width:100%}
-.content_inner{width:1180px;margin:0 auto}
-
+/* main */
 .main{background:#f7f7f7 url(../image/bg_main.png) center 120px no-repeat}
 .tit_main{padding:120px 0 98px;text-align:center}
 .tit_main .slogan{font-size:50px;line-height:70px;color:#ffffff;letter-spacing:-50;}
@@ -58,6 +56,13 @@
 .fes .on_fes .btn_fes{position:absolute;right:60px;top:95px;display:block;width:120px;height:40px;line-height:41px;color:#445fb7;text-align:center;border-radius:3px;background:#eef5fb;border:1px solid #a3c4e0;box-sizing:border-box}
 
 
+/* table tit */
+.tit_tb{padding-bottom:10px;}
+.tit_tb::after{content:'';display:block;clear:both}
+.tit_tb .fl{float:left}
+.tit_tb .fr{float:right}
+.tit_tb span{font-size:15px;line-height:15px}
+
 /* table */
 
 .tbbox{position:relative}
@@ -74,10 +79,15 @@
 .tb td{padding:20px;background:#ffffff}
 .tb td p{padding-top:5px}
 
+/* button */
+
+
+
 /* article */
 article + article{margin-top:80px}
 article h3{padding-bottom:20px;font-size:32px;color:#111111;font-family:'Roboto', 'Noto-M'}
 article > p{padding-bottom:20px;line-height:16px;font-size:16px}
+article > .art_txt{line-height:24px}
 
 /* oga_cht */
 .oga_cht{position:relative;width:100%;height:570px;background:url(../image/bg_ogacht_line.png) left top no-repeat}
@@ -101,3 +111,61 @@ article > p{padding-bottom:20px;line-height:16px;font-size:16px}
 .cht08 li{float:left}
 .cht08 li a{display:block;width:220px;height:60px;line-height:60px;border:1px solid #aaaaaa;background:#fff;text-align:center;box-sizing:border-box;font-family:'Noto-M';border-radius:8px}
 .cht08 li + li{margin-left:30px}
+
+/* greeting */
+.bg_greeting{background:url(../image/bg_greeting.png) center 374px no-repeat}
+.tit_greeting, .cnt_greeting{padding-left:52px}
+.tit_greeting h3{padding-top:110px;font-size:36px;line-height:50px;color:#111111;font-family:'Noto-DL'}
+.tit_greeting .cnt{display:block;padding-top:30px;font-size:18px;font-family:'Noto-M'}
+.tit_greeting .sign{display:block;height:34px;padding-top:21px;background:url(../image/ico_sign.png) 0 21px no-repeat;text-indent:-9999px}
+.cnt_greeting{padding-top:45px;}
+.cnt_greeting p{line-height:28px;padding-bottom:0;font-size:18px}
+.cnt_greeting p:nth-child(2n){padding-bottom:28px}
+
+
+
+/* tab */
+.tabbox{position:relative}
+
+.tab ul li{float:left;width:25%;height:70px;border:1px solid #dddddd;border-right:0;border-bottom:1px solid #445fb7;background:#f5f5f5;box-sizing:border-box}
+.tab ul li:last-child{border-right:1px solid #dddddd}
+.tab ul li.on{border:1px solid #445fb7;border-bottom:1px solid #ffffff;background:#ffffff}
+.tab ul li.on + li{border-left:0}
+.tab ul li a{display:block;text-align:center;line-height:70px;color:#555555;font-size:18px}
+.tab ul li.on a{color:#445fb7;font-family:'Roboto','Noto-M'}
+
+.tab_cont{margin-top:60px}
+.tab_cont > div{display:none}
+.tab_cont > div.on{display:block}
+
+
+/* history */
+.history{border-top:2px solid #333333;border-bottom:1px solid #333333}
+.history .box.line{border-top:1px solid #dddddd}
+.history .box::after{content:'';display:block;clear:both}
+.history .box:last-child .cnt_list{border-bottom:0}
+.history .box > div{float:left}
+.history .box .year{width:280px;font-size:40px;padding:43px 0;color:#111111;font-family:'Noto-M'}
+.history .box .cnt_list{width:calc(100% - 280px);padding:45px 0;border-bottom:1px solid #dddddd}
+.history .box .cnt_list.no_line{border-bottom:0px}
+.history .box .cnt + .cnt{margin-top:28px}
+.history .box .cnt .cal, .history .box .cnt .info{display:inline-block;vertical-align:top}
+.history .box .cnt .cal{width:145px;font-size:20px;color:#445fb7;font-family:'Noto-M'}
+.history .box .cnt .info{width:calc(100% - 150px);font-size:18px;line-height:18px}
+
+
+/* accordion */
+.accordion{position:relative;border-top:1px solid #333333}
+.accordion > ul > li > a{display:block;height:60px;line-height:60px;border-bottom:1px solid #dddddd;padding-left:30px;box-sizing:border-box;font-size:16px;font-family:'Roboto-M','Noto-M';background:url(../image/ico_acc_plus.png) right 30px center no-repeat}
+.accordion > ul > li.on > a{color:#01b5af;background:url(../image/ico_acc_minus.png) right 30px center no-repeat}
+.accordion > ul > li .cnt{display:none;padding:30px;background:#f7f7f7}
+.accordion > ul > li.on .cnt{display:block}
+.accordion > ul > li .cnt .txt_pag + .txt_pag{padding-top:24px}
+.accordion > ul > li .cnt .txt_pag p{line-height:24px}
+.accordion > ul > li .cnt .txt_pag .list{padding-left:7px}
+
+
+
+
+
+
