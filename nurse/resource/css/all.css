@@ -44,7 +44,7 @@
 nav .dep1{margin-left:10px;margin-top:10px}
 nav .dep1 li{float:left}
 nav .dep1::after{content:"";display:block;clear:both}
-nav .dep1 li a{display:block;width:190px;height:69px;line-height:69px;font-weight:500;text-align:center;font-size:18px;color:#111111;font-family:'Roboto-M','Noto-M'}
+nav .dep1 li a{display:block;width:190px;height:69px;line-height:69px;padding-bottom:11px;font-weight:500;text-align:center;font-size:18px;color:#111111;font-family:'Roboto-M','Noto-M'}
 nav .dep1 li.on a{color:#445fb7}
 
 .site_map{float:right;display:block;width:30px;height:36px;margin-top:27px;background:url(../image/ico_sitemap.png) right center no-repeat;text-indent:-9999px;}
@@ -53,7 +53,7 @@ nav .dep1 li.on a{color:#445fb7}
 .dep2_inner{width:1180px;height:471px;margin:0 auto;}
 .dep2_inner > ul{height:100%;margin-left:190px}
 .dep2_inner > ul > li{float:left;width:189px;height:100%}
-.dep2_inner > ul > li + li{border-left:1px solid #ececec}
+.dep2_inner > ul > li + li{border-left:1px solid #f7f7f7}
 .dep2_inner > ul > li::after{content:"";display:block;clear:both}
 .dep2_inner > ul > li:hover{background:#ececec}
 
@@ -117,6 +117,7 @@ article > .art_txt{line-height:24px}
 .tit_tb .fl{float:left}
 .tit_tb .fr{float:right}
 .tit_tb span{font-size:15px;line-height:15px}
+.tit_tb .tit_sub{font-size:18px;font-family:'Roboto-M','Noto-M'}
 
 /* table */
 .tbbox{position:relative}
@@ -162,8 +163,8 @@ article > .art_txt{line-height:24px}
 
 /* main */
 .main{background:#f7f7f7 url(../image/bg_main.png) center 120px no-repeat}
-.tit_main{padding:120px 0 98px;text-align:center}
-.tit_main .slogan{font-size:50px;line-height:70px;color:#ffffff;letter-spacing:-50;}
+.tit_main{padding:75px 0 98px;text-align:center}
+.tit_main .slogan{font-size:50px;line-height:70px;color:#ffffff}
 .tit_main .slogan span{color:#ffffff}
 .tit_main .slogan_en{padding-top:25px;font-size:17px;color:#fff;letter-spacing:9px;opacity:0.6;font-family: 'Roboto-Medium';}
 
@@ -213,6 +214,7 @@ article > .art_txt{line-height:24px}
 .noti li{float:left;width:373px;height:231px;border-radius:19px;background:#fff;box-shadow:0px 5px 15px rgba(0, 0, 0, 0.1)}
 .noti li + li{margin-left:30px}
 .noti li a{display:block;width:100%;height:100%;padding:45px 40px;box-sizing:border-box}
+.noti li a:hover{text-decoration: underline;}
 .noti li span{display:block}
 .noti li .tit{color:#111111;font-size:16px;font-family:'Roboto', 'Noto-M'}
 .noti li .cnt{display:-webkit-box; word-wrap:break-word; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; text-overflow:ellipsis; height:78px; line-height:26px;color:#333333;font-size:18px;margin:14px 0 22px;font-family: 'Noto-DL';}

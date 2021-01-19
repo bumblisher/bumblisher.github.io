@@ -9,13 +9,13 @@ $(document).ready(function(){
         var $dep1 = $("nav .dep1");
         var $dep2 = $("nav .dep2");
 
-        $dep1.on("click", function(){
+        $dep1.on("mouseover", function(){
             if(!$dep1.hasClass("on")){
                 $dep1.addClass("on");
                 $(".dep2_box").stop().slideDown(); 
             }else{
-                $dep1.removeClass("on");
-                $(".dep2_box").stop().slideUp(); 
+               // $dep1.removeClass("on");
+               // $(".dep2_box").stop().slideUp(); 
             }
         });
         
