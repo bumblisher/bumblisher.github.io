@@ -302,7 +302,7 @@ article > .art_txt{line-height:24px}
 .history .box .cnt + .cnt{margin-top:28px}
 .history .box .cnt .cal, .history .box .cnt .info{display:inline-block;vertical-align:top}
 .history .box .cnt .cal{width:145px;font-size:20px;color:#445fb7;font-family:'Noto-M'}
-.history .box .cnt .info{width:calc(100% - 150px);font-size:18px;line-height:18px}
+.history .box .cnt .info{width:calc(100% - 150px);font-size:18px;line-height:20px}
 
 /* accordion */
 .accordion{position:relative;border-top:1px solid #333333}
