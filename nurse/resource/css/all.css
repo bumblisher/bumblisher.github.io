@@ -187,6 +187,18 @@ article > .art_txt{line-height:24px}
 .quick_menu li:hover,
 .quick_menu2 li:hover{background:#eef5fb}
 
+.quick_menu li{opacity:0;transform:translateY(200px)} 
+.quick_menu li{animation:quickshow 0.7s forwards;}
+.quick_menu li:nth-child(2){animation-delay:0.2s;}
+.quick_menu li:nth-child(3){animation-delay:0.4s;}
+.quick_menu li:nth-child(4){animation-delay:0.6s;}
+.quick_menu2 li{opacity:0;transform:translateX(200px)} 
+.quick_menu2 li{animation:quickshow2 0.7s forwards;animation-delay:0.8s;}
+.quick_menu2 li:nth-child(2){animation-delay:1.0s;}
+.quick_menu2 li:nth-child(3){animation-delay:1.2s;}
+@keyframes quickshow{100%{transform:translateY(0);opacity:1;}}
+@keyframes quickshow2{100%{transform:translateX(0);opacity:1;}}
+
 .tab_main{position:relative;margin:60px 0 20px}
 .tab_main ul::after{display:block;content:"";clear:both}
 .tab_main ul li{float:left}
