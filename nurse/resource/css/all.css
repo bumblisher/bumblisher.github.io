@@ -45,6 +45,7 @@ nav .dep1{margin-left:10px;margin-top:10px}
 nav .dep1 li{float:left}
 nav .dep1::after{content:"";display:block;clear:both}
 nav .dep1 li a{display:block;width:190px;height:69px;line-height:69px;padding-bottom:11px;font-weight:500;text-align:center;font-size:18px;color:#111111;font-family:'Roboto-M','Noto-M'}
+nav .dep1 li a:hover,
 nav .dep1 li.on a{color:#445fb7}
 
 .site_map{float:right;display:block;width:30px;height:36px;margin-top:27px;background:url(../image/ico_sitemap.png) right center no-repeat;text-indent:-9999px;}
