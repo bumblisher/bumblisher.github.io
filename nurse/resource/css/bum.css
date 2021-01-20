@@ -64,3 +64,61 @@ section.w600{width:600px;}
 
 
 h3 > span[id*='focus']{display: block;margin-top: -150px;padding-bottom: 150px;}
+
+
+/* checkbox */
+.chk.list{position: relative;}
+.chk.list li{position: relative;display: inline-block;}
+.chk.list li + li{margin-left:10px}
+
+.chk{position:relative;display:block;}
+.chk input[type="checkbox"]{position:absolute;left:0}
+.chk input[type="checkbox"] + label{display: inline-block;padding-left: 30px;line-height: 24px;color:#333;font-family:'Roboto', 'Noto-R';font-size: 16px;}
+.chk input[type="checkbox"] + label:before{position:absolute;left:0;top:0;content:'';display: inline-block;width:24px;height:24px;border:1px solid #aaa;box-sizing:border-box;background:#fff;border-radius: 50%;}
+.chk input[type="checkbox"] + label:after{content:'';position:absolute;left:7px;top:7px;width:8px;height:4px;border-left:2px solid #aaa;border-bottom:2px solid #aaa;transform:rotate(-45deg)}
+.chk input[type="checkbox"]:checked + label:before{background-color:#01b5af;border:0}
+.chk input[type="checkbox"]:checked + label:after{border-left:2px solid #fff;border-bottom:2px solid #fff;}
+
+/* box_form */
+.box_form + .box_form{margin-top:30px}
+.box_form .tit{margin-bottom:10px;font-family:'Roboto', 'Noto-M';font-size: 15px;color:#333}
+.box_form > div + div{margin-top:10px}
+.box_form > div::after{content: '';display: block;clear: both;}
+.box_form > div > *{float: left;}
+.box_form > div > * + *{margin-left: 10px;}
+.box_form textarea{border:1px solid #aaa;padding:12px;height: 140px;line-height: 20px;color:#888;font-size: 14px;box-sizing: border-box;}
+.box_form input[type=text]{display: inline-block;width:100%;height: 50px;padding:0 20px;border:1px solid #ddd;border-radius: 8px;box-sizing: border-box;color:#555;font-size: 16px;}
+.box_form input[type=text][readonly=readonly]:focus,
+.box_form input[type=text][readonly=readonly]{background: #f7f7f7;color:#aaa;border-color:#ddd;}
+.box_form select{width:100%;height:50px;border:1px solid #ddd;border-radius: 8px;padding:0 20px;box-sizing: border-box;color:#333;font-size: 16px;background: url(../image/ico_select.png) no-repeat right 20px center;}
+.txt_email{position: relative;display: block;width:0px;height: 50px;}
+.txt_email:before{content:'@';position: absolute;left: -7px;line-height: 50px;color:#555;font-size: 16px;font-family: 'Roboto', 'Noto-R', sans-serif;}
+
+.box_form .btn_form{display: inline-block;height: 40px;line-height: 38px;padding:0 22px;border:1px solid #111;box-sizing: border-box;font-size: 15px;color:#333;text-align: center;}
+.box_form .btn_form{margin-top: 5px;}
+.box_form .btn_form:hover{border-color:#01b5af;color:#01b5af}
+
+.ly_form::after{content: '';display: block;clear: both;}
+.ly_form li{position: relative;display: block;float: left;width:50%;}
+.ly_form li + li{margin-left: -1px;}
+
+.ly_form li:first-child > input[type=text],
+.ly_form li:first-child > label,
+.ly_form li:first-child > select{border-radius: 8px 0 0 8px;}
+.ly_form li:last-child > input[type=text],
+.ly_form li:last-child > label,
+.ly_form li:last-child > select{border-radius: 0 8px 8px 0;}
+
+.ly_form li input[type=text],
+.ly_form li select{border-radius: 0;}
+.ly_form li input[type=radio]{position: absolute;top:0;left: 0;}
+.ly_form li input[type=radio] + label{position: relative;display: block;width: 100%;height: 50px;border:1px solid #ddd;box-sizing: border-box;line-height: 48px;text-align: center;background: #fff;z-index: 1;cursor: pointer;}
+.ly_form li input[type=radio]:checked + label{border-color:#01b5af;color:#01b5af;z-index: 2;}
+.box_form input[type=text]:focus,
+.box_form select:focus{position: relative;border-color: #01b5af;outline: none;z-index: 2;}
+
+.ly_form.col3{width:calc(100% + 2px)}
+.ly_form.col3 li{width:33%}
+.ly_form.col3 li:nth-child(2){width:34%}
+.ly_form.col4{width:calc(100% + 3px)}
+.ly_form.col4 li{width:25%;}
