@@ -2,29 +2,29 @@
 
 @font-face{
     font-family:'Noto-DL';
-    src : url(../font/NotoSanskr-DemiLight.otf);
-    src : url(../font/NotoSanskr-DemiLight.woff),
-    url(../font/NotoSanskr-DemiLight.woff2);
+    src : url(../font/NotoSansKR-DemiLight.otf);
+    src : url(../font/NotoSansKR-DemiLight.woff),
+    url(../font/NotoSansKR-DemiLight.woff2);
     font-style: normal;
 }
 @font-face{
     font-family:'Noto-R';
-    src : url(../font/NotoSanskr-Regular.otf);
-    src : url(../font/NotoSanskr-Regular.woff),
-    url(../font/NotoSanskr-Regular.woff2);
+    src : url(../font/NotoSansKR-Regular.otf);
+    src : url(../font/NotoSansKR-Regular.woff),
+    url(../font/NotoSansKR-Regular.woff2);
     font-style: normal;
 }
 @font-face{
     font-family:'Noto-M';
-    src : url(../font/NotoSanskr-Medium.otf);
-    src : url(../font/NotoSanskr-Medium.woff),
-    url(../font/NotoSanskr-Medium.woff2);
+    src : url(../font/NotoSansKR-Medium.otf);
+    src : url(../font/NotoSansKR-Medium.woff),
+    url(../font/NotoSansKR-Medium.woff2);
     font-style: normal;
 }
 @font-face{
     font-family:'Noto-B';
-    src : url(../font/NotoSanskr-Bold.otf);
-    src : url(../font/NotoSanskr-Bold.woff),
+    src : url(../font/NotoSansKR-Bold.otf);
+    src : url(../font/NotoSansKR-Bold.woff),
     url(../font/NotoSansKR-Bold.woff2);
     font-style: normal;
 }
