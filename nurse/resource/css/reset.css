@@ -2,32 +2,29 @@
 
 @font-face{
     font-family:'Noto-DL';
-    src : url(../font/NotoSansKR-DemiLight.otf);
-    src : url(../font/NotoSansKR-DemiLight.woff),
-    url(../font/NotoSansKR-DemiLight.woff2);
     font-style: normal;
+    src :    url(../font/NotoSansKR-DemiLight.woff) format("woff"),
+            url(../font/NotoSansKR-DemiLight.otf) format("truetype");
 }
 @font-face{
     font-family:'Noto-R';
-    src : url(../font/NotoSansKR-Regular.otf);
-    src : url(../font/NotoSansKR-Regular.woff),
-    url(../font/NotoSansKR-Regular.woff2);
     font-style: normal;
+    src :    url(../font/NotoSansKR-Regular.woff) format("woff"),
+            url(../font/NotoSansKR-Regular.otf) format("truetype");
 }
 @font-face{
     font-family:'Noto-M';
-    src : url(../font/NotoSansKR-Medium.otf);
-    src : url(../font/NotoSansKR-Medium.woff),
-    url(../font/NotoSansKR-Medium.woff2);
     font-style: normal;
+    src :    url(../font/NotoSansKR-Medium.woff) format("woff"),
+            url(../font/NotoSansKR-Medium.otf) format("truetype");
 }
 @font-face{
     font-family:'Noto-B';
-    src : url(../font/NotoSansKR-Bold.otf);
-    src : url(../font/NotoSansKR-Bold.woff),
-    url(../font/NotoSansKR-Bold.woff2);
     font-style: normal;
+    src :    url(../font/NotoSansKR-Bold.woff) format("woff"),
+            url(../font/NotoSansKR-Bold.otf) format("truetype");
 }
+
 @font-face{
     font-family:'Roboto';
     src : url(../font/Roboto-Regular.ttf);
@@ -56,7 +53,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video,button,textarea{
+time, mark, audio, video,button,textarea,select,input{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -112,6 +109,14 @@ select::-ms-expand {
 input[type="text"],
 input[type="password"]{-webkit-appearance: none;}
 
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder { /* WebKit browsers */ color:#aaa; }
+input:-moz-placeholder,
+textarea:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */ color:#aaa; }
+ input::-moz-placeholder,
+ textarea::-moz-placeholder { /* Mozilla Firefox 19+ */ color:#aaa; } input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */ color:transparent; }
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder { /* WebKit browsers */ color:transparent; } input:focus:-moz-placeholder, textarea:focus:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color:transparent; } input:focus::-moz-placeholder, textarea:focus::-moz-placeholder { /* Mozilla Firefox 19+ */ color:transparent; } input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */ color:transparent; }
+
 .per50{width:50%}
 .per100{width:100%}
 
@@ -152,3 +157,6 @@ input[type="password"]{-webkit-appearance: none;}
 .bb0{border-bottom:0px !important}
 
 .ftm{font-family:'Roboto-M','Noto-M'}
+
+.fl{float:left}
+.fr{float:right}

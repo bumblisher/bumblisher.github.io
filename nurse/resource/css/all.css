@@ -8,7 +8,7 @@
 .header_inner{width:1180px;margin:0 auto;padding:0 50px;}
 
 .container{position: relative;min-width:1280px;min-height: calc(100vh - 272px);padding-top:120px}
-.content_inner{width:1280px;margin:0 auto;padding:50px;box-sizing: border-box;}
+.content_inner{width:1280px;margin:0 auto;padding:50px 50px 120px 50px;box-sizing: border-box;}
 .container.bg_gray{background-color: #f7f7f7;}
 .container.bg_gray .content_inner{background-color: #f7f7f7;}
 
@@ -56,7 +56,7 @@ nav .dep1 li.on a{color:#445fb7}
 .dep2_inner > ul > li{float:left;width:189px;height:100%}
 .dep2_inner > ul > li + li{border-left:1px solid #f7f7f7}
 .dep2_inner > ul > li::after{content:"";display:block;clear:both}
-.dep2_inner > ul > li:hover{background:#ececec}
+.dep2_inner > ul > li:hover{background:#f7f7f7}
 
 nav .dep2{margin-top:10px}
 nav .dep2 > li > a{display:block;padding:10px 0 10px 20px;line-height:22px;font-size:15px;font-weight:100;color: #333333;}
@@ -108,11 +108,14 @@ article h4{font-size:24px;color:#111111;font-family:'Roboto-M', 'Noto-M', sans-s
 article > p{padding-bottom:20px;line-height:24px;font-size:16px}
 article > .art_txt{line-height:24px}
 article h3 + .txtbox{margin-top:20px}
+article h3 + .txtbox.type2{margin-top:5px}
 article h3 + .tbbox{margin-top:10px}
+article h3 + .txt_ref2{margin-top:5px}
+article > .txt_ref:last-child{margin-bottom:0}
 
 /* titarea */
 .titarea{padding:29px 0;text-align: center;}
-.titarea h2{font-size: 48px;font-family: 'Roboto', 'Noto-M', sans-serif;}
+.titarea h2{font-size: 48px;font-family: 'Roboto', 'Noto-M', sans-serif;color:#111}
 .titarea h2 + .tit_txt{margin-top:22px;font-size: 20px;line-height: 30px;}
 
 /* table tit */
@@ -123,19 +126,23 @@ article h3 + .tbbox{margin-top:10px}
 .tit_tb span{font-size:15px;line-height:15px}
 .tit_tb .tit_sub{font-size:18px;font-family:'Roboto-M','Noto-M', sans-serif}
 
-.txt_smy{font-size:24px;line-height:36px;color:#111111;margin-bottom:50px}
+.txt_smy{font-size:24px;line-height:36px;color:#111111;margin-bottom:50px;padding-bottom:0}
 .txtbox + .txtbox{margin-top:40px}
 .txtbox h4{padding-bottom:20px}
 .txtbox > p{padding-bottom:20px;line-height:24px;font-size:16px}
 .txtbox > p:last-child{padding-bottom:0}
+.txtbox > .txt_ref2{padding-bottom:0;line-height:32px}
 
 .txt_sm{font-size:15px;line-height:22px;color:#555555}
 .tbbox + .txt_sm{margin-top:20px}
 
 .txt_ref{display:inline-block;height:32px;line-height:32px;border-radius:4px;background:#f5f5f5;padding:0 11px;font-size:15px;color:#555555}
+.txt_ref{margin-bottom:10px}
+.txt_ref2{display:inline-block;height:32px;line-height:32px;border-radius:4px;margin-bottom:10px;background:#f5f5f5;padding:0 11px;font-size:16px;color:#333333;font-family:'Roboto-M','Noto-M', sans-serif}
+
 
 /* table */
-.tbbox{position:relative;border-top:1px solid #333333}
+.tbbox{position:relative;border-top:1px solid #333333;border-bottom:1px solid #dddddd}
 .tbbox .tb{width:100%;}
 
 .tb tr:first-child th,
@@ -143,7 +150,7 @@ article h3 + .tbbox{margin-top:10px}
 .tb tr > *:first-child{border-left:0}
 .tb tr > *:last-child{border-right:0}
 .tb th,
-.tb td{height:60px;box-sizing:border-box;text-align:center;vertical-align:middle;border:1px solid #dddddd;font-size:16px}
+.tb td{height:60px;box-sizing:border-box;text-align:center;vertical-align:middle;border:0;border-top:1px solid #dddddd;border-left:1px solid #dddddd;font-size:16px}
 .tb th{background:#f7f7f7}
 .tb thead th span, .tb th span{line-height:24px;color:#111111;font-family:'Roboto-M','Noto-M', sans-serif;}
 .tb thead + tbody th span{font-family: 'Roboto', 'Noto-DL', sans-serif}
@@ -167,6 +174,12 @@ article h3 + .tbbox{margin-top:10px}
 .tb .tb_gray::before{content:'';position:absolute;top:-14px;left:50%;width:14px;height:8px;margin-left:-7px;background:url(../image/ico_tbg_next.png)}
 .tb .tb_gray::after{content:'';position:absolute;top:46px;left:50%;width:14px;height:8px;margin-left:-7px;background:url(../image/ico_tbg_next.png)}
 
+.tb tr.line th, .tb tr.line td{border-top:1px solid #333333}
+
+.tbbox.ns4{border-bottom:1px solid #333333}
+.tbbox.ns4 .tb tr > *:first-child{border-left:1px solid #dddddd}
+.tbbox.ns4 .tb tr > *:last-child{border-right:1px solid #dddddd}
+
 .empty{display:none;height:137px;line-height:138px;border-top:1px solid #333333;border-bottom:1px solid #dddddd;text-align:center}
 .empty p{font-size:18px}
 
@@ -189,6 +202,7 @@ article h3 + .tbbox{margin-top:10px}
 .tab.col3 ul li{width:33.33%}
 .tab.col4 ul li{width:25%}
 .tab.col5 ul li{width:20%}
+.tab.col6 ul li{width:16.666%}
 
 .tab_cont{margin-top:60px}
 .tab_cont > div{display:none}
@@ -236,6 +250,8 @@ article h3 + .tbbox{margin-top:10px}
 .paging li a{display:block;width:22px;height:22px;line-height:22px;text-align:center;font-size:16px}
 .paging li a:hover{color:#445fb7;text-decoration:underline}
 .paging li.on a{color:#445fb7;font-family:'Roboto-M', sans-serif}
+
+.paging .txt_smlist{margin-top:40px}
 
 /* ly */
 .ly{position:relative}
@@ -335,9 +351,10 @@ h3 > span[id*='focus']{display: block;margin-top: -150px;padding-bottom: 150px;}
 .box_loginbtn::after{content:"";display: block;clear:both}
 .box_loginbtn li{display: inline-block;width:240px;height:240px;background:#fff;border-radius:18px;box-shadow:0 5px 15px rgba(0, 0, 0, 0.2);}
 .box_loginbtn li + li{margin-left: 40px;}
-.box_loginbtn li a{display:block;height:100%;padding-top:161px;color:#111111;line-height:24px;text-align:center;font-size:20px;box-sizing: border-box;}
+.box_loginbtn li a{display:block;height:100%;padding-top:161px;color:#111111;line-height:24px;text-align:center;font-size:20px;box-sizing: border-box;background:#fff;border-radius:18px;}
 .box_loginbtn li:nth-child(1) a{background:url(../image/ico_findid.png) center 66px no-repeat}
 .box_loginbtn li:nth-child(2) a{background:url(../image/ico_findpw.png) center 77px no-repeat}
+.box_loginbtn li a:hover{background-color: #eef5fb;}
 
 .box_logintext{text-align: center;padding: 80px 30px;border-top: 1px solid #333;border-bottom: 1px solid #333;}
 .box_logintext p{font-size:20px}
@@ -345,6 +362,8 @@ h3 > span[id*='focus']{display: block;margin-top: -150px;padding-bottom: 150px;}
 
 .btn_login{display: block;width:290px;height: 70px;line-height: 70px;border-radius:8px;background: #999;text-align: center;color:#fff;font-size: 20px;}
 .btn_login.mint{background: #01b5af;}
+.btn_login:hover{background:#777777;}
+.btn_login.mint:hover{background: #00a09b;}
 
 .boxbtn_login{margin-top: 60px;text-align: center;overflow: hidden;}
 .boxbtn_login li{display: block;float: left;}
@@ -371,6 +390,7 @@ h3 > span[id*='focus']{display: block;margin-top: -150px;padding-bottom: 150px;}
 .cht07 li + li{margin-top:10px}
 .cht08 li{float:left}
 .cht08 li a{display:block;width:220px;height:60px;line-height:60px;border:1px solid #aaaaaa;background:#fff;text-align:center;box-sizing:border-box;font-family:'Noto-M';border-radius:8px}
+.cht08 li a:hover{text-decoration:underline}
 .cht08 li + li{margin-left:30px}
 
 /* greeting */
@@ -402,7 +422,7 @@ h3 > span[id*='focus']{display: block;margin-top: -150px;padding-bottom: 150px;}
 .accordion > ul > li > a{display:block;height:60px;line-height:60px;border-bottom:1px solid #dddddd;padding-left:30px;box-sizing:border-box;font-size:16px;font-family:'Roboto-M','Noto-M', sans-serif;background:url(../image/ico_acc_plus.png) right 30px center no-repeat}
 .accordion > ul > li.on > a{color:#01b5af;background:url(../image/ico_acc_minus.png) right 30px center no-repeat}
 .accordion > ul > li .cnt{display:none;padding:30px;background:#f7f7f7}
-.accordion > ul > li.on .cnt{display:block}
+/* .accordion > ul > li.on .cnt{display:block} */
 .accordion > ul > li .cnt .txt_pag + .txt_pag{padding-top:24px}
 .accordion > ul > li .cnt .txt_pag p{line-height:24px}
 .accordion > ul > li .cnt .txt_pag .list{padding-left:7px}
@@ -420,7 +440,7 @@ h3 > span[id*='focus']{display: block;margin-top: -150px;padding-bottom: 150px;}
 .txt_noti{background:#f7f7f7;padding:30px}
 .txt_noti .tit_noti{font-size:16px;font-family:'Roboto-M','Noto-M', sans-serif}
 .txt_noti ul{margin-top:14px}
-.txt_noti ul li p{line-height:24px}
+.txt_noti ul li p{line-height:24px;color:#555555}
 
 /* map */
 .map{width:100%;height:550px;background:#f7f7f7}

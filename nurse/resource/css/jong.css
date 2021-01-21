@@ -165,6 +165,12 @@ article > .art_txt{line-height:24px}*/
 .accordion > ul > li .cnt .txt_pag .list{padding-left:7px}
 
 
+/* box_down */
+.box_down{position:relative}
+.box_down ul::after{content:"";display:block;clear:both}
+.box_down li{float:left;width:280px;border:1px solid #dddddd;border-radius:7px;padding:30px 0;margin:0 20px 20px 0;box-sizing:border-box;text-align:center}
+.box_down li:nth-child(4n){margin-right:0}
+.box_down li p{font-size:16px;color:#111111;font-family:'Roboto-M', 'Noto-M', sans-serif;margin-bottom:25px}
 
-
-
+.box_down.col2 li{width:580px}
+.box_down.col2 li:nth-child(2n){margin-right:0}

@@ -87,8 +87,10 @@ $(document).ready(function(){
             var $acclist = $(this).parent();
             if($acclist.hasClass("on")){
                 $acclist.removeClass("on");
+                $(this).next().stop().slideUp();
             }else{
                 $acclist.addClass("on");
+                $(this).next().stop().slideDown();
             }
         });
     }
