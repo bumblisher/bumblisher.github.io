@@ -3,16 +3,22 @@
 @font-face{
     font-family:'Noto-DL';
     src : url(../font/NotoSansCJKkr-DemiLight.otf);
+    src : url(../font/NotoSansCJKkr-DemiLight.woff),
+    url(../font/NotoSansCJKkr-DemiLight.woff2);
     font-style: normal;
 }
 @font-face{
     font-family:'Noto-R';
     src : url(../font/NotoSansCJKkr-Regular.otf);
+    src : url(../font/NotoSansCJKkr-Regular.woff),
+    url(../font/NotoSansCJKkr-Regular.woff2);
     font-style: normal;
 }
 @font-face{
     font-family:'Noto-M';
     src : url(../font/NotoSansCJKkr-Medium.otf);
+    src : url(../font/NotoSansCJKkr-Medium.woff),
+    url(../font/NotoSansCJKkr-Medium.woff2);
     font-style: normal;
 }
 @font-face{
