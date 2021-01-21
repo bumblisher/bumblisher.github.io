@@ -23,9 +23,9 @@
 }
 @font-face{
     font-family:'Noto-B';
-    src : url(../font/NotoSanskr-Bold.otf.otf);
-    src : url(../font/NotoSanskr-Bold.otf.woff),
-    url(../font/NotoSanskr-Bold.otf.otf.woff2);
+    src : url(../font/NotoSanskr-Bold.otf);
+    src : url(../font/NotoSanskr-Bold.woff),
+    url(../font/NotoSansKR-Bold.woff2);
     font-style: normal;
 }
 @font-face{
