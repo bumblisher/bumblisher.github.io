@@ -174,3 +174,39 @@ article > .art_txt{line-height:24px}*/
 
 .box_down.col2 li{width:580px}
 .box_down.col2 li:nth-child(2n){margin-right:0}
+
+.box_down.col1 li{width:100%}
+
+
+/* box_step */
+.box_step > ul::after{content:'';display:block;clear:both}
+.box_step > ul > li{position:relative;float:left;width:360px;height:210px;padding:40px 30px;text-align:center;background:url(../image/bg_step01.png) 0 0 no-repeat;box-sizing:border-box}
+.box_step > ul > li + li{margin-left:45px}
+.box_step > ul > li + li::before{content:'';position:absolute;top:50%;left:-33px;margin-top:-13px;width:17px;height:26px;background:url(../image/ico_steparrow.png)}
+.box_step > ul > li p{color:#111111;padding-top:85px;line-height:24px}
+.box_step > ul > li p.icon01{padding-top:75px;background:url(../image/ico_step01.png) center 16px no-repeat}
+.box_step > ul > li p.icon02{background:url(../image/ico_step02.png) center 15px no-repeat}
+.box_step > ul > li p.icon03{background:url(../image/ico_step03.png) center 14px no-repeat}
+.box_step > ul > li p.icon04{background:url(../image/ico_step04.png) center 26px no-repeat}
+.box_step > ul > li p.icon05{background:url(../image/ico_step05.png) center 24px no-repeat}
+.box_step > ul > li p.icon06{background:url(../image/ico_step06.png) center 26px no-repeat}
+
+.box_step.list > ul > li{height:auto}
+.box_step.list ul li ul{margin-top:80px}
+.box_step.list ul li ul li{position:relative;line-height:24px;text-align:left;padding-left:10px}
+.box_step.list ul li ul li::before{content:'';position:absolute;top:10px;left:0px;width:4px;height:4px;background:#333333;border-radius:50%}
+.box_step.list ul li ul li + li{margin-top:3px}
+
+.box_step.type2 > ul > li{width:170px;height:170px;background:url(../image/bg_step02.png) 0 0 no-repeat;padding:20px}
+.box_step.type2 > ul > li + li{margin-left:32px}
+.box_step.type2 > ul > li + li::before{left:-24px}
+.box_step.type2 > ul > li p{padding-top:42px}
+.box_step.type2 > ul > li p.line3{padding-top:30px}
+.box_step.type2 > ul > li p.line1{padding-top:55px}
+
+.box_step.type3 > ul > li{width:210px;height:210px;background:url(../image/bg_step03.png) 0 0 no-repeat;}
+.box_step.type3 > ul > li + li{margin-left:32px}
+.box_step.type3 > ul > li + li::before{left:-24px}
+.box_step.type3 > ul > li p{padding-top:42px}
+.box_step.type3 > ul > li p.line3{padding-top:30px}
+.box_step.type3 > ul > li p.line1{padding-top:55px}
