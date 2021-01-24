@@ -122,4 +122,20 @@ $(document).ready(function(){
         });
     }
     btnTop();
+
+    function exPop(){
+        var $exPopBtn = $(".exPopBtn");
+        var $exPop = $("#exPop");
+        var $popClose = $(".btn_close");
+
+        $exPopBtn.click(function (e) {
+            e.preventDefault();
+            $exPop.addClass("on");
+        });
+        $popClose.click(function (e) {
+            e.preventDefault();
+            $exPop.removeClass("on");
+        });
+    }
+    exPop();
 });

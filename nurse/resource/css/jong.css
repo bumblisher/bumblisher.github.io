@@ -210,3 +210,25 @@ article > .art_txt{line-height:24px}*/
 .box_step.type3 > ul > li p{padding-top:42px}
 .box_step.type3 > ul > li p.line3{padding-top:30px}
 .box_step.type3 > ul > li p.line1{padding-top:55px}
+
+
+/* box_stepcom */
+
+.box_stepcom > ul > li{postion:relative;float:left}
+.box_stepcom > ul > li + li{margin-left:30px}
+.box_stepcom > ul > li .tit{height:50px;line-height:50px;margin-bottom:20px;box-sizing:border-box;border:1px solid #888888;text-align:center;border-radius:8px;background:#f7f7f7;font-size:18px;font-family:'Roboto-M','Noto-M',sans-serif}
+.box_stepcom > ul > li ul + ul{margin-top:20px}
+.box_stepcom > ul > li > div, .box_stepcom > ul > li > ul{border:1px solid #dddddd}
+.box_stepcom .step{width:330px}
+.box_stepcom .process{width:458px}
+.box_stepcom .company{width:331px}
+
+.box_stepcom .step > div{text-align:center;color:#445fb7;box-sizing:border-box}
+.box_stepcom .step > div + div{margin-top:20px}
+.box_stepcom .step > div:nth-child(2), .box_stepcom .step > div:nth-child(4){height:247px;line-height:247px}
+.box_stepcom .step > div:nth-child(3){height:100px;line-height:100px}
+.box_stepcom .process li, .box_stepcom .company li{height:49px;line-height:49px;box-sizing:border-box}
+.box_stepcom .process li{text-align:center}
+.box_stepcom .process li + li{border-top:1px solid #dddddd}
+.box_stepcom .company li{padding-left:20px}
+.box_stepcom .company li + li{border-top:1px solid transparent}
