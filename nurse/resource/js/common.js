@@ -123,10 +123,15 @@ $(document).ready(function(){
     }
     btnTop();
 
+    // 팝업 임시 스크립트
     function exPop(){
         var $exPopBtn = $(".exPopBtn");
         var $exPop = $("#exPop");
         var $popClose = $(".btn_close");
+        
+        var $exAlertBtn = $(".exAlertBtn");
+        var $exAlert = $("#exAlert");
+        var $exAlertClose = $(".alert .btn_cm");
 
         $exPopBtn.click(function (e) {
             e.preventDefault();
@@ -135,6 +140,15 @@ $(document).ready(function(){
         $popClose.click(function (e) {
             e.preventDefault();
             $exPop.removeClass("on");
+        });
+
+        $exAlertBtn.click(function (e) {
+            e.preventDefault();
+            $exAlert.addClass("on");
+        });
+        $exAlertClose.click(function (e) {
+            e.preventDefault();
+            $exAlert.removeClass("on");
         });
     }
     exPop();
