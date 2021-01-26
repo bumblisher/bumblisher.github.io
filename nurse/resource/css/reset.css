@@ -3,26 +3,27 @@
 @font-face{
     font-family:'Noto-DL';
     font-style: normal;
-    src :    url(../font/NotoSansCJKkr-DemiLight.woff) format("woff"),
-            url(../font/NotoSansKR-DemiLight.otf) format("truetype");
+    src :    url(../font/NotoSansKR-DemiLight.otf) format("truetype"),
+    url(../font/NotoSansCJKkr-DemiLight.woff) format("woff");
+            
 }
 @font-face{
     font-family:'Noto-R';
     font-style: normal;
-    src :    url(../font/NotoSansCJKkr-Regular.woff) format("woff"),
-            url(../font/NotoSansKR-Regular.otf) format("truetype");
+    src :    url(../font/NotoSansKR-Regular.otf) format("truetype"),
+    url(../font/NotoSansCJKkr-Regular.woff) format("woff");
 }
 @font-face{
     font-family:'Noto-M';
     font-style: normal;
-    src :    url(../font/NotoSansCJKkr-Medium.woff) format("woff"),
-            url(../font/NotoSansKR-Medium.otf) format("truetype");
+    src :    url(../font/NotoSansKR-Medium.otf) format("truetype"),
+    url(../font/NotoSansCJKkr-Medium.woff) format("woff");
 }
 @font-face{
     font-family:'Noto-B';
     font-style: normal;
-    src :    url(../font/NotoSansCJKkr-Bold.woff) format("woff"),
-            url(../font/NotoSansKR-Bold.otf) format("truetype");
+    src :   url(../font/NotoSansKR-Bold.otf) format("truetype"),
+    url(../font/NotoSansCJKkr-Bold.woff) format("woff");
 }
 
 @font-face{
