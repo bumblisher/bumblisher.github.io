@@ -3,25 +3,25 @@
 @font-face{
     font-family:'Noto-DL';
     font-style: normal;
-    src :    url(../font/NotoSansKR-DemiLight.woff) format("woff"),
+    src :    url(../font/NotoSansCJKkr-DemiLight.woff) format("woff"),
             url(../font/NotoSansKR-DemiLight.otf) format("truetype");
 }
 @font-face{
     font-family:'Noto-R';
     font-style: normal;
-    src :    url(../font/NotoSansKR-Regular.woff) format("woff"),
+    src :    url(../font/NotoSansCJKkr-Regular.woff) format("woff"),
             url(../font/NotoSansKR-Regular.otf) format("truetype");
 }
 @font-face{
     font-family:'Noto-M';
     font-style: normal;
-    src :    url(../font/NotoSansKR-Medium.woff) format("woff"),
+    src :    url(../font/NotoSansCJKkr-Medium.woff) format("woff"),
             url(../font/NotoSansKR-Medium.otf) format("truetype");
 }
 @font-face{
     font-family:'Noto-B';
     font-style: normal;
-    src :    url(../font/NotoSansKR-Bold.woff) format("woff"),
+    src :    url(../font/NotoSansCJKkr-Bold.woff) format("woff"),
             url(../font/NotoSansKR-Bold.otf) format("truetype");
 }
 
@@ -40,6 +40,7 @@
     src : url(../font/Roboto-Bold.ttf);
     font-style: normal;
 }
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
