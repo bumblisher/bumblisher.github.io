@@ -73,7 +73,7 @@ nav .dep3 > li > a:hover{text-decoration: underline}
 
 .lnb{min-width: 1280px;height: 50px;border-bottom: 1px solid #eee;box-sizing: border-box;background-color:#fff;}
 .lnb_inner{width:1180px;height:100%;margin:0 auto;padding: 18px 0;box-sizing: border-box;}
-.lnb_inner .step li{display: inline-block;position: relative;font-size: 15px}
+.lnb_inner .step li{display: inline-block;position: relative;font-size: 15px;color:#555555}
 .lnb_inner .step li:first-child{width:14px;height: 13px;margin-left: 1px;background: url(../image/ico_home.png) no-repeat center;text-indent: -9999px;}
 .lnb_inner .step li + li{margin-left:7px;padding-left:13px;}
 .lnb_inner .step li + li::before{content:'';display: inline-block;position: absolute;left: 0;top:4px;width:4px;height: 5px;background:url(../image/ico_lnb_arrow.png) no-repeat center;}
@@ -88,6 +88,7 @@ nav .dep3 > li > a:hover{text-decoration: underline}
 .foot_info *{font-size:14px;font-weight:100;color:#aaaaaa}
 .foot_info > *{padding-top:10px}
 .foot_info .foot_num span{display:inline-block}
+.foot_info .foot_num span + span{padding-left:20px}
 
 .foot_util{right:50px;top:38px} 
 .foot_util ul li{float:left;position:relative}
@@ -117,7 +118,7 @@ article > .txt_ref:last-child{margin-bottom:0}
 
 /* titarea */
 .titarea{padding:29px 0;text-align: center;}
-.titarea h2{font-size: 48px;font-family: 'Roboto', 'Noto-M', sans-serif;color:#111}
+.titarea h2{font-size: 48px;font-family: 'Roboto-B', 'Noto-M', sans-serif;color:#111}
 .titarea h2 + .tit_txt{margin-top:22px;font-size: 20px;line-height: 30px;}
 
 /* table tit */
@@ -350,11 +351,11 @@ article > .txt_ref:last-child{margin-bottom:0}
 .btn_df.go:hover{background:url(../image/ico_arrowgohover.png) right 14px center no-repeat}
 .btn_df.go.big{width:250px;text-align:left}
 
-.btn_cm{display: inline-block;min-width: 140px;height: 50px;padding:0 20px;color:#fff;background: #999;font-size: 18px;text-align: center;line-height: 48px;box-sizing: border-box;border-radius: 4px;}
-.btn_cm.gray{background: #333}
-.btn_cm.mint{background: #01b5af}
+.btn_cm{display: inline-block;min-width: 140px;height: 50px;padding:0 20px;color:#fff;background: #999;font-size: 18px;text-align: center;line-height: 50px;box-sizing: border-box;border-radius: 4px;}
 .btn_cm:hover{background: #777}
-.btn_cm.gray:hover{background: #555}
+.btn_cm.gray{background: #555}
+.btn_cm.mint{background: #01b5af}
+.btn_cm.gray:hover{background: #444}
 .btn_cm.mint:hover{background: #00a09b}
 .btn_cm.long{padding:0 49px}
 
@@ -404,6 +405,11 @@ h3 > span[id*='focus']{display: block;margin-top: -150px;padding-bottom: 150px;}
 .ipt:focus,
 .select:focus,
 .txa:focus{position: relative;border-color: #01b5af;outline: none;z-index: 2;}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder{ /* WebKit browsers */ color:transparent; } 
+input:focus:-moz-placeholder, textarea:focus:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color:transparent; } 
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder { /* Mozilla Firefox 19+ */ color:transparent; } 
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */ color:transparent; }
 
 
 /* main */
@@ -521,7 +527,7 @@ h3 > span[id*='focus']{display: block;margin-top: -150px;padding-bottom: 150px;}
 .cht06{top:290px;left:622px}
 .cht07{top:173px;left:923px}
 .cht08{top:496px;left:3px}
-.cht01 a, .cht02 a, .cht03 a, .cht04 a, .cht05 a, .cht06 a{display:block;width:260px;height:60px;line-height:60px;border:1px solid #dddddd;background:#fff;box-sizing:border-box;border-radius:30px;text-align:center;font-size:20px;font-family:'Noto-M';}
+.cht01 a, .cht02 a, .cht03 a, .cht04 a, .cht05 a, .cht06 a{display:block;width:260px;height:60px;line-height:60px;border:2px solid #dddddd;background:#fff;box-sizing:border-box;border-radius:30px;text-align:center;font-size:20px;font-family:'Roboto-M','Noto-M', sans-serif}
 .cht01 a, .cht02 a{border-color:#dfe5ff;box-shadow:0 0 20px rgba(68, 95, 183, 0.2);color:#445fb7}
 .cht01 a:hover, .cht02 a:hover{background:#445fb7;color:#fff}
 .cht03 a, .cht05 a{background:#888888;border:0px;color:#ffffff}
@@ -691,6 +697,7 @@ h3 > span[id*='focus']{display: block;margin-top: -150px;padding-bottom: 150px;}
 .box_line .line_grp ul li{display: inline-block;}
 .box_line .line_grp:first-child{border-top:1px solid #ddd;}
 .box_line .line_btn{margin-top: 20px;}
+.box_line .line_btn .btn_cm + .btn_cm{margin-left:20px}
 .box_line .line_comment{border-top:1px solid #333;border-bottom: 1px solid #ddd;background-color: #f7f7f7;padding:30px}
 .box_line .line_comment .tit{font-size: 18px;font-family:'Roboto', 'Noto-M';color:#111;margin-bottom: 30px;}
 .box_line .line_comment p{line-height: 24px;}
@@ -698,6 +705,7 @@ h3 > span[id*='focus']{display: block;margin-top: -150px;padding-bottom: 150px;}
 .box_line .file a{color: #01b5af;text-decoration: underline;}
 .box_line .link{color: #888;}
 .box_line .link:hover{color:#333333}
+.box_line .link.no:hover{color:#888888;text-decoration: none}
 
 .req::before{content: '*';color:#ed9333;margin-right: 2px;}
 
@@ -792,6 +800,7 @@ h3 > span[id*='focus']{display: block;margin-top: -150px;padding-bottom: 150px;}
 .box_step > ul > li p.icon06{background:url(../image/ico_step06.png) center 26px no-repeat}
 
 .box_step.list > ul > li{height:auto}
+.box_step.list > ul > li + li::before{top:105px;left:-30px}
 .box_step.list ul li ul{margin-top:80px}
 .box_step.list ul li ul li{position:relative;line-height:24px;text-align:left;padding-left:10px}
 .box_step.list ul li ul li::before{content:'';position:absolute;top:10px;left:0px;width:4px;height:4px;background:#333333;border-radius:50%}
@@ -806,7 +815,7 @@ h3 > span[id*='focus']{display: block;margin-top: -150px;padding-bottom: 150px;}
 
 .box_step.type3 > ul > li{width:210px;height:210px;background:url(../image/bg_step03.png) 0 0 no-repeat;}
 .box_step.type3 > ul > li + li{margin-left:32px}
-.box_step.type3 > ul > li + li::before{left:-24px}
+.box_step.type3 > ul > li + li::before{left:-24px;}
 .box_step.type3 > ul > li p{padding-top:42px}
 .box_step.type3 > ul > li p.line3{padding-top:30px}
 .box_step.type3 > ul > li p.line1{padding-top:55px}
@@ -833,3 +842,72 @@ h3 > span[id*='focus']{display: block;margin-top: -150px;padding-bottom: 150px;}
 .box_stepcom .process ul + ul::after{content:"";display:block;clear:both;position:absolute;width:2px;height:20px;background:#dddddd;top:-21px;left:50%;margin-left:-1px}
 .box_stepcom .company li{padding-left:20px}
 .box_stepcom .company li + li{border-top:1px solid transparent}
+
+
+/* englist version */
+
+.enver div, .enver span, .enver h1, .enver h2, .enver h3, .enver h4, .enver h5, .enver p,
+.enver a, .enver address, .enver em, .enver img, .enver dl, .enver dt, .enver dd, .enver ol, .enver ul, .enver li,
+.enver table, .enver tbody, .enver tfoot, .enver thead, .enver tr, .enver th, .enver td, 
+.enver article, .enver footer, .enver header, .enver nav, .enver section, 
+.enver button, .enver textarea, .enver select, .enver input{letter-spacing: 0;}
+
+.enver .header_gnb .logo a{display:block;width:100%;height:100%;background:url(../image/logo_en.png) 0 center no-repeat}
+
+.enver nav .dep1 li a{display:block;width:352px;height:69px;line-height:69px;padding-bottom:11px;font-weight:500;text-align:center;font-size:18px;color:#111111;font-family:'Roboto-M','Noto-M', sans-serif}
+
+.enver .dep2_inner{width:1180px;height:195px;margin:0 auto;}
+.enver .dep2_inner > ul{height:100%;margin-left:190px}
+.enver .dep2_inner > ul > li{float:left;width:352px;height:100%}
+
+.enver .tit_main{padding:82px 0 108px;text-align:center}
+.enver .tit_main .slogan{font-size:60px;line-height:80px;font-family:'Roboto-B', sans-serif}
+
+.enver .quick_menu li{width:272px}
+.enver .quick_menu li:nth-child(4){margin-right:0}
+.enver .quick_menu li:nth-child(1) a{background:url(../image/ico_enmain_quick01.png) center 39px no-repeat}
+.enver .quick_menu li:nth-child(2) a{background:url(../image/ico_enmain_quick02.png) center 39px no-repeat}
+.enver .quick_menu li:nth-child(3) a{padding-top:121px;background:url(../image/ico_enmain_quick03.png) center 39px no-repeat}
+.enver .quick_menu li:nth-child(4) a{background:url(../image/ico_enmain_quick04.png) center 39px no-repeat}
+
+/* greeting */
+.enver .tit_greeting, .cnt_greeting{padding-left:52px}
+.enver .tit_greeting h3{padding-top:89px;font-size:36px;line-height:46px;color:#111111;font-family:'Roboto-M', sans-serif}
+.enver .tit_greeting .cnt01{display:block;padding-top:2px;font-size:24px;line-height:34px;}
+.enver .tit_greeting .cnt02{display:block;padding-top:22px;line-height:34px;font-size:18px;font-family:'Roboto-M', sans-serif}
+.enver .tit_greeting .sign{display:block;height:34px;padding-top:7px;background:url(../image/ico_sign.png) 0 7px no-repeat;text-indent:-9999px}
+
+.enver .cnt_greeting{padding-top:25px;}
+.enver .cnt_greeting p{line-height:28px;padding-bottom:28px;font-size:18px}
+.enver .cnt_greeting p:nth-child(2n){padding-bottom:0px}
+.enver .cnt_greeting p:nth-child(n){padding-bottom:28px}
+
+/* foundation */
+.enver .bg_foundation{background:url(../image/bg_foundation.png) center 152px repeat-x}
+.enver .box_foundation > p{padding-top:45px;line-height:24px}
+.enver .box_foundation p{padding-bottom:0}
+.enver .box_foundation .list{padding-top:30px}
+.enver .box_foundation .list li{line-height:28px;font-size:18px;font-family:'Roboto-M', sans-serif}
+.enver .box_foundation .list li p{font-size:16px;line-height:24px;padding-left:20px}
+
+/* history */
+.enver .history .box .cnt .cal{width:130px;font-size:20px;color:#445fb7;font-family:'Roboto-M', 'Noto-M', sans-serif}
+.enver .history .box .cnt .info{width:calc(100% - 134px);font-size:18px;line-height:20px}
+
+/* oga_cht */
+.enver .oga_cht{position:relative;width:100%;height:600px;background:url(../image/bg_ogacht_enline.png) left top no-repeat}
+.enver .cht01{top:20px;left:354px}
+.enver .cht02{top:20px;left:644px}
+.enver .cht03{top:107px;left:85px}
+.enver .cht04{top:200px;left:354px}
+.enver .cht05{top:290px;left:85px}
+.enver .cht06{top:290px;left:622px}
+.enver .cht07{top:110px;left:923px}
+.enver .cht08{top:490px;left:3px}
+.enver .cht07 li{width:240px;height:60px;border:1px solid #dddddd;background:#f7f7f7;padding:0 20px;box-sizing:border-box;border-radius:8px}
+.enver .cht07 li a{display:block;width:auto;height:60px;line-height:22px;border:0px;padding-left:0;padding-top:8px;background:transparent;font-size:16px;}
+.enver .cht07 li.one a{line-height:60px;padding-top:0}
+.enver .cht08 li a{display:block;width:220px;height:90px;line-height:22px;padding-top:23px;border:1px solid #aaaaaa;background:#fff;text-align:center;box-sizing:border-box;font-family:'Noto-M';border-radius:8px}
+.enver .cht08 li.ty2 a{padding-top:10px}
+.enver .cht08 li a:hover{text-decoration:underline}
+.enver .cht08 li + li{margin-left:30px}

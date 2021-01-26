@@ -126,14 +126,14 @@ textarea:focus::-moz-placeholder { /* Mozilla Firefox 19+ */ color:transparent; 
 input:focus:-ms-input-placeholder, 
 textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */ color:transparent; }
 
-input[readonly=readonly]:focus::-webkit-input-placeholder,
-textarea[readonly=readonly]:focus::-webkit-input-placeholder { /* WebKit browsers */ color:#aaa; }
-input[readonly=readonly]:focus:-moz-placeholder,
-textarea[readonly=readonly]:focus:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */ color:#aaa; }
-input[readonly=readonly]:focus::-moz-placeholder,
-textarea[readonly=readonly]:focus::-moz-placeholder { /* Mozilla Firefox 19+ */ color:#aaa; } 
-input[readonly=readonly]:focus:-ms-input-placeholder,
-textarea[readonly=readonly]:focus:-ms-input-placeholder { /* Internet Explorer 10+ */ color:#aaa; }
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder { /* WebKit browsers */ color:#aaa; }
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */ color:#aaa; }
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder { /* Mozilla Firefox 19+ */ color:#aaa; } 
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */ color:#aaa; }
 
 .per50{width:50%}
 .per100{width:100%}
