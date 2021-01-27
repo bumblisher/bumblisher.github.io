@@ -4,7 +4,7 @@
 .header{position:relative;height:47px}
 .header .header_top{display:flex;align-items:center;width:100%;height:47px}
 .header .header_top .logo{width:116px;height:40px;background:url(../image/logo_m.png) no-repeat;background-size:100% auto}
-.header .header_top .logo a{display:block;text-indent:-9999px}
+.header .header_top .logo a{display:block;height:40px;text-indent:-9999px}
 .header .header_top .allmenu{display:block;width:40px;height:40px;margin-left:auto;background:url(../image/ico_m_allmenu.png) no-repeat;background-size:100% auto;text-indent:-9999px}
 
 .menu{position:absolute;left:0;right:0;top:0;width:100%;overflow:hidden}

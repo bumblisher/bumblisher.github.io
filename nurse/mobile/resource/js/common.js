@@ -9,6 +9,7 @@ $(document).ready(function(){
             if(!nav.hasClass("on")){
                 nav.stop().animate({left:"0%"});
                 nav.addClass("on");
+                $('body').css("overflow", "hidden");
             }
         });
 
@@ -16,6 +17,7 @@ $(document).ready(function(){
             if(nav.hasClass("on")){
                 nav.stop().animate({left:"100%"});
                 nav.removeClass("on");
+                $('body').css("overflow", "scroll");
             }
         });
     }
