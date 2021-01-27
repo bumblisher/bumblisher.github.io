@@ -8,7 +8,7 @@
 .header .header_top .allmenu{display:block;width:40px;height:40px;margin-left:auto;background:url(../image/ico_m_allmenu.png) no-repeat;background-size:100% auto;text-indent:-9999px}
 
 .menu{position:absolute;left:0;right:0;top:0;width:100%;overflow:hidden}
-.menu nav{position:fixed;left:100%;width:100%;height:100%;overflow:auto;padding-bottom:20px;box-sizing:border-box;background:#ffffff;}
+.menu nav{position:fixed;z-index:100;left:100%;width:100%;height:100%;overflow:auto;padding-bottom:20px;box-sizing:border-box;background:#ffffff;}
 .nav_hd{border-bottom:1px solid #dddddd;padding:0 20px}
 .nav_hd ul{display:flex;flex-direction:row;align-items:center;justify-content:flex-end;height:46.666px}
 .nav_hd li + li{margin-left:10px}
