@@ -4,8 +4,11 @@
 .btn_top{position: fixed;left:50%;bottom:50px;display: none;width:46px;height:46px;margin-left:590px;border-radius: 50%;box-shadow:0 5px 15px rgba(0, 0, 0, 0.2);text-indent: -9999px;background:#fff url(../image/ico_btntop.png) center no-repeat;z-index: 10;}
 .btn_top.fix{position: absolute;} */
 
-.container{padding-top: 47px;padding-bottom: 70px;}
+.container{padding-top: 47px;padding-bottom: 70px;min-height: calc(100vh - 189px);box-sizing: border-box;}
 .container.main{background-color: #f7f7f7;margin-top: -47px;}
+.container.bg_gray{background-color: #f7f7f7;}
+.container.bg_gray .content_inner{background-color: #f7f7f7;}
+
 
 .main_top{height: 550px;margin: -47px -20px 0;padding-top: 47px;background: url(../image/bg_main.png) no-repeat center;background-size: cover;box-sizing: border-box;}
 .main_top .tit_main{width:300px;padding-top: 55px;margin: 0 auto;}
@@ -45,9 +48,61 @@
 .foot_info .foot_num span + span{margin-left: 10px;}
 .foot_info .copy{line-height: 16px;font-family: 'Roboto-R', 'Noto-DL', sans-serif;color:#aaa;}
 
-
-
-
-.skip a{position:absolute;top:0px;left:-9999px;z-index:9999}
-.skip a:focus, #skip a:active{left:0px;width:100%;padding:10px;background:#000;color:#fff;font-weight:bold;text-align:center}
 .btn_top{display: none;}
+
+/* login */
+.box_login{margin: 0 10px;padding:30px;background-color:#fff;box-shadow:0 3px 10px rgba(0, 0, 0, 0.2);border-radius: 20px;}
+.box_login input[type=text],
+.box_login input[type=password]{display: block;border:1px solid #ddd;border-radius:4px;width:100%;height:40px;padding:0 12px;box-sizing: border-box;font-size: 14px;}
+.box_login input[type=text]:focus,
+.box_login input[type=password]:focus{border-color: #445fb7;outline: none;}
+.box_login input[type=text] + input[type=text],
+.box_login input[type=text] + input[type=password]{margin-top:9px}
+.box_login .btn_login{margin-top:15px;display: block;width:100%;font-size: 15px;}
+.box_login ul{margin-top:20px;text-align: center;}
+.box_login ul li{display: inline-block;padding:0 15px}
+.box_login ul li a{font-size: 13px;color:#555}
+.box_login ul li + li{border-left: 1px solid #ddd;}
+
+.box_loginbtn{text-align: center;}
+.box_loginbtn::after{content:"";display: block;clear:both}
+.box_loginbtn li{display: inline-block;width:240px;height:240px;background:#fff;border-radius:18px;box-shadow:0 5px 15px rgba(0, 0, 0, 0.2);}
+.box_loginbtn li + li{margin-left: 40px;}
+.box_loginbtn li a{display:block;height:100%;padding-top:161px;color:#111111;line-height:24px;text-align:center;font-size:20px;box-sizing: border-box;background:#fff;border-radius:18px;}
+.box_loginbtn li a:hover{background-color: #eef5fb;}
+.box_loginbtn li:nth-child(1) a{background:url(../image/ico_findid.png) center 66px no-repeat}
+.box_loginbtn li:nth-child(2) a{background:url(../image/ico_findpw.png) center 77px no-repeat}
+
+.box_logintext{text-align: center;padding: 80px 30px;border-top: 1px solid #333;border-bottom: 1px solid #333;}
+.box_logintext p{font-size:20px}
+.box_logintext p span{color:#445fb7}
+
+.btn_login{display: block;height: 43px;line-height: 43px;border-radius:4px;background: #999;text-align: center;color:#fff;font-size: 14px;font-family: 'Roboto-R', 'Noto-M', sans-serif;}
+.btn_login:hover{background:#777777}
+.btn_login.mint{background: #01b5af;}
+.btn_login.mint:hover{background:#00a09b}
+
+.boxbtn_login{margin-top: 60px;text-align: center;overflow: hidden;}
+.boxbtn_login li{float:left;display:block;}
+.boxbtn_login li + li{margin-left:20px}
+
+/* titarea */
+.titarea{padding:29px 0;}
+.titarea .tit_txt{font-size: 18px;font-family: 'Roboto-B', 'Noto-M', sans-serif;color:#111;line-height: 24px;}
+
+
+
+
+/* 공용 */
+.txa{padding:20px;height: 140px;border:1px solid #ddd;border-radius: 8px;color:#555;font-size: 16px;box-sizing: border-box;}
+.ipt{display: inline-block;width:100%;height: 50px;padding:0 20px;border:1px solid #ddd;border-radius: 8px;box-sizing: border-box;color:#555;font-size: 16px;}
+.ipt[readonly=readonly]:focus,
+.ipt[readonly=readonly],
+.txa[readonly=readonly],
+.txa[readonly=readonly]:focus{background: #f7f7f7;color:#aaa;border-color:#ddd;}
+.select{width:100%;height:50px;border:1px solid #ddd;border-radius: 8px;padding:0 40px 0 20px;box-sizing: border-box;color:#333;font-size: 16px;background: url(../image/ico_select.png) no-repeat right 20px center;}
+.txt_email{position: relative;display: block;width:0px;height: 50px;}
+.txt_email:before{content:'@';position: absolute;left: -7px;line-height: 50px;color:#555;font-size: 16px;font-family: 'Roboto', 'Noto-R', sans-serif;}
+.ipt:focus,
+.select:focus,
+.txa:focus{position: relative;border-color: #01b5af;outline: none;z-index: 2;}

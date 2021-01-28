@@ -906,6 +906,7 @@ h3 > span[id*='focus']{display: block;margin-top: -150px;padding-bottom: 150px;}
 .enver .cht08 li.ty2 a{padding-top:10px}
 .enver .cht08 li a:hover{text-decoration:underline}
 .enver .cht08 li + li{margin-left:30px}
+.enver .oga_cht a{pointer-events: none;}
 
 /* table tb */
 .enver .tb .tb_blue, .enver .tb .tb_gray{margin-left:0}
@@ -915,6 +916,8 @@ h3 > span[id*='focus']{display: block;margin-top: -150px;padding-bottom: 150px;}
 .enver .tb .tb_gray{position:relative;display:block;width:540px;height:40px;margin-left:0;line-height:42px;border-radius:8px}
 .enver .tb .tb_gray.right{display:inline-block;width:310px;margin-left:310px}
 .enver .tb .tb_gray.no::after{display:none}
+.enver .tb .tb_gray.no_bf:before{display:none}
+
 
 /* testmain*/
 .test nav .dep1{margin-left:22px}
