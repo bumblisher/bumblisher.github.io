@@ -849,6 +849,7 @@ h3 > span[id*='focus']{display: block;margin-top: -150px;padding-bottom: 150px;}
 .enver .header_gnb .logo a{display:block;width:100%;height:100%;background:url(../image/logo_en.png) 0 center no-repeat}
 
 .enver nav .dep1 li a{display:block;width:352px;height:69px;line-height:69px;padding-bottom:11px;font-weight:500;text-align:center;font-size:18px;color:#111111;font-family:'Roboto-M','Noto-M', sans-serif}
+.enver nav .dep1 li a:hover{color:#445fb7}
 
 .enver .dep2_inner{width:1180px;height:195px;margin:0 auto;}
 .enver .dep2_inner > ul{height:100%;margin-left:190px}
