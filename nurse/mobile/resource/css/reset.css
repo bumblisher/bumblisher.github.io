@@ -92,7 +92,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-textarea{resize: none;display: block;width: 100%;box-sizing: border-box;box-shadow: none;}
+textarea{resize: none;display: block;width: 100%;box-sizing: border-box;-webkit-appearance: none;}
 select {
     -webkit-appearance: none;  /* 네이티브 외형 감추기 */
     -moz-appearance: none;
