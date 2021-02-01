@@ -115,10 +115,10 @@
 .ly_form li + li{margin-left: -1px;}
 .ly_form li:first-child > input[type=text],
 .ly_form li:first-child > label,
-.ly_form li:first-child > select{border-radius: 8px 0 0 8px;}
+.ly_form li:first-child > select{border-radius: 4px 0 0 4px;}
 .ly_form li:last-child > input[type=text],
 .ly_form li:last-child > label,
-.ly_form li:last-child > select{border-radius: 0 8px 8px 0;}
+.ly_form li:last-child > select{border-radius: 0 4px 4px 0;}
 
 .ly_form li input[type=text],
 .ly_form li select{border-radius: 0;}
@@ -128,6 +128,22 @@
 .box_form input[type=text]:focus,
 .box_form input[type=password]:focus,
 .box_form select:focus{position: relative;border-color: #01b5af;outline: none;z-index: 2;}
+
+.box_form .btn_df{display: inline-block;box-sizing: border-box;text-align: center;}
+.box_form .txt_span{color:#333;font-size: 14px;}
+.box_form .txt_sub{color:#555;font-size: 13px;}
+.box_form .ipt_year,
+.box_form .ipt_month{position: relative;}
+.box_form .ipt_year .ipt{text-align: right;padding-right: 24px;}
+.box_form .ipt_month .ipt{text-align: right;padding-right: 36px;}
+.box_form .ipt_year:after{content: '년';position: absolute;right: 10px;top: 2px;line-height: 32px;color:#333;font-size: 14px;font-family: 'Roboto', 'Noto-R', sans-serif;z-index: 10;}
+.box_form .ipt_month:after{content: '개월';position: absolute;right: 10px;top: 2px;line-height: 32px;color:#333;font-size: 14px;font-family: 'Roboto', 'Noto-R', sans-serif;z-index: 10;}
+
+.box_form .btnbox{margin-top: 30px;}
+.btnbox{display: flex;text-align: center;margin-top: 20px;}
+.btnbox .btn_cm{flex:1}
+.btnbox .btn_cm + .btn_cm{margin-left:10px}
+
 .fn{flex:none !important}
 
 /* 공용 */
@@ -159,16 +175,16 @@
 .chk input[type="checkbox"]:checked + label:after{border-left:2px solid #fff;border-bottom:2px solid #fff;}
 
 /* radio */
-.radio.list{position: relative;}
+.radio.list{position: relative;margin-top: -10px;}
 .radio.list li{position: relative;display: inline-block;}
-.radio.list li + li{margin-left:10px}
+.radio.list li{margin: 10px 20px 0 0;}
 .radio.list + .radio.list{margin-top: 5px;}
 
 .radio{position:relative;display:block;}
 .radio input[type="radio"]{position:absolute;left:2px;top:2px;}
-.radio input[type="radio"] + label{display: inline-block;padding-left: 30px;line-height: 24px;color:#333;font-family:'Roboto', 'Noto-R';font-size: 16px;cursor: pointer}
-.radio input[type="radio"] + label:before{position:absolute;left:0;top:0;content:'';display: inline-block;width:24px;height:24px;border:1px solid #aaa;box-sizing:border-box;background:#fff;border-radius: 50%;}
-.radio input[type="radio"] + label:after{content:'';position:absolute;left:7px;top:7px;width:10px;height:10px;background:#aaa;border-radius: 50%;}
+.radio input[type="radio"] + label{display: inline-block;min-width: 76px;padding-left: 26px;line-height: 20px;color:#333;font-family:'Roboto', 'Noto-R';font-size: 14px;cursor: pointer;box-sizing: border-box;}
+.radio input[type="radio"] + label:before{position:absolute;left:0;top:0;content:'';display: inline-block;width:20px;height:20px;border:1px solid #aaa;box-sizing:border-box;background:#fff;border-radius: 50%;}
+.radio input[type="radio"] + label:after{content:'';position:absolute;left:6px;top:6px;width:8px;height:8px;background:#aaa;border-radius: 50%;}
 .radio input[type="radio"]:checked + label:before{background-color:#01b5af;border:0}
 .radio input[type="radio"]:checked + label:after{background:#fff;}
 
@@ -185,10 +201,10 @@
 .box_sch{text-align: center;}
 .box_sch > * + *{margin-top: 12px;}
 .box_sch .ipt_sch{position: relative;display:block;}
-.box_sch .ipt_sch input[type=text]{padding-right: 54px;}
-.box_sch .ipt_sch .btn_sch{position: absolute;top:12px;right:18px;display: inline-block;width:34px;height: 34px;background: url(../image/ico_sch.png) no-repeat center;text-indent: -9999px;z-index: 10}
+.box_sch .ipt_sch input[type=text]{padding-right: 34px;}
+.box_sch .ipt_sch .btn_sch{position: absolute;top:0px;right:0px;display: inline-block;width:34px;height: 34px;background: url(../image/ico_sch.png) no-repeat center;background-size: 16px;text-indent: -9999px;z-index: 10}
 
-.tit_tb{display: flex;}
+.tit_tb{display: flex;padding: 20px 20px 10px;}
 .tit_tb span{font-size: 14px;line-height: 20px;color:#555;}
 
 
@@ -196,13 +212,23 @@
 .tit_board{font-size:17px;line-height: 21px;color:#111;font-family:'Roboto-M', 'Noto-M', sans-serif}
 .date_board{margin-top: 8px;font-size:15px;line-height: 21px;color:#888}
 
-
+.board{border-bottom:1px solid #ddd}
 .board li{border-top:1px solid #ddd}
-.board li{padding:15px 0}
+.board li{padding:15px 20px}
 .board li a{display: block;}
+.board li.file{padding-right: 52px;background: url(../image/ico_file.png) no-repeat right 20px center;background-size: 16px 20px;}
 .board .cate_board{margin-bottom: 2px;font-size:13px;}
 .board .tit_board{height: 42px;overflow: hidden;font-size:15px;font-family:'Roboto', 'Noto-DL', sans-serif}
 .board .date_board{margin-top: 2px;font-size:13px;}
+
+.listboard{padding: 0 20px;}
+.listboard li{border:1px solid #ddd}
+.listboard li a{display: block;padding: 13px 17px;}
+.listboard li + li{margin-top: 10px;}
+.listboard li.down{background:url(../image/ico_m_btndown.png) right 15px center no-repeat;background-size:12px 18px}
+.listboard .tit_list{font-size:16px;font-family:'Roboto-R', 'Noto-M', sans-serif}
+.listboard .date_list{margin-top: 7px;font-size:13px;color:#888}
+.listboard + .btn_more{margin: 10px 20px;}
 
 .empty{display:none;height:133px;align-items: center;justify-content: center;border-bottom:1px solid #dddddd;}
 .empty p{font-size:15px;color:#333}
@@ -215,7 +241,8 @@
 .btn_cm.gray:hover{background: #444}
 .btn_cm.mint:hover{background: #00a09b}
 .btn_cm.long{padding:0 49px}
-.btn_more{display: block;color:#555;font-size: 13px;height: 34px;line-height: 34px;background: #f7f7f7;text-align: center;}
+.btn_more{display: block;color:#555;font-size: 13px;height: 34px;line-height: 34px;background: #f7f7f7;text-align: center;vertical-align: middle;}
+.btn_more:after{content:'';display: inline-block;margin:-2px 0 0 8px;width:11px;height:6px;background: url(../image/ico_more.png) no-repeat center;background-size: 11px 6px;vertical-align: middle;}
 
 
 .box_line + .box_line{margin-top: 60px}
@@ -236,3 +263,8 @@
 .box_line .file a{display: block;font-size: 14px;line-height: 20px;color: #445fb7;text-decoration: underline;}
 .box_line .link{color: #333;font-size: 13px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 .box_line .link.no{color:#888888;text-decoration: none;pointer-events: none;}
+
+.txt_h3{margin-top: 5px;}
+.txt_h3 span{font-size: 15px;}
+.txt_h3 .num{color:#445fb7;font-family: 'Noto-M', sans-serif;margin-left: 6px;}
+.txt_h3 .num + span{font-family: 'Noto-M', sans-serif;}

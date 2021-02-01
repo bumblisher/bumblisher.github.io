@@ -37,7 +37,7 @@ article.cnt_greeting{padding:30px 20px;border-top:0px}
 .accordion .list p{padding-left:6px}
 
 /* CI */
-.ci article{border-top:0px}
+.ci article{border-top:10px}
 .cibox{padding:212px 20px 30px;background:#f7f7f7 url(../image/ico_m_ci.png) center 27px no-repeat;background-size:160px}
 .cibox .tit{font-size:16px;font-family:'Roboto-M','Noto-M',sans-serif}
 .cibox .cnt{padding-top:13px;font-size:14px;color:#555555;line-height:21px;}
@@ -88,7 +88,7 @@ article.cnt_greeting{padding:30px 20px;border-top:0px}
 .cht08 li + li{margin-top:10px}
 
 
-article + article{border-top:10px solid #dddddd}
+article + article{border-top:10px solid #f0f0f0}
 article > h3{padding-bottom:11px;line-height:24px;font-size:18px;color:#111111;font-family:'Roboto-M','Noto-M',sans-serif}
 article > h4{color:#111111;font-size:16px}
 article > p{font-size:14px;line-height:20px}
@@ -141,7 +141,7 @@ article > p + .btn_df{margin-top:10px}
 .tb .tb_gray::before{content:'';position:absolute;top:-20px;left:50%;width:20px;height:10px;margin-left:-10px;background:url(../image/ico_m_tbg_next.png);background-size:20px 10px}
 .tb .tb_gray::after{content:'';position:absolute;bottom:-20px;left:50%;width:20px;height:10px;margin-left:-10px;background:url(../image/ico_m_tb_next.png);background-size:20px 10px}
 .tb .tb_blue.up::after{content:'';position:absolute;bottom:-20px;left:50%;width:20px;height:10px;margin-left:2px;background:url(../image/ico_m_tbg_prev.png);background-size:20px 10px}
-.tb .tb_blue.up::before{content:'';position:absolute;bottom:-20px;left:50%;width:20px;height:10px;margin-left:-22px;background:url(../image/ico_m_tb_next.png);background-size:20px 10px}}
+.tb .tb_blue.up::before{content:'';position:absolute;bottom:-20px;left:50%;width:20px;height:10px;margin-left:-22px;background:url(../image/ico_m_tb_next.png);background-size:20px 10px}
 
 
 
@@ -205,8 +205,8 @@ article > p + .btn_df{margin-top:10px}
 
 .txt_smy{font-size:14px;line-height:20px;padding-bottom:24px}
 
-.txt_ref{padding:9px;font-size:13px;line-height:19px;background:#f5f5f5;border-radius:8px;margin-top:5px}
-.txt_ref2{padding:9px;font-size:13px;line-height:19px;background:#f5f5f5;border-radius:8px;margin-bottom:14px}
+.txt_ref{padding:9px;font-size:13px;line-height:19px;background:#f5f5f5;border-radius:8px;margin-top:5px;font-family:'Roboto-M','Noto-M',sans-serif}
+.txt_ref2{padding:9px;font-size:13px;line-height:19px;background:#f5f5f5;border-radius:8px;margin-bottom:14px;font-family:'Roboto-M','Noto-M',sans-serif}
 
 .at20 article + article{padding:30px 20px 30px}
 

@@ -3,18 +3,18 @@
 @import url("jong.css");
 
 .header{position:absolute;left:0;right:0;top:0px;height:47px}
-.header .header_top.main{display:flex;align-items:center;width:100%;height:47px;background:transparent;border-bottom:0px}
+.header .header_top.main{position:relative;display:flex;align-items:center;width:100%;height:47px;background:transparent;border-bottom:0px}
 .header .header_top.main .logo{width:148.66px;height:47px;background:url(../image/logo_m.png) no-repeat;background-size:100% auto}
 .header .header_top.main .logo a{display:block;height:47px;text-indent:-9999px}
 .header .header_top.main .allmenu{display:block;width:62px;height:47px;margin-left:auto;background:url(../image/ico_m_allmenu.png) no-repeat;background-size:100% auto;text-indent:-9999px}
 
-.header .header_top{position:relative;background:#fff;border-bottom:1px solid #dddddd}
+.header .header_top{position:fixed;left:0;right:0;z-index:100;background:#fff;border-bottom:1px solid #dddddd}
 .header .header_top > .btn_prev{position:absolute;left:0;top:0;width:50px;height:46px;text-indent:-9999px;background:url(../image/ico_m_prevpage.png) no-repeat;background-size:100% auto}
 .header .header_top > h2{height:46px;line-height:46px;text-align: center;font-size:17px}
 .header .header_top > .allmenu{position:absolute;right:0px;top:0px;width:62px;height:46px;text-indent:-9999px;background:url(../image/ico_m_allmenusub.png) no-repeat;background-size:100% auto}
 
 .menu{position:absolute;left:0;right:0;top:0;width:100%;overflow:hidden}
-.menu nav{position:fixed;z-index:100;left:100%;width:100%;height:100%;overflow:auto;padding-bottom:20px;box-sizing:border-box;background:#ffffff;}
+.menu nav{position:fixed;z-index:200;left:100%;width:100%;height:100%;overflow:auto;padding-bottom:20px;box-sizing:border-box;background:#ffffff;}
 .nav_hd{border-bottom:1px solid #dddddd}
 .nav_hd ul{display:flex;flex-direction:row;align-items:center;justify-content:flex-end;height:46.666px}
 .nav_hd li + li{margin-left:10px}
@@ -23,10 +23,13 @@
 .nav_hd .logout a{color:#555555}
 .nav_hd .close a{display:block;text-indent:-9999px;width:46px;height:24px;border:0px;padding:4px 20px 4px 10px;background:url(../image/ico_m_menu_close.png) right 20px center no-repeat;background-size:16px}
 
-.box_gnb{padding:0 20px}
+.box_gnb{padding:0 20px 10px}
 .box_gnb > ul > li + li{margin-top:10px}
+.box_gnb > ul > li + li.nav_last{margin-top:0px;border-top:1px solid #dddddd;padding-top:10px}
 
-.dep1{font-size:17.333px;font-family:"Roboto-B","Noto-B", sans-serif;color:#01b5af;padding:13px 0 12px}
+.dep1, .dep1 > a{font-size:17.333px;font-family:"Roboto-B","Noto-B", sans-serif;color:#01b5af;padding:13px 0 12px}
+.nav_last span{color:#555555;font-size:14px;text-decoration:underline}
+.nav_last span + span{margin-left:20px}
 
 .dep2 > li + li{margin-top:9px}
 .dep2 > li > a{position:relative;display:block;height:33px;line-height:33px;border-bottom:1px solid #dddddd;font-size:15px;font-family:'Roboto-M','Noto-M',sans-serif}
