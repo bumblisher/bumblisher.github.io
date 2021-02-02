@@ -592,7 +592,7 @@ h3 > span[id*='focus']{display: block;margin-top: -150px;padding-bottom: 150px;}
 .txt_noti ul li p{line-height:24px;color:#555555}
 
 /* map */
-.map{width:100%;height:550px;background:#f7f7f7}
+.map{width:100%;height:auto;background:#f7f7f7}
 .map + .tbbox{margin-top:50px}
 
 /* box_form */

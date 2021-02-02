@@ -145,47 +145,58 @@
             <div class="lnb_inner">
                 <ul class="step">
                     <li>홈</li>
-                    <li>KABONE</li>
-                    <li>찾아오시는 길</li>
+                    <li>참여공간</li>
+                    <li>질문과 답변</li>
                 </ul>
             </div>
         </div>
         <div class="content">
             <div class="content_inner">
                 <div class="titarea">
-                    <h2>찾아오시는 길</h2>
+                    <h2>질문과 답변</h2>
                 </div>
                 <section>
                     <article>
-                        <div class="map">
-                            <img src="../resource/image/bg_map.png" alt="" style="width:100%">
+                        <div class="tit_tb">
+                            <div class="fr"><span><span class="cl_orange">*</span> 표시가 있는 항목은 필수로 입력하셔야 합니다.</span></div>
                         </div>
                         <div class="tbbox">
-                            <table class="tb">
+                            <table class="tb type2">
                                 <colgroup>
-                                    <col style="width:395px" />
-                                    <col/>
+                                    <col style="width:340px"/>
+                                    <col />
                                 </colgroup>
                                 <tbody>
                                     <tr>
-                                        <th><span>주소</span></th>
-                                        <td class="tal"><span>서울특별시 중구 동호로 314</span></td>
+                                        <th><span class="req">질문유형</span></th>
+                                        <td><select class="select" name="" id="" style="width:400px;">
+                                            <option value="" selected>간호교육인증평가</option>
+                                            <option value="">4년제 간호학과 지정</option>
+                                            <option value="">전문간호사 교육기관 지정 및 관리</option>
+                                            <option value="">전문간호사 자격시험</option>
+                                            <option value="">보험심사관리사 자격시험</option>
+                                            <option value="">간호조무사교육훈련기관 지정평가</option>
+                                            <option value="">간호대학실습교육 지원사업</option>
+                                            <option value="">기타</option>
+                                        </select></td>
                                     </tr>
                                     <tr>
-                                        <th><span>연락처</span></th>
-                                        <td class="tal"><span>대표전화 : 1833-6230 / 팩스 : 02-2088-4644</span></td>
+                                        <th><span class="req">제목</span></th>
+                                        <td><input type="text" class="ipt" placeholder="제목을 입력하세요."></td>
                                     </tr>
                                     <tr>
-                                        <th><span>오시는 길</span></th>
-                                        <td class="tal">
-                                            <div class="tb_grp">
-                                                <span class="cl_blue">지하철 이용시</span>
-                                                <p>4호선(동대문역사문화공원역 5번출구)</p>    
-                                                <p>5호선(동대문역사문화공원역 6번출구)</p>
-                                            </div>
-                                            <div class="tb_grp">
-                                                <span class="cl_blue">일반버스 이용시</span>
-                                                <p>105, 421, 463, 507, N16</p>
+                                        <th><span class="req">내용</span></th>
+                                        <td><textarea class="txa" name="" id="" cols="30" rows="10" style="height: 290px;" placeholder="내용을 입력하세요."></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <th><span>첨부서류</span></th>
+                                        <td>
+                                            <div class="ly_grp">
+                                                <a href="#" class="btn_df">파일첨부</a>
+                                                <ul class="ipt_file" style="width: 700px;">
+                                                    <li><span>접수 페이지 안내사항.pdf</span><a href="#" class="btn_del"></a></li>
+                                                    <li><span>접수 페이지 안내사항.pdf</span><a href="#" class="btn_del"></a></li>
+                                                </ul>
                                             </div>
                                         </td>
                                     </tr>
@@ -193,6 +204,10 @@
                             </table>
                         </div>
                     </article>
+                    <div class="btnbox cb">
+                        <a href="#" class="btn_cm">취소</a>
+                        <a href="#" class="btn_cm mint">확인</a>
+                    </div>
                 </section>
             </div>
         </div>
