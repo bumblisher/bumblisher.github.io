@@ -253,10 +253,10 @@ article > p + .btn_df{margin-top:10px}
 
 /* box_step */
 .box_step{margin-top:14px}
-.box_step ul li{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:50px;border:4px solid #eef5fb;border-radius:25px;text-align:center;box-sizing:border-box}
+.box_step ul li{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:50px;border:4px solid #eef5fb;border-radius:32px;text-align:center;box-sizing:border-box;padding:9px 0}
 .box_step ul li + li{margin-top:21px}
 .box_step ul li + li::before{content:'';left:50%;top:-20px;margin-left:-9px;position:absolute;width:19px;height:12px;background:url(../image/ico_m_step_arrow.png) 0 0 no-repeat;background-size:100% auto}
-.box_step ul li p{font-size:13px;font-family:'Roboto-M','Noto-M',sans-serif}
+.box_step ul li p{font-size:13px;line-height:19px;font-family:'Roboto-M','Noto-M',sans-serif}
 
 .box_step.type2{margin-top:0px}
 .box_step.type2 ul li{position:relative;display:flex;flex-direction:row;align-items:normal;background:#fff;border:1px solid #dddddd;padding:17px 19px;border-radius:0}
@@ -269,3 +269,14 @@ article > p + .btn_df{margin-top:10px}
 
 .bs_tit{font-size:16px;font-family:'Roboto-M','Noto-M',sans-serif;}
 .tb_subtit{font-size:16px;padding-top:30px}
+
+.txt_smlist li{font-size:13px;line-height:19px;color:#555555}
+.txt_smlist + .txt_smlist{margin-top:19px}
+
+.listprog{padding:0 20px}
+.listprog li{border:1px solid #dddddd;padding:19px}
+.listprog li .tit{font-size:16px;color:#111111;font-family:'Roboto-M','Noto-M',sans-serif;margin-bottom:10px}
+.listprog li p{font-size:15px}
+.listprog li .per{margin-top:26px;font-size:14px;line-height:20px;color:#888888}
+.listprog li + li{margin-top:10px}
+.listprog + .btn_more{margin:10px 20px}

@@ -747,7 +747,8 @@ h3 > span[id*='focus']{display: block;margin-top: -150px;padding-bottom: 150px;}
 .popup .pop_footer .btn_dayclose{color:#555;font-size: 15px;text-decoration: underline;line-height: 50px;float: right;}
 
 .popup.sitemap{width:900px;max-width:900px}
-.popup.sitemap .pop_cont{padding:9px 30px 30px;background:url(../image/bg_sitemap.png) 0 0 repeat-y}
+.popup.sitemap .pop_cont{padding:0;}
+.popup.sitemap .pop_cont .site_box{padding:9px 30px 15px;background:url(../image/bg_sitemap.png) 0 0 repeat-y}
 .popup.sitemap .site_grp{position:relative}
 .popup.sitemap .site_grp::after{content:'';clear:both;display:block;}
 .popup.sitemap .site_grp > *{float:left}
@@ -763,6 +764,9 @@ h3 > span[id*='focus']{display: block;margin-top: -150px;padding-bottom: 150px;}
 .popup.sitemap .site_grp .menu01.col3 > li{width:33.33%;}
 .popup.sitemap .site_grp .menu01.col3 > li + li{padding-left:17px}
 .popup.sitemap .site_grp .menu01.col3 > li:nth-child(4n){padding-left:0}
+.popup.sitemap .site_btm{border-top:1px solid #dddddd;padding:30px 30px}
+.popup.sitemap .site_btm span{display:inline-block;margin-left:40px;text-decoration:underline}
+.popup.sitemap .site_btm span + span{margin-left:70px}
 
 
 .dim {display: none;position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 10000; background: rgba(0, 0, 0, 0.5); }
@@ -867,15 +871,15 @@ h3 > span[id*='focus']{display: block;margin-top: -150px;padding-bottom: 150px;}
 
 /* greeting */
 .enver .tit_greeting, .cnt_greeting{padding-left:52px}
-.enver .tit_greeting h3{padding-top:89px;font-size:36px;line-height:46px;color:#111111;font-family:'Roboto-M', sans-serif}
-.enver .tit_greeting .cnt01{display:block;padding-top:2px;font-size:24px;line-height:34px;}
-.enver .tit_greeting .cnt02{display:block;padding-top:22px;line-height:34px;font-size:18px;font-family:'Roboto-M', sans-serif}
-.enver .tit_greeting .sign{display:block;height:34px;padding-top:7px;background:url(../image/ico_sign.png) 0 7px no-repeat;text-indent:-9999px}
+.enver .tit_greeting h3{padding-top:140px;font-size:36px;line-height:46px;color:#111111;font-family:'Roboto-M', sans-serif}
+.enver .tit_greeting .cnt01{display:block;padding:2px 0 54px;font-size:24px;line-height:34px;}
 
 .enver .cnt_greeting{padding-top:25px;}
 .enver .cnt_greeting p{line-height:28px;padding-bottom:28px;font-size:18px}
 .enver .cnt_greeting p:nth-child(2n){padding-bottom:0px}
 .enver .cnt_greeting p:nth-child(n){padding-bottom:28px}
+.enver .cnt_greeting .cnt02{display:block;padding-top:0px;line-height:34px;font-size:18px;text-align:right;font-family:'Roboto-M', sans-serif}
+.enver .cnt_greeting .sign{display:block;height:34px;padding-top:7px;background:url(../image/ico_sign.png) right 7px no-repeat;text-indent:-9999px}
 
 /* foundation */
 .enver .bg_foundation{background:url(../image/bg_foundation.png) center 152px repeat-x}

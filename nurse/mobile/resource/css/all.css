@@ -2,6 +2,8 @@
 @import url("bum.css");
 @import url("jong.css");
 
+.container{position:relative}
+
 .header{position:absolute;left:0;right:0;top:0px;height:47px}
 .header .header_top.main{position:relative;display:flex;align-items:center;width:100%;height:47px;background:transparent;border-bottom:0px}
 .header .header_top.main .logo{width:148.66px;height:47px;background:url(../image/logo_m.png) no-repeat;background-size:100% auto}
@@ -26,6 +28,8 @@
 .box_gnb{padding:0 20px 10px}
 .box_gnb > ul > li + li{margin-top:10px}
 .box_gnb > ul > li + li.nav_last{margin-top:0px;border-top:1px solid #dddddd;padding-top:10px}
+.box_gnb .mypg{display:none}
+.box_gnb .mypg.on{display:block}
 
 .dep1, .dep1 > a{font-size:17.333px;font-family:"Roboto-B","Noto-B", sans-serif;color:#01b5af;padding:13px 0 12px}
 .nav_last span{color:#555555;font-size:14px;text-decoration:underline}
@@ -41,3 +45,21 @@
 .dep3{display:flex;flex-direction:row;height:44px;}
 .dep3 li{flex:1;height:44px;background:#f7f7f7}
 .dep3 li a{display:flex;align-items:center;height:100%;padding-left:14.6px;font-size:14px;color:#555555}
+
+.btn_top{position: fixed;right:25px;bottom:25px;display:none;width:30px;height:30px;border-radius:4px;border:1px solid #e7e7e7;text-indent:-9999px;background:#fff url(../image/ico_m_btntop.png) center no-repeat;background-size:10px auto;z-index: 10;}
+.btn_top.fix{position: absolute;}
+
+.popup {display: none;width:280px; max-width:280px; position: fixed; left: 50%; top: 50%; background: #fff; z-index: 10001; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);border-radius: 8px;overflow: hidden;}
+.popup .pop_header {position: relative; display:flex;flex-direction:row;align-items:center;height:47px; background: #00aea8;}
+.popup .pop_header h2 {line-height:47px; color: #fff; font-size: 16px;text-align: left; padding-left:20px;font-family:'Roboto-M','Noto-M',sans-serif}
+.popup .pop_header .btn_close {width: 56px; height: 47px; margin-left:auto;background: url(../image/ico_m_popclose.png) no-repeat center;text-indent:-9999px;background-size:16px}
+.popup .pop_cont {height: 280px;overflow: auto;padding: 20px;box-sizing: border-box}
+.popup .pop_cont p{font-size:15px;line-height:21px}
+.popup .pop_footer{display:flex;flex-direction:row;align-items:center;height:45px;background: #f7f7f7;border-top:1px solid #dddddd;box-sizing: border-box;}
+.popup .pop_footer > button{flex:1;text-align:center;height:45px}
+.popup .pop_footer .btn_dayclose{color:#555;font-size:15px;border-right:1px solid #dddddd}
+
+.dim {display: none;position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 10000; background: rgba(0, 0, 0, 0.5); }
+
+.popup.on{display: block;}
+.popup.on ~ .dim{display: block;}

@@ -60,4 +60,31 @@ $(document).ready(function(){
     }
     tab();
 
+    function btnTop(){
+        var $btnTop = $(".btn_top");
+    
+        $(window).scroll(function () {
+            var nowScroll = parseInt($(document).scrollTop());
+            var winHeight = $(window).height();
+            var docHeight = $(document).height();
+            var floatPos = parseInt(docHeight) - parseInt(winHeight) - 155;
+
+            if(nowScroll > floatPos){
+                $btnTop.addClass('fix')
+            }else{
+                $btnTop.removeClass('fix')
+            }
+            if ($(this).scrollTop() > 200) {
+                $btnTop.fadeIn(300);
+            } else {
+                $btnTop.fadeOut(300);
+            }
+        });
+        $btnTop.click(function (e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        });
+    }
+    btnTop();
+
 });
