@@ -38,6 +38,18 @@
 .quick_menu2 li:nth-child(2) a{background:url(../image/ico_m_quick06.png) 14px center no-repeat;background-size: 22px 21px;}
 .quick_menu2 li:nth-child(3) a{background:url(../image/ico_m_quick07.png) 14px center no-repeat;background-size: 22px 21px;}
 
+.quick_menu li{opacity:0;transform:translateY(200px)} 
+.quick_menu li{animation:quickshow 0.6s forwards;}
+.quick_menu li:nth-child(2){animation-delay:0.1s;}
+.quick_menu li:nth-child(3){animation-delay:0.2s;}
+.quick_menu li:nth-child(4){animation-delay:0.3s;}
+.quick_menu2 li{opacity:0;transform:translateX(200px)} 
+.quick_menu2 li{animation:quickshow2 0.6s forwards;animation-delay:0.6s;}
+.quick_menu2 li:nth-child(2){animation-delay:0.7s;}
+.quick_menu2 li:nth-child(3){animation-delay:0.8s;}
+@keyframes quickshow{100%{transform:translateY(0);opacity:1;}}
+@keyframes quickshow2{100%{transform:translateX(0);opacity:1;}}
+
 .foot_util ul{display: flex;height: 40px;border-top:1px solid #ddd;border-bottom:1px solid #ddd;box-sizing: border-box;}
 .foot_util ul li{flex:1;position: relative;}
 .foot_util ul li:before {content: '';border-left: 1px solid #ddd;position: absolute;left: 0;top: 12px;height: 13px;}
@@ -80,9 +92,9 @@
 .box_logintext p span{color:#445fb7;font-family: 'Roboto-R', 'Noto-M', sans-serif;}
 
 .btn_login{display: block;height: 43px;line-height: 43px;border-radius:4px;background: #999;text-align: center;color:#fff;font-size: 14px;font-family: 'Roboto-R', 'Noto-M', sans-serif;}
-.btn_login:hover{background:#777777}
+/* .btn_login:hover{background:#777777} */
 .btn_login.mint{background: #01b5af;}
-.btn_login.mint:hover{background:#00a09b}
+/* .btn_login.mint:hover{background:#00a09b} */
 
 .boxbtn_login{display: flex;margin-top: 30px;text-align: center;overflow: hidden;}
 .boxbtn_login li{display:block;flex:1}
@@ -216,7 +228,7 @@
 
 .cate_board{margin-bottom: 5px;font-size:15px;line-height: 21px;color:#445fb7}
 .tit_board{font-size:17px;line-height: 21px;color:#111;font-family:'Roboto-M', 'Noto-M', sans-serif}
-.date_board{margin-top: 8px;font-size:15px;line-height: 21px;color:#888}
+.date_board{margin-top:17px;font-size:15px;line-height: 21px;color:#888}
 
 .board{border-bottom:1px solid #ddd}
 .board li{border-top:1px solid #ddd}
@@ -251,11 +263,11 @@
 .empty.on{display: flex;}
 
 .btn_cm{display:block;height: 40px;padding:0 13px;color:#fff;background: #999;font-size: 14px;text-align: center;line-height: 40px;box-sizing: border-box;border-radius: 4px;}
-.btn_cm:hover{background: #777}
+/* .btn_cm:hover{background: #777} */
 .btn_cm.gray{background: #555}
 .btn_cm.mint{background: #01b5af}
-.btn_cm.gray:hover{background: #444}
-.btn_cm.mint:hover{background: #00a09b}
+/* .btn_cm.gray:hover{background: #444} 
+.btn_cm.mint:hover{background: #00a09b} */
 .btn_cm.long{padding:0 49px}
 .btn_cm.fix{position: fixed;bottom:20px;left:20px;right:20px;height: 45px;line-height: 45px;font-size: 15px;font-family:'Roboto-M', 'Noto-M', sans-serif;box-shadow:0 3px 10px rgba(0, 0, 0, 0.2);border-radius: 23px;z-index: 10;}
 .btn_more{display: block;color:#555;font-size: 13px;height: 34px;line-height: 34px;background: #f7f7f7;text-align: center;vertical-align: middle;}
@@ -314,3 +326,40 @@ p + .txt_ollist{margin-top: 10px;}
 .box_gray .tit{color:#333;font-family: 'Roboto', 'Noto-M', sans-serif;font-size: 14px;margin-bottom: 5px;}
 .box_gray p{font-size: 14px;color:#555;line-height: 20px;}
 .box_gray + p{margin-top: 10px;font-size: 14px;color:#555;line-height: 20px;}
+
+.box_noti{margin-top: 40px;}
+.tab_main{max-width: 500px;position:relative;margin:60px 0 20px;margin: 0 auto;box-sizing: border-box;padding: 0 20px;}
+.tab_main ul::after{display:block;content:"";clear:both}
+.tab_main ul li{float:left}
+.tab_main ul li + li{margin-left:15px}
+.tab_main ul li a{display:block;font-size:18px;font-family:'Noto-B', sans-serif;color:#aaaaaa}
+.tab_main ul li.on a{color:#333333}
+.tab_main .more{position:absolute;right:0;top:0px;height:18px;line-height:18px;margin-right:20px;font-size:13px;color:#555555;background:url(../image/ico_main_more.png) right 4px no-repeat}
+
+.tab_main_cnt .tab_cnt02{display:none}
+.noti::after{display:block;content:"";clear:both}
+.noti li{float:left;height:150px;border-radius:10px;background:#fff;box-shadow:0px 5px 15px rgba(0, 0, 0, 0.1);box-sizing: border-box;}
+/* .noti li + li{margin-left:10px} */
+.noti li a{display:block;width:100%;height:100%;padding:22px 20px;box-sizing:border-box}
+.noti li a:hover{text-decoration: underline;}
+.noti li span{display:block}
+.noti li .tit{color:#111111;font-size:14px;font-family:'Roboto', 'Noto-M', sans-serif}
+.noti li .cnt{display:-webkit-box; word-wrap:break-word; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; text-overflow:ellipsis; height:57px; line-height:19px;color:#333333;font-size:14px;margin:14px 0;font-family: 'Noto-DL';}
+.noti li .cal{color:#555555;font-size:14px}
+
+.fes{padding: 14px 20px;}
+.fes li{width:100%;height:150px;border-radius:10px}
+.fes .no_fes{display: none;line-height:150px;background:#ebebeb;text-align:center;font-size:16px;color:#555555}
+.fes .on_fes{position:relative;background:#fff;padding:20px 20px;padding-right: 80px;box-sizing: border-box;box-shadow:0px 5px 15px rgba(0, 0, 0, 0.1)}
+.fes .on_fes .tit{margin-bottom:15px;font-size:15px;color:#333333;font-family:'Roboto', 'Noto-M', sans-serif;line-height: 21px;display:-webkit-box; word-wrap:break-word; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; text-overflow:ellipsis; height:42px;}
+.fes .on_fes .cnt{font-size:14px;color:#333333;padding-bottom:27px}
+.fes .on_fes .cnt .count{color:#445fb7;font-family:'Roboto-M', sans-serif;}
+.fes .on_fes .cal{font-size:13px}
+.fes .on_fes .btn_fes{position:absolute;right:0px;top:0px;display:block;width:62px;height:150px;padding-top: 80px;font-size: 13px;color:#445fb7;text-align:center;border-radius:0 10px 10px 0;background:#eef5fb url(../image/ico_arrow.png) center top 58px no-repeat;box-sizing:border-box;background-size: 22px;}
+
+.tab_cnt01.swiper-container{padding:14px 0;}
+.tab_cnt01 .swiper-wrapper{margin-left: calc(-15% + 10px);}
+.tab_cnt01 .swiper-pagination{position: relative;margin-top: 10px;bottom:auto}
+.tab_cnt01.swiper-container-horizontal>.swiper-pagination-bullets,
+.tab_cnt01.swiper-container-horizontal > .swiper-pagination-bullets{bottom:auto}
+.tab_cnt01 .swiper-pagination-bullet-active{background-color: #445fb7;}

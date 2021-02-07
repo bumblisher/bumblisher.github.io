@@ -86,5 +86,33 @@ $(document).ready(function(){
         });
     }
     btnTop();
+    
+    function mainTab() {
+        var $menu = $(".tab_main ul li a");
 
+        $menu.on("click", function(){
+            var idx = $(this).parent().index();
+            
+            if(idx == 0){
+                $(".tab_main .more").show();
+            }else{
+                $(".tab_main .more").hide();
+            }
+            $(".tab_main ul li").eq(idx).addClass("on").siblings().removeClass("on");
+            $(".tab_main_cnt > div").eq(idx).show().siblings().hide();
+        });
+    }
+    mainTab();
+
+    const swiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        loop: false,
+        slidesPerView: '1.5',
+        spaceBetween: 10,
+        centeredSlides: true,
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        }
+    });
 });
