@@ -104,15 +104,12 @@ $(document).ready(function(){
     }
     mainTab();
 
-    const swiper = new Swiper('.swiper-container', {
-        // Optional parameters
-        loop: false,
-        slidesPerView: '1.5',
-        spaceBetween: 10,
-        centeredSlides: true,
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 0,
         pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        }
+            el: '.swiper-pagination',
+            clickable: true,
+        },
     });
 });
