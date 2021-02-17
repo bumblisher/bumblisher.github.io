@@ -702,6 +702,10 @@ h3 > span[id*='focus']{display: block;margin-top: -150px;padding-bottom: 150px;}
 .box_line .link:hover{color:#333333}
 .box_line .link.no:hover{color:#888888;text-decoration: none}
 
+.box_line .line_grp.file{height: auto;padding-bottom: 0;}
+.box_line .line_grp.file .tit{float: left;width:80px}
+.box_line .line_grp.file ul{width: calc(100% - 80px);padding: 20px 0px 6px;}
+
 .req::before{content: '*';color:#ed9333;margin-right: 2px;}
 
 /* box_down */
