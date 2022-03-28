@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resource/css/reset.css">
+    <link rel="stylesheet" href="resource/css/common.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="login_wrap">
+        <div class="login_left">
+            <div class="text_area">
+                <div class="title">두올앳 Portal</div>
+                <div class="text">온라인을 오프라인으로,<br>오프라인을 온라인으로-<br>모든것을 하나로 통합하는 DAA System</div>
+            </div>
+        </div>
+        <div class="login_right">
+            <button class="security">내부보안망</button>
+            <div class="login_form">
+                <div class="login_cont">
+                    <form name="loginFrm" id="loginFrm" method="post">
+                        <label for="" class="id_ipt login_ipt_box">
+                            <input type="text" id="user_id" name="user_id" title="" style="outline-style:none;" placeholder="아이디" class="icon_id" autocomplete="off" value="">
+                        </label>
+                        <div class="regex hide" id="regex_id"></div>
+    
+    
+                        <label for="" class="nm_ipt login_ipt_box">
+                            <input type="" name="user_phone" id="user_phone" title="" style="outline-style:none;" placeholder="휴대폰번호 (-를 제외 후 입력해주세요)" class="icon_nm" autocomplete="off" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                        </label>
+                        <div class="regex hide" id="regex_phone"></div>
+    
+    
+                        <label for="" class="pw_ipt login_ipt_box">
+                            <input type="password" name="user_password" id="user_password" title="" style="outline-style:none;" placeholder="비밀번호" class="icon_pw" autocomplete="off">
+                        </label>
+                        <div class="regex hide" id="regex_pwd"></div>
+    
+    
+                        <label for="chk" class="id_chk">
+                            <input type="checkbox" id="chk" name="chk" value="on"><i class="chk"></i><span class="text">아이디 저장</span>
+                        </label>
+                            <input type="hidden" name="user_ip" value="110.12.47.19">
+                        <a href="javascript:loginCheck()" id="btn_login" class="btn_login" style="cursor:pointer;">LOGIN</a>
+                        <div class="btn_src_all">
+                            <a href="#">아이디 찾기</a>
+                            <a href="#">비밀번호 찾기</a>
+                            <a href="#">등록 휴대폰번호 변경하기</a>
+                        </div>
+                        <div class="help_desk">Help Desk 1588 - 7800</div>
+                        <div class="login_info">본 시스템은 내부보안망이므로 등록된 PC에서 접속해주세요</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
