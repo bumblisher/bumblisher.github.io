@@ -50,11 +50,11 @@ aside ul li a { margin: 0; padding: 0; border: 0; list-style: none; line-height:
 aside h1 { padding: 35px 0 55px 40px } 
 aside h1 a { display: block; width: 87px; cursor: pointer; background: url(../images/logo_daa.png) no-repeat center; background-size: 87px; font-size: 0; height: 43px; } 
 
-aside ul ul { display: none; } 
+aside ul ul { display: none; }
 aside > ul > li { border-bottom: 1px solid #ddd; } 
 aside > ul > li.active > ul { display: block; } 
 aside > ul > li.active > a:after { transform:rotate(-135deg); -webkit-transform:rotate(-135deg); } 
-aside > ul > li > a { position: relative; display: flex; align-items: center; height: 70px; padding: 0 40px 0 86px; cursor: pointer; z-index: 2; font-size: 18px; text-decoration: none; color: #00218C; font-weight: bold; background: #ffffff; } 
+aside > ul > li > a { position: relative; display: flex; align-items: center; height: 70px; padding: 0 40px 0 84px; cursor: pointer; z-index: 2; font-size: 18px; text-decoration: none; color: #00218C; font-weight: bold; background: #ffffff; } 
 aside > ul > li > a:before { content: ''; width: 30px; height: 30px; position: absolute; left:40px; top:20px; background: url(../images/icon_menu1.png) no-repeat center; } 
 aside > ul > li:nth-child(2) > a:before { background: url(../images/icon_menu2.png) no-repeat center; } 
 aside > ul > li:nth-child(3) > a:before { background: url(../images/icon_menu3.png) no-repeat center; } 
@@ -63,10 +63,16 @@ aside > ul > li:nth-child(5) > a:before { background: url(../images/icon_menu5.p
 aside > ul > li > a:after { content:''; position: absolute; right:23px; border: solid #161616; border-width: 0 2px 2px 0; display: inline-block; padding: 5px; transform: rotate(45deg); -webkit-transform:rotate(45deg); transition: all 0.52s ease; margin-top: -8px; } 
 aside > ul > li > a:hover { color: #00218C; } 
 aside > ul > li > a > i { vertical-align: middle; margin-right: 15px; } 
-aside ul ul li a { padding: 14px 84px; cursor: pointer; z-index: 2; font-size: 18px; text-decoration: none; color: #4B4B4B; background: #ffffff; } 
-aside ul ul ul li a { padding-left: 32px; } 
+aside ul ul li a { padding: 13px 84px; cursor: pointer; z-index: 2; font-size: 18px; text-decoration: none; color: #4B4B4B; background: #ffffff; } 
+aside ul ul li.dep3 > a{font-weight: 600;}
+aside ul ul li.dep3 li > a{font-weight: 400;}
+aside ul ul li.dep3 > ul{display: block;}
+aside ul ul ul li a { padding-left: 90px; } 
+aside ul ul ul li a:before{content:"-";display: inline-block;margin-right:5px;}
 aside ul ul li.on a,
-aside ul ul li a:hover { color: #4B4B4B; background: #ecf2f8; } 
+aside ul ul li> a:hover { color: #4B4B4B; background: #ecf2f8;} 
+aside ul ul li.on > a{font-weight: 600;}
+
 
 .container { flex:1; display: flex; flex-direction: column; } 
 
