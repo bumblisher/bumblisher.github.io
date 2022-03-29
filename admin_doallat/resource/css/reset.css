@@ -1,5 +1,19 @@
 @charset "UTF-8";
 
+@font-face{
+    font-family:'Pretendard';
+    font-style: normal;
+    src : url(../font/Pretendard-Regular.woff2) format("woff2");
+            
+}
+@font-face{
+    font-family:'Pretendard';
+    font-style: bold;
+    src : url(../font/Pretendard-Bold.woff2) format("woff2");
+            
+}
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
