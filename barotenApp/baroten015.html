@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resource/css/reset.css">
+    <link rel="stylesheet" href="resource/css/common.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="resource/js/main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <button class="btn_back"></button>
+            <h2>월세결제하기</h2>
+        </header>
+        <div class="wrap_cont">
+            <div class="cont_inner">
+                <div class="box_guide">
+                    <p class="tit_guide">GUIDE</p>
+                    <ul class="list_guide">
+                        <li>서비스멤버만 사용가능한 서비스입니다.</li>
+                        <li>아래의 월세결제정보를 등록 후 결제 신청해주시기 바랍니다.</li>
+                        <li>월세결제정보 등록시 향후 편리하게 이용하실 수 있습니다.</li>
+                        <li>결제신청시 1시간 이내에 임대인의 계좌로송금됩니다.</li>
+                        <li>이체확인서는 카카오톡 알림톡 또는 문자로 발송됩니다.</li>
+                    </ul>
+                </div>
+                <h3>서비스멤버 신청하기</h3>
+                <dl>
+                    <dt>월세계약 선택하기</dt>
+                    <dd class="box_input">
+                        <select type="text">
+                            <option value="">0000</option>
+                            <option value="">0001</option>
+                            <option value="">0002</option>
+                        </select>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>월세결제정보 등록하기</dt>
+                    <dd class="box_input">
+                        <ul class="grp_radio">
+                            <li><input type="radio" id="radio01" name="radio" checked><label for="radio01">주택월세</label></li>
+                            <li><input type="radio" id="radio02" name="radio"><label for="radio02">상가월세</label></li>
+                        </li>
+                    </dd>
+                    <dd>
+                        <ul class="list_guide star">
+                            <li>부동산 계약서 상의 임차주소를 입력해주세요 </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>주소</dt>
+                    <dd class="box_input">
+                        <input type="text" placeholder="" readonly="readonly" checked>
+                        <button class="btn_cm">주소검색</button>
+                    </dd>
+                    <dd class="box_input">
+                        <input type="text" placeholder="" readonly="readonly">
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>나머지 주소</dt>
+                    <dd class="box_input">
+                        <input type="text" placeholder="">
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>임차료 입력</dt>
+                    <dd class="box_input">
+                        <select type="text">
+                            <option value="">0000</option>
+                            <option value="">0001</option>
+                            <option value="">0002</option>
+                        </select>
+                    </dd>
+                    <dd>
+                        <ul class="list_guide star">
+                            <li>계약서 상의 월세를 입력해주세요</li>
+                        </ul>
+                    </dd>
+                </dl>
+                <h3>임대인 계좌정보</h3>
+                <div class="ly_box">
+                    <dl>
+                        <dt>은행</dt>
+                        <dd class="box_input">
+                            <select type="text">
+                                <option value="">0000</option>
+                                <option value="">0001</option>
+                                <option value="">0002</option>
+                            </select>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>예금주</dt>
+                        <dd class="box_input">
+                            <input type="text" placeholder="">
+                        </dd>
+                    </dl>
+                </div>
+                <dl>
+                    <dt>계좌번호</dt>
+                    <dd class="box_input">
+                        <input type="text" placeholder="">
+                    </dd>
+                    <dd>
+                        <ul class="list_guide">
+                            <li>계약서상의 임대인 정보와 임대인 계좌정보를 동일하게 입력해주세요. 신청하신 정보로 임대료가 송금됩니다.</li>
+                            <li>오류 입력에 대한 문제 발생시 임차료 환불은 진행되지 않습니다.</li>
+                        </ul>
+                    </dd>
+                </dl>
+                <h3>임차인 성명입력</h3>
+                <dl>
+                    <dt>임차인 성명</dt>
+                    <dd class="box_input">
+                        <input type="text" placeholder="">
+                    </dd>
+                    <dd>
+                        <ul class="list_guide star">
+                            <li>임차인은 회원 본인만 가능합니다.</li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>결제수단선택</dt>
+                    <dd class="box_input">
+                        <select type="text">
+                            <option value="">0000</option>
+                            <option value="">0001</option>
+                            <option value="">0002</option>
+                        </select>
+                    </dd>
+                    <dd>
+                        <ul class="list_guide">
+                            <li>결제수단은 사전에 등록된 카드로 신청 가능합니다.</li>
+                            <li>다른 카드로 결제를 원하시는 경우 카드등록을 추가해주세요 <a href="#" class="txt_link">카드등록하기</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <h3>부동산 계약서 업로드 하기</h3>
+                <div class="box_upload">
+                    <ul class="list_guide star">
+                        <li>부동산 계약서를 마스킹 후 등록해주세요.<br><a href="#" class="txt_link">마스킹가이드</a></li>
+                    </ul>
+                    <button class="btn_upload contract">임대차 계약서 업로드 하기</button>
+                    <ul class="list_guide">
+                        <li>부동산 계약서를 등록해주세요.</li>
+                        <li>최초 1회 등록으로 향후 편리하게 사용할 수 있습니다.</li>
+                        <li>본 서비스는 금융위원회 및 금융감독원의 규정아래 부동산 거래에 대한 계약서를 필수로 첨부 해주셔야 합니다.</li>
+                        <li>부동산 임차계약서와 월세결제 신청 내역이 다른 경우 카드결제 신청이 거절될 수 있습니다.</li>
+                    </ul>
+                    <ul class="list_guide star">
+                        <li>월세거래등록 구분을 위해 월세계약명을 입력해주세요</li>
+                    </ul>
+                </div>
+                <dl>
+                    <dd class="box_input">
+                        <input type="text" placeholder="예시) 강남우리집/부산사업장">
+                    </dd>
+                </dl>
+            </div>
+            <div class="box_btn">
+                <button class="btn_cm">등록하기</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

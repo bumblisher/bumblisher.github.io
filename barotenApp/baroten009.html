@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resource/css/reset.css">
+    <link rel="stylesheet" href="resource/css/common.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="resource/js/main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <button class="btn_back"></button>
+            <h2>회원가입</h2>
+        </header>
+        <div class="wrap_cont">
+            <div class="cont_inner">
+                <div class="box_input">
+                    <input type="text" placeholder="ID">
+                    <button class="btn_cm">중복확인</button>
+                </div>
+                <div class="box_input">
+                    <input type="password" placeholder="비밀번호">
+                    <p class="txt_noti">*비밀번호를 확인하여주세요.</p>
+                </div>
+                <div class="box_input">
+                    <input type="password" placeholder="비밀번호 확인">
+                </div>
+                <div class="box_input">
+                    <input type="text" placeholder="성명">
+                </div>
+                <div class="box_input">
+                    <input type="text" placeholder="010">
+                    <button class="btn_cm">인증번호 받기</button>
+                </div>
+                
+                <div class="box_input">
+                    <input type="text" placeholder="인증번호">
+                    <button class="btn_cm">인증번호 확인</button>
+                </div>
+                <div class="box_input">
+                    <input type="text" placeholder="생년월일 (8자리 입력)">
+                    <ul class="grp_radio">
+                        <li><input type="radio" id="radio01" name="radio" checked><label for="radio01">여성</label></li>
+                        <li><input type="radio" id="radio02" name="radio"><label for="radio02">남성</label></li>
+                    </li>
+                </div>
+                <ul class="grp_check">
+                    <li><input type="checkbox" id="check01" checked><label for="check01">약관(필수)</label><a href="#"></a></li>
+                    <li><input type="checkbox" id="check02" ><label for="check02">개인정보활용동의(필수)</label><a href="#"></a></li>
+                    <li><input type="checkbox" id="check03" ><label for="check03">제3자 정보동의(필수)</label><a href="#"></a></li>
+                    <li><input type="checkbox" id="check04" ><label for="check04">위 사항에 모두 동의합니다. </label></li>
+                </ul>
+            </div>
+            <div class="box_btn">
+                <button class="btn_cm">회원가입</button>
+            </div>
+        </div>
+        <div class="popup on">
+            <div class="pop_header">
+                <button class="btn_close"></button>
+            </div>
+            <div class="pop_cont">
+                <div class="txtbox">
+                    <p><span class="red">홍길동님</span><br>
+                        회원가입을<br>
+                        완료하였습니다.<br>
+                        </p>
+                </div>
+                <div class="pop_btn">
+                    <button class="btn_cm">로그인하기</button>
+                </div>
+            </div>
+        </div>
+        <div class="dim"></div>
+    </div>
+</body>
+</html>
+
+
