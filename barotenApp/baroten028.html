@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resource/css/reset.css">
+    <link rel="stylesheet" href="resource/css/common.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="resource/js/main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <button class="btn_back"></button>
+            <h2>결제정보</h2>
+        </header>
+        <div class="wrap_cont">
+            <div class="cont_inner">
+                <div class="box_guide">
+                    <p class="tit_guide">GUIDE</p>
+                    <ul class="list_guide">
+                        <li>본 서비스는 바로텐 서비스멤버만 신청가능합니다.</li>
+                        <li>서비스멤버는 결제 카드 등록 및 회원인증이 완료된 회원입니다.</li>
+                        <li>결제시 사용할 결제정보를 추가로 등록할 수 있습니다.</li>
+                        <li>결제상세정보에서 수정 또는 삭제하실 수 있습니다.</li>
+                        <li>수정시 기존 등록된 카드와 결제정보 명칭만 변경 가능합니다.</li>
+                    </ul>
+                </div>
+                <dl class="mt30">
+                    <dd class="box_input">
+                        <input type="text">
+                        <button class="btn_cm">검색</button>
+                    </dd>
+                    <dd class="box_input">
+                        <ul class="grp_radio">
+                            <li><input type="radio" id="radio01" name="radio" checked><label for="radio01">월세</label></li>
+                            <li><input type="radio" id="radio02" name="radio"><label for="radio02">재료</label></li>
+                            <li><input type="radio" id="radio03" name="radio"><label for="radio03">배달대행</label></li>
+                        </li>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>기간</dt>
+                    <dd class="box_input">
+                        <select type="text">
+                            <option value="">날짜</option>
+                            <option value="">0001</option>
+                            <option value="">0002</option>
+                        </select>
+                        <span>~</span>
+                        <select type="text">
+                            <option value="">날짜</option>
+                            <option value="">0001</option>
+                            <option value="">0002</option>
+                        </select>
+                        <select type="text">
+                            <option value="">최신순</option>
+                            <option value="">0001</option>
+                            <option value="">0002</option>
+                        </select>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>결제정보 보기</dt>
+                    <dd class="box_txt">
+                        <p class="tit">대치동 우리가게</p>
+                        <p>유형 : 월세</p>
+                        <p>소재지 : 서울시 강남구 대치동 XX</p>
+                        <p>등록일 : 21/12/28</p>
+                    </dd>
+                    <dd class="box_txt">
+                        <p class="tit">냉동 돈까스 공급처</p>
+                        <p>유형 : 재료</p>
+                        <p>상호 : OO식자재마트</p>
+                        <p>등록일 : 21/12/28</p>
+                    </dd>
+                    <dd class="box_txt">
+                        <p class="tit">배달이 밀릴때!</p>
+                        <p>유형 : 배달대행</p>
+                        <p>상호 : 따르릉 자전거 배달</p>
+                        <p>등록일 : 21/12/28</p>
+                    </dd>
+                </dl>
+            <div class="box_btn full">
+                <button class="btn_cm">월세 결제정보 추가하기</button>
+                <button class="btn_cm">재료 결제정보 추가하기</button>
+                <button class="btn_cm">배달대행 결제정보 추가하기</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

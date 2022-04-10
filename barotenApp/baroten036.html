@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resource/css/reset.css">
+    <link rel="stylesheet" href="resource/css/common.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="resource/js/main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <button class="btn_back"></button>
+            <h2>재료비 결제하기</h2>
+        </header>
+        <div class="wrap_cont">
+            <div class="cont_inner">
+                <div class="box_guide">
+                    <p class="tit_guide">GUIDE</p>
+                    <ul class="list_guide">
+                        <li>서비스멤버만 사용가능한 서비스입니다.</li>
+                        <li>아래의 공급처정보를 등록 후 결제 신청해주시기 바랍니다.</li>
+                        <li>공급처정보 등록시 향후 편리하게 이용하실 수 있습니다.</li>
+                        <li>결제신청시 1시간 이내에 공급처의 계좌로송금됩니다.</li>
+                        <li>이체확인서는 카카오톡 알림톡 또는 문자로 발송됩니다.</li>
+                    </ul>
+                </div>
+                <h3>서비스멤버 신청하기</h3>
+                <dl>
+                    <dt>회원성명</dt>
+                    <dd class="box_input">
+                        <input type="text" placeholder="회원성명">
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>주민등록번호</dt>
+                    <dd class="box_input">
+                        <input type="text">
+                        <span>-</span>
+                        <input type="text">
+                    </dd>
+                </dl>
+                <div class="box_upload">
+                    <ul class="list_guide star">
+                        <li>실명확인을 위해 주민등록증
+                            사진을 업로드해주세요
+                        </li>
+                        <li>실명확인 후 카드결제서비스 이용이 가능합니다</li>
+                        <li>주민등록증은 앞면과 뒷면 모두 올려주세요</li>
+                    </ul>
+                    <button class="btn_upload">주민등록증 앞면 업로드하기</button>
+                    <button class="btn_upload">주민등록증 뒷면 업로드하기</button>
+                    <ul class="grp_check">
+                        <li><input type="checkbox" id="check01" ><label for="check01">금융거래 안전을 위해 주민등록증 사본을
+                            보유하며 회원요청시 즉시 삭제됨을 안내드립니다.</label></li>
+                    </ul>
+                </div>
+                <h3>휴대폰 번호 확인</h3>
+                <dl>
+                    <dt>휴대폰번호</dt>
+                    <dd class="box_input">
+                        <input type="text" placeholder="010">
+                        <button class="btn_cm">인증번호 전송</button>
+                    </dd>
+                    <dd class="box_input">
+                        <input type="text" placeholder="인증번호">
+                        <button class="btn_cm">인증번호 확인</button>
+                    </dd>
+                    <dd class="guide">
+                        <ul class="list_guide">
+                            <li>신청하신 내역결과 또는 그 외 상세내용을 문자로 발송드립니다.</li>
+                            <li>거래내역에 대한 정보를 문자로 발송드리기에본인 휴대폰번호로 인증해주시기 바랍니다.
+                                타인의 휴대폰번호 인증으로 발생되는 모든 문제는 (주)삼인칭에서 책임지지 않습니다.</li>
+                        </ul>
+                    </dd>
+                </dl>
+                <h3>카드등록하기</h3>
+                <dl>
+                    <dt>카드번호</dt>
+                    <dd class="box_input">
+                        <input type="text" placeholder="카드번호">
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>유효기간</dt>
+                    <dd class="box_input">
+                        <select type="text">
+                            <option value="">년</option>
+                            <option value="">0001</option>
+                            <option value="">0002</option>
+                        </select>
+                        <select type="text">
+                            <option value="">월</option>
+                            <option value="">0001</option>
+                            <option value="">0002</option>
+                        </select>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>소유자 성명</dt>
+                    <dd class="box_input">
+                        <input type="text" placeholder="성명">
+                    </dd>
+                    <dd class="box_input">
+                        <ul class="grp_check">
+                            <li><input type="checkbox" id="check02"><label for="check02">소유자 본인 카드임을 확인합니다.</label></li>
+                        </ul>
+                    </dd>
+                    <dd class="guide">
+                        <ul class="list_guide">
+                            <li>카드소유자와 회원명이 일치하지 않을 경우본 서비스 신청은 불가합니다.</li>
+                            <li>해당카드를 이용하시려면 카드소유자 성명으로 회원가입 진행 후 서비스 신청해주세요.<br>
+                                <a href="#" class="txt_link">1:1채팅으로 신청하기</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <ul class="grp_check">
+                    <li><input type="checkbox" id="check03"><label for="check03">이용약관을 확인하였습니다. (필수)</label><a href="#"></a>
+                    </li>
+                    <li><input type="checkbox" id="check04"><label for="check04">개인정보 활용동의(필수)</label><a href="#"></a>
+                    </li>
+                    <li><input type="checkbox" id="check05"><label for="check05">개인정보 제3자 정보 제공동의 (필수)</label><a href="#"></a>
+                    </li>
+                    <li><input type="checkbox" id="check06"><label for="check06">위 사항에 모두 동의합니다.</label></li>
+                </ul>
+            </div>
+            <div class="box_btn">
+                <button class="btn_cm">서비스멤버 신청하기</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

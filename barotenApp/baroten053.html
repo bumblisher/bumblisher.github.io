@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resource/css/reset.css">
+    <link rel="stylesheet" href="resource/css/common.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="resource/js/main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <button class="btn_back"></button>
+            <h2>거래내역 및 입금내역</h2>
+        </header>
+        <div class="wrap_cont">
+            <div class="cont_inner">
+                <dl>
+                    <dd class="box_input">
+                        <input type="text" placeholder="검색창">
+                    </dd>
+                    <dd class="box_input">
+                        <select type="text">
+                            <option value="">결제종류</option>
+                            <option value="">0001</option>
+                            <option value="">0002</option>
+                        </select>
+                        <select type="text">
+                            <option value="">결제상태</option>
+                            <option value="">0001</option>
+                            <option value="">0002</option>
+                        </select>
+                        <select type="text">
+                            <option value="">최신순</option>
+                            <option value="">0001</option>
+                            <option value="">0002</option>
+                        </select>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>기간</dt>
+                    <dd class="box_input">
+                        <input type="text" placeholder="yy.mm.dd">
+                        <span>-</span>
+                        <input type="text" placeholder="yy.mm.dd">
+                    </dd>
+                </dl>
+                <div class="list_trade">
+                    <ul>
+                        <li>
+                            <div class="list_tit">
+                                <span>2022.01.12</span><span class="sub">10:05:55</span><span class="right">결제완료</span>
+                            </div>
+                            <div class="list_cont">
+                                <div>
+                                    <span>배달대행 결제</span>
+                                    <div class="right">
+                                        <span class="sub">(일시불)</span>
+                                        <span>10,000원</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span>마이콜라이더</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list_tit">
+                                <span>2022.01.12</span><span class="sub">10:05:55</span><span class="right">결제완료</span>
+                            </div>
+                            <div class="list_cont">
+                                <div>
+                                    <span>배달대행 결제</span>
+                                    <div class="right">
+                                        <span class="sub">(일시불)</span>
+                                        <span>10,000원</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span>마이콜라이더</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wrap_menu">
+            <ul>
+                <li><a href="#" class="home">홈</a></li>
+                <li><a href="#" class="mypage">마이페이지</a></li>
+                <li><a href="#" class="payment">결제내역</a></li>
+                <li><a href="#" class="notice">공지사항</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -16,7 +16,7 @@
     <div class="wrap">
         <header>
             <button class="btn_back"></button>
-            <h2>재료비 결제하기</h2>
+            <h2>배달대행료 결제하기</h2>
         </header>
         <div class="wrap_cont">
             <div class="cont_inner">
@@ -24,14 +24,14 @@
                     <p class="tit_guide">GUIDE</p>
                     <ul class="list_guide">
                         <li>서비스멤버만 사용가능한 서비스입니다.</li>
-                        <li>아래의 공급처 정보를 등록 후 결제 신청 해주시기 바랍니다.</li>
-                        <li>공급처 정보 등록 시 향후 편리하게 이용하실 수 있습니다.</li>
-                        <li>결제신청시 1시간 이내에 공급처의 계좌로 송금됩니다.</li>
+                        <li>아래의 배달대행사 정보를 등록 후 결제 신청 해주시기 바랍니다.</li>
+                        <li>배달대행사 정보 등록 시 향후 편리하게 이용하실 수 있습니다.</li>
+                        <li>결제신청시 1시간 이내에 배달대행사의 계좌로 송금됩니다.</li>
                         <li>이체확인서는 카카오톡 알림톡 또는 문자로 발송됩니다.</li>
                     </ul>
                 </div>
                 <dl>
-                    <dt>재료 공급처 선택하기</dt>
+                    <dt>배달대행사 선택하기</dt>
                     <dd class="box_input">
                         <select type="text">
                             <option value="">0000</option>
@@ -40,15 +40,15 @@
                         </select>
                     </dd>
                 </dl>
-                <h3>재료 공급처 정보 등록하기</h3>
+                <h3>배달대행사 정보 등록하기</h3>
                 <dl>
-                    <dt>공급처 상호</dt>
+                    <dt>배달대행사 상호</dt>
                     <dd class="box_input">
                         <input type="text" placeholder="">
                     </dd>
                 </dl>
                 <dl>
-                    <dt>공급처 사업자 등록번호 </dt>
+                    <dt>배달대행사 사업자 등록번호 </dt>
                     <dd class="box_input">
                         <input type="text" placeholder="">
                     </dd>
@@ -59,13 +59,13 @@
                         <li>사업자 상태 확인 후 카드결제 서비스 이용이 가능합니다.</li>
                         <li>휴업중이거나 폐업된 사업자는 사용하실 수 없습니다.  </li>
                     </ul>
-                    <button class="btn_upload contract">공급처의 사업자등록증 업로드 하기</button>
+                    <button class="btn_upload contract">배달대행사의 사업자등록증 업로드 하기</button>
                     <ul class="grp_check">
                         <li><input type="checkbox" id="check01" checked><label for="check01">금융거래 안전을 위해 사업자등록증 사본을
                             보유하며 회원요청시 즉시 삭제됨을 안내드립니다.</label></li>
                     </ul>
                 </div>
-                <h3>공급처 계좌정보</h3>
+                <h3>배달대행사 계좌정보</h3>
                 <div class="ly_box">
                     <dl>
                         <dt>은행</dt>
@@ -91,20 +91,21 @@
                     </dd>
                     <dd>
                         <ul class="list_guide">
-                            <li>공급처 사업자등록증의 대표명이나 업체명은 예금주와 동일해야 합니다. 계좌정보를 동일하게 입력해주세요.<br>
+                            <li>배달대행사 사업자등록증의 대표명이나 업체명은 예금주와 동일해야 합니다. 계좌정보를 동일하게 입력해주세요.<br>
                                 신청하신 정보로 자재비가 송금됩니다.</li>
                             <li>오류 입력에 대한 문제 발생시 자재비 환불은 진행되지 않습니다.</li>
                         </ul>
                     </dd>
                 </dl>
-                <h3>자재구매자 성명입력</h3><dl>
+                <h3>배달대행 서비스 이용자 성명입력</h3>
+                <dl>
                     <dt>성명</dt>
                     <dd class="box_input">
                         <input type="text" placeholder="">
                     </dd>
                     <dd>
                         <ul class="list_guide star">
-                            <li>자재구매자는 회원 본인만 가능합니다.</li>
+                            <li>배달대행 서비스 이용자는 회원 본인만 가능합니다.</li>
                         </ul>
                     </dd>
                 </dl>
@@ -122,16 +123,16 @@
                             <li>결제수단은 사전에 등록된 카드로 신청 가능합니다.</li>
                             <li>다른 카드로 결제를 원하시는 경우 카드등록을 추가해주세요 <a href="#" class="txt_link">카드등록하기</a></li>
                             <li>최초 1회 등록으로 향후 편리하게 사용할 수 있습니다.</li>
-                            <li>공급처 사업자등록증과 등록한 내역이 다른경우 카드결제 신청이 거절될 수 있습니다.</li>
+                            <li>대행사 사업자등록증과 등록한 내역이 다른경우 카드결제 신청이 거절될 수 있습니다.</li>
                         </ul>
                     </dd>
                     <dd class="guide">
                         <ul class="list_guide star">
-                            <li>공급처 구분을 위해 명칭을 입력해주세요.</li>
+                            <li>대행사 구분을 위해 명칭을 입력해주세요.</li>
                         </ul>
                     </dd>
                     <dd class="box_input">
-                        <input type="text" placeholder="예시) 으뜸식자재마트 / 오리농장">
+                        <input type="text" placeholder="예시) 배달빨라">
                     </dd>
                 </dl>
             </div>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resource/css/reset.css">
+    <link rel="stylesheet" href="resource/css/common.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="resource/js/main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <button class="btn_back"></button>
+            <h2>카드 추가 등록하기</h2>
+        </header>
+        <div class="wrap_cont">
+            <div class="cont_inner">
+                <h3>카드 추가 등록하기</h3>
+                <dl>
+                    <dt>카드번호</dt>
+                    <dd class="box_input">
+                        <input type="text" placeholder="카드번호">
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>유효기간</dt>
+                    <dd class="box_input">
+                        <select type="text">
+                            <option value="">년</option>
+                            <option value="">0001</option>
+                            <option value="">0002</option>
+                        </select>
+                        <select type="text">
+                            <option value="">월</option>
+                            <option value="">0001</option>
+                            <option value="">0002</option>
+                        </select>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>소유자 성명</dt>
+                    <dd class="box_input">
+                        <input type="text" placeholder="성명">
+                    </dd>
+                    <dd class="box_input">
+                        <ul class="grp_check">
+                            <li><input type="checkbox" id="check02"><label for="check02">소유자 본인 카드임을 확인합니다.</label></li>
+                        </ul>
+                    </dd>
+                    <dd class="guide">
+                        <ul class="list_guide">
+                            <li>카드소유자와 회원명이 일치하지 않을 경우본 서비스 신청은 불가합니다.</li>
+                            <li>해당카드를 이용하시려면 카드소유자 성명으로 회원가입 진행 후 서비스 신청해주세요.<br>
+                                <a href="#" class="txt_link">1:1채팅으로 신청하기</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>휴대폰번호</dt>
+                    <dd class="box_input">
+                        <input type="text" placeholder="010">
+                        <button class="btn_cm">인증번호 전송</button>
+                    </dd>
+                    <dd class="box_input">
+                        <input type="text" placeholder="인증번호">
+                        <button class="btn_cm">인증번호 확인</button>
+                    </dd>
+                </dl>
+            </div>
+            <div class="box_btn">
+                <button class="btn_cm">등록하기</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

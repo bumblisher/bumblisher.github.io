@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resource/css/reset.css">
+    <link rel="stylesheet" href="resource/css/common.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="resource/js/main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <button class="btn_back"></button>
+            <h2>재료 결제정보 추가하기</h2>
+        </header>
+        <div class="wrap_cont">
+            <div class="cont_inner">
+                <dl>
+                    <dd class="box_txt">
+                        <p>명칭 : 튀김류 전문마트</p>
+                        <p>결제유형 : 재료</p>
+                        <p>공급처 상호 : 무슨 식자재 마트</p>
+                        <p>공급처 사업자 등록번호 : 123-45-67890</p>
+                        <p>공급처 계좌정보</p>
+                        <p>XX은행</p>
+                        <p>예금주 : 홍길동</p>
+                        <p>계좌번호 : 1234-****-****-0000</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>결제수단선택</dt>
+                    <dd class="box_input">
+                        <select type="text">
+                            <option value="">0000</option>
+                            <option value="">0001</option>
+                            <option value="">0002</option>
+                        </select>
+                    </dd>
+                    <dd class="guide">
+                        <ul class="list_guide">
+                            <li>결제수단은 사전에 등록된 카드로 신청 가능합니다.</li>
+                            <li>다른 카드로 결제를 원하시는 경우 카드등록을 추가해주세요. 
+                                <a href="#" class="txt_link">카드등록하기</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>휴대폰번호</dt>
+                    <dd class="box_input">
+                        <input type="text" placeholder="010">
+                        <button class="btn_cm">인증번호 전송</button>
+                    </dd>
+                    <dd class="box_input">
+                        <input type="text" placeholder="인증번호">
+                        <button class="btn_cm">인증번호 확인</button>
+                    </dd>
+                </dl>
+            </div>
+            <div class="box_btn full">
+                <button class="btn_cm">등록하기</button>
+                <button class="btn_cm white">삭제하기</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resource/css/reset.css">
+    <link rel="stylesheet" href="resource/css/common.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="resource/js/main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <button class="btn_back"></button>
+            <h2>회원정보수정</h2>
+        </header>
+        <div class="wrap_cont">
+            <div class="cont_inner">
+                <div class="box_guide">
+                    <p class="mb5"><strong>홍길동</strong>님의 회원정보입니다.</p>
+                    <ul class="list_guide">
+                        <li>회원정보는 개인정보처리방침에 따라 안전하게
+                            보호되며, 회원님의 명백한 동의없이 공개 또는
+                            제 3자에게 제공되지 않습니다.<br>
+                            개인정보처리방침</li>
+                    </ul>
+                </div>
+                <div class="box_table">
+                    <table>
+                        <colgroup>
+                            <col style="width:20%;">
+                            <col>
+                        </colgroup>
+                        <tr>
+                            <th>회원성명</th>
+                            <td>
+                                <p>홍길동</p>
+                                <ul class="list_guide">
+                                    <li>가입하신 회원의 성함,생년월일,성별,주민등록번호는 수정하실 수 없습니다.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>아이디</th>
+                            <td>
+                                <p>honggildong</p>
+                                <ul class="list_guide">
+                                    <li>가입하신 아이디 정보는 수정하실 수 없습니다.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>휴대전화</th>
+                            <td>
+                                <p>010-0000-0000</p>
+                                <ul class="list_guide">
+                                    <li>아이디,비밀번호찾기,결제시스템 이용 등 바로10으로부터 알림을 받을 때 사용할 휴대전화입니다.</li>
+                                </ul>
+                                <button class="btn_cm">수정하기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>이메일</th>
+                            <td>
+                                <p>baro10@baro10.com</p>
+                                <button class="btn_cm">수정하기</button>
+                                <ul class="list_guide">
+                                    <li>카드결제 내역 및 정산내역, 세금계산서 발송등 바로텐의 사용정보 및 서비스의 변경/종료등 바로텐의 안내에 사용할 이메일 주소입니다.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>프로모션<br>
+                                정보<br>
+                                수신동의</th>
+                            <td>
+                                <ul class="grp_check">
+                                    <li>
+                                        <input type="checkbox" id="check01">
+                                        <label for="check01">휴대전화(바로10앱 또는 SMS)</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="check02">
+                                        <label for="check02">이메일</label>
+                                    </li>
+                                </ul>
+                                <ul class="list_guide">
+                                    <li>맞춤형 정보,이벤트,혜택정보를 보내드려요.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
