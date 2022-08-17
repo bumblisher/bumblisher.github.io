@@ -1,0 +1,371 @@
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resource/css/reset.css">
+    <link rel="stylesheet" href="resource/css/common.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="resource/js/main.js"></script>
+    <title>PAY_PEOPLE</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <a href="#" class="logo"><h1>ADMIN</h1></a>
+            <div class="right">
+                <span class="name">(할매커피)최호연</span>
+                <span>님 접속중입니다</span>
+                <button>로그아웃</button>
+            </div>
+        </header>
+        <div class="container">
+            <aside>
+                <ul class="nav_menu">
+                    <li class="active">
+                        <a href="#">회원관리</a>
+                        <ul>
+                            <li class="on"><a href="#">조회하기</a></li>
+                            <li><a href="#">등록하기</a>
+                                <ul>
+                                    <li><a href="#">일반회원</a></li>
+                                    <li><a href="#">가맹회원</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">회원승인</a></li>
+                            <li><a href="#">정보수정</a>
+                                <ul>
+                                    <li><a href="#">일반회원</a></li>
+                                    <li><a href="#">가맹회원</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">휴면회원</a>
+                                <ul>
+                                    <li><a href="#">등록</a></li>
+                                    <li><a href="#">수정</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">탈퇴회원</a>
+                                <ul>
+                                    <li><a href="#">등록</a></li>
+                                    <li><a href="#">수정</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">접속관리</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">거래관리</a>
+                        <ul>
+                            <li><a href="#">통합 결제내역 조회</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">정산관리</a>
+                        <ul>
+                            <li><a href="#">정산달력</a></li>
+                            <li><a href="#">정산내역조회</a></li>
+                            <li><a href="#">지급보류/해제/상계</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">고객지원</a>
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">서식자료실</a></li>
+                            <li><a href="#">메뉴얼</a></li>
+                            <li><a href="#">문의하기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+            <div class="content">
+                <div class="box_navi"><p>HOME > 회원관리 > 조회하기</p></div>
+                
+                <div class="box_form">
+                    <div class="grp_form">
+                        <div class="cont">
+                            <p class="tit">거래일자</p>
+                            <div class="grp_flex">
+                                <div class="grp_cal">
+                                    <input type="text" name="" id="">
+                                    <button></button>
+                                </div>
+                                <span class="ml0">~</span>
+                                <div class="grp_cal">
+                                    <input type="text" name="" id="">
+                                    <button></button>
+                                </div>
+                                <div class="grp_btn">
+                                    <button class="btn_cm">3개월</button>
+                                    <button class="btn_cm">6개월</button>
+                                    <button class="btn_cm">12개월</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grp_form">
+                        <div class="cont">
+                            <p class="tit">휴대폰번호</p>
+                            <input type="text">
+                        </div>
+                        <div class="cont">
+                            <p class="tit">회원명</p>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="grp_form">
+                        <div class="cont">
+                            <p class="tit">회원종류</p>
+                            <select type="text">
+                                <option value=""></option>
+                                <option value="">option01</option>
+                                <option value="">option02</option>
+                                <option value="">option03</option>
+                            </select>
+                        </div>
+                        <div class="cont">
+                            <p class="tit">사이트</p>
+                            <select type="text">
+                                <option value=""></option>
+                                <option value="">option01</option>
+                                <option value="">option02</option>
+                                <option value="">option03</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_form_btn">
+                    <div class="left">
+                        <button class="btn_cm type1">인쇄하기</button>
+                    </div>
+                    <div class="right">
+                        <button class="btn_cm type1">전체조회</button>
+                        <button class="btn_cm type1">조건조회</button>
+                        <button class="btn_cm type1">수정</button>
+                        <button class="btn_cm type1">승인</button>
+                    </div>
+                </div>
+                <div class="box_board">
+                    <div class="board_tit">
+                        <span>검색결과 : 5개</span>
+                        <select class="select" type="text" style="width:175px">
+                            <option value="">10/50/100개씩보기</option>
+                            <option value="">10개씩보기</option>
+                            <option value="">50개씩보기</option>
+                            <option value="">100개씩보기</option>
+                        </select>
+                    </div>
+                    <table>
+                        <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>선택</th>
+                                <th class="tac">NO.</th>
+                                <th class="tac">가입일</th>
+                                <th>사이트</th>
+                                <th>회원종류</th>
+                                <th>회원명</th>
+                                <th class="tac">휴대폰번호</th>
+                                <th class="tac">이메일</th>
+                                <th>승인</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input class="" type="checkbox"></td>
+                                <td class="tac">
+                                    <p>B_000000</p>
+                                </td>
+                                <td class="tac">
+                                    <p>2022-03-01</p>
+                                </td>
+                                <td>
+                                    <p>바로텐</p>
+                                </td>
+                                <td>
+                                    <p>일반회원</p>
+                                </td>
+                                <td>
+                                    <p>최은희</p>
+                                </td>
+                                <td class="tac">
+                                    <p>010-2222-3333</p>
+                                </td>
+                                <td class="tac">
+                                    <p>미확인</p>
+                                </td>
+                                <td>
+                                    <p>미확인</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input class="" type="checkbox"></td>
+                                <td class="tac">
+                                    <p>H_000000</p>
+                                </td>
+                                <td class="tac">
+                                    <p>2022-03-01</p>
+                                </td>
+                                <td>
+                                    <p>홀인원</p>
+                                </td>
+                                <td>
+                                    <p>가맹회원</p>
+                                </td>
+                                <td>
+                                    <p>공유</p>
+                                </td>
+                                <td class="tac">
+                                    <p>010-2222-3333</p>
+                                </td>
+                                <td class="tac">
+                                    <p>Bluecity@kakao.com</p>
+                                </td>
+                                <td>
+                                    <p>대기</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input class="" type="checkbox"></td>
+                                <td class="tac">
+                                    <p>B_000000</p>
+                                </td>
+                                <td class="tac">
+                                    <p>2022-03-01</p>
+                                </td>
+                                <td>
+                                    <p>바로텐</p>
+                                </td>
+                                <td>
+                                    <p>일반회원</p>
+                                </td>
+                                <td>
+                                    <p>최은희</p>
+                                </td>
+                                <td class="tac">
+                                    <p>010-2222-3333</p>
+                                </td>
+                                <td class="tac">
+                                    <p>미확인</p>
+                                </td>
+                                <td>
+                                    <p>미확인</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input class="" type="checkbox"></td>
+                                <td class="tac">
+                                    <p>H_000000</p>
+                                </td>
+                                <td class="tac">
+                                    <p>2022-03-01</p>
+                                </td>
+                                <td>
+                                    <p>홀인원</p>
+                                </td>
+                                <td>
+                                    <p>가맹회원</p>
+                                </td>
+                                <td>
+                                    <p>공유</p>
+                                </td>
+                                <td class="tac">
+                                    <p>010-2222-3333</p>
+                                </td>
+                                <td class="tac">
+                                    <p>Bluecity@kakao.com</p>
+                                </td>
+                                <td>
+                                    <p>대기</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="tac"></td>
+                                <td class="tac"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="tac"></td>
+                                <td class="tac"></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="tac"></td>
+                                <td class="tac"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="tac"></td>
+                                <td class="tac"></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ul class="pagination_sic">
+                        <li><a href="#" class="prev"></a></li>
+                        <li><a href="#" class="home"></a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><a href="#">9</a></li>
+                        <li><a href="#">10</a></li>
+                        <li><a href="#" class="next"></a></li>
+                        <li><a href="#" class="end"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="popup on" style="width:436px;">
+            <div class="pop_header">
+                <h2>인쇄하기</h2>
+                <button class="btn_close"></button>
+            </div>
+            <div class="pop_cont">
+                <div class="txtbox">
+                    <p>검색하신 회원리스트는<br>
+                        회원조회의 화면 상태로 인쇄됩니다.<br>
+                        검색하신 DATA가 50개 이상인 경우<br>
+                        엑셀로 다운로드 받으신 후 인쇄를 진행해주세요
+                        </p>
+                    <p class="semibold">검색 DATA : <span class="cl_blue">000</span>개</p>
+                </div>
+                <div class="pop_chk">
+                    <input type="checkbox" id="chk01">
+                    <label for="chk01">회원리스트 인쇄를 신청합니다.<br>
+                        회원정보 인쇄물은 외부 유출 및 사용이 불가하며<br>
+                        개인정보 (성명,휴대폰,이메일)부분은 노출이 불가<br>
+                        하여 성명을 제외한 기타 정보는 *로 표기됩니다.<br>
+                        회원의 상세 정보 인쇄가 필요한 경우 관리자의<br>
+                        승인이 필요합니다.</label>
+                </div>
+            </div>
+            <div class="pop_footer">
+                <button class="btn_cm blue">인쇄하기</button>
+                <button class="btn_cm gray">엑셀 다운로드</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resource/css/reset.css">
+    <link rel="stylesheet" href="resource/css/common.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="resource/js/main.js"></script>
+    <title>PAY_PEOPLE</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <a href="#" class="logo"><h1>ADMIN</h1></a>
+            <div class="right">
+                <span class="name">(할매커피)최호연</span>
+                <span>님 접속중입니다</span>
+                <button>로그아웃</button>
+            </div>
+        </header>
+        <div class="container">
+            <aside>
+                <ul class="nav_menu">
+                    <li class="active">
+                        <a href="#">회원관리</a>
+                        <ul>
+                            <li class="on"><a href="#">조회하기</a></li>
+                            <li><a href="#">등록하기</a>
+                                <ul>
+                                    <li><a href="#">일반회원</a></li>
+                                    <li><a href="#">가맹회원</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">회원승인</a></li>
+                            <li><a href="#">정보수정</a>
+                                <ul>
+                                    <li><a href="#">일반회원</a></li>
+                                    <li><a href="#">가맹회원</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">휴면회원</a>
+                                <ul>
+                                    <li><a href="#">등록</a></li>
+                                    <li><a href="#">수정</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">탈퇴회원</a>
+                                <ul>
+                                    <li><a href="#">등록</a></li>
+                                    <li><a href="#">수정</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">접속관리</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">거래관리</a>
+                        <ul>
+                            <li><a href="#">통합 결제내역 조회</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">정산관리</a>
+                        <ul>
+                            <li><a href="#">정산달력</a></li>
+                            <li><a href="#">정산내역조회</a></li>
+                            <li><a href="#">지급보류/해제/상계</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">고객지원</a>
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">서식자료실</a></li>
+                            <li><a href="#">메뉴얼</a></li>
+                            <li><a href="#">문의하기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+            <div class="content">
+                <div class="box_navi"><p>HOME > 회원관리 >  등록하기 > 가맹회원</p></div>
+                <div class="box_tit"><p class="tit">STEP2. 가맹회원 정보 등록하기</p></div>
+                <div class="box_form readonly">
+                    <div class="box_form_tit"><p>일반회원 정보확인</p></div>
+                    <div class="grp_form">
+                        <div class="cont">
+                            <p class="tit">등록일</p>
+                            <input type="text">
+                        </div>
+                        <div class="cont">
+                            <p class="tit" style="width: 80px;">회원명</p>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="grp_form">
+                        <div class="cont">
+                            <p class="tit">아이디</p>
+                            <input type="text">
+                        </div>
+                        <div class="cont">
+                            <p class="tit" style="width: 80px;">생년월일</p>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="grp_form">
+                        <div class="cont">
+                            <p class="tit">비밀번호</p>
+                            <input type="password">
+                        </div>
+                        <div class="cont">
+                            <p class="tit" style="width: 80px;">휴대폰</p>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="grp_form">
+                        <div class="cont">
+                            <p class="tit" >사이트</p>
+                            <select type="text">
+                                <option value=""></option>
+                                <option value="">option01</option>
+                                <option value="">option02</option>
+                                <option value="">option03</option>
+                            </select>
+                        </div>
+                        <div class="cont">
+                        </div>
+                    </div>
+                </div>
+                <div class="box_form white">
+                    <div class="box_form_tit"><p>가맹회원 정보등록</p></div>
+                    <div class="grp_form">
+                        <div class="cont">
+                            <p class="tit">주민등록번호</p>
+                            <input type="text">
+                        </div>
+                        <div class="cont">
+                            <p class="tit" style="width: 158px;">주민등록증사본 업로드</p>
+                            <div class="grp_flex">
+                                <span class="red">주민.jpg</span>
+                                <button class="btn_cm">업로드</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grp_form">
+                        <div class="cont">
+                            <p class="tit">주소</p>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="grp_form">
+                        <div class="cont">
+                            <p class="tit">이메일</p>
+                            <input type="text">
+                        </div>
+                        <div class="cont">
+                            <p class="tit" style="width: 158px;">사업자 세금계산서 신청</p>
+                            <div class="grp_flex">
+                                <div class="grp_radio"><input type="radio" id="radio01" name="radio" checked><label for="radio01">네</label><input type="radio" id="radio02" name="radio"> <label for="radio02">아니오</label></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grp_form">
+                        <div class="cont">
+                            <p class="tit">사업자번호</p>
+                            <select type="text">
+                                <option value=""></option>
+                                <option value="">option01</option>
+                                <option value="">option02</option>
+                                <option value="">option03</option>
+                            </select>
+                        </div>
+                        <div class="cont">
+                            <p class="tit" style="width: 158px;">사업자등록증 업로드</p>
+                            <div class="grp_flex">
+                                <span class="red">사업자.jpg</span>
+                                <button class="btn_cm">업로드</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_form white">
+                    <div class="box_form_tit"><p>결제정보 등록</p></div>
+                    <div class="grp_form">
+                        <div class="cont">
+                            <p class="tit">카드번호</p>
+                            <input type="text">
+                        </div>
+                        <div class="cont">
+                            <p class="tit">카드사</p>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="grp_form">
+                        <div class="cont">
+                            <p class="tit">유효 연월일</p>
+                            <div class="grp_flex">
+                                <select type="text">
+                                    <option value=""></option>
+                                    <option value="">option01</option>
+                                    <option value="">option02</option>
+                                    <option value="">option03</option>
+                                </select>
+                                <select type="text">
+                                    <option value=""></option>
+                                    <option value="">option01</option>
+                                    <option value="">option02</option>
+                                    <option value="">option03</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cont">
+                            <p class="tit">소유자</p>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="box_form white">
+                    <div class="box_form_tit"><p>정산계좌 정보</p></div>
+                    <div class="grp_form">
+                        <div class="cont">
+                            <p class="tit">은행명</p>
+                            <input type="text">
+                        </div>
+                        <div class="cont">
+                            <p class="tit">계좌번호</p>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="grp_form">
+                        <div class="cont">
+                            <p class="tit">예금주</p>
+                            <input type="text">
+                        </div>
+                        <div class="cont">
+                            <p class="tit" style="width: 128px;">통장사본 업로드</p>
+                            <div class="grp_flex">
+                                <span class="red">통장사본.jpg</span>
+                                <button class="btn_cm">업로드</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_btn">
+                    <button class="btn_cm blue" style="width: 240px;">SMS 인증발송</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
