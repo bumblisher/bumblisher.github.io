@@ -246,7 +246,7 @@ body.bg_white{background: #fff;}
 .wrap.toss.form.webtoon .box_paging .swiper-pagination{display: block;position: relative;width:auto;margin-left: 10px;flex:none;color:#fff;bottom: auto;margin-right: 10px;font-size: 20px;font-family: BR;font-weight: 400;}
 .wrap.toss.form.webtoon .box_paging .swiper-pagination span{font-family: BR;font-weight: 400;}
 .wrap.toss.form.webtoon .box_paging .swiper-pagination2{height:16px;background: #fff;border-radius: 13px;position: relative;max-width: 916px;margin-left: 10px;overflow: hidden;isolation: isolate;}
-
+.wrap.toss.form.webtoon .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{height: 16px;}
 /* toss - 웹툰리스트 */   
 .wrap.toss.form.webtoon .wrap_inner{height: 100%;box-sizing: border-box;}
 .wrap.toss.form.webtoon .box_webtoon{position: relative;margin: 50px auto 0;width: 829px;height: 621px;padding:70px 30px 0 430px;background: url(../images/bg_toss_webtoon_list.png) no-repeat center bottom;box-sizing: border-box;}
@@ -300,7 +300,7 @@ body.bg_white{background: #fff;}
 .swiper-button-next::after,
 .swiper-button-prev::after{display: none;}
 .swiper-slide img {display: block;width: 100%;object-fit: contain;}
-.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{border-radius: 13px;}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{border-radius: 13px;height: 10px;}
 
 @media only screen and (max-width: 769px) {
     .one .swiper-slide:nth-child(15),
@@ -646,6 +646,7 @@ body.bg_white{background: #fff;}
     .wrap.toss.form.webtoon .box_paging{flex-direction: column;justify-content: center;height: 95px;}
     .wrap.toss.form.webtoon .box_paging .swiper-pagination{display: block;bottom:0px !important;width: auto !important;left:auto !important;margin: 0 auto 20px;order:-1;}
     .wrap.toss.form.webtoon .box_paging .swiper-pagination2{height: 10px;}
+    .wrap.toss.form.webtoon .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{height: 10px;}
     
 
     .wrap.toss.form.webtoon.list .wrap_inner{width: auto;}
