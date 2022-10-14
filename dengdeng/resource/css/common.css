@@ -233,14 +233,18 @@ body.bg_white{background: #fff;}
 /* toss - 웹툰 */
 .wrap.toss.form.webtoon .wrap_inner{width:980px}
 .wrap.toss.form.webtoon .swiper{background: url(../images/bg_toss_webtoon.png) no-repeat center;background-size: contain;box-sizing: border-box;}
-.wrap.toss.form.webtoon .swiper-slide img{width:90%}
+.wrap.toss.form.webtoon .swiper-slide img{width:90%;height: 90%;}
 .wrap.toss.form.webtoon .swiper-slide:nth-child(odd){align-items: flex-end;}
 .wrap.toss.form.webtoon .swiper-slide:nth-child(even){align-items: flex-start;}
 
-.wrap.toss.form.webtoon .box_paging{position: fixed;left:0;right:0;bottom:0;display: flex;padding: 0 20px;height: 60px;background-color: #212631;display: flex;align-items: center;z-index: 10;}
-.wrap.toss.form.webtoon .box_paging .swiper-button-prev{position: relative;margin: 0 10px 0 auto;top:auto;width: 40px !important;height: 40px !important;background-size: contain;}
-.wrap.toss.form.webtoon .box_paging .swiper-button-next{position: relative;margin: 0 auto 0 10px;top:auto;width: 40px !important;height: 40px !important;background-size: contain;}
-.wrap.toss.form.webtoon .box_paging .swiper-pagination{display: block;position: relative;width:60px;flex:none;color:#fff;bottom: auto;margin-right: 10px;font-size: 20px;font-family: BR;font-weight: 400;}
+.wrap.toss.form.webtoon .box_paging{position: fixed;left:0;right:0;bottom:0;display: flex;padding: 0 20px;height: 60px;background-color: #212631;display: flex;align-items: center;justify-content: center;z-index: 10;}
+
+.wrap.toss.form.webtoon .box_paging .swiper-button-prev{position: relative;margin: 0 10px 0 auto;top:auto;width: 40px !important;height: 40px !important;background: url(../images/ico_sw_prev_w.png);background-size: contain;}
+.wrap.toss.form.webtoon .box_paging .swiper-button-next{position: relative;margin: 0 auto 0 10px;top:auto;width: 40px !important;height: 40px !important;background: url(../images/ico_sw_next_w.png);background-size: contain;}
+.wrap.toss.form.webtoon .box_paging .swiper-button-prev{position: fixed;top: 50%;left: 50%;margin-left: -500px;}
+.wrap.toss.form.webtoon .box_paging .swiper-button-next{position: fixed;top: 50%;left:auto;right: 50%;margin-right: -500px;}
+.wrap.toss.form.webtoon .box_paging .swiper-pagination{display: block;position: relative;width:auto;margin-left: 10px;flex:none;color:#fff;bottom: auto;margin-right: 10px;font-size: 20px;font-family: BR;font-weight: 400;}
+.wrap.toss.form.webtoon .box_paging .swiper-pagination span{font-family: BR;font-weight: 400;}
 .wrap.toss.form.webtoon .box_paging .swiper-pagination2{height:16px;background: #fff;border-radius: 13px;position: relative;max-width: 916px;margin-left: 10px;overflow: hidden;}
 
 /* toss - 웹툰리스트 */   
@@ -295,18 +299,18 @@ body.bg_white{background: #fff;}
 .swiper-button-prev{width: 50px !important;height: 50px !important;background: url(../images/ico_sw_prev.png) no-repeat center;}
 .swiper-button-next::after,
 .swiper-button-prev::after{display: none;}
-.swiper-slide img {display: block;width: 100%;}
+.swiper-slide img {display: block;width: 100%;object-fit: contain;}
 
 @media only screen and (max-width: 769px) {
-    .swiper-slide:nth-child(15),
-    .swiper-slide:nth-child(16){display: none;}
+    .one .swiper-slide:nth-child(15),
+    .one .swiper-slide:nth-child(16){display: none;}
 }
 
 @media only screen and (min-width: 769px) {
     .swiper-slide:first-child {
         transition: transform 100ms;
     }
-    .swiper-slide:last-child{display: none;}
+    .one .swiper-slide:last-child{display: none;}
     .swiper-slide:first-child img {
         transition: box-shadow 500ms;
     }
@@ -451,6 +455,9 @@ body.bg_white{background: #fff;}
     .wrap.toss.company .grp_cont >div:last-child ul{display: flex;}
     .wrap.toss.company .grp_cont >div:last-child ul li{flex:1;}
     .wrap.toss.company .grp_cont >div:last-child ul li+li{margin-left: 16px;}
+
+    .wrap.toss.form.webtoon .box_paging .swiper-button-prev{margin-left: -400px;}
+    .wrap.toss.form.webtoon .box_paging .swiper-button-next{margin-right: -400px;}
 }
 
 @media only screen and (max-width: 1080px) {
@@ -568,7 +575,7 @@ body.bg_white{background: #fff;}
     .wrap .list_webtoon{grid-template-columns: 1fr;width: auto;gap:15px;margin: 70px 15px 0;}
     .wrap .list_webtoon li a{flex-direction: row;padding: 12px 9px 12px 12px;align-items: center;}
     .wrap .list_webtoon li p{font-size: 13px;}
-    .wrap .list_webtoon li p:last-chlid{flex:1;overflow: hidden;}
+    /* .wrap .list_webtoon li p:last-chlid{flex:1;overflow: hidden;} */
     .wrap .list_webtoon li p.tit{font-size: 23px;width:36px;flex:none;}
     .wrap .list_webtoon li .img_thumbnail{flex:none;margin: 0 12px;width:130px;height: 86px;background-size: contain !important;}
 
@@ -633,10 +640,10 @@ body.bg_white{background: #fff;}
     .wrap.toss.form.webtoon .swiper-slide img{width:100%}
     .wrap.toss.form.webtoon .swiper-slide:nth-child(odd){background: url(../images/bg_toss_pageleft.png) no-repeat top right;}
     .wrap.toss.form.webtoon .swiper-slide:nth-child(even){background: url(../images/bg_toss_pageright.png) no-repeat top left;}
-    .wrap.toss.form.webtoon .box_paging .swiper-button-prev{position: absolute;left:15px;top:15px !important;width:28px !important}
-    .wrap.toss.form.webtoon .box_paging .swiper-button-next{position: absolute;right:15px;top:15px !important;width:28px !important}
+    .wrap.toss.form.webtoon .box_paging .swiper-button-prev{position: absolute;left:15px;top:15px !important;width:28px !important;height:28px !important;margin: 0;background: url("../images/ico_sw_prev.png");background-size: contain;}
+    .wrap.toss.form.webtoon .box_paging .swiper-button-next{position: absolute;right:15px;top:15px !important;width:28px !important;height:28px !important;margin: 0;background: url("../images/ico_sw_next.png");background-size: contain;}
     .wrap.toss.form.webtoon .box_paging{flex-direction: column;justify-content: center;height: 95px;}
-    .wrap.toss.form.webtoon .box_paging .swiper-pagination{display: block;bottom:0px !important;width: 60px !important;left:auto !important;margin: 0 auto 20px;order:-1}
+    .wrap.toss.form.webtoon .box_paging .swiper-pagination{display: block;bottom:0px !important;width: auto !important;left:auto !important;margin: 0 auto 20px;order:-1;}
     .wrap.toss.form.webtoon .box_paging .swiper-pagination2{height: 10px;}
     
 
