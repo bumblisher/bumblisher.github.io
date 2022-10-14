@@ -300,7 +300,6 @@ body.bg_white{background: #fff;}
 .swiper-button-next::after,
 .swiper-button-prev::after{display: none;}
 .swiper-slide img {display: block;width: 100%;object-fit: contain;}
-.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{border-radius: 13px;height: 10px;}
 
 @media only screen and (max-width: 769px) {
     .one .swiper-slide:nth-child(15),
