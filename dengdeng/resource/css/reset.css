@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
-
 @font-face{
     font-family:'SUIT';
     src : url('../font/SUIT-Bold.woff2') format("woff2");
@@ -48,9 +46,33 @@
 	font-style: normal;
 }
 @font-face{
-    font-family:'Cookie';
-    src : url('../font/CookieRun-Regular.woff') format("woff");
+    font-family:'BR';
+    src : url('../font/BR_R.woff') format("woff");
 	font-weight: 400;
+	font-style: normal;
+}
+@font-face{
+    font-family:'BR';
+    src : url('../font/BR_B.woff') format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face{
+    font-family:'Spoqa';
+    src : url('../font/SpoqaHanSansNeo-Regular.woff') format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face{
+    font-family:'Spoqa';
+    src : url('../font/SpoqaHanSansNeo-Medium.woff') format("woff");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face{
+    font-family:'Spoqa';
+    src : url('../font/SpoqaHanSansNeo-Bold.woff') format("woff");
+	font-weight: 700;
 	font-style: normal;
 }
 

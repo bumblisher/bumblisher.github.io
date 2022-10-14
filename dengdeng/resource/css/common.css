@@ -4,6 +4,8 @@
 body{background:#E9F3FC ;}
 body.bg_blue{background:#469CFF;}
 body.bg_blue2{background:#2497F9;}
+body.bg_toss{background: #4880EE;}
+body.bg_white{background: #fff;}
 .wrap{height: 100%;min-height: 875px;position: relative;}
 .wrap *{transition: all 0.5s;}
 
@@ -23,6 +25,10 @@ body.bg_blue2{background:#2497F9;}
 .wrap .txt_agree > ul {counter-reset:list-number;margin-top: 10px;}
 .wrap .txt_agree > ul li{counter-increment:list-number;position: relative;padding-left: 14px;font-family: 'SUIT';font-weight: 500;font-size: 12px;color:#292929;line-height: 18px;}
 .wrap .txt_agree > ul li:before{content:counter(list-number) ". ";position: absolute;left:0;top:0;}
+.wrap~div .txt_agree >p{padding-left: 24px;font-family: 'SUIT';font-style: normal;font-weight: 700;font-size: 15px;line-height: 19px;color: #292929;background: url(../images/ico_agree.png) no-repeat left center;}
+.wrap~div .txt_agree > ul {counter-reset:list-number;margin-top: 10px;}
+.wrap~div .txt_agree > ul li{counter-increment:list-number;position: relative;padding-left: 14px;font-family: 'SUIT';font-weight: 500;font-size: 13px;color:#292929;line-height: 22px;}
+.wrap~div .txt_agree > ul li:before{content:counter(list-number) ". ";position: absolute;left:0;top:0;}
 
 .wrap .btn_big{position: relative;display: inline-flex;align-items: center;justify-content: center;height: 80px;background-color: #2497F9;width:350px;font-family: 'SUIT';font-weight: 500;font-size: 27px;color:#fff;z-index: 10;}
 .wrap .btn_big.navy{background-color: #0B1D5D;}
@@ -39,6 +45,21 @@ body.bg_blue2{background:#2497F9;}
 .wrap .list_form li input[type="checkbox"]+label{font-size: 23px;line-height: 48px;font-weight: 600;padding-left: 60px;background: url(../images/ico_chk.png) no-repeat left center;cursor: pointer;}
 .wrap .list_form li input[type="checkbox"]:checked+label{background: url(../images/ico_chk_on.png) no-repeat left center;}
 .wrap .list_form li a{font-size: 18px;font-weight: 600;margin-left: 10px;color: #ADB5BD;text-decoration: none;}
+
+.wrap .list_webtoon{position: relative;margin: 70px auto 0;padding-bottom: 30px;display: grid;grid-template-columns: 1fr 1fr;width: 600px;gap:18px;z-index: 10;}
+.wrap .list_webtoon li{display: block;border:1px solid #DEE2E6;border-radius: 12px;background: #fff;}
+.wrap .list_webtoon li a{display: flex;flex-direction: column;color: #000;text-decoration: none;padding: 12px;}
+.wrap .list_webtoon li p{font-family: 'Cookie';font-weight: 400;font-size: 15px;text-align: left;}
+.wrap .list_webtoon li p.tit{font-size: 34px;}
+.wrap .list_webtoon li .img_thumbnail{margin: 12px 0;width:264px;height:174px;background: url(../images/img_toon00.png) no-repeat center;text-align: center;}
+.wrap .list_webtoon li:nth-child(1) .img_thumbnail{background: url(../images/img_toon01.png) no-repeat center;}
+.wrap .list_webtoon li:nth-child(2) .img_thumbnail{background: url(../images/img_toon02.png) no-repeat center;}
+
+.wrap .btn_link button{width:120px;height: 60px;font-size: 15px;font-weight: 700;display: flex;align-items: center;justify-content: center;padding-left: 40px;border-radius: 30px;box-sizing: border-box;}
+.wrap .btn_link button+button{margin-top: 10px;}
+.wrap .btn_link .consult{background: #fff url(../images/ico_write.png) no-repeat left 10px center;color:#4880EE;border:1px solid #DEE2E6}
+.wrap .btn_link .kakao{background: #FFE812 url(../images/ico_kakao.png) no-repeat left 10px center;color:#381F1F}
+.wrap .btn_link .company{background: #fff url(../images/ico_company.png) no-repeat left 10px center;color:#4880EE;border:1px solid #DEE2E6}
 
 /* page01 */
 .wrap.page01{border:30px solid #D1E7FB;border-bottom:0;box-sizing: border-box;}
@@ -152,6 +173,108 @@ body.bg_blue2{background:#2497F9;}
 .wrap.page05 .btn_big{margin-top: 40px;background-color: #0B3F8D;border-radius:15px;}
 .wrap.page05 .btn_big::after{display: none;}
 
+/* toss01 */
+.wrap.toss::after,
+.wrap.toss::before{display: none;}
+.wrap.toss .logo_toss{display: block;position: absolute;left: 170px;top:50px;width:224px;height: 38px;z-index: 10;background: url(../images/logo_toss.png) no-repeat center;background-size: contain;}
+.wrap.toss .logo_samsung{top:50px}
+.wrap.toss .logo_samsung h1{background: url(../images/logo_samsung_toss.png) no-repeat center;background-size: contain;}
+.bg_toss .wrap.toss .logo_samsung h1{background: url(../images/logo_samsung_w.png) no-repeat center;background-size: contain;}
+.bg_toss .wrap.toss .logo_toss{background: url(../images/logo_toss_w.png) no-repeat center;background-size: contain;}
+.bg_toss .wrap.toss .logo_inkorea{top:50px;background: url(../images/logo_inkorea_w.png) no-repeat top right;background-size: 227px;}
+.bg_toss .wrap.toss .logo_inkorea span{color:#DEE2E6}
+.wrap.toss .main_txt{position: relative;display: flex;flex-direction: column;align-items: center;height: 100%;padding-top:30px;background: url(../images/bg_toss.png) no-repeat bottom center;box-sizing: border-box;}
+.wrap.toss .main_txt .txt01{position: absolute;top:180px;font-family: BR;font-size: 37px;line-height: 37px;color:#fff;font-weight: 400;}
+.wrap.toss .main_txt .txt_tit{margin-top: 46px;padding-top: 186px;font-family: BR;font-size: 73px;line-height: 75px;color:#fff;font-weight: 700;background: url(../images/bg_toss-tit.png) no-repeat center top;box-sizing: border-box;width:100%;height: 406px;background-size: contain;}
+.wrap.toss .main_txt .txt02{position: absolute;right:20px;right: 260px;bottom: 200px;font-family: 'spoqa';font-style: normal;font-weight: 500;font-size: 26px;line-height: 33px;color: #fff;text-align: left;}
+.wrap.toss .main_txt .txt02 span + span{display: block;margin-left: 0;font-weight: 700;}
+.wrap.toss .btn_toss{min-width: 198px;padding:12px;height: 65px;background: #fff;border-radius: 9px;font-family: 'spoqa';font-size: 20px;line-height: 25px;font-weight: 700;}
+.wrap.toss .btn_toss.blue{background: #4880EE;color:#fff;}
+.wrap.toss .btn_toss.main{position: absolute;bottom:110px;right:260px;padding: 20px;height: 71px;background: #F2F4F6;font-size: 25px;line-height: 31px;font-weight: 500;}
+
+/* toss02 */
+.wrap.toss.detail .wrap_inner{height: auto;}
+.wrap.toss.detail .logo_inkorea{top:50px}
+.wrap.toss.detail .main_txt{padding: 220px 0 0;background: none;display: block;text-align: left;}
+.wrap.toss.detail .main_txt .txt01{color:#212631;font-size: 37px;}
+.wrap.toss.detail .main_txt .txt_tit{color:#212631;width:auto;height: auto;font-size: 50px;line-height: 65px;margin-top: 10px;padding-top: 0;;background: none;}
+.wrap.toss.detail .box_btn{margin-top: 20px;}
+.wrap.toss.detail .box_btn *+*{margin-left: 20px;}
+.wrap.toss.detail .wrap_full{position: relative;background:#4880EE;margin-top: 150px;padding:29px 0;}
+.wrap.toss.detail .wrap_full::before{content:'';position: absolute;left:50%;top:-534px;width: 786px;height: 634px;margin-left: -206px;background: url(../images/toss02_dog.png) no-repeat center bottom;background-size: cover;z-index: -1;}
+.wrap.toss.detail .txt_agree{max-width:980px;margin:0 auto;}
+.wrap.toss.detail .txt_agree p{color:#fff;background: url(../images/ico_agree_w.png) no-repeat left center;font-size: 18px;}
+.wrap.toss.detail .txt_agree ul{margin-top: 20px;}
+.wrap.toss.detail .txt_agree ul li{color:#fff;font-size: 13px;}
+.wrap.toss.detail .txt_agree > ul li span{display: block;}
+
+/* toss02-detail */
+.wrap.toss.detail.agree{min-height: 700px;}
+.wrap.toss.detail.agree .wrap_inner{height: 100%;}
+.wrap.toss.detail.agree .box_agree{position: absolute;left:0;top:168px;right:0;bottom:30px;background: #fff;border-radius: 10px;overflow: hidden;padding: 18px;}
+.wrap.toss.detail.agree .txt_agree{overflow: auto;height: 100%;}
+.wrap.toss.detail.agree .txt_agree p{color:#292929;background: none;padding: 0;}
+.wrap.toss.detail.agree .txt_agree ul li{color:#292929}
+
+/* toss03 */
+.wrap.toss.form .wrap_inner{padding-top: 120px;width: 1020px;height: auto;}
+.wrap.toss.form .logo_toss{left:auto;right:0}
+.wrap.toss.form .txt_tit{margin: 0 auto;display: flex;justify-content: center;align-items: center;width: 398px;height: 91px;background: url(../images/bg_toss03-tit.png) no-repeat left center;font-family: BR;font-weight: 700;font-size: 37px;color:#fff}
+.wrap.toss.form .list_form{width:1003px;height: 647px;background: url(../images/bg_toss03_form.png) no-repeat top center;background-size: contain;margin: -30px auto 0;padding:130px 280px 0;box-sizing: border-box;}
+.wrap.toss.form .list_form:before{content: '';position: absolute;left:80px;bottom:8px;width:235px;height: 254px;background: url(../images/toss_dog03.png) no-repeat center;}
+.wrap.toss.form .list_form:after{content: '';position: absolute;right:20px;bottom:8px;width:267px;height: 216px;background: url(../images/toss_dog03_1.png) no-repeat center;}
+.wrap.toss.form .list_form li .tit{width:110px;font-size: 19px;font-family: spoqa;font-weight: 700;margin-right: 34px;}
+.wrap.toss.form .list_form li + li{margin-top: 18px;}
+.wrap.toss.form .list_form li input[type="text"]{height: 55px;font-size: 19px;font-family: spoqa;font-weight: 500;}
+.wrap.toss.form .list_form li input[type="checkbox"]+label{line-height: 34px;font-size: 17px;font-family: spoqa;font-weight: 700;background-size: 34px;padding-left: 44px;}
+.wrap.toss.form .list_form li:nth-child(6){justify-content: center;}
+.wrap.toss.form .list_form li a{font-size: 13px;font-family: spoqa;font-weight: 700;color:#ADB5BD;text-decoration: underline;}
+
+/* toss - 웹툰 */
+.wrap.toss.form.webtoon .wrap_inner{width:980px}
+.wrap.toss.form.webtoon .swiper{background: url(../images/bg_toss_webtoon.png) no-repeat center;background-size: contain;box-sizing: border-box;}
+.wrap.toss.form.webtoon .swiper-slide img{width:90%}
+.wrap.toss.form.webtoon .swiper-slide:nth-child(odd){align-items: flex-end;}
+.wrap.toss.form.webtoon .swiper-slide:nth-child(even){align-items: flex-start;}
+
+.wrap.toss.form.webtoon .box_paging{position: fixed;left:0;right:0;bottom:0;display: flex;padding: 0 20px;height: 60px;background-color: #212631;display: flex;align-items: center;z-index: 10;}
+.wrap.toss.form.webtoon .box_paging .swiper-button-prev{position: relative;margin: 0 10px 0 auto;top:auto;width: 40px !important;height: 40px !important;background-size: contain;}
+.wrap.toss.form.webtoon .box_paging .swiper-button-next{position: relative;margin: 0 auto 0 10px;top:auto;width: 40px !important;height: 40px !important;background-size: contain;}
+.wrap.toss.form.webtoon .box_paging .swiper-pagination{display: block;position: relative;width:60px;flex:none;color:#fff;bottom: auto;margin-right: 10px;font-size: 20px;font-family: BR;font-weight: 400;}
+.wrap.toss.form.webtoon .box_paging .swiper-pagination2{height:16px;background: #fff;border-radius: 13px;position: relative;max-width: 916px;margin-left: 10px;overflow: hidden;}
+
+/* toss - 웹툰리스트 */   
+.wrap.toss.form.webtoon .wrap_inner{height: 100%;box-sizing: border-box;}
+.wrap.toss.form.webtoon .box_webtoon{position: relative;margin: 50px auto 0;width: 829px;height: 621px;padding:70px 30px 0 430px;background: url(../images/bg_toss_webtoon_list.png) no-repeat center bottom;box-sizing: border-box;}
+.wrap.toss.form.webtoon .list_webtoon{width:auto;display: flex;flex-direction: column;margin: 0;height: 100%;box-sizing: border-box;overflow: auto;padding-bottom: 15px;}
+.wrap.toss.form.webtoon .list_webtoon li a{flex-direction: row;align-items: center;padding: 9px;}
+.wrap.toss.form.webtoon .list_webtoon li p{font-size: 18px;font-family: BR;font-weight: 400;}
+.wrap.toss.form.webtoon .list_webtoon li .tit{margin: 0 10px;flex:none}
+.wrap.toss.form.webtoon .list_webtoon li .img_thumbnail{order:-1;width:85px;height: 85px;background-size: cover;margin: 0;border-radius: 9px;flex:none}
+.wrap.toss.form.webtoon.list .btn_link{right:-60px;top:40px}
+
+.wrap.toss .btn_link{position: absolute;right: 0;top:300px;z-index: 20;}
+.wrap.toss .btn_link button{background-size: 35px;height: 45px;border-radius: 9px;width: 114px;padding-left: 30px;background-position: 6px center;}
+
+/* toss04 */
+.wrap.toss.company{background: url(../images/bg_toss04.png) no-repeat center top;}
+.wrap.toss.company .logo_toss{left:auto;right: 0;}
+.wrap.toss.company .grp_tit{padding-top: 226px;font-size: 36px;color:#212529;font-family: spoqa;}
+.wrap.toss.company .grp_tit span{display: block;font-weight: 700;}
+.wrap.toss.company .btn_app{margin-top: 20px;display: flex;align-items: center;}
+.wrap.toss.company .btn_app button{display: inline-flex;align-items: center;justify-content: center;width: 133px;height: 44px;border:1px solid #212529;border-radius: 6px;color:#212529;font-family: spoqa;font-size: 13px;font-weight: 700;background: transparent;}
+.wrap.toss.company .btn_app button+button{margin-left: 10px;}
+.wrap.toss.company .btn_app .google::before{content: '';display: inline-block;width:18px;height: 18px;margin-right: 10px;background: url(../images/ico_google.png) no-repeat center;background-size: contain;}
+.wrap.toss.company .btn_app .apple::before{content: '';display: inline-block;width:18px;height: 18px;margin-right: 10px;background: url(../images/ico_apple.png) no-repeat center;background-size: contain;}
+.wrap.toss.company .grp_cont{margin-top: 204px;;display: flex;align-items: center;padding-bottom: 50px;}
+.wrap.toss.company .grp_cont >div p{color:#212529;font-family: spoqa;}
+.wrap.toss.company .grp_cont >div:first-child{flex:6}
+.wrap.toss.company .grp_cont >div:first-child p{font-size: 18px;font-weight: 700;}
+.wrap.toss.company .grp_cont >div:last-child{flex:5;margin-left: 40px;}
+.wrap.toss.company .grp_cont >div:last-child .tit{font-size: 15px;font-weight: 700;margin-bottom: 8px;}
+.wrap.toss.company .grp_cont >div:last-child .cont{font-size: 12px;margin-bottom: 20px;}
+
+/* etc */
 .btn_back{display: none;position: fixed;left: 30px;bottom: 30px;width:48px;height: 48px;background: url(../images/ico_back.png) no-repeat center;background-size: contain;}
 .dim{position: fixed;left: 0;right:0;top:0;bottom: 0;background: #000;opacity: 0.3;z-index: 100;}
 .popup{display: flex;flex-direction: column;position: fixed;width: 721px;height: 310px;z-index: 110;top:50%;left:50%;margin: -121px 0 0 -360px;background: #fff;border-radius: 20px;overflow: hidden;}
@@ -161,26 +284,19 @@ body.bg_blue2{background:#2497F9;}
 .popup.small{width: 350px;height: 154px;margin: -77px 0 0 -175px;}
 .popup > p{flex: 1;display: flex;align-items: center;justify-content: center;font-size: 18px;}
 
-
 /* webtoon */
 .wrap.page03.webtoon .txt_tit{background: url(../images/webtoon_tit.png) no-repeat center;background-size: cover;height: 140px;}
+.wrap.page03.webtoon .btn_link{position: absolute;right: 0;top: 156px;z-index: 20;}
+
 .swiper {width: 100%;margin-top: 70px;height: 650px;}
-.swiper-pagination{display: none;}
-.swiper-slide {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
+.swiper-pagination{display: none;font-family: 'Cookie';font-weight: 400;font-size: 20px;}
+.swiper-slide {display: flex;flex-direction: column;align-items: center;justify-content: center;position: relative;}
 .swiper-button-next{width: 50px !important;height: 50px !important;background: url(../images/ico_sw_next.png) no-repeat center;}
 .swiper-button-prev{width: 50px !important;height: 50px !important;background: url(../images/ico_sw_prev.png) no-repeat center;}
 .swiper-button-next::after,
 .swiper-button-prev::after{display: none;}
-.swiper-slide img {
-    display: block;
-    width: 100%;
-}
+.swiper-slide img {display: block;width: 100%;}
+
 @media only screen and (max-width: 769px) {
     .swiper-slide:nth-child(15),
     .swiper-slide:nth-child(16){display: none;}
@@ -196,7 +312,6 @@ body.bg_blue2{background:#2497F9;}
     }
 
     .swiper-slide.swiper-slide-active:first-child {
-    /* transform: translateX(50%); */
         z-index: 2;
     }
 
@@ -205,17 +320,8 @@ body.bg_blue2{background:#2497F9;}
     }
 
     .swiper-slide.swiper-slide-next:nth-child(2) {
-      /* transform: translateX(55%); */
     z-index: 1;
     }
-
-    /* .swiper[dir="rtl"] .swiper-slide.swiper-slide-active:first-child {
-    transform: translateX(-50%);
-    }
-
-    .swiper[dir="rtl"] .swiper-slide.swiper-slide-next:nth-child(2) {
-    transform: translateX(-55%);
-    } */
 }
 
 
@@ -226,7 +332,7 @@ body.bg_blue2{background:#2497F9;}
 
 
 
-@media only screen and (max-width: 1279px) {
+@media only screen and (max-width: 1280px) {
     .wrap{min-height:746px;}
     .wrap_inner{position: relative;width:100%;min-width:700px;margin: 0 auto;}
 
@@ -319,12 +425,56 @@ body.bg_blue2{background:#2497F9;}
     .wrap.page05 .list_form li a{font-size: 14px;}
     .wrap.page05 .btn_big{height: 60px}
 
+    .wrap.page03.webtoon .btn_link{right:20px}
     .swiper{box-sizing: border-box;height: 506px;max-width: 768px;}
     .swiper-slide img{max-width:100%;}
     .swiper-slide:nth-child(15){align-items: flex-end;}
     .swiper-slide:nth-child(16){align-items: flex-start;}
 
     .btn_back{display: block;}
+
+    .wrap.toss{min-height: 660px;}
+    .wrap.toss .wrap_inner{width:calc(100% - 40px)}
+    .wrap.toss .main_txt .txt02{left:50%;right:auto;font-size: 20px;line-height: 28px;}
+    .wrap.toss .btn_toss.main{left:50%;right:auto;font-size:18px;height: 60px;padding: 12px;}
+
+    .wrap.toss.detail .wrap_full{padding: 29px 40px}
+    .wrap.toss.detail .wrap_full::before{width:600px;background-size: contain;margin-left: -216px;}
+
+    .wrap.toss.company .logo_samsung{top:30px}
+    .wrap.toss.company .logo_toss{top:30px}
+    .wrap.toss.company .grp_cont >div:first-child{flex:5}
+    .wrap.toss.company .grp_cont >div:last-child{flex:7}
+    .wrap.toss.company .grp_cont >div:last-child ul{display: flex;}
+    .wrap.toss.company .grp_cont >div:last-child ul li{flex:1;}
+    .wrap.toss.company .grp_cont >div:last-child ul li+li{margin-left: 16px;}
+}
+
+@media only screen and (max-width: 1080px) {
+    .wrap.toss.form .wrap_inner{padding-top: 120px;width: 738px;height: auto;}
+    .bg_toss .wrap.toss.form .logo_inkorea{top:20px}
+    .wrap.toss.form .list_form{width:738px;height: 496px;padding: 80px 170px 0;background-size: cover;}
+    .wrap.toss.form .list_form:before{width: 150px;height: 164px;background-size: contain;left: 40px;}
+    .wrap.toss.form .list_form:after{width: 150px;height: 122px;background-size: contain;}
+    .wrap.toss.form .list_form li .tit{width:90px;font-size: 15px;font-family: spoqa;font-weight: 700;margin-right: 20px;}
+    .wrap.toss.form .list_form li + li{margin-top: 10px;}
+    .wrap.toss.form .list_form li input[type="text"]{height: 50px;font-size: 15px;font-family: spoqa;font-weight: 500;}
+    .wrap.toss.form .list_form li input[type="checkbox"]+label{line-height: 25px;font-size: 13px;font-family: spoqa;font-weight: 700;background-size: 25px;padding-left: 32px;}
+    .wrap.toss.form .list_form li a{font-size: 10px;}
+    .wrap.toss .btn_link{right:-10px}
+
+    .wrap.toss.form.webtoon .wrap_inner{width: 738px;box-sizing: border-box;}
+    .wrap.toss.form.webtoon.list .wrap_inner{width:829px;box-sizing: border-box;}
+    .wrap.toss.form.webtoon .btn_link{position: fixed;top:200px;right:10px}
+}
+@media only screen and (max-width: 980px) {
+    .wrap.toss .main_txt{padding-top: 100px;}
+    .wrap.toss .main_txt .txt_tit{width:700px;font-size: 56px;margin-top: 10px;padding-top: 120px;}
+    .wrap.toss .main_txt .txt01{font-size: 30px;}
+    .wrap.toss .btn_toss.main{right:auto}
+.wrap.toss.form.webtoon .box_webtoon
+    .wrap.toss.form.webtoon .wrap_inner{width:729px}
+    .wrap.toss.form.webtoon .box_webtoon{width:729px;background-size: contain;padding-top: 120px;padding-left: 374px;}
 }
 
 @media only screen and (max-width: 767px) {
@@ -401,8 +551,11 @@ body.bg_blue2{background:#2497F9;}
     .wrap.page05 .list_form li p{width: 100px;}
     .wrap.page05 .btn_big{width: 200px;height: 60px;font-size: 18px;margin-top: 15px;}
 
-    .wrap.page03.webtoon .txt_tit{margin-top: 34px;}
+    .wrap.page03.webtoon::after{height:340px}
+    .wrap.page03.webtoon::before{top:130px}
     .wrap.page03.webtoon .wrap_inner{max-width: 375px;}
+    .wrap.page03.webtoon .txt_tit{margin-top: 46px;}
+    .wrap.page03.webtoon .btn_link{top:160px}
     .swiper{margin-top: 30px;}
     .swiper-slide img{height: auto;width:auto;}
     .swiper-button-next,
@@ -410,63 +563,96 @@ body.bg_blue2{background:#2497F9;}
     .swiper-pagination{display: block;bottom:0px !important;width: 60px !important;left:50% !important;margin-left: -30px;}
     .swiper-pagination span{font-family: 'Cookie';font-weight: 400;font-size: 20px;}
 
+    .wrap .list_webtoon{grid-template-columns: 1fr;width: auto;gap:15px;margin: 70px 15px 0;}
+    .wrap .list_webtoon li a{flex-direction: row;padding: 12px 9px 12px 12px;align-items: center;}
+    .wrap .list_webtoon li p{font-size: 13px;}
+    .wrap .list_webtoon li p:last-chlid{flex:1;overflow: hidden;}
+    .wrap .list_webtoon li p.tit{font-size: 23px;width:36px;flex:none;}
+    .wrap .list_webtoon li .img_thumbnail{flex:none;margin: 0 12px;width:130px;height: 86px;background-size: contain !important;}
+
     .btn_back{display: none;}
     .popup{width: 343px;height: 429px;margin: -214px 0 0 -171px}
     .popup .txt_agree{padding: 30px 20px 20px;}
     .popup button{height: 56px;}
+
+    .wrap .btn_link button{width:50px;height: 50px;padding: 0;font-size: 0;background-position: center center !important;}
+
+    .wrap.toss{min-height: 550px;}
+    .wrap.toss .wrap_inner{width:auto;}
+    .wrap.toss .logo_toss{width:157px;height: 27px;left: auto;top:15px;right:15px}
+    .wrap.toss .logo_samsung{top:15px;left:15px;width:103px;height: 35px;}
+    .bg_toss .wrap.toss .logo_inkorea{top:auto;background: url(../images/m_logo_inkorea_w.png) no-repeat top right;}
+    .wrap.toss .logo_inkorea{top:auto;bottom:15px;right:15px;padding: 20px 0 0;width:194px;height: 36px;min-width: auto;background: url(../images/m_logo_inkorea_w.png) no-repeat top right;}
+    .wrap.toss .logo_inkorea span{font-size: 0 !important;}
+    .wrap.toss .main_txt{justify-content: flex-start;margin: 0 auto;padding-top: 50px;width:356px;background: url(../images/bg_toss_m.png) no-repeat center bottom;padding-bottom: 296px;}
+    .wrap.toss .main_txt .txt01{position: absolute;top:128px;font-size: 28px;}
+    .wrap.toss .main_txt .txt_tit{padding-top: 128px;font-size: 40px;line-height: 44px;margin-top: 10px;width:100%;height: 240px;background: url(../images/bg_toss_m-tit.png) no-repeat center top;box-sizing: border-box;}
+    .wrap.toss .main_txt .txt02{position: static;font-size: 20px;line-height: 28px;font-size: 18px;}
+    .wrap.toss .main_txt .txt02 span{display: inline !important;}
+    .wrap.toss .main_txt .txt02 span + span{margin-left: 6px;}
+    .wrap.toss .btn_toss.main{position: static;margin-top: 20px;}
+
+    .wrap.toss.detail .wrap_inner{width:calc(100% - 30px);height: 100%;}
+    
+    .wrap.toss.detail .logo_inkorea{top:auto;right: auto;left:0;bottom:15px;background: url(../images/m_logo_inkorea_w_l.png) no-repeat top right;}
+    .wrap.toss.detail .main_txt {padding: 90px 0 0;}
+    .wrap.toss.detail .main_txt .txt01{font-size: 25px;position: static;text-align: center;}
+    .wrap.toss.detail .main_txt .txt_tit{width:100%;font-size:32px;text-align: center;line-height: 40px;}
+    .wrap.toss.detail .wrap_full{padding: 15px 15px 80px;position: absolute;bottom: 0;}
+    .wrap.toss.detail .wrap_full::before{width:375px;background: url(../images/toss02_dog_m.png) no-repeat center bottom;margin-left: -188px;}
+    .wrap.toss.detail .box_btn{position: absolute;top:220px;left:50%;margin-left: -172px;}
+    .wrap.toss.detail .btn_toss{min-width: auto;width: 166px;height: 60px;font-size: 18px;}
+    .wrap.toss.detail .btn_toss + .btn_toss{margin-left: 9px;}
+    .wrap.toss.detail .txt_agree p{font-size: 12px;}
+    .wrap.toss.detail .txt_agree ul{margin-top: 8px;}
+    .wrap.toss.detail .txt_agree ul li{font-size: 10px;line-height: 14px;}
+
+    .wrap.toss.detail.agree .box_agree{top:75px;bottom:15px}
+    .wrap.toss.detail.agree{min-height: auto;}
+    .wrap.toss.detail .logo_inkorea{display: none;}
+
+    .wrap.toss.form{min-height:760px}
+    .wrap.toss.form .wrap_inner{padding-top: 70px;width: auto;height: 100%;overflow: hidden;box-sizing: border-box;}
+    .wrap.toss.form .logo_toss{right:15px}
+    .bg_toss .wrap.toss.form .logo_inkorea{top:auto;right: auto;left:15px;bottom:15px;background: url(../images/m_logo_inkorea_w_l.png) no-repeat top right;}
+    .wrap.toss.form .txt_tit{font-size: 32px;width:340px;background-size: contain;}
+    .wrap.toss.form .list_form{position: static;width:345px;height: 515px;padding: 60px 10px 0;background: url(../images/bg_toss03_form_m.png) no-repeat center top;background-size: contain;margin-top: 0px;}
+    .wrap.toss.form .list_form:before{width:123px;height: 110px;left:0;bottom:-8px;background: url(../images/toss_dog03_m.png) no-repeat center;background-size: contain;}
+    .wrap.toss.form .list_form:after{width: 156px;height: 113px;right:0;bottom:0;background: url(../images/toss_dog03_1m.png) no-repeat center;background-size: contain;}
+    .wrap.toss.form .list_form li .tit{width:90px;font-size: 15px;font-family: spoqa;font-weight: 700;margin-right: 20px;}
+    .wrap.toss.form .list_form li + li{margin-top: 15px;}
+    .wrap.toss.form .list_form li input[type="text"]{height: 50px;font-size: 15px;font-family: spoqa;font-weight: 500;}
+    .wrap.toss.form .list_form li input[type="checkbox"]+label{line-height: 25px;font-size: 13px;font-family: spoqa;font-weight: 700;background-size: 25px;padding-left: 32px;}
+    .wrap.toss.form .list_form li a{font-size: 10px;}
+
+    .wrap.toss.form.webtoon{min-height:660px}
+    .wrap.toss.form.webtoon .wrap_inner{width: 375px;}
+    .wrap.toss.form.webtoon .wrap_inner .swiper{background: none;}
+    .wrap.toss.form.webtoon .swiper-slide img{width:100%}
+    .wrap.toss.form.webtoon .swiper-slide:nth-child(odd){background: url(../images/bg_toss_pageleft.png) no-repeat top right;}
+    .wrap.toss.form.webtoon .swiper-slide:nth-child(even){background: url(../images/bg_toss_pageright.png) no-repeat top left;}
+    .wrap.toss.form.webtoon .box_paging .swiper-button-prev{position: absolute;left:15px;top:15px !important;width:28px !important}
+    .wrap.toss.form.webtoon .box_paging .swiper-button-next{position: absolute;right:15px;top:15px !important;width:28px !important}
+    .wrap.toss.form.webtoon .box_paging{flex-direction: column;justify-content: center;height: 95px;}
+    .wrap.toss.form.webtoon .box_paging .swiper-pagination{display: block;bottom:0px !important;width: 60px !important;left:auto !important;margin: 0 auto 20px;order:-1}
+    .wrap.toss.form.webtoon .box_paging .swiper-pagination2{height: 10px;}
+    
+
+    .wrap.toss.form.webtoon.list .wrap_inner{width: auto;}
+    .wrap.toss.form.webtoon .box_webtoon{position: static;padding: 40px 30px;width:377px;height: 500px;background: url(../images/bg_toss_webtoon_list_m.png) no-repeat center top;background-size: contain;}
+    .wrap.toss.form.webtoon .list_webtoon li{height: 88px;}
+    .wrap.toss.form.webtoon .list_webtoon li .tit{width:26px}
+    .wrap.toss.form.webtoon .list_webtoon li .img_thumbnail{width:73px;height: 73px;background-size: cover !important;}
+    .wrap.toss .btn_link{position: fixed;top:180px;right: 10px;}
+    .wrap.toss .btn_link button{width:50px;height: 50px;background-size: 40px;}
+
+    .wrap.toss.company{background: none;}
+    .wrap.toss.company .logo_toss{right: 15px;}
+    .wrap.toss.company .grp_tit{padding-top: 100px;padding-bottom: 60px;text-align: center;background: url(../images/bg_toss04_m.png) no-repeat center ;background-size: cover;}
+    .wrap.toss.company .btn_app{justify-content: center;}
+    .wrap.toss.company .grp_cont{display: block;padding: 0 15px;margin: 30px 0 0;}
+    
+    .wrap.toss.company .grp_cont >div:last-child{margin-left: 0;margin-top: 30px;}
+    .wrap.toss.company .grp_cont >div:last-child ul{display: block;}
+    .wrap.toss.company .grp_cont >div:last-child ul li+li{margin-left: 0;}
 }
-
-
-
-
-/* 컴포넌트 */
-/* .wrap select { padding: 0 0 0 10px; height: 34px; border:1px solid #D7D6D6; border-radius: 5px; background:#fff;font-size: 16px;appearance: none;background: url(../images/ico_select.png) no-repeat center right 10px;}
-.wrap input[type="text"],
-.wrap input[type="password"]{ padding: 0 12px; height: 34px; border:1px solid #D7D6D6; border-radius: 5px; background:#fff; font-size: 16px;} 
-.wrap textarea{padding: 5px 15px; height: 72px; border:1px solid #D7D6D6; border-radius: 5px; background:#fff;resize: none;box-sizing: border-box;font-size: 16px;}
-.wrap table input[type="text"],
-.wrap table input[type="password"]{width: 100%;}
-.wrap select:disabled,
-.wrap input[type="text"]:read-only,
-.wrap input[type="text"]:disabled,
-.wrap input[type="password"]:read-only,
-.wrap input[type="password"]:disabled,
-.wrap textarea:read-only,
-.wrap textarea:disabled{background-color: #D9D9D9 !important;}
-.wrap .btn_cm { flex: none; min-width: 68px; height: 34px; border: 1px solid #8c8c8c; padding: 0 12px;color: #525252; background: #fff; border-radius: 8px; font-size: 16px; font-weight: 600; } 
-.wrap .btn_cm.type1{border-color:#1A78FE;color:#1A78FE}
-.wrap .btn_cm.blue{background-color:#1A78FE;border-color:#1A78FE;color:#fff}
-.wrap .btn_cm.gray{background-color:#AFAFAF;border-color:#AFAFAF;color:#fff}
-.wrap .btn_tab{width: 120px;height: 36px;background-color: #D9D9D9;border-radius: 18px;color: #525252;font-size: 16px;}
-.wrap .btn_tab.on{background-color: #1A78FE;color: #fff;font-weight: 600;}
-.grp_radio { display:flex; align-items: center; } 
-.grp_radio input[type="radio"] { display: none; } 
-.grp_radio label { display:inline-flex; align-items: center; font-size: 16px; color:#525252; cursor: pointer; } 
-.grp_radio label:before { content:'';flex:none; display: inline-block; margin-right:5px; width:20px; height: 20px; border:1px solid #676767; border-radius: 50%; box-sizing: border-box; background: #1A78FE;box-shadow: inset 0px 0px 0 10px #fff;} 
-.grp_radio input[type="radio"]:checked + label:before { box-shadow: inset 0px 0px 0 4px #fff; } 
-.grp_radio.col4{display: grid;grid-template-columns: 1fr 1fr 1fr 1fr;width: 100%;}
-.grp_check { display: flex; align-items: center; } 
-.grp_check > a { margin-left: auto; position: relative; width: 20px; height: 20px; } 
-.grp_check > a:before { content: ''; position: absolute; left: 5px; top: 6px; width: 7px; height: 7px; border: 2px solid #232323; border-width: 0 0 2px 2px; transform: rotate(-135deg); } 
-.grp_check > a.txt_link { width: auto; height: auto; margin-left: 5px; } 
-.grp_check > a.txt_link::before { display: none; } 
-.grp_check input[type="checkbox"] { display: none; } 
-.grp_check label { position: relative; display:inline-flex; align-items: center; padding-left: 25px; font-size: 16px; color:#525252; cursor: pointer; line-height: 20px; } 
-.grp_check label:before { content:''; flex:none; display: inline-block;margin-right: 5px; width:20px; height: 20px; border:1px solid #525252; border-radius: 3px; box-sizing: border-box; background: #fff; } 
-.grp_check input[type="checkbox"]:checked + label:after { content: ''; position: absolute; left: 9px; top: 10px; width: 9px; height: 4px; border: 2px solid #1A78FE; border-width: 0 0 3px 3px; transform: rotate(-45deg); } 
- */
-
-
-/* .grp_flex { display: flex; align-items: center; flex: 1; }
-.grp_flex[style*="width"]{flex:none}
-.grp_flex .red { flex:1; color: #E53939; } 
-.grp_flex .btn_cm {min-width: 68px;} 
-.grp_flex .grp_btn{display: inline-flex;align-items: center;}
-.grp_flex .grp_btn button + button{margin-left: 10px;}
-.grp_flex label { flex:none;padding: 5px; margin-left:0; margin-right: 10px; font-size: 16px; color: #525252; } 
-.grp_flex .right { flex:none; margin-left: auto; } 
-.grp_flex input[type="text"] { flex:1 } 
-.grp_flex input[type="text"] + .grp_radio{margin-left: 30px;}
-.grp_flex > *+* { margin-left: 10px; } 
-.grp_flex.chk_col > label{flex:1;}
-.grp_flex .grp_cal input[type="text"]{width: 117px;} */
