@@ -245,7 +245,7 @@ body.bg_white{background: #fff;}
 .wrap.toss.form.webtoon .box_paging .swiper-button-next{position: fixed;top: 50%;left:auto;right: 50%;margin-right: -500px;}
 .wrap.toss.form.webtoon .box_paging .swiper-pagination{display: block;position: relative;width:auto;margin-left: 10px;flex:none;color:#fff;bottom: auto;margin-right: 10px;font-size: 20px;font-family: BR;font-weight: 400;}
 .wrap.toss.form.webtoon .box_paging .swiper-pagination span{font-family: BR;font-weight: 400;}
-.wrap.toss.form.webtoon .box_paging .swiper-pagination2{height:16px;background: #fff;border-radius: 13px;position: relative;max-width: 916px;margin-left: 10px;overflow: hidden;}
+.wrap.toss.form.webtoon .box_paging .swiper-pagination2{height:16px;background: #fff;border-radius: 13px;position: relative;max-width: 916px;margin-left: 10px;overflow: hidden;isolation: isolate;}
 
 /* toss - 웹툰리스트 */   
 .wrap.toss.form.webtoon .wrap_inner{height: 100%;box-sizing: border-box;}
