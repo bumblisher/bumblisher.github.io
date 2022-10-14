@@ -441,6 +441,9 @@ body.bg_white{background: #fff;}
     .wrap.toss.detail .wrap_full{padding: 29px 40px}
     .wrap.toss.detail .wrap_full::before{width:600px;background-size: contain;margin-left: -216px;}
 
+    .wrap.toss.form .wrap_inner{padding-top: 70px;}
+    .wrap.toss.form.webtoon .box_webtoon{margin-top: 18px;}
+
     .wrap.toss.company .logo_samsung{top:30px}
     .wrap.toss.company .logo_toss{top:30px}
     .wrap.toss.company .grp_cont >div:first-child{flex:5}
@@ -472,7 +475,6 @@ body.bg_white{background: #fff;}
     .wrap.toss .main_txt .txt_tit{width:700px;font-size: 56px;margin-top: 10px;padding-top: 120px;}
     .wrap.toss .main_txt .txt01{font-size: 30px;}
     .wrap.toss .btn_toss.main{right:auto}
-.wrap.toss.form.webtoon .box_webtoon
     .wrap.toss.form.webtoon .wrap_inner{width:729px}
     .wrap.toss.form.webtoon .box_webtoon{width:729px;background-size: contain;padding-top: 120px;padding-left: 374px;}
 }
