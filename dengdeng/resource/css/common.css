@@ -644,7 +644,7 @@ body.bg_white{background: #fff;}
     .wrap.toss.form.webtoon .box_paging .swiper-button-next{position: absolute;right:15px;top:15px !important;width:28px !important;height:28px !important;margin: 0;background: url("../images/ico_sw_next.png");background-size: contain;}
     .wrap.toss.form.webtoon .box_paging{flex-direction: column;justify-content: center;height: 95px;}
     .wrap.toss.form.webtoon .box_paging .swiper-pagination{display: block;bottom:0px !important;width: auto !important;left:auto !important;margin: 0 auto 20px;order:-1;}
-    .wrap.toss.form.webtoon .box_paging .swiper-pagination2{height: 10px;}
+    .wrap.toss.form.webtoon .box_paging .swiper-pagination2{height: 11px;}
     
 
     .wrap.toss.form.webtoon.list .wrap_inner{width: auto;}
