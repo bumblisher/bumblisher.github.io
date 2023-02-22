@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="resource/css/reset.css">
+    <link rel="stylesheet" href="resource/css/common.css">
+    <script src="resource/js/jquery-3.4.1.min.js"></script>
+    <script src="resource/js/main.js"></script>
+    <title>PET PRO</title>
+</head>
+<body>
+    <div class="wrap">
+        <section class="sec01">
+            <div class="section_inner">
+                <h1 class="logo"><a href="#"></a></h1>
+                <p class="strong">펫보험은 <br>
+                    우리아이들을 지키는<br>
+                    필수적 선택입니다</p>
+                <p>어느 날 나에게 따뜻한 선물로<br>
+                    찾아온 우리 아이들<br>
+                    오래오래 우리와 함께 하기를</p>
+            </div>
+        </section>
+        <section class="sec02">
+            <div class="section_inner">
+                <h2>펫보험 종류.
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </h2>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p class="tit">우리아이 건강보험</p>
+                            <p class="txt">아이가 아플 때, 다쳤을 때<br>
+                                <span class="strong">동물병원 치료비 걱정 없이</span></p>
+                            <p>치료비 최대 80%까지 보장<br>
+                                치료비 걱정없는 보험</p>
+                            <button class="btn_cm">바로 "톡" 상담</button>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="tit">우리아이 양육자금 보험</p>
+                            <p class="txt">보호자가 불의의 사고로<br>
+                                <span class="strong">아이 혼자 남겨져 있을 때</span></p>
+                            <p>치료비 최대 80%까지 보장<br>
+                                치료비 걱정없는 보험</p>
+                            <button class="btn_cm">바로 "톡" 상담</button>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="tit">우리아이 의무보험</p>
+                            <p class="txt">우리아이 진짜 착한데 
+                                <span class="strong">맹견이라<br>의무보험 가입을 해야 할 때</span></p>
+                            <p>착한 우리 아이라도<br>
+                                타인을 위해 꼭 가입해야 하는 보험</p>
+                            <button class="btn_cm">바로 "톡" 상담</button>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                
+                <!-- Swiper JS -->
+                <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+            
+                <!-- Initialize Swiper -->
+                <script>
+                var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 'auto',
+                    initialSlide: 0,
+                    spaceBetween: 50,
+                    centeredSlides: true,
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    type : 'progressbar'
+                    },
+                });
+                </script>
+            </div>
+        </section>
+        <section class="sec03">
+            <div class="section_inner">
+                <h2>우리아이 보험료는?</h2>
+                <div class="box type01">
+                    <div>
+                        <p>우리아이 보험료를<br>
+                        <strong>문자, 카카오톡</strong>을 통해<br>
+                        알려드립니다</p>
+                        <p>아이의 정보를 입력해 주세요</p>
+                    </div>
+                    <div>
+                        <div class="grp_form">
+                            <p>사랑하는 우리 아이는</p>
+                            <div class="grp_input bot">
+                                <div class="grp_radio img">
+                                    <input type="radio" name="radio01" id="radio01">
+                                    <label for="radio01">강아지</label>
+                                    <input type="radio" name="radio01" id="radio02">
+                                    <label for="radio02">고양이</label>
+                                </div>
+                                <span>입니다.</span>
+                            </div>
+                        </div>
+                        <div class="grp_form">
+                            <p>성별은</p>
+                            <div class="grp_input">
+                                <div class="grp_radio">
+                                    <input type="radio" name="radio02" id="radio03">
+                                    <label for="radio03">남자아이</label>
+                                    <input type="radio" name="radio02" id="radio04">
+                                    <label for="radio04">여자아이</label>
+                                </div>
+                                <span>입니다.</span>
+                            </div>
+                        </div>
+                        <div class="grp_form">
+                            <p>생일은</p>
+                            <div class="grp_input">
+                                <input type="text" placeholder="예 : 180101 (YYMMDD)">
+                                <span>입니다.</span>
+                            </div>
+                        </div>
+                        <div class="grp_form">
+                            <p>품종은</p>
+                            <div class="grp_input">
+                                <div class="grp_sch">
+                                    <input type="text" placeholder="품종을 입력해 주세요.">
+                                    <button></button>
+                                </div>
+                                <span>입니다.</span>
+                            </div>
+                        </div>
+                        <button class="btn_cm">다음</button>
+                    </div>
+                </div>
+                <div class="box type02" style="display: none;">
+                    <p class="tit">보험선택</p>
+                    <p class="sub_tit">살펴보실 보험상품은?</p>
+                    <ul class="ul_radio ver1">
+                        <li>
+                            <input type="radio" name="sec03" id="radio05" checked>
+                            <label for="radio05">
+                                <p class="tit">우리아이 건강보험</p>
+                                <p>동물병원치료비<br>
+                                    최대 80% 보장</p>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="sec03" id="radio06">
+                            <label for="radio06">
+                                <p class="tit">우리아이 양육자금</p>
+                                <p>매월 50~150만원<br>
+                                    양육자금 준비</p>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="sec03" id="radio07">
+                            <label for="radio07">
+                                <p class="tit">우리아이 의무보험</p>
+                                <p>반려동물<br>
+                                    배상책임</p>
+                            </label>
+                        </li>
+                    </ul>
+                    <p class="sub_tit mt50">보험기간을 선택해 주세요</p>
+                    <ul class="ul_radio ver2">
+                        <li>
+                            <input type="radio" name="sec04" id="radio08" checked>
+                            <label for="radio08">
+                                <p>우리아이<br>
+                                    20살 때까지</p>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="sec04" id="radio09">
+                            <label for="radio09">
+                                <p>지금부터<br>
+                                    10년 동안</p>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="sec04" id="radio10">
+                            <label for="radio10">
+                                <p>지금부터<br>
+                                    5년 동안</p>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="sec04" id="radio11">
+                            <label for="radio11">
+                                <p>딱<br>
+                                    1년만</p>
+                            </label>
+                        </li>
+                    </ul>
+                    <button class="btn_cm">다음</button>
+                </div>
+                <div class="box type02" style="display: none;">
+                    <p class="tit">선호하는 보험사는 어디일까요?</p>
+                    <p class="sub_tit">보험사를 선택해 주세요</p>
+                    <ul class="ul_radio ver3">
+                        <li>
+                            <input type="radio" name="sec03-2" id="radio12" checked>
+                            <label for="radio12">
+                                <p>삼성화재</p>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="sec03-2" id="radio13">
+                            <label for="radio13">
+                                <p>DB손해보험</p>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="sec03-2" id="radio14">
+                            <label for="radio14">
+                                <p>현대해상보험</p>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="sec03-2" id="radio15">
+                            <label for="radio15">
+                                <p>메리츠손해보험</p>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="sec03-2" id="radio16">
+                            <label for="radio16">
+                                <p>좋은 보험을 펫프로에서 추천해 주세요.</p>
+                            </label>
+                        </li>
+                    </ul>
+                    <button class="btn_cm kakao" style="width: 170px;padding: 0;">바로 "톡" 상담</button>
+                    <button class="btn_cm">다음</button>
+                </div>
+                <div class="box type02" style="display: none;">
+                    <p class="tit">보호자님, 어디로 보내드릴까요?</p>
+                    <ul class="ul_radio ver4">
+                        <li>
+                            <input type="radio" name="sec03-3" id="radio18" checked>
+                            <label for="radio18">
+                                <p>카카오톡</p>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="sec03-3" id="radio19">
+                            <label for="radio19">
+                                <p>문자</p>
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="form">
+                        <div class="grp_form">
+                            <p>보호자님 성명</p>
+                            <div class="grp_input">
+                                <input type="text" placeholder="성명">
+                            </div>
+                        </div>
+                        <div class="grp_form">
+                            <p>보호자님 연락처</p>
+                            <div class="grp_input">
+                                <input type="text" placeholder="휴대폰 번호(‘-’없이)">
+                            </div>
+                        </div>
+                        <div class="grp_form">
+                            <div class="grp_check">
+                                <input type="checkbox" name="check01" id="check01">
+                                <label for="check01">개인정보 활용 동의</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn_cm kakao" style="width: 180px;padding: 0;">바로 "톡" 상담</button>
+                    <button class="btn_cm">신청하기</button>
+                </div>
+                <div class="box type02" style="display: none;">
+                    <p class="title"></p>
+                    <p><strong>김아영 보호자</strong>님<br>
+                        <strong>체리 아이</strong>의 <strong>보험료 설계</strong>를<br>
+                        신청하신 카카오톡 또는 문자로 발송해 드릴게요.
+                    </p>
+                    <p class="icon">상세한 사항은 알림톡으로<br> 
+                        다시 한 번 안내드리겠습니다.</p>
+                </div>
+            </div>
+        </section>
+        <section class="sec04">
+            <div class="section_inner">
+                <h2>PET PRO HELPER란?</h2>
+                <p>우리 <strong>HELPER 들은 아이들과 함께 생활하는 보호자들입니다.</strong><br>
+                    우리들이 <strong>펫보험을 소개하고 안내해 드립니다.</strong></p>
+                <div class="img"></div>
+                <p class="icon">우리들이 펫보험을 소개하는 이유</p>
+                <p>보호자들이 아이들 치료비 부분 때문에 아이들을 버리지 않기를 바라는 마음<br>
+                    아이들이 치료받을 때 <strong>치료비 걱정 없이 치료받기를 바라는 마음</strong>으로<br>
+                    보험판매의 목적보다는 <strong>아이들에게 맞는 보험</strong>을 찾아드리고<br>
+                    <strong>보험내용을 이해하기 쉽게 설명드리는 역할</strong>을 담당하고 있어요</p>
+            </div>
+        </section>
+        <section class="sec05">
+            <div class="section_inner">
+                <h2>보험으로 보상받는 강아지 질병</h2>
+                <div class="box_sch">
+                    <div class="grp_form">
+                        <div class="grp_input">
+                            <div class="grp_sch">
+                                <input type="text" placeholder="질병을 검색해 주세요.">
+                                <button></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grp_form">
+                        <div class="grp_input">
+                            <span>인기 검색어</span>
+                            <button class="btn_sp">관절염</button>
+                            <button class="btn_sp">심장사상충병</button>
+                            <button class="btn_sp">관절염</button>
+                        </div>
+                    </div>
+                    <ul class="box_sch_list">
+                        <li><a href="#"><em>간</em>부전</a></li>
+                        <li><a href="#"><em>간</em>염</a></li>
+                        <li><a href="#"><em>간</em>경화</a></li>
+                        <li><a href="#"><em>간</em>질</a></li>
+                        <li><a href="#">추<em>간</em>판탈출증</a></li>
+                    </ul>
+                </div>
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="/resource/images/bg_sec05.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/resource/images/bg_sec05-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/resource/images/bg_sec05-2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/resource/images/bg_sec05-3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- Initialize Swiper -->
+                <script>
+                var swiper = new Swiper(".mySwiper2", {
+                    slidesPerView: 'auto',
+                    initialSlide: 0,
+                    spaceBetween: 50,
+                    centeredSlides: true,
+                    pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    type : 'progressbar'
+                    },
+                });
+                </script>
+            </div>
+        </section>
+        <section class="sec06">
+            <div class="section_inner">
+                <h2>동물병원 치료비 보상문의</h2>
+                <p>아이들 보험을 가입하셨나요?<br>
+                    아이들 보험 청구하기 어려우시죠?</p>
+                <p class="txt">저희 PET PRO HELPER에게 문의주세요</p>
+                <div class="grp_form flex">
+                    <p>보호자 성명</p>
+                    <div class="grp_input">
+                        <input type="text" placeholder="성명">
+                    </div>
+                </div>
+                <div class="grp_form flex">
+                    <p>보호자 연락처</p>
+                    <div class="grp_input">
+                        <input type="text" placeholder="휴대폰 번호(‘-’없이)">
+                    </div>
+                </div>
+                <div class="grp_form flex">
+                    <p>아이 이름</p>
+                    <div class="grp_input">
+                        <input type="text" placeholder="이름 (예. 초코)">
+                    </div>
+                </div>
+                <div class="grp_form flex">
+                    <p>아이 나이</p>
+                    <div class="grp_input">
+                        <input type="text" placeholder="나이 (예. 3살)">
+                    </div>
+                </div>
+                <div class="grp_form flex">
+                    <p>아이 품종</p>
+                    <div class="grp_input">
+                        <div class="grp_sch">
+                            <input type="text" placeholder="품종을 입력해 주세요.">
+                            <button></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grp_form flex">
+                    <p>가입한 보험사</p>
+                    <div class="grp_input">
+                        <select name="" id="">
+                            <option value="">삼성화재</option>
+                            <option value="">교보생명</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="grp_form flex">
+                    <p>치료비 영수증 첨부하기</p>
+                    <div class="grp_input">
+                        <div class="grp_file">
+                            <input type="text">
+                            <button></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_btn">
+                    <button class="btn_cm kakao">바로 "톡" 상담</button>
+                    <button class="btn_cm">문의하기</button>
+                </div>
+            </div>
+        </section>
+        <section class="sec07">
+            <div class="section_inner">
+                <h2>PET PRO 홍보파트너</h2>
+                <p>강아지 보험 필요성을 함께 홍보 하고 있는<br>
+                    <strong>오프라인 상점 파트너</strong> 입니다<br>
+                    광고파트너를 신청해주시면 소정의 광고비를 드립니다</p>
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="grp_img">
+                                <img src="/resource/images/bg_sec07.png" alt="">
+                                <img src="/resource/images/bg_sec07-1.png" alt="">
+                            </div>
+                            <p>동그라운드</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="grp_img">
+                                <img src="/resource/images/bg_sec07-2.png" alt="">
+                                <img src="/resource/images/bg_sec07-3.png" alt="">
+                            </div>
+                            <p>마스코타펫</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="grp_img">
+                                <img src="/resource/images/bg_sec07.png" alt="">
+                                <img src="/resource/images/bg_sec07-1.png" alt="">
+                            </div>
+                            <p>동그라운드</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="grp_img">
+                                <img src="/resource/images/bg_sec07-2.png" alt="">
+                                <img src="/resource/images/bg_sec07-3.png" alt="">
+                            </div>
+                            <p>마스코타펫</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="grp_img">
+                                <img src="/resource/images/bg_sec07.png" alt="">
+                                <img src="/resource/images/bg_sec07-1.png" alt="">
+                            </div>
+                            <p>동그라운드</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="grp_img">
+                                <img src="/resource/images/bg_sec07-2.png" alt="">
+                                <img src="/resource/images/bg_sec07-3.png" alt="">
+                            </div>
+                            <p>마스코타펫</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="grp_img">
+                                <img src="/resource/images/bg_sec07.png" alt="">
+                                <img src="/resource/images/bg_sec07-1.png" alt="">
+                            </div>
+                            <p>동그라운드</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="grp_img">
+                                <img src="/resource/images/bg_sec07-2.png" alt="">
+                                <img src="/resource/images/bg_sec07-3.png" alt="">
+                            </div>
+                            <p>마스코타펫</p>
+                        </div>
+                    </div>
+                    <div class="grp_swbtn">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <!-- Initialize Swiper -->
+                <script>
+                var swiper = new Swiper(".mySwiper3", {
+                    slidesPerView: 4,
+                    slidesPerGroup:2,
+                    spaceBetween: 50,
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
+                </script>
+                <button class="btn_cm">신청하기</button>
+            </div>
+        </section>
+        <section class="sec08">
+            <div class="section_inner">
+                <h2>PET PRO PARTNER</h2>
+                <ul class="list_partner">
+                    <li><img src="/resource/images/img_partner01.png" alt=""></li>
+                    <li><img src="/resource/images/img_partner02.png" alt=""></li>
+                    <li><img src="/resource/images/img_partner03.png" alt=""></li>
+                    <li><img src="/resource/images/img_partner04.png" alt=""></li>
+                    <li><img src="/resource/images/img_partner05.png" alt=""></li>
+                    <li><img src="/resource/images/img_partner06.png" alt=""></li>
+                    <li><img src="/resource/images/img_partner07.png" alt=""></li>
+                    <li><img src="/resource/images/img_partner08.png" alt=""></li>
+                    <li><img src="/resource/images/img_partner09.png" alt=""></li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <div class="section_inner">
+                <ul class="sitemap">
+                    <li>
+                        <p class="tit">펫프로 소개</p>
+                        <ul>
+                            <li><a href="#">펫프로란?</a></li>
+                            <li><a href="#">사업영역</a></li>
+                            <li><a href="#">VISION</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="tit">펫프로 컨설팅</p>
+                        <ul>
+                            <li><a href="#">펫보험 영업센터 구축</a></li>
+                            <li><a href="#">펫보험 광고대행</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="tit">펫프로 교육센터</p>
+                        <ul>
+                            <li><a href="#">HELPER 교육</a></li>
+                            <li><a href="#">HELPER 지원하기</a></li>
+                            <li><a href="#">외부 파트너 교육</a></li>
+                            <li><a href="#">외부 파트너 지원하기</a></li>
+                            <li><a href="#">보험광고 무료지원받기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="tit">광고 PARTNER</p>
+                        <ul>
+                            <li><a href="#">소개자료</a></li>
+                            <li><a href="#">파트너 시작하기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="talk"></button>
+                <div class="f_banner">
+                    <p class="tit">배너공간 배너공간</p>
+                    <p>배너공간 배너공간</p>
+                </div>
+                <div class="info">
+                    <p class="f_logo">㈜삼성 펫프로 | 대표이사 주태성 | 사업자등록번호 : 351-86-02778</p>
+                    <p>보험대리점명 : (주)삼성펫프로 / 보험대리점등록번호 : 제2023010060호<br><br>
+                        주소 : 인천광역시 연수구 아트센터대로  87 402동 508호<br>
+                        광고센터 : 인천광역시 연수구 아트센터대로 131 402동 307호<br><br>
+                        <strong>상담센터 : 실시간 채팅</strong> 또는 <strong>전화상담</strong> 평일 09:00 ~ 17: 00</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
