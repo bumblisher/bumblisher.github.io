@@ -47,8 +47,6 @@ footer, header, hgroup, menu, nav, section {
 }
 html, body {
 	height:100%;
-	-webkit-transform: translateZ(0);
-	-webkit-overflow-scrolling: touch;
 }
 ol, ul {
 	list-style: none;
