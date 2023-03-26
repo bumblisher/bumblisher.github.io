@@ -36,10 +36,19 @@ $(document).ready(function() {
         $(this).parent().addClass("on")
     
     });
-    $('.btn_tab').on('click',function(){
+    $('.btn_menu').on('click',function(){
         
+        $('aside').toggleClass("hide");
+    });
+    
+
+    $('.btn_tab').on('click',function(){
         $('.btn_tab').removeClass("on");
         $(this).addClass("on")
-    
     });
+    $('.tab_cont_list button').on('click',function(){
+        $('.tab_cont_list li').removeClass("on");
+        $(this).parent().addClass("on")
+    });
+    
 });

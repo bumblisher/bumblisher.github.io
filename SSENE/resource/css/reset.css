@@ -12,6 +12,12 @@
 	font-weight: 600;
     src : url(../font/Pretendard-SemiBold.woff2) format("woff2");
 }
+@font-face{
+    font-family:'Pretendard';
+    font-style: 500;
+	font-weight: 500;
+    src : url(../font/Pretendard-Medium.woff2) format("woff2");
+}
 
 @font-face{
     font-family:'Pretendard';
@@ -49,6 +55,7 @@ time, mark, audio, video, button, input, select, textarea {
 	letter-spacing: -0.2px;
 	vertical-align: baseline;
 	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Pretendard !important;
+	font-weight: 500;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
