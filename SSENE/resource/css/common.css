@@ -269,7 +269,7 @@ header > .right .btn_noti.on{background: url(../images/btn_noti_on.png) center n
 
 
 body.login{background-color: #E03122;}
-body.login .wrap{height: auto;}
+body.login .wrap{height: auto;min-width:1600px;}
 .wrap_login{display: flex;position: relative;width: 1500px;height: 900px;margin: 60px auto ;background:#fff;border-radius: 35px;box-sizing: border-box;padding-right: 150px;}
 .wrap_login h1{width: 215px;height: 60px;background: url(../images/logo_login.png);margin: 70px auto 30px;}
 .img_login{flex:1;background:url(../images/img_login01.png) no-repeat center bottom;text-align: center;}
