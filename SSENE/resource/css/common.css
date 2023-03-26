@@ -181,6 +181,7 @@ header > .right .btn_noti.on{background: url(../images/btn_noti_on.png) center n
 .grp_form .cont.inner .grp_flex{width: 100%;}
 .grp_form .cont.inner .grp_flex .tit+*{margin-left: 0;}
 .grp_form .cont.inner .grp_flex+.grp_flex{margin-top: 10px;}
+.grp_form .cont.noti{border:0}
 
 .grp_form.sch{padding-bottom: 30px;border-bottom: 1px solid #DEE2E6;margin-bottom: 30px;}
 .grp_form.sch .tit{width: auto;margin-right: 20px;}
@@ -213,6 +214,12 @@ header > .right .btn_noti.on{background: url(../images/btn_noti_on.png) center n
 .box_btn .btn_cm{height: 43px;padding: 0 15px;}
 .box_btn button + button{margin-left: 15px;}
 
+.box_noti{padding: 15px;background: #FFF3BF;border-radius: 10px;}
+.box_noti .tit_noti{font-size: 15px;font-weight: 700;color:#495057;}
+.box_noti ul{margin-top: 10px;}
+.box_noti ul li{position: relative;padding-left:10px;font-size: 13px;font-weight: 700;line-height: 140%;color:#495057;}
+.box_noti ul li:before{content: '';display: inline-block;width: 3px;height: 3px;position: absolute;left:1px;top:7px;background: #495057;border-radius: 2px;}
+
 .box_top{display: flex;align-items: center;padding: 10px 15px;background: #F1F3F5;margin-bottom: 30px;}
 .box_top .tit{font-size: 18px;font-weight: 600;color:#212529;}
 .box_top .right{margin-left: auto;}
@@ -238,6 +245,8 @@ header > .right .btn_noti.on{background: url(../images/btn_noti_on.png) center n
 .box_board table td button{padding: 5 8px;font-size: 13px;font-weight: 500;color:#fff;background: #343A40;border-radius: 4px;}
 .box_board table td button.blue{background: #4C6EF5;}
 .box_board table td > a{color:#212529}
+.box_board table th input[type=checkbox],
+.box_board table td input[type=checkbox]{width: 16px;height: 16px;}
 .box_board table th.tac,
 .box_board table td.tac,
 .box_board table.tac th,
