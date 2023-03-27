@@ -270,7 +270,7 @@ header > .right .btn_noti.on{background: url(../images/btn_noti_on.png) center n
 
 body.login{background-color: #E03122;}
 body.login .wrap{position: relative;padding: 0 20px;}
-.wrap_login{display: flex;position: relative;max-width: 1500px;min-width: 1200px;width: 90%;height: 88%;min-height: 750px;max-height: 900px;margin: 30px auto 0px;background:#fff;border-radius: 35px;box-sizing: border-box;}
+.wrap_login{display: flex;position: relative;max-width: 1500px;min-width: 1200px;width: 94%;height: 88%;min-height: 750px;max-height: 900px;margin: 30px auto 0px;background:#fff;border-radius: 35px;box-sizing: border-box;}
 .wrap_login h1{width: 215px;height: 60px;background: url(../images/logo_login.png);margin: 70px auto 30px;}
 .wrap_login:after{content: "";display: block;position: absolute;right: -20px;width: 20px;height: 20px;}
 .img_login{flex:1 1 auto;background:url(../images/img_login01.png) no-repeat center bottom;text-align: center;}
