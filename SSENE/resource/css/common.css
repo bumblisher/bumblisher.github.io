@@ -97,7 +97,7 @@ header > .right .btn_noti.on{background: url(../images/btn_noti_on.png) center n
 .tab_main .tit_main h2{font-size: 18px;font-weight: 600;color:#212529;margin-right: 10px;}
 .tab_main .tit_main p{font-size: 12px;font-weight: 500;color:#495057;}
 .tab_main .tit_main .right{margin-left: auto;display: inline-flex;align-items: center;}
-.tab_main .tit_main .right button{background: #212529;color:#fff;height: 45px;padding: 0 20px;font-size: 14px;}
+.tab_main .tit_main .right button{background: #212529;color:#fff;height: 45px;padding: 0 20px;font-size: 14px;border-radius: 6px;}
 
 .tab_cont_list{display: flex;align-items: center;margin-top: 15px;}
 .tab_cont_list li{display: inline-flex;align-items: center;}

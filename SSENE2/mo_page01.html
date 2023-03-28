@@ -11,10 +11,22 @@
     <title>SSENE</title>
 </head>
 
-<body>
+<body class="mob">
     <div class="wrap">
-        <aside>
+        <header>
             <h1 class="logo"><a href="#">SSENE</a></h1>
+            <div class="right">
+                <button class="btn_noti">알림</button>
+                <button class="btn_aside"></button>
+            </div>
+        </header>
+        <aside>
+            <div class="aside_info">
+                <p><span class="name">최은희 (A등급)님</span>
+                    <span>이 로그인하셨습니다 </span></p>
+                <p>접속IP : 218.237.65.1</p>
+                <button class="btn_close"></button>
+            </div>
             <p class="tit">Notice</p>
             <ul class="nav_noti">
                 <li><a href="#">최근 공지 1</a></li>
@@ -64,35 +76,22 @@
                     </ul>
                 </li>
             </ul>
+            <div class="grp_botmenu">
+                <button>공지사항</button>
+                <button>로그아웃</button>
+                <p class="txt_bot">© SSENE Corp.</p>
+            </div>
         </aside>
+        <div class="tit_main">
+            <h2>광고소재관리</h2>
+            <p>설명글을 입력해 주세요.</p>
+            <div class="right">
+                <button>새로 등록하기</button>
+            </div>
+        </div>
         <div class="container">
-            <header>
-                <button class="btn_menu"></button>
-                <p>SSENE POTAL</p>
-                <p>접속IP : 218.237.65.1</p>
-                <div class="right">
-                    <span class="name">최은희 (A등급)님</span>
-                    <span>이 로그인하셨습니다 </span>
-                    <div class="grp_topmenu">
-                        <button class="btn_noti">알림</button>
-                        <button>공지사항</button>
-                        <button>로그아웃</button>
-                    </div>
-                </div>
-            </header>
+            
             <div class="tab_main">
-                <ul class="tab_main_list">
-                    <li><a href="#">타이틀</a><button class="close"></button></li>
-                    <li><a href="#">타이틀</a><button class="close"></button></li>
-                    <li><a href="#" class="on">타이틀</a><button class="close"></button></li>
-                </ul>
-                <div class="tit_main">
-                    <h2>광고소재관리</h2>
-                    <p>설명글을 입력해 주세요.</p>
-                    <div class="right">
-                        <button>새로 등록하기</button>
-                    </div>
-                </div>
                 <ul class="tab_cont_list">
                     <li class="on"><button>광고소재<span>3</span></button></li>
                     <li><button>리워드 상품<span>3</span></button></li>
@@ -201,6 +200,7 @@
                 </div>
             </div>
         </div>
+        <div class="dim"></div>
     </div>
 </body>
 
