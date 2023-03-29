@@ -414,9 +414,13 @@ body.welcome{background: #E03122 url(../images/logo_welcome.png) no-repeat cente
 .mob .grp_form .cont textarea{flex:none}
 .mob .grp_form .cont .btn_sch{height: 50px;width: 100%;margin-left: 0;}
 
+.mob .tbl_list > li{margin-bottom: 15px;padding-bottom: 15px;border-bottom:1px solid #DEE2E6}
 .mob .tbl_list .grp_flex label{font-size: 15px;color: #495057;}
 .mob .tbl_list .grp_flex button{padding: 5px;font-size: 11px;font-weight: 500;color:#fff;background: #343A40;border-radius: 4px;}
 .mob .tbl_list .grp_flex button.blue{background: #4C6EF5;}
-.mob .tbl_list .grp_line{display: flex;align-items: center;color:#212529;font-size: 13px;margin-top: 10px;}
+.mob .tbl_list .grp_line{display: flex;align-items: center;font-size: 13px;margin-top: 10px;}
 .mob .tbl_list .grp_line .tit{font-size: 14px;color:#4C6EF5;}
+.mob .tbl_list .grp_line span{font-weight: 500;color:#212529;}
+.mob .tbl_list .grp_line span+span{margin-left: 8px;position: relative;}
+.mob .tbl_list .grp_line span+span::before{content: '';display: inline-block;border-left: 1px solid #868E96;height: 8px;margin-right: 8px;}
 .mob .pagination_sic{margin-top: 0;}
