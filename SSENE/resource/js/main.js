@@ -51,4 +51,14 @@ $(document).ready(function() {
         $(this).parent().addClass("on")
     });
     
+
+    //  모바일
+    $('.btn_aside').on('click',function(){
+        $('body').addClass("menu_on");
+    });
+    $('.aside_info .btn_close').on('click',function(){
+        $('body').removeClass("menu_on");
+    });
+    
 });
+
