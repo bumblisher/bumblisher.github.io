@@ -208,7 +208,8 @@ ul.grp_check{display: flex;}
 .wrap.mob .grp_check label:before{width: 25px;height: 25px;border-radius: 6px;}
 .wrap.mob .grp_check label:after{left: 6px;top: 9px;width: 10px;height: 5px;}
 .wrap.mob .grp_input textarea{font-size: 12px;padding: 13px 15px;}
-.wrap.mob .grp_input select{-webkit-appearance: none;}
+.wrap.mob .grp_input input[type=text],
+.wrap.mob .grp_input select{font-size: 14px;-webkit-appearance: none;-moz-appearance: none;appearance: none;}
 
 
 .wrap.mob .box_layout{flex-direction: column;}
