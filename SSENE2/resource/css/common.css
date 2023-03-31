@@ -134,7 +134,8 @@ header > .right .btn_noti.on{background: url(../images/btn_noti_on.png) center n
 .wrap input[type="password"]:read-only,
 .wrap input[type="password"]:disabled,
 .wrap textarea:read-only,
-.wrap textarea:disabled{background-color: #E9ECEF !important;color:#ADB5BD}
+.wrap textarea:disabled{background-color: #E9ECEF !important;color:#ADB5BD;opacity: 1;}
+.wrap select:disabled{background-image: url(../images/ico_select_dis.png);}
 .wrap .btn_cm { flex: none;height: 40px; font-size: 14px;font-weight: 500;padding: 0px 10px;color: #000; background: #212529; border-radius: 6px;color:#fff} 
 .wrap .btn_cm.gray{background-color:#DEE2E6;color:#495057}
 .wrap .btn_cm.red{background-color:#E03122;color:#fff}
@@ -198,8 +199,7 @@ header > .right .btn_noti.on{background: url(../images/btn_noti_on.png) center n
 .grp_form.sch .btn_sch{margin-left: 15px;background: #212529;color:#fff;font-size: 14px;font-weight: 500;width: 100px;height: 40px;border-radius: 6px;}
 
 .grp_form h3{font-size: 18px;color:#495057;margin-bottom: 30px;font-weight: 700;}
-.grp_form h4{font-size: 15px;color:#495057;margin: 15px 0 10px;font-weight: 700;}
-
+.grp_form h4{font-size: 16px;color:#495057;margin: 25px 0 10px;font-weight: 700;}
 .grp_flex { display: flex; align-items: center; flex: 1; }
 .grp_flex[style*="width"]{flex:none}
 .grp_flex .red { flex:1; color: #E53939; } 
@@ -252,6 +252,13 @@ header > .right .btn_noti.on{background: url(../images/btn_noti_on.png) center n
 .box_board .board_tit .right button.red{border:0;background: #E03122;color:#fff;}
 .box_board .board_tit .right button+button{margin-left: 10px;}
 
+.box_board .board_box{display: flex;align-items: center;justify-content: center;border:3px solid #CED4DA;padding: 30px;flex-direction: column;margin-top: 15px;}
+.box_board .board_box > div{display: flex;align-items: center;width: 330px;}
+.box_board .board_box > div+div{margin-top: 15px;}
+.box_board .board_box > div p{font-size: 15px;font-weight: 500;}
+.box_board .board_box > div .tit{font-size: 18px;font-weight: 700;flex:none;margin-right: auto;}
+.box_board .board_box > div .red{font-size: 21px;font-weight: 700;color:#E03122;margin-right: 3px;}
+
 .box_board table {width: 100%;margin-top: 15px;} 
 .box_board table tbody tr:hover td { background-color: #e1ecf8; } 
 .box_board table th:first-child,
@@ -271,6 +278,7 @@ header > .right .btn_noti.on{background: url(../images/btn_noti_on.png) center n
 .box_board table td.tac,
 .box_board table.tac th,
 .box_board table.tac td{text-align: center;}
+.box_board table td.red{color:#E03122}
 .box_board table tbody:empty:before{position: absolute;left: 0;top: 0;content:'조회된 데이터가 없습니다.';font-size: 13px;font-weight: 500;color:#868E96;display: flex;align-items: center;justify-content: center;width: 100%;height: 100%;}
 .box_board table tbody:empty{position: relative;height: 200px;border: 1px solid #DEE2E6;}
 .box_board + .box_btn{margin-top: 50px;}

@@ -84,22 +84,28 @@
                 <ul class="tab_main_list">
                     <li><a href="#">타이틀</a><button class="close"></button></li>
                     <li><a href="#">타이틀</a><button class="close"></button></li>
-                    <li><a href="#" class="on">광고상품 변경</a><button class="close"></button></li>
+                    <li><a href="#" class="on">광고정산</a><button class="close"></button></li>
                 </ul>
                 <div class="tit_main">
-                    <h2>광고상품 변경</h2>
+                    <h2>광고정산</h2>
                     <p>설명글을 입력해 주세요.</p>
-                    <div class="right">
-                        <button>새로 등록하기</button>
-                    </div>
                 </div>
                 <div class="content">
                     <div class="grp_form sch">
                         <div class="cont">
-                            <p class="tit">광고주 찾기</p>
+                            <p class="tit">생성일</p>
                             <div class="grp_flex">
+                                <div class="grp_cal">
+                                    <input type="text" name="" id="">
+                                    <button></button>
+                                </div>
+                                <span class="">-</span>
+                                <div class="grp_cal">
+                                    <input type="text" name="" id="">
+                                    <button></button>
+                                </div>
                                 <select type="text" style="width: 270px;">
-                                    <option value="">전체</option>
+                                    <option value="">광고주명</option>
                                     <option value="">option01</option>
                                     <option value="">option02</option>
                                     <option value="">option03</option>
@@ -111,7 +117,17 @@
                     </div>
                     <div class="box_board">
                         <div class="board_tit">
-                            <p>목록 (총 <span>3</span> 개)</p>
+                            <p>목록 (총 <span>4</span> 개)</p>
+                        </div>
+                        <div class="board_box">
+                            <div>
+                                <p class="tit">광고수익 총 지급액</p>
+                                <p><span class="red">1,000,000</span>원</p>
+                            </div>
+                            <div>
+                                <p class="tit">미처리 지급액</p>
+                                <p><span class="red">300,000</span>원</p>
+                            </div>
                         </div>
                         <table>
                             <colgroup>
@@ -123,54 +139,59 @@
                                 <col>
                                 <col>
                                 <col>
-                                <col>
                             </colgroup>
                             <thead>
                                 <tr>
                                     <th><input class="" type="checkbox"></th>
-                                    <th>아이디</th>
-                                    <th>성명</th>
-                                    <th>광고상품1</th>
-                                    <th>광고상품1</th>
-                                    <th>광고상품1</th>
-                                    <th>연락처</th>
-                                    <th>등록</th>
-                                    <th>변경</th>
+                                    <th>생성일</th>
+                                    <th>배정일</th>
+                                    <th>CRM결과</th>
+                                    <th>광고주명</th>
+                                    <th>광고소재</th>
+                                    <th>광고수익</th>
+                                    <th>지급일</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td><input class="" type="checkbox"></td>
-                                    <td>testuser10</td>
-                                    <td>삼성화재</td>
+                                    <td>2023-03-23 13:22:01</td>
+                                    <td>2023-03-23 13:22:01</td>
+                                    <td>CRM</td>
+                                    <td>본사</td>
                                     <td>펫프로114 자체광고</td>
-                                    <td>펫프로114 자체광고</td>
-                                    <td>펫프로114 자체광고</td>
-                                    <td>010-3030-3030</td>
-                                    <td>등록</td>
-                                    <td><button class="blue">변경</button></td>
+                                    <td>10,000원</td>
+                                    <td class="red">2023-03-30</td>
                                 </tr>
                                 <tr>
                                     <td><input class="" type="checkbox"></td>
-                                    <td>testuser10</td>
-                                    <td>삼성화재</td>
+                                    <td>2023-03-23 13:22:01</td>
+                                    <td>2023-03-23 13:22:01</td>
+                                    <td>CRM</td>
+                                    <td>본사</td>
                                     <td>펫프로114 자체광고</td>
-                                    <td>펫프로114 자체광고</td>
-                                    <td>펫프로114 자체광고</td>
-                                    <td>010-3030-3030</td>
-                                    <td>등록</td>
-                                    <td><button class="blue">변경</button></td>
+                                    <td>10,000원</td>
+                                    <td class="red">2023-03-30</td>
                                 </tr>
                                 <tr>
                                     <td><input class="" type="checkbox"></td>
-                                    <td>testuser10</td>
-                                    <td>삼성화재</td>
+                                    <td>2023-03-23 13:22:01</td>
+                                    <td>2023-03-23 13:22:01</td>
+                                    <td>CRM</td>
+                                    <td>본사</td>
                                     <td>펫프로114 자체광고</td>
+                                    <td>10,000원</td>
+                                    <td class="red">2023-03-30</td>
+                                </tr>
+                                <tr>
+                                    <td><input class="" type="checkbox"></td>
+                                    <td>2023-03-23 13:22:01</td>
+                                    <td>2023-03-23 13:22:01</td>
+                                    <td>CRM</td>
+                                    <td>본사</td>
                                     <td>펫프로114 자체광고</td>
-                                    <td>펫프로114 자체광고</td>
-                                    <td>010-3030-3030</td>
-                                    <td>등록</td>
-                                    <td><button class="blue">변경</button></td>
+                                    <td>10,000원</td>
+                                    <td class="red">2023-03-30</td>
                                 </tr>
                             </tbody>
                         </table>
