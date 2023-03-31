@@ -344,6 +344,7 @@ body.login .wrap{position: relative;padding: 0 20px;}
 
 .popup { display: none; width: 540px; position: fixed; left: 50%; top: 50%; background: #fff; z-index: 10001;box-shadow: 0px 4px 30px 10px rgba(0, 0, 0, 0.1); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); border-radius: 10px; overflow: hidden; } 
 .popup .pop_header { position: relative; padding:30px 20px;box-sizing: border-box;} 
+.popup .pop_header.pb0{padding-bottom: 0;}
 .popup .pop_header h2 { color: #212529; font-size: 18px; text-align: center;font-weight: 700;} 
 .popup .pop_header .btn_close { position: absolute; top: 15px; right: 20px; width: 30px; height: 30px; background: transparent; } 
 .popup .pop_header .btn_close:before,
@@ -358,7 +359,11 @@ body.login .wrap{position: relative;padding: 0 20px;}
 .popup .pop_cont.pd0{padding: 0;}
 .popup .pop_cont .txtbox p{font-size:16px;line-height: 24px;color: #525252;}
 .popup .pop_cont .txtbox p.semibold{font-weight: 600;margin-top: 15px;}
+.popup .pop_cont .txt_sub{font-size: 15px;line-height: 140%;color:#868E96;}
 .popup .pop_cont > select{width: 100%;margin-bottom: 10px;font-size: 15px;height: 57px;}
+.popup .pop_cont .box_red{display: inline-block;padding: 10px 20px;border:2px solid #E03122;border-radius: 6px;margin: 15px auto;}
+.popup .pop_cont .box_red p{color:#343A40;line-height: 140%;font-weight: 500;font-size: 15px;}
+.popup .pop_cont .box_red .red{color:#E03122;font-weight: 700;margin-bottom: 5px;;}
 .box_list{border:1px solid #CED4DA;border-radius: 10px;padding: 20px 30px;margin-top: 20px;}
 .box_list li{display: flex;align-items: center;}
 .box_list li+li{margin-top: 20px;}
