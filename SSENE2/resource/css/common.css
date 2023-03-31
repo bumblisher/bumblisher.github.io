@@ -445,20 +445,27 @@ body.welcome{background: #E03122 url(../images/logo_welcome.png) no-repeat cente
 .mob .tab_cont_list li button{flex:1;padding:0;height: 48px;font-size: 14px;;}
 .mob .tab_cont_list li button span{margin-left: 5px;}
 
+.mob .box_form .grp_form .cont .grp_flex{width: 100%;}
 
 .mob .grp_form.sch{padding: 0;margin: 0;border: 0;}
 .mob .grp_form.sch .cont + .cont{margin-top: 10px;}
 .mob .grp_form .cont{flex-direction: column;align-items: flex-start;flex:none}
 .mob .grp_form .cont + .cont{margin-top: 15px;}
-.mob .grp_form .cont .tit{margin-bottom: 10px;}
+.mob .grp_form .cont .tit{margin-bottom: 10px;width: auto;}
 .mob .grp_form .cont .grp_cal{flex:1;width: auto;}
-.mob .grp_form .cont input[type="text"],
-.mob .grp_form .cont input[type="password"],
-.mob .grp_form .cont select,
-.mob .grp_form .cont textarea{flex:none}
+.mob .grp_form .cont > input[type="text"],
+.mob .grp_form .cont > input[type="password"],
+.mob .grp_form .cont > select,
+.mob .grp_form .cont > textarea{flex:none}
 .mob .grp_form .cont .btn_sch{height: 50px;width: 100%;margin-left: 0;}
 .mob .grp_form .cont:last-child{border-bottom: 0;padding-bottom: 0;}
+.mob .grp_form .cont.inner .tit{margin-top: 15px;}
+.mob .grp_form .cont.inner .tit:first-child{margin-top: 0;}
+.mob .grp_form h4{text-align: center;}
 
+.mob .box_top{padding: 5px 10px;}
+.mob .box_top .tit{font-size: 16px;}
+.mob .box_top .btn_cm{width: 80px;height: 38px;font-size: 15px;}
 .mob .box_btn{margin-top: 30px;}
 
 .mob .tbl_list > li{margin-bottom: 15px;padding-bottom: 15px;border-bottom:1px solid #DEE2E6}
