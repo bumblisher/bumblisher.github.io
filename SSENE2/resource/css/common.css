@@ -463,15 +463,26 @@ body.welcome{background: #E03122 url(../images/logo_welcome.png) no-repeat cente
 .mob .grp_form .cont.inner .tit:first-child{margin-top: 0;}
 .mob .grp_form h4{text-align: center;}
 
-.mob .box_top{padding: 5px 10px;}
+.mob .box_top{padding: 5px 10px;min-height: 48px;}
 .mob .box_top .tit{font-size: 16px;}
 .mob .box_top .btn_cm{width: 80px;height: 38px;font-size: 15px;}
 .mob .box_btn{margin-top: 30px;}
+.mob .box_top .back{font-size: 16px;}
+
+.mob .board_tit { display: flex; align-items: center;min-height: 33px;border-bottom:1px solid #DEE2E6;margin: -10px -12px 10px;padding: 0 12px 5px;box-sizing: border-box;} 
+.mob .board_tit p{font-size: 14px;color:#212529;font-weight: 600;}
+.mob .board_tit p span { color: #E03122; font-weight: 600; } 
+.mob .board_tit .right{display: flex;align-items: center;margin-left: auto;}
+.mob .board_tit .right button{height: 36px;padding: 10px;color:#212529;font-weight: 600;font-size: 13px;border:1px solid #DEE2E6;background: #fff;}
+.mob .board_tit .right button.red{border:0;background: #E03122;color:#fff;}
+.mob .board_tit .right button+button{margin-left: 10px;}
 
 .mob .tbl_list > li{margin-bottom: 15px;padding-bottom: 15px;border-bottom:1px solid #DEE2E6}
 .mob .tbl_list .grp_flex label{font-size: 15px;color: #495057;}
-.mob .tbl_list .grp_flex button{padding: 5px;font-size: 11px;font-weight: 500;color:#fff;background: #343A40;border-radius: 4px;}
+.mob .tbl_list .grp_flex button,
+.mob .tbl_list .grp_flex .badge{padding: 5px;font-size: 11px;font-weight: 500;color:#fff;background: #343A40;border-radius: 4px;}
 .mob .tbl_list .grp_flex button.blue{background: #4C6EF5;}
+.mob .tbl_list .grp_flex .badge{background: #E03122;}
 .mob .tbl_list .grp_line{display: flex;align-items: center;font-size: 13px;margin-top: 10px;}
 .mob .tbl_list .grp_line .tit{font-size: 14px;color:#4C6EF5;}
 .mob .tbl_list .grp_line span{font-weight: 500;color:#212529;}
