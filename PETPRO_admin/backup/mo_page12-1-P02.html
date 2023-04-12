@@ -1,0 +1,213 @@
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resource/css/reset.css">
+    <link rel="stylesheet" href="resource/css/common.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="resource/js/main.js"></script>
+    <title>PETPRO</title>
+</head>
+
+<body class="mob">
+    <div class="wrap">
+        <header>
+            <h1 class="logo"><a href="#">PETPRO</a></h1>
+            <div class="right">
+                <button class="btn_noti">알림</button>
+                <button class="btn_aside"></button>
+            </div>
+        </header>
+        <aside>
+            <div class="aside_info">
+                <p><span class="name">최은희 (A등급)님</span>
+                    <span>이 로그인하셨습니다 </span></p>
+                <p>접속IP : 218.237.65.1</p>
+                <button class="btn_close"></button>
+            </div>
+            <p class="tit">Notice</p>
+            <ul class="nav_noti">
+                <li><a href="#">최근 공지 1</a></li>
+                <li><a href="#">최근 공지 2</a></li>
+            </ul>
+            <p class="tit">Menu</p>
+            <ul class="nav_menu">
+                <li class="active">
+                    <a href="#">광고파트너</a>
+                    <ul>
+                        <li class="on"><a href="#">광고소재 관리</a></li>
+                        <li><a href="#">파트너 정산</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">광고주</a>
+                    <ul>
+                        <li><a href="#">광고주 소재등록</a></li>
+                        <li><a href="#">광고현황</a></li>
+                        <li><a href="#">광고비결제</a></li>
+                        <li><a href="#">광고비정산</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">대행사</a>
+                    <ul>
+                        <li><a href="#">대행사정산</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">상담CRM</a>
+                    <ul>
+                        <li><a href="#">상담CRM</a></li>
+                        <li><a href="#">배정하기</a></li>
+                        <li><a href="#">배정결과</a></li>
+                        <li><a href="#">카카오톡 알림톡</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">DATA 관리</a>
+                    <ul>
+                        <li><a href="#">회원등록</a></li>
+                        <li><a href="#">광고소재</a></li>
+                        <li><a href="#">마케팅 DB</a></li>
+                        <li><a href="#">RCS 현황</a></li>
+                        <li><a href="#">알림톡</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="grp_botmenu">
+                <button>공지사항</button>
+                <button>로그아웃</button>
+                <p class="txt_bot">© PETPRO Corp.</p>
+            </div>
+        </aside>
+        <div class="tit_main">
+            <div>
+                <h2>광고비 충전하기</h2>
+                <p>설명글을 입력해 주세요.</p>
+            </div>
+            <div class="right">
+                <button>새로 등록하기</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="tab_main">
+                <div class="content">
+                    <div class="grp_form sch">
+                        <div class="cont">
+                            <select type="text">
+                                <option value="">광고주명</option>
+                                <option value="">option01</option>
+                                <option value="">option02</option>
+                                <option value="">option03</option>
+                            </select>
+                        </div>
+                        <div class="cont">
+                            <input type="text">
+                        </div>
+                        <div class="cont">
+                            <button class="btn_sch">검색하기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="box_form">
+                        <div class="grp_form">
+                            <h3>광고주 정보</h3>
+                            <div class="cont">
+                                <p class="tit">광고주명</p>
+                                <input type="text">
+                            </div>
+                            <div class="cont">
+                                <p class="tit">광고주 등록일</p>
+                                <input type="text">
+                            </div>
+                            <div class="cont">
+                                <p class="tit">광고주 연락처</p>
+                                <input type="text">
+                            </div>
+                            <div class="cont">
+                                <p class="tit">광고상품</p>
+                                <input type="text">
+                            </div>
+                            <h4>광고 파트너</h4>
+                            <div class="cont inner">
+                                <p class="tit">선택 1</p>
+                                <select type="text">
+                                    <option value="">선택</option>
+                                    <option value="">option01</option>
+                                    <option value="">option02</option>
+                                    <option value="">option03</option>
+                                </select>
+                                <p class="tit">선택 2</p>
+                                <select type="text">
+                                    <option value="">선택</option>
+                                    <option value="">option01</option>
+                                    <option value="">option02</option>
+                                    <option value="">option03</option>
+                                </select>
+                                <p class="tit">선택 3</p>
+                                <select type="text">
+                                    <option value="">선택</option>
+                                    <option value="">option01</option>
+                                    <option value="">option02</option>
+                                    <option value="">option03</option>
+                                </select>
+                            </div>
+                            <h3>결제 정보 입력</h3>
+                            <div class="cont inner">
+                                <p class="tit">광고비 충전액</p>
+                                <select type="text">
+                                    <option value="">선택</option>
+                                    <option value="">option01</option>
+                                    <option value="">option02</option>
+                                    <option value="">option03</option>
+                                </select>
+                                <select type="text">
+                                    <option value="">선택</option>
+                                    <option value="">option01</option>
+                                    <option value="">option02</option>
+                                    <option value="">option03</option>
+                                </select>
+                            </div>
+                            <div class="cont">
+                                <p class="tit">할부기간</p>
+                                <select type="text">
+                                    <option value="">선택</option>
+                                    <option value="">option01</option>
+                                    <option value="">option02</option>
+                                    <option value="">option03</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_btn ver">
+                    <p>선택하신 결제정보내역을 광고주의 연락처로<br> 결제링크를 발송드립니다.</p>
+                    <p class="red">문의사항은 1544-9474로 연락바랍니다.</p>
+                    <button class="btn_cm">등록하기</button>
+                </div>
+            </div>
+        </div>
+        <div class="popup on" style="width:344px;">
+            <div class="pop_cont">
+                <ul class="box_list">
+                    <li><span class="tit">광고주 :</span><span>광고주</span></li>
+                    <li><span class="tit">연락처 :</span><span>010-3030-3030</span></li>
+                    <li><span class="tit">충전액 :</span><span>500,000원</span></li>
+                    <li><span class="tit">할부기간 :</span><span>일시불</span></li>
+                </ul>
+                <p class="txt tac">위 내용으로 결제링크<br> 
+                    <strong class="red">발송이 실패</strong>되었습니다.</p>
+            </div>
+            <div class="pop_footer">
+                <button class="btn_cm gray">닫기</button>
+                <button class="btn_cm red">재발송하기</button>
+            </div>
+        </div>
+        <div class="dim"></div>
+    </div>
+</body>
+
+</html>
