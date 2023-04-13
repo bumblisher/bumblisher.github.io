@@ -56,31 +56,25 @@
                 <ul class="tab_main_list">
                     <li><a href="#">타이틀</a><button class="close"></button></li>
                     <li><a href="#">타이틀</a><button class="close"></button></li>
-                    <li><a href="#" class="on">광고비 관리</a><button class="close"></button></li>
+                    <li><a href="#" class="on">마케팅 지원</a><button class="close"></button></li>
                 </ul>
                 <div class="tit_main">
-                    <h2>광고비 관리</h2>
+                    <h2>마케팅 지원</h2>
                     <p>설명글을 입력해 주세요.</p>
                 </div>
-                
-                <div class="content">
-                    <div class="board_box">
-                        <div>
-                            <p class="tit">광고비 잔액</p>
-                            <p><span class="blue">1,000,000</span>원</p>
-                            <button>광고비 충전</button>
-                        </div>
-                    </div>
-                </div>
                 <ul class="tab_cont_list">
-                    <li class="on"><button>충전 내역</button></li>
-                    <li><button>사용 내역</button></li>
+                    <li class="on"><button>사은품 안내</button></li>
+                    <li><button>상담 안내</button></li>
+                    <li><button>설계서 발송</button></li>
                 </ul>
-                <div class="content center">
+                <div class="content">
+                    <div class="box_top">
+                        <button class="back">알림톡 만들기</button>
+                    </div>
                     <div class="grp_form sch">
                         <div class="cont">
+                            <p class="tit">등록일</p>
                             <div class="grp_flex">
-                                <p class="tit">충전일</p>
                                 <div class="grp_cal">
                                     <input type="text" name="" id="">
                                     <button></button>
@@ -90,6 +84,14 @@
                                     <input type="text" name="" id="">
                                     <button></button>
                                 </div>
+                                <select type="text" style="width: 270px;">
+                                    <option value="">전체</option>
+                                    <option value="">광고주명</option>
+                                    <option value="">광고파트너</option>
+                                    <option value="">연락처</option>
+                                </select>
+                                <input type="text" style="width: 270px;">
+                                <button class="btn_sch">검색하기</button>
                             </div>
                         </div>
                     </div>
@@ -109,39 +111,14 @@
                             <thead>
                                 <tr>
                                     <th><input class="" type="checkbox"></th>
-                                    <th>순서</th>
-                                    <th>충전일</th>
-                                    <th>결제수단</th>
-                                    <th>기타</th>
-                                    <th>충전한 액수</th>
+                                    <th>발송일</th>
+                                    <th>수신번호</th>
+                                    <th>발송종류</th>
+                                    <th>발신ID</th>
+                                    <th>발송결과</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td><input class="" type="checkbox"></td>
-                                    <td>1</td>
-                                    <td>2023-03-23 13:22:01</td>
-                                    <td>신용카드</td>
-                                    <td>일시불</td>
-                                    <td>500,000원</td>
-                                </tr>
-                                <tr>
-                                    <td><input class="" type="checkbox"></td>
-                                    <td>1</td>
-                                    <td>2023-03-23 13:22:01</td>
-                                    <td>신용카드</td>
-                                    <td>일시불</td>
-                                    <td>500,000원</td>
-                                </tr>
-                                <tr>
-                                    <td><input class="" type="checkbox"></td>
-                                    <td>1</td>
-                                    <td>2023-03-23 13:22:01</td>
-                                    <td>신용카드</td>
-                                    <td>일시불</td>
-                                    <td>500,000원</td>
-                                </tr>
-                            </tbody>
+                            <tbody></tbody>
                         </table>
                         <div class="box_pgn">
                             <button>선택삭제</button>
