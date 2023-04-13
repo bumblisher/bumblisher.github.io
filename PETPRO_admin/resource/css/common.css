@@ -118,7 +118,7 @@ header > .right .btn_noti.on{background: url(../images/btn_noti_on.svg) center n
 .content.center .box_form:empty:after{/*content:'광고주명/연락처를 통해 광고주를 검색하세요.';*/color:#868E96;font-size: 13px;font-weight: 500;}
 .content.center + .box_btn{flex-direction: column;margin-top: 30px;}
 .content.center + .box_btn p{font-size: 14px;font-weight: 500;color:#000;margin-bottom: 10px;}
-.content.center + .box_btn p.red{font-size: 13px;font-weight: 600;color:#1A78FE;}
+.content.center + .box_btn p.red{font-size: 13px;font-weight: 600;color:#E03131;}
 .content.center + .box_btn .btn_cm{padding: 13px 30px;}
 .content h3{display: flex;align-items: center;font-size: 18px;color:#1A78FE;margin-bottom: 15px;font-weight: 700;}
 .content h3 span{font-size: 12px;font-weight: 500;color:#495057;margin-left: 10px;}
@@ -144,7 +144,8 @@ header > .right .btn_noti.on{background: url(../images/btn_noti_on.svg) center n
 .wrap select:disabled{background-image: url(../images/ico_select_dis.svg);}
 .wrap .btn_cm { flex: none;height: 40px; font-size: 14px;font-weight: 500;padding: 0px 10px;color: #000; background: #212529; border-radius: 6px;color:#fff} 
 .wrap .btn_cm.gray{background-color:#DEE2E6;color:#495057}
-.wrap .btn_cm.red{background-color:#1A78FE;color:#fff}
+.wrap .btn_cm.red{background-color:#E03131;color:#fff}
+.wrap .btn_cm.blue{background-color:#1A78FE;color:#fff}
 
 .grp_radio { display:flex; align-items: center; } 
 .grp_radio input[type="radio"] { display: none; } 
@@ -178,8 +179,8 @@ header > .right .btn_noti.on{background: url(../images/btn_noti_on.svg) center n
 .box_form.space2{padding-right: 65%;}
 .box_form .grp_form{flex:1}
 .box_form .grp_form .cont{padding-bottom: 15px;border-bottom:1px solid #E9ECEF;/*padding-right: 170px;*/} 
-/* .box_form .grp_form .cont.wide{padding-right: 0;} */
 .box_form .grp_form .cont:empty{border:0}
+.box_form .grp_form .cont + h3{margin-top: 20px;}
 .box_form +.box_form{margin-top: 50px;}
 
 
@@ -291,7 +292,7 @@ header > .right .btn_noti.on{background: url(../images/btn_noti_on.svg) center n
 .box_board table td.tac,
 .box_board table.tac th,
 .box_board table.tac td{text-align: center;}
-.box_board table td.red{color:#1A78FE}
+.box_board table td.red{color:#E03131}
 .box_board table tbody:empty:before{position: absolute;left: 0;top: 0;content:'조회된 데이터가 없습니다.';font-size: 13px;font-weight: 500;color:#868E96;display: flex;align-items: center;justify-content: center;width: 100%;height: 100%;}
 .box_board table tbody:empty{position: relative;height: 200px;border: 1px solid #DEE2E6;}
 .box_board + .box_btn{margin-top: 50px;}
@@ -376,11 +377,11 @@ body.login .wrap{position: relative;padding: 0 20px;}
 .popup .pop_cont > select{width: 100%;margin-bottom: 10px;font-size: 15px;height: 57px;}
 .popup .pop_cont .box_red{display: inline-block;padding: 10px 20px;border:2px solid #1A78FE;border-radius: 6px;margin: 15px auto;}
 .popup .pop_cont .box_red p{color:#343A40;line-height: 140%;font-weight: 500;font-size: 15px;}
-.popup .pop_cont .box_red .red{color:#1A78FE;font-weight: 700;margin-bottom: 5px;}
+.popup .pop_cont .box_red .red{color:#E03131;font-weight: 700;margin-bottom: 5px;}
 .popup .pop_cont .grp_form .cont .tit{width: 100px;}
 .popup .pop_cont .grp_form .cont span{color:#868E96;font-size: 15px}
 .popup .pop_cont .grp_form .cont+.cont{margin-top: 10px;}
-.popup .pop_cont .grp_form h4{margin-top: 0;color:#212529}
+.popup .pop_cont .grp_form h4{margin-top: 0;color:#212529;font-size: 15px;font-weight: 700;margin-bottom: 10px;}
 .popup .pop_cont .grp_form{border-top: 1px solid #E9ECEF;padding-top: 15px;}
 .popup .pop_cont .grp_form + .grp_form{margin-left: 0;margin-top: 15px;}
 
@@ -391,7 +392,7 @@ body.login .wrap{position: relative;padding: 0 20px;}
 .box_list li span{font-size: 16px;font-weight: 700;color:#212529;}
 .box_list + .txt{font-size: 18px;font-weight: 600;color:#212529;text-align: center;margin-top: 30px;margin-bottom: 10px;}
 .box_list + .txt strong{font-weight: 700;}
-.box_list + .txt strong.red{color:#1A78FE;}
+.box_list + .txt strong.red{color:#E03131;}
 .box_list.type2{padding: 15px 10px;}
 .box_list.type2 li{justify-content: center;}
 .box_list.type2 li+li{margin-top: 5px;}
@@ -541,7 +542,7 @@ body.welcome{background: #1A78FE url(../images/logo_welcome.svg) no-repeat cente
 .mob .board_box > div+div{margin-top: 10px;}
 .mob .board_box > div p{font-size: 15px;font-weight: 500;white-space: nowrap;}
 .mob .board_box > div .tit{font-size: 16px;font-weight: 700;flex:none;margin-right: auto;}
-.mob .board_box > div .red{font-size: 18px;font-weight: 700;color:#1A78FE;margin-right: 3px;}
+.mob .board_box > div .red{font-size: 18px;font-weight: 700;color:#E03131;margin-right: 3px;}
 
 .mob .board_box > .grp_flex{flex-direction: column;}
 .mob .board_box > .grp_flex > *{flex:none; width: 100%;margin-left: 0;height: 50px;}

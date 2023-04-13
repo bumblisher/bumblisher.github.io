@@ -84,10 +84,10 @@
                 <ul class="tab_main_list">
                     <li><a href="#">타이틀</a><button class="close"></button></li>
                     <li><a href="#">타이틀</a><button class="close"></button></li>
-                    <li><a href="#" class="on">배정결과</a><button class="close"></button></li>
+                    <li><a href="#" class="on">배정하기</a><button class="close"></button></li>
                 </ul>
                 <div class="tit_main">
-                    <h2>배정결과</h2>
+                    <h2>배정하기</h2>
                     <p>설명글을 입력해 주세요.</p>
                 </div>
                 <div class="content">
@@ -104,53 +104,28 @@
                                     <input type="text" name="" id="">
                                     <button></button>
                                 </div>
-                            </div>
-                            <p class="tit">상담원명</p>
-                            <div class="grp_flex fn">
-                                <select type="text" style="width: 200px;">
-                                    <option value="">선택</option>
-                                    <option value="">option01</option>
-                                    <option value="">option02</option>
-                                    <option value="">option03</option>
-                                </select>
-                            </div>
-                            <p class="tit">배정결과</p>
-                            <div class="grp_flex fn">
-                                <select type="text" style="width: 200px;">
-                                    <option value="">선택</option>
-                                    <option value="">option01</option>
-                                    <option value="">option02</option>
-                                    <option value="">option03</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="cont">
-                            <p class="tit">검색어</p>
-                            <div class="grp_flex fn">
-                                <select type="text" style="width: 280px;">
-                                    <option value="">고객성명</option>
-                                    <option value="">option01</option>
-                                    <option value="">option02</option>
-                                    <option value="">option03</option>
-                                </select>
-                                <input type="text" style="width: 280px;">
-                                <button class="btn_sch">정산결과 확인하기</button>
+                                <button class="btn_sch">검색하기</button>
+                                <button class="btn_sch white">초기화하기</button>
                             </div>
                         </div>
                     </div>
                     <div class="box_board">
                         <div class="board_tit">
-                            <p>목록 (총 <span>3</span> 개)</p>
+                            <p>목록 (총 <span>4</span> 개)</p>
                             <div class="right">
                                 <button>엑셀 다운</button>
+                            </div>
+                        </div>
+                        <div class="board_box mt5">
+                            <p>미배정 건 : <span class="red">3개</span>에 선택 담당자 배정하기</p>
+                            <div class="grp_flex fn" style="width: auto">
+                                <input type="text" name="" id="" style="width: 200px;" placeholder="배정할 수를 입력해 주세요.">
+                                <button class="btn_cm" style="width: 110px;">배정하기</button>
                             </div>
                         </div>
                         <table>
                             <colgroup>
                                 <col style="width:50px">
-                                <col>
-                                <col>
-                                <col>
                                 <col>
                                 <col>
                                 <col>
@@ -165,59 +140,47 @@
                                     <th><input class="" type="checkbox"></th>
                                     <th>광고 ID</th>
                                     <th>신청일시</th>
-                                    <th>배정일시</th>
                                     <th>보호자 성명</th>
                                     <th>연락처</th>
                                     <th>강아지 이름</th>
                                     <th>견종</th>
                                     <th>나이</th>
-                                    <th>상담원 성명</th>
-                                    <th>배정결과</th>
-                                    <th>기타</th>
+                                    <th>개별배정</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td><input class="" type="checkbox"></td>
                                     <td>testuser10</td>
-                                    <td>2023-03-23 13:22:01</td>
-                                    <td>2023-03-23 13:22:01</td>
+                                    <td>2023-03-31 12:12:34</td>
                                     <td>최은희</td>
                                     <td>010-3030-2020</td>
-                                    <td>나나</td>
+                                    <td>콜라</td>
                                     <td>말티즈</td>
                                     <td>2016년생</td>
-                                    <td>김수지</td>
-                                    <td>미배정</td>
-                                    <td>기타</td>
+                                    <td><button class="blue">배정하기</button></td>
                                 </tr>
                                 <tr>
                                     <td><input class="" type="checkbox"></td>
                                     <td>testuser10</td>
-                                    <td>2023-03-23 13:22:01</td>
-                                    <td>2023-03-23 13:22:01</td>
+                                    <td>2023-03-31 12:12:34</td>
                                     <td>최은희</td>
                                     <td>010-3030-2020</td>
-                                    <td>나나</td>
+                                    <td>콜라</td>
                                     <td>말티즈</td>
                                     <td>2016년생</td>
-                                    <td>김수지</td>
-                                    <td>미배정</td>
-                                    <td>기타</td>
+                                    <td><button class="blue">배정하기</button></td>
                                 </tr>
                                 <tr>
                                     <td><input class="" type="checkbox"></td>
                                     <td>testuser10</td>
-                                    <td>2023-03-23 13:22:01</td>
-                                    <td>2023-03-23 13:22:01</td>
+                                    <td>2023-03-31 12:12:34</td>
                                     <td>최은희</td>
                                     <td>010-3030-2020</td>
-                                    <td>나나</td>
+                                    <td>콜라</td>
                                     <td>말티즈</td>
                                     <td>2016년생</td>
-                                    <td>김수지</td>
-                                    <td>미배정</td>
-                                    <td>기타</td>
+                                    <td><button class="blue">배정하기</button></td>
                                 </tr>
                             </tbody>
                         </table>

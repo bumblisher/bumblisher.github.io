@@ -84,24 +84,17 @@
                 <ul class="tab_main_list">
                     <li><a href="#">타이틀</a><button class="close"></button></li>
                     <li><a href="#">타이틀</a><button class="close"></button></li>
-                    <li><a href="#" class="on">회원등록</a><button class="close"></button></li>
+                    <li><a href="#" class="on">배정결과</a><button class="close"></button></li>
                 </ul>
                 <div class="tit_main">
-                    <h2>회원등록</h2>
+                    <h2>배정결과</h2>
                     <p>설명글을 입력해 주세요.</p>
                 </div>
-                <ul class="tab_cont_list">
-                    <li class="on"><button>광고주</button></li>
-                    <li><button>파트너</button></li>
-                </ul>
                 <div class="content">
-                    <div class="box_top">
-                        <button class="back">조회</button>
-                    </div>
                     <div class="grp_form sch">
                         <div class="cont">
-                            <p class="tit">등록일</p>
-                            <div class="grp_flex">
+                            <p class="tit">기간</p>
+                            <div class="grp_flex fn">
                                 <div class="grp_cal">
                                     <input type="text" name="" id="">
                                     <button></button>
@@ -111,20 +104,46 @@
                                     <input type="text" name="" id="">
                                     <button></button>
                                 </div>
-                                <select type="text" style="width: 270px;">
-                                    <option value="">전체</option>
+                            </div>
+                            <p class="tit">상담원명</p>
+                            <div class="grp_flex fn">
+                                <select type="text" style="width: 200px;">
+                                    <option value="">선택</option>
                                     <option value="">option01</option>
                                     <option value="">option02</option>
                                     <option value="">option03</option>
                                 </select>
-                                <input type="text" style="width: 270px;">
-                                <button class="btn_sch">검색하기</button>
+                            </div>
+                            <p class="tit">배정결과</p>
+                            <div class="grp_flex fn">
+                                <select type="text" style="width: 200px;">
+                                    <option value="">선택</option>
+                                    <option value="">option01</option>
+                                    <option value="">option02</option>
+                                    <option value="">option03</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cont">
+                            <p class="tit">검색어</p>
+                            <div class="grp_flex fn">
+                                <select type="text" style="width: 280px;">
+                                    <option value="">고객성명</option>
+                                    <option value="">option01</option>
+                                    <option value="">option02</option>
+                                    <option value="">option03</option>
+                                </select>
+                                <input type="text" style="width: 280px;">
+                                <button class="btn_sch">정산결과 확인하기</button>
                             </div>
                         </div>
                     </div>
                     <div class="box_board">
                         <div class="board_tit">
                             <p>목록 (총 <span>3</span> 개)</p>
+                            <div class="right">
+                                <button>엑셀 다운</button>
+                            </div>
                         </div>
                         <table>
                             <colgroup>
@@ -140,72 +159,65 @@
                                 <col>
                                 <col>
                                 <col>
-                                <col>
                             </colgroup>
                             <thead>
                                 <tr>
                                     <th><input class="" type="checkbox"></th>
-                                    <th>등록일</th>
-                                    <th>아이디</th>
-                                    <th>성명</th>
+                                    <th>광고 ID</th>
+                                    <th>신청일시</th>
+                                    <th>배정일시</th>
+                                    <th>보호자 성명</th>
                                     <th>연락처</th>
-                                    <th>광고상품수</th>
-                                    <th>지역1</th>
-                                    <th>지역2</th>
-                                    <th>지역3</th>
-                                    <th>지역4</th>
-                                    <th>사업자<br>
-                                        여부</th>
-                                    <th>시스템<br>
-                                        사용여부</th>
-                                    <th>상태</th>
+                                    <th>강아지 이름</th>
+                                    <th>견종</th>
+                                    <th>나이</th>
+                                    <th>상담원 성명</th>
+                                    <th>배정결과</th>
+                                    <th>기타</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td><input class="" type="checkbox"></td>
-                                    <td>2023-03-23 13:22:01</td>
                                     <td>testuser10</td>
-                                    <td>이지아</td>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>최은희</td>
                                     <td>010-3030-2020</td>
-                                    <td>3</td>
-                                    <td>지역1</td>
-                                    <td>지역2</td>
-                                    <td>지역3</td>
-                                    <td>지역4</td>
-                                    <td>Y</td>
-                                    <td>Y</td>
-                                    <td>정상</td>
+                                    <td>나나</td>
+                                    <td>말티즈</td>
+                                    <td>2016년생</td>
+                                    <td>김수지</td>
+                                    <td>미배정</td>
+                                    <td>기타</td>
                                 </tr>
                                 <tr>
                                     <td><input class="" type="checkbox"></td>
-                                    <td>2023-03-23 13:22:01</td>
                                     <td>testuser10</td>
-                                    <td>이지아</td>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>최은희</td>
                                     <td>010-3030-2020</td>
-                                    <td>3</td>
-                                    <td>지역1</td>
-                                    <td>지역2</td>
-                                    <td>지역3</td>
-                                    <td>지역4</td>
-                                    <td>Y</td>
-                                    <td>Y</td>
-                                    <td>정상</td>
+                                    <td>나나</td>
+                                    <td>말티즈</td>
+                                    <td>2016년생</td>
+                                    <td>김수지</td>
+                                    <td>미배정</td>
+                                    <td>기타</td>
                                 </tr>
                                 <tr>
                                     <td><input class="" type="checkbox"></td>
-                                    <td>2023-03-23 13:22:01</td>
                                     <td>testuser10</td>
-                                    <td>이지아</td>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>최은희</td>
                                     <td>010-3030-2020</td>
-                                    <td>3</td>
-                                    <td>지역1</td>
-                                    <td>지역2</td>
-                                    <td>지역3</td>
-                                    <td>지역4</td>
-                                    <td>Y</td>
-                                    <td>Y</td>
-                                    <td>정상</td>
+                                    <td>나나</td>
+                                    <td>말티즈</td>
+                                    <td>2016년생</td>
+                                    <td>김수지</td>
+                                    <td>미배정</td>
+                                    <td>기타</td>
                                 </tr>
                             </tbody>
                         </table>

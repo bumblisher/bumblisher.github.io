@@ -23,44 +23,16 @@
             <p class="tit">Menu</p>
             <ul class="nav_menu">
                 <li class="active">
-                    <a href="#">광고파트너</a>
-                    <ul>
-                        <li class="on"><a href="#">광고소재 관리</a></li>
-                        <li><a href="#">파트너 정산</a></li>
-                    </ul>
-                </li>
-                <li>
                     <a href="#">광고주</a>
                     <ul>
-                        <li><a href="#">광고주 소재등록</a></li>
-                        <li><a href="#">광고현황</a></li>
-                        <li><a href="#">광고비결제</a></li>
-                        <li><a href="#">광고비정산</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">대행사</a>
-                    <ul>
-                        <li><a href="#">대행사정산</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">상담CRM</a>
-                    <ul>
-                        <li><a href="#">상담CRM</a></li>
-                        <li><a href="#">배정하기</a></li>
-                        <li><a href="#">배정결과</a></li>
-                        <li><a href="#">카카오톡 알림톡</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">DATA 관리</a>
-                    <ul>
-                        <li><a href="#">회원등록</a></li>
-                        <li><a href="#">광고소재</a></li>
-                        <li><a href="#">마케팅 DB</a></li>
-                        <li><a href="#">RCS 현황</a></li>
-                        <li><a href="#">알림톡</a></li>
+                        <li class="on"><a href="#">회원정보 변경</a></li>
+                        <li><a href="#">광고상품 변경</a></li>
+                        <li><a href="#">광고 관리</a></li>
+                        <li><a href="#">마케팅 지원</a></li>
+                        <li><a href="#">광고비 관리</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">고객센터/문의하기</a></li>
+                        <li><a href="#">이벤트</a></li>
                     </ul>
                 </li>
             </ul>
@@ -84,259 +56,63 @@
                 <ul class="tab_main_list">
                     <li><a href="#">타이틀</a><button class="close"></button></li>
                     <li><a href="#">타이틀</a><button class="close"></button></li>
-                    <li><a href="#" class="on">타이틀</a><button class="close"></button></li>
+                    <li><a href="#" class="on">마케팅 지원</a><button class="close"></button></li>
                 </ul>
                 <div class="tit_main">
-                    <h2>회원등록</h2>
+                    <h2>마케팅 지원</h2>
                     <p>설명글을 입력해 주세요.</p>
                 </div>
                 <ul class="tab_cont_list">
-                    <li><button>광고주</button></li>
-                    <li class="on"><button>파트너</button></li>
-                    <li><button>대행사</button></li>
-                    <li><button>사원</button></li>
+                    <li class="on"><button>사음품 안내</button></li>
+                    <li><button>상담 안내</button></li>
+                    <li><button>설계서 발송</button></li>
                 </ul>
                 <div class="content">
                     <div class="box_top">
-                        <p class="tit">등록하기</p>
+                        <p class="tit">알림톡 발송하기</p>
                         <div class="right"><button class="btn_cm">조회<span>3</span></button></div>
                     </div>
                     <div class="box_form">
                         <div class="grp_form">
                             <div class="cont">
-                                <p class="tit">아이디</p>
-                                <div class="grp_flex">
-                                    <input type="text">
-                                    <button class="btn_cm">중복확인</button>
-                                </div>
-                            </div>
-                            <div class="cont">
-                                <p class="tit">비밀번호</p>
-                                <input type="password">
-                            </div>
-                            <div class="cont">
-                                <p class="tit">파트너 성명</p>
+                                <p class="tit">신청자 성명</p>
                                 <input type="text">
                             </div>
                             <div class="cont">
-                                <p class="tit">파트너 연락처</p>
-                                <div class="grp_flex">
-                                    <input type="text">
-                                    <button class="btn_cm">인증하기</button>
-                                </div>
+                                <p class="tit">연락처</p>
+                                <input type="text">
                             </div>
                             <div class="cont">
-                                <p class="tit">인증번호</p>
-                                <div class="grp_flex">
-                                    <input type="text">
-                                    <button class="btn_cm">확인하기</button>
-                                </div>
-                            </div>
-                            <div class="cont inner">
-                                <div class="grp_flex">
-                                    <p class="tit">매장주소</p>
-                                    <select type="text">
-                                        <option value="">시/도</option>
-                                        <option value="">option01</option>
-                                        <option value="">option02</option>
-                                        <option value="">option03</option>
-                                    </select>
-                                    <select type="text">
-                                        <option value="">구/군</option>
-                                        <option value="">option01</option>
-                                        <option value="">option02</option>
-                                        <option value="">option03</option>
-                                    </select>
-                                    <select type="text">
-                                        <option value="">동</option>
-                                        <option value="">option01</option>
-                                        <option value="">option02</option>
-                                        <option value="">option03</option>
-                                    </select>
-                                </div>
-                                <div class="grp_flex">
-                                    <p class="tit">상세주소</p>
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="cont">
-                                <ul class="grp_tbl">
-                                    <li class="top">
-                                        <div class="grp_flex">
-                                            <p class="tit"></p>
-                                            <p class="top">광고상품</p>
-                                            <p class="top">광고비</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="grp_flex">
-                                            <p class="tit">선택1</p>
-                                            <select type="text">
-                                                <option value="">선택</option>
-                                                <option value="">option01</option>
-                                                <option value="">option02</option>
-                                                <option value="">option03</option>
-                                            </select>
-                                            <select type="text">
-                                                <option value="">선택</option>
-                                                <option value="">option01</option>
-                                                <option value="">option02</option>
-                                                <option value="">option03</option>
-                                            </select>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="grp_flex">
-                                            <p class="tit">선택1</p>
-                                            <select type="text">
-                                                <option value="">선택</option>
-                                                <option value="">option01</option>
-                                                <option value="">option02</option>
-                                                <option value="">option03</option>
-                                            </select>
-                                            <select type="text">
-                                                <option value="">선택</option>
-                                                <option value="">option01</option>
-                                                <option value="">option02</option>
-                                                <option value="">option03</option>
-                                            </select>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="grp_flex">
-                                            <p class="tit">선택1</p>
-                                            <select type="text">
-                                                <option value="">선택</option>
-                                                <option value="">option01</option>
-                                                <option value="">option02</option>
-                                                <option value="">option03</option>
-                                            </select>
-                                            <select type="text">
-                                                <option value="">선택</option>
-                                                <option value="">option01</option>
-                                                <option value="">option02</option>
-                                                <option value="">option03</option>
-                                            </select>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="cont">
-                                <p class="tit">광고기간</p>
-                                <div class="grp_flex">
-                                    <div class="grp_cal">
-                                        <input type="text" name="" id="">
-                                        <button></button>
-                                    </div>
-                                    <span class="">-</span>
-                                    <div class="grp_cal">
-                                        <input type="text" name="" id="">
-                                        <button></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cont">
-                                <p class="tit">광고비 정산일</p>
+                                <p class="tit">사은품 선택</p>
                                 <select type="text">
                                     <option value="">선택</option>
                                     <option value="">option01</option>
                                     <option value="">option02</option>
                                     <option value="">option03</option>
                                 </select>
+                            </div>
+                            <div class="cont">
+                                <p class="tit">상담완료일</p>
+                                <div class="grp_cal">
+                                    <input type="text" name="" id="">
+                                    <button></button>
+                                </div>
+                            </div>
+                            <div class="cont">
+                                <p class="tit">상담원명</p>
+                                <input type="text">
+                            </div>
+                            <div class="cont">
+                                <p class="tit">전달할 메시지</p>
+                                <textarea name="" id=""></textarea>
                             </div>
                         </div>
                         <div class="grp_form">
-                            <div class="cont inner">
-                                <div class="grp_flex">
-                                    <p class="tit">광고주 입금계좌</p>
-                                    <select type="text" style="width: 110px;">
-                                        <option value="">입금은행</option>
-                                        <option value="">option01</option>
-                                        <option value="">option02</option>
-                                        <option value="">option03</option>
-                                    </select>
-                                    <input type="text" placeholder="예금주명">
-                                </div>
-                                <div class="grp_flex">
-                                    <p class="tit"></p>
-                                    <input type="text" placeholder="계좌번호">
-                                </div>
-                            </div>
-                            <div class="cont">
-                                <p class="tit">1. 통장사본</p>
-                                <div class="ipt_file">
-                                    <input type="text">
-                                    <button class="btn_file"></button>
-                                </div>
-                            </div>
-                            <div class="cont">
-                                <p class="tit">2. 매장사진</p>
-                                <div class="ipt_file">
-                                    <input type="text">
-                                    <button class="btn_file"></button>
-                                </div>
-                            </div>
-                            <div class="cont">
-                                <p class="tit">3. 간판사진</p>
-                                <div class="ipt_file">
-                                    <input type="text">
-                                    <button class="btn_file"></button>
-                                </div>
-                            </div>
-                            <div class="cont">
-                                <p class="tit">4. 설치사진1</p>
-                                <div class="ipt_file">
-                                    <input type="text">
-                                    <button class="btn_file"></button>
-                                </div>
-                            </div>
-                            <div class="cont">
-                                <p class="tit">4. 설치사진2</p>
-                                <div class="ipt_file">
-                                    <input type="text">
-                                    <button class="btn_file"></button>
-                                </div>
-                            </div>
-                            <div class="cont">
-                                <p class="tit">4. 설치사진3</p>
-                                <div class="ipt_file">
-                                    <input type="text">
-                                    <button class="btn_file"></button>
-                                </div>
-                            </div>
-                            <div class="cont">
-                                <p class="tit">대행사</p>
-                                <select type="text">
-                                    <option value="">선택</option>
-                                    <option value="">option01</option>
-                                    <option value="">option02</option>
-                                    <option value="">option03</option>
-                                </select>
-                            </div>
-                            <div class="cont">
-                                <p class="tit">사업자 등록번호</p>
-                                <input type="text">
-                            </div>
-                            <div class="cont">
-                                <p class="tit">사업자등록증<br>
-                                    첨부</p>
-                                <div class="ipt_file">
-                                    <input type="text">
-                                    <button class="btn_file"></button>
-                                </div>
-                            </div>
-                            <div class="cont">
-                                <p class="tit">파트너계약서</p>
-                                <div class="ipt_file">
-                                    <input type="text">
-                                    <button class="btn_file"></button>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="box_btn">
-                    <button class="btn_cm">등록하기</button>
+                    <button class="btn_cm">알림톡 발송하기</button>
                 </div>
             </div>
         </div>

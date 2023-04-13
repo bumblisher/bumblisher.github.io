@@ -84,20 +84,17 @@
                 <ul class="tab_main_list">
                     <li><a href="#">타이틀</a><button class="close"></button></li>
                     <li><a href="#">타이틀</a><button class="close"></button></li>
-                    <li><a href="#" class="on">광고현황</a><button class="close"></button></li>
+                    <li><a href="#" class="on">상담 CRM</a><button class="close"></button></li>
                 </ul>
                 <div class="tit_main">
-                    <h2>광고현황</h2>
+                    <h2>상담 CRM</h2>
                     <p>설명글을 입력해 주세요.</p>
-                    <div class="right">
-                        <button>새로 등록하기</button>
-                    </div>
                 </div>
                 <div class="content">
                     <div class="grp_form sch">
                         <div class="cont">
-                            <p class="tit">등록일</p>
-                            <div class="grp_flex">
+                            <p class="tit">기간</p>
+                            <div class="grp_flex fn">
                                 <div class="grp_cal">
                                     <input type="text" name="" id="">
                                     <button></button>
@@ -107,14 +104,37 @@
                                     <input type="text" name="" id="">
                                     <button></button>
                                 </div>
-                                <select type="text" style="width: 270px;">
-                                    <option value="">광고상품명</option>
+                            </div>
+                            <p class="tit">상담원명</p>
+                            <div class="grp_flex fn">
+                                <select type="text" style="width: 200px;">
+                                    <option value="">선택</option>
                                     <option value="">option01</option>
                                     <option value="">option02</option>
                                     <option value="">option03</option>
                                 </select>
-                                <input type="text" style="width: 270px;">
-                                <button class="btn_sch">검색하기</button>
+                            </div>
+                            <p class="tit">배정결과</p>
+                            <div class="grp_flex fn">
+                                <select type="text" style="width: 200px;">
+                                    <option value="">선택</option>
+                                    <option value="">option01</option>
+                                    <option value="">option02</option>
+                                    <option value="">option03</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cont">
+                            <p class="tit">회원선택</p>
+                            <div class="grp_flex fn">
+                                <select type="text" style="width: 280px;">
+                                    <option value="">선택</option>
+                                    <option value="">option01</option>
+                                    <option value="">option02</option>
+                                    <option value="">option03</option>
+                                </select>
+                                <input type="text" style="width: 280px;">
+                                <button class="btn_sch">정산결과 확인하기</button>
                             </div>
                         </div>
                     </div>
@@ -132,49 +152,54 @@
                                 <col>
                                 <col>
                                 <col>
+                                <col>
                             </colgroup>
                             <thead>
                                 <tr>
                                     <th><input class="" type="checkbox"></th>
-                                    <th>생성일</th>
-                                    <th>배정일</th>
-                                    <th>CRM결과</th>
-                                    <th>광고주명</th>
-                                    <th>광고파트너</th>
-                                    <th>광고소재</th>
-                                    <th>광고비잔액</th>
+                                    <th>광고 ID</th>
+                                    <th>신청일시</th>
+                                    <th>배정일시</th>
+                                    <th>보호자 성명</th>
+                                    <th>연락처</th>
+                                    <th>상담원 성명</th>
+                                    <th>상담결과</th>
+                                    <th>결과입력</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td><input class="" type="checkbox"></td>
-                                    <td>2023-03-23 13:22:01</td>
-                                    <td>2023-03-23 13:22:01</td>
-                                    <td>CRM</td>
-                                    <td>본사</td>
-                                    <td>청량리소고기국밥</td>
-                                    <td>펫프로114 자체광고</td>
-                                    <td>광고비잔액</td>
+                                    <td>testuser10</td>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>최은희</td>
+                                    <td>010-3030-2020</td>
+                                    <td>김수지</td>
+                                    <td>미배정</td>
+                                    <td><button class="blue">입력하기</button></td>
                                 </tr>
                                 <tr>
                                     <td><input class="" type="checkbox"></td>
-                                    <td>2023-03-23 13:22:01</td>
-                                    <td>2023-03-23 13:22:01</td>
-                                    <td>CRM</td>
-                                    <td>본사</td>
-                                    <td>청량리소고기국밥</td>
-                                    <td>펫프로114 자체광고</td>
-                                    <td>광고비잔액</td>
+                                    <td>testuser10</td>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>최은희</td>
+                                    <td>010-3030-2020</td>
+                                    <td>김수지</td>
+                                    <td>병력거절</td>
+                                    <td><button class="blue">입력하기</button></td>
                                 </tr>
                                 <tr>
                                     <td><input class="" type="checkbox"></td>
-                                    <td>2023-03-23 13:22:01</td>
-                                    <td>2023-03-23 13:22:01</td>
-                                    <td>CRM</td>
-                                    <td>본사</td>
-                                    <td>청량리소고기국밥</td>
-                                    <td>펫프로114 자체광고</td>
-                                    <td>광고비잔액</td>
+                                    <td>testuser10</td>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>최은희</td>
+                                    <td>010-3030-2020</td>
+                                    <td>김수지</td>
+                                    <td>3회부재 거절</td>
+                                    <td><button class="blue">입력하기</button></td>
                                 </tr>
                             </tbody>
                         </table>
