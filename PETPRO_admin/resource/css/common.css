@@ -213,7 +213,7 @@ header > .right .btn_noti.on{background: url(../images/btn_noti_on.svg) center n
 .grp_flex { display: flex; align-items: center; flex: 1; }
 .grp_flex.fn {flex: none;}
 .grp_flex[style*="width"]{flex:none}
-.grp_flex .red { flex:1; color: #E53939; } 
+.grp_flex .red {color: #E53939; } 
 .grp_flex .btn_cm {min-width: 68px;} 
 .grp_flex .grp_btn{display: inline-flex;align-items: center;}
 .grp_flex .grp_btn button + button{margin-left: 10px;}
@@ -511,6 +511,7 @@ body.welcome{background: #1A78FE url(../images/logo_welcome.svg) no-repeat cente
 
 .mob .grp_sch{display: flex;margin-bottom: 20px;}
 .mob .grp_sch .btn_filter{width: 40px;height: 50px;background: url(../images/btn_filter.svg) no-repeat center;font-size: 0;}
+.mob .board_tit  .right .btn_filter{width: 36px;height: 36px;background: url(../images/btn_filter.svg) no-repeat center;font-size: 0;padding: 0;border:0;}
 .mob .grp_sch .grp_flex{position: relative;}
 .mob .grp_sch .grp_flex input[type="text"]{background: #fff;padding-right: 40px;height: 50px;font-size: 14px;}
 .mob .grp_sch .grp_flex .btn_sch{position: absolute;top:0;right:0;width: 40px;height: 50px;background: url(../images/btn_sch.svg) no-repeat center;font-size: 0;}
@@ -545,13 +546,15 @@ body.welcome{background: #1A78FE url(../images/logo_welcome.svg) no-repeat cente
 .mob .grp_form h4{text-align: center;}
 .mob .grp_form h4 + h4{margin-top: 5px;}
 
-.mob .box_top{padding: 5px 10px;min-height: 48px;box-sizing: border-box;}
-.mob .box_top .tit{font-size: 16px;}
+.mob .box_top{padding: 5px 10px;min-height: 48px;box-sizing: border-box;background-color: #fff;padding:0 0 10px;margin-bottom: 20px;border-bottom:1px solid #8E8E93}
+.mob .box_top .tit{font-size: 18px;font-weight: 600;}
 .mob .box_top .btn_cm{width: 80px;height: 38px;font-size: 15px;}
 .mob .box_top .back{font-size: 16px;}
 
 .mob .box_btn{margin-top: 30px;}
 .mob .box_btn .btn_cm{width: auto;height: 43px;}
+.mob .box_btn .btn_cm.full{width: 100%;height: 50px;}
+.mob .content > .btn_cm{width: 100%;height: 50px;margin-top: 30px;}
 .mob .box_btn.ver{flex-direction: column;margin-top: 20px;}
 .mob .box_btn.ver p{font-size: 13px;font-weight: 500;color:#000;margin-bottom: 5px;text-align: center;}
 .mob .box_btn.ver p.red{font-size: 12px;font-weight: 600;color:#1A78FE;}
@@ -574,13 +577,14 @@ body.welcome{background: #1A78FE url(../images/logo_welcome.svg) no-repeat cente
 .mob .tbl_list .grp_flex label{font-size: 15px;color: #495057;}
 .mob .tbl_list .grp_flex button,
 .mob .tbl_list .grp_flex .badge{padding: 8px 10px;font-size: 12px;font-weight: 500;color:#696969;background: #fff;border-radius: 8px;border:1px solid #DEE2E6;margin-left: auto;}
+.mob .tbl_list .grp_flex .badge.red{border-color: #FF7676;color:#ff0000;background-color: #fff8f8;}
 .mob .tbl_list .grp_flex button.blue{background: #4C6EF5;}
-.mob .tbl_list .grp_line{display: flex;align-items: center;font-size: 13px;margin-top: 8px;}
+.mob .tbl_list .grp_line{display: flex;align-items: center;font-size: 13px;margin-top: 5px;}
 .mob .tbl_list .grp_line .tit{font-size: 15px;color:#495057;font-weight: 600;}
 .mob .tbl_list .grp_line.fs span,
 .mob .tbl_list .grp_line.fs a{font-size: 14px;}
 .mob .tbl_list .grp_line.bt{padding-top: 8px;border-top:1px solid #eaeaea}
-.mob .tbl_list .grp_line span{font-weight: 500;color:#495057;font-size: 14px;}
+.mob .tbl_list .grp_line span{font-weight: 500;color:#495057;font-size: 14px;line-height: 1.2;}
 .mob .tbl_list .grp_line span.red{color:#E04B3F}
 .mob .tbl_list .grp_line span+span{margin-left: 8px;position: relative;}
 .mob .tbl_list .grp_line a{display: inline-block;color:#495057;}
@@ -600,11 +604,12 @@ body.welcome{background: #1A78FE url(../images/logo_welcome.svg) no-repeat cente
 .mob .box_pgn{margin-top: 50px;}
 .mob .pagination_sic{margin-top: 0;}
 
-.mob .board_box{display: flex;align-items: center;border:2px solid #CED4DA;padding: 20px;flex-direction: column;margin-top: 15px;margin-bottom: 19px;}
-.mob .board_box > div{display: flex;align-items: center;width: 100%;}
+.mob .board_box{display: flex;align-items: center;padding: 20px;flex-direction: column;background: #FFFFFF;box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);border-radius: 8px;margin-bottom: 20px;}
+.mob .board_box > div{display: flex;justify-content: center;align-items: center;width: 100%;}
 .mob .board_box > div+div{margin-top: 10px;}
-.mob .board_box > div p{font-size: 15px;font-weight: 500;white-space: nowrap;}
-.mob .board_box > div .tit{font-size: 16px;font-weight: 700;flex:none;margin-right: auto;}
+.mob .board_box > div p{font-size: 15px;font-weight: 600;white-space: nowrap;}
+.mob .board_box > div .tit{margin-right: 6px;}
+.mob .board_box > button{font: none;padding: 8px 10px;width: 240px;height: 40px;background: #1976D2;border-radius: 44px;color:#fff;margin-top: 16px;}
 .mob .board_box > div .red{font-size: 18px;font-weight: 700;color:#E03131;margin-right: 3px;}
 
 .mob .board_box > .grp_flex{flex-direction: column;}
@@ -614,10 +619,20 @@ body.welcome{background: #1A78FE url(../images/logo_welcome.svg) no-repeat cente
 .mob .popup{width: 90%;max-width: 500px;}
 .mob .popup .pop_header{padding-bottom: 10px;}
 .mob .popup .pop_cont{padding: 10px 20px 20px;overflow: auto;}
+.mob .popup .pop_cont .grp_form h3{text-align: left;border-bottom:2px solid #eaeaea;padding-bottom: 5px;margin: 15px 0;}
+.mob .popup .pop_cont .grp_form h3:first-child{margin-top: 0;}
 .mob .popup .pop_cont .grp_form h4{text-align: left;}
+.mob .popup .pop_cont .grp_form p.txt{color:#495057;font-size: 14px;font-weight: 500;line-height: 1;}
+.mob .popup .pop_cont .grp_form p.txt+p.txt{margin-top: 8px;}
 .mob .popup .pop_cont .grp_form.list .cont .tit{margin-bottom: 0px;}
 .mob .popup .pop_cont .grp_form.full .cont{flex-direction: row;align-items: baseline;}
 .mob .popup .pop_cont .txt_red{font-size: 13px;color:#F34949;text-align: center;margin-top: 15px;line-height: 140%;}
+.mob .popup .pop_cont .grp_sch{padding-bottom: 15px;border-bottom: 2px solid #8E8E93;margin-bottom: 0;}
+.mob .popup .pop_cont .grp_sch .grp_flex input[type="text"]{background-color: #f4f4f4;}
+.mob .popup .pop_cont .grp_sch + .content{padding: 8px 0 12px;}
+.mob .popup .pop_cont .grp_form .cont.txt{align-items: center;}
+.mob .popup .pop_cont .grp_form .cont.txt p{font-size: 14px;font-weight: 500;color:#000;text-align: center;line-height: 1.2;}
+.mob .popup .pop_cont .grp_form .cont.txt p.red{color:#E03122;margin-top: 13px;font-weight: 600;margin-top: 5px;}
 .mob .popup .pop_footer{height: 58px;}
 .mob .popup .pop_footer > button{height: 58px;}
 
