@@ -512,7 +512,7 @@ body.welcome{background: #1A78FE url(../images/logo_welcome.svg) no-repeat cente
 .mob .grp_sch{display: flex;margin-bottom: 20px;}
 .mob .grp_sch .btn_filter{width: 40px;height: 50px;background: url(../images/btn_filter.svg) no-repeat center;font-size: 0;}
 .mob .grp_sch .grp_flex{position: relative;}
-.mob .grp_sch .grp_flex input[type="text"]{background: #fff;padding-right: 40px;height: 50px;}
+.mob .grp_sch .grp_flex input[type="text"]{background: #fff;padding-right: 40px;height: 50px;font-size: 14px;}
 .mob .grp_sch .grp_flex .btn_sch{position: absolute;top:0;right:0;width: 40px;height: 50px;background: url(../images/btn_sch.svg) no-repeat center;font-size: 0;}
 
 .mob .box_form .grp_form .cont .grp_flex{width: 100%;}
@@ -535,7 +535,11 @@ body.welcome{background: #1A78FE url(../images/logo_welcome.svg) no-repeat cente
 .mob .grp_form .cont.inner .tit:first-child{margin-top: 0;}
 .mob .grp_form .cont.inner >*+*{margin-top: 10px;}
 .mob .grp_form .cont.inner >.tit+*{margin-top: 0;}
+.mob .grp_form .cont.inner .grp_flex > div{flex:1}
+.mob .grp_form .cont.inner .grp_flex > div[style*="width"]{flex:none}
 .mob .grp_form .cont.inner h4{margin-top: 0;margin-bottom: 0;}
+.mob .grp_form .cont.inner{align-items: stretch;}
+.mob .grp_form .cont.inner > span{text-align: center;}
 .mob .grp_form h3{text-align: center;margin-top: 30px;}
 .mob .grp_form h3:first-child{margin-top: 0;}
 .mob .grp_form h4{text-align: center;}
@@ -559,7 +563,7 @@ body.welcome{background: #1A78FE url(../images/logo_welcome.svg) no-repeat cente
 .mob .box_noti.red .txt{font-size: 11px;}
 
 .mob .board_tit { display: flex; align-items: center;min-height: 33px;padding: 0;box-sizing: border-box;margin-bottom: 15px;} 
-.mob .board_tit p{font-size: 14px;color:#212529;font-weight: 600;}
+.mob .board_tit p{font-size: 15px;color:#212529;font-weight: 600;}
 .mob .board_tit p span { color: #1A78FE; font-weight: 600; } 
 .mob .board_tit .right{display: flex;align-items: center;margin-left: auto;}
 .mob .board_tit .right button{height: 33px;padding: 8px;color:#212529;font-weight: 600;font-size: 13px;border:1px solid #DEE2E6;background: #fff;}
@@ -569,22 +573,31 @@ body.welcome{background: #1A78FE url(../images/logo_welcome.svg) no-repeat cente
 .mob .tbl_list > li{margin-bottom: 15px;padding:8px;background: #FFFFFF;border: 1px solid #EBEBF0;box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.12);}
 .mob .tbl_list .grp_flex label{font-size: 15px;color: #495057;}
 .mob .tbl_list .grp_flex button,
-.mob .tbl_list .grp_flex .badge{padding: 5px;font-size: 11px;font-weight: 500;color:#fff;background: #343A40;border-radius: 4px;}
+.mob .tbl_list .grp_flex .badge{padding: 8px 10px;font-size: 12px;font-weight: 500;color:#696969;background: #fff;border-radius: 8px;border:1px solid #DEE2E6;margin-left: auto;}
 .mob .tbl_list .grp_flex button.blue{background: #4C6EF5;}
-.mob .tbl_list .grp_flex .badge{background: #1A78FE;}
-.mob .tbl_list .grp_line{display: flex;align-items: center;font-size: 13px;margin-top: 10px;}
-.mob .tbl_list .grp_line .tit{font-size: 14px;color:#4C6EF5;}
+.mob .tbl_list .grp_line{display: flex;align-items: center;font-size: 13px;margin-top: 8px;}
+.mob .tbl_list .grp_line .tit{font-size: 15px;color:#495057;font-weight: 600;}
 .mob .tbl_list .grp_line.fs span,
 .mob .tbl_list .grp_line.fs a{font-size: 14px;}
-.mob .tbl_list .grp_line span{font-weight: 500;color:#212529;}
+.mob .tbl_list .grp_line.bt{padding-top: 8px;border-top:1px solid #eaeaea}
+.mob .tbl_list .grp_line span{font-weight: 500;color:#495057;font-size: 14px;}
 .mob .tbl_list .grp_line span.red{color:#E04B3F}
 .mob .tbl_list .grp_line span+span{margin-left: 8px;position: relative;}
-.mob .tbl_list .grp_line a{display: inline-block;color:#212529;}
+.mob .tbl_list .grp_line a{display: inline-block;color:#495057;}
 .mob .tbl_list .grp_line span+a{margin-left: 8px;}
 .mob .tbl_list .grp_line span+span::before{content: '';display: inline-block;border-left: 1px solid #868E96;height: 8px;margin-right: 8px;}
+.mob .tbl_list .grp_line.date{flex-direction: column;align-items: flex-start;padding-top: 8px;border-top: 2px solid #eaeaea;}
+.mob .tbl_list .grp_line.date span{font-size: 13px;margin: 0;}
+.mob .tbl_list .grp_line.date span::before{display: none;}
+.mob .tbl_list .grp_line.date span+span{margin-top: 4px;}
+.mob .tbl_list .grp_line.tac{align-items: center;}
+.mob .tbl_list .grp_check label:before{width: 32px;height: 32px;margin-right: 0;border-color:#AEAEB2}
+.mob .tbl_list .grp_check input[type="checkbox"]:checked + label:after{left: 9px;margin-top: -8px;width: 13px;height: 7px;}
+.mob .tbl_list li > .btn_cm{height: 32px;font-size: 13px;font-weight: 600;width: 100%;margin-top: 10px;;}
 .mob .tbl_list:empty:before{position: absolute;left: 0;top: 0;content:'조회된 데이터가 없습니다.';font-size: 13px;font-weight: 500;color:#868E96;display: flex;align-items: center;justify-content: center;width: 100%;height: 100%;}
 .mob .tbl_list:empty{position: relative;height: 200px;border-bottom: 1px solid #DEE2E6;}
 /* .mob .tbl_list.sch01:empty:before{content:'광고주명/연락처를 통해 광고주를 검색하세요.';} */
+.mob .box_pgn{margin-top: 50px;}
 .mob .pagination_sic{margin-top: 0;}
 
 .mob .board_box{display: flex;align-items: center;border:2px solid #CED4DA;padding: 20px;flex-direction: column;margin-top: 15px;margin-bottom: 19px;}
@@ -599,8 +612,15 @@ body.welcome{background: #1A78FE url(../images/logo_welcome.svg) no-repeat cente
 .mob .board_box > .grp_flex > *+*{margin-top: 10px;}
 
 .mob .popup{width: 90%;max-width: 500px;}
+.mob .popup .pop_header{padding-bottom: 10px;}
 .mob .popup .pop_cont{padding: 10px 20px 20px;overflow: auto;}
+.mob .popup .pop_cont .grp_form h4{text-align: left;}
 .mob .popup .pop_cont .grp_form.list .cont .tit{margin-bottom: 0px;}
+.mob .popup .pop_cont .grp_form.full .cont{flex-direction: row;align-items: baseline;}
 .mob .popup .pop_cont .txt_red{font-size: 13px;color:#F34949;text-align: center;margin-top: 15px;line-height: 140%;}
 .mob .popup .pop_footer{height: 58px;}
 .mob .popup .pop_footer > button{height: 58px;}
+
+.mob .popup.bottom{left:0;right:0;bottom:0;top:100px;margin:0;transform:none;width: 100%;max-width: none;max-height: none;border-radius: 10px 10px 0 0;}
+.mob .popup.bottom .pop_header:before{content:'';position: absolute;left: 50%;top:16px;width: 60px;height: 4px;background-color: #eaeaea;display: block;margin-left: -30px;}
+.mob .popup.bottom .pop_footer{margin-top: 5px;}
