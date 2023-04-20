@@ -60,5 +60,17 @@ $(document).ready(function() {
         $('body').removeClass("menu_on");
     });
     
+
+    //슬라이드토글
+    $('.box_board.noti .tog').on('click',function(){
+        $(this).next(".cont").slideToggle(0);
+    });
+
+    //슬라이드토글
+    $('.list_tog li button').on('click',function(){
+        $(this).next(".cont").stop().slideToggle(300);
+    });
+    
+
 });
 
