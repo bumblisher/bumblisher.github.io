@@ -1,12 +1,8 @@
 $(function(){
 
 	// 팝업열기
-	$('#btnPop').click(function(){
-		$('#testPop').addClass("on");
-	}); 
-	// 팝업닫기
-	$('#testPop').click(function(){
-		$(this).removeClass("on");
+	$('#btnTxt').click(function(){
+		$('#grpTxtRed').show();
 	}); 
 	// 햄버거 메뉴
 	$(".btn_menu").on("click", function(){
