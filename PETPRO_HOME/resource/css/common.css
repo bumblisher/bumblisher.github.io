@@ -251,7 +251,7 @@ ul.grp_check{display: flex;}
 .wrap.mob .sec03 .swiper-slide{position: relative;width: 200px;height: 200px;overflow: hidden;border-radius: 10px;margin: 0;opacity: 1;margin-right: 15px;filter: none;}
 .wrap.mob .sec03 .swiper-slide img{width: 200px;height: 200px;}
 .wrap.mob .sec03 .swiper-slide p{position: absolute;left:12px;bottom: 12px;font-weight: 700;font-size: 18px;line-height: 140%;color: #E9ECEF;}
-.wrap.mob .sec03 .swiper-pagination{padding: 0;height: 8px;width: 220px;margin: 30px auto 0;}
+.wrap.mob .sec03 .swiper-pagination{padding: 0;height: 8px;width: 220px;margin: 30px auto 0;overflow: hidden;}
 .wrap.mob .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{background: #343A40;}
 
 .wrap.mob .sec04 .txt_sec04{font-size: 15px;line-height: 21px;margin-top: 20px;}
