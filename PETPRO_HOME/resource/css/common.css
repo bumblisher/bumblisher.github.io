@@ -248,7 +248,7 @@ ul.grp_check{display: flex;}
 .wrap.mob .sec03 .grp_sec03{margin-top: 20px;}
 .wrap.mob .sec03 .grp_sec03 p{font-size: 15px;line-height: 140%;}
 .wrap.mob .sec03 .swiper{padding: 0 0 50px 20px;box-sizing: border-box;}
-.wrap.mob .sec03 .swiper-slide{position: relative;width: 200px;height: 200px;overflow: hidden;border-radius: 10px;margin: 0;opacity: 1;margin-right: 15px;filter: drop-shadow(0px 15px 35px rgba(0, 0, 0, 0.15));}
+.wrap.mob .sec03 .swiper-slide{position: relative;width: 200px;height: 200px;overflow: hidden;border-radius: 10px;margin: 0;opacity: 1;margin-right: 15px;filter: none;}
 .wrap.mob .sec03 .swiper-slide img{width: 200px;height: 200px;}
 .wrap.mob .sec03 .swiper-slide p{position: absolute;left:12px;bottom: 12px;font-weight: 700;font-size: 18px;line-height: 140%;color: #E9ECEF;}
 .wrap.mob .sec03 .swiper-pagination{padding: 0;height: 8px;width: 220px;margin: 30px auto 0;}
@@ -296,7 +296,7 @@ ul.grp_check{display: flex;}
 .wrap.mob .grp_input input[type="text"],
 .wrap.mob .grp_input input[type="password"],
 .wrap.mob .grp_input select{height: 58px;font-size: 16px;}
-.wrap.mob .grp_input select{background-size: 17px;-webkit-appearance: none;}
+.wrap.mob .grp_input select{background-size: 17px;-webkit-appearance: none;color:#212529}
 .wrap.mob .grp_input textarea{height: 100px;font-size: 16px;}
 .wrap.mob .grp_check label{padding-left: 34px;font-size:16px;line-height: 26px;}
 .wrap.mob .grp_check label:before{width: 26px;height: 26px;}
