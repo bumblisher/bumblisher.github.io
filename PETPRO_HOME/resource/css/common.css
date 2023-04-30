@@ -230,7 +230,7 @@ ul.grp_check{display: flex;}
 .wrap.mob .sec01{text-align: center;height: 800px;}
 .wrap.mob .sec01 p.tit{padding-top: 98px;font-size: 23px;margin-bottom: 0;}
 .wrap.mob .sec01 .section_inner{position: relative;height: 100%;background: url(../images/bg_sec01.svg) no-repeat bottom 130px center;background-size: 268px 366px;}
-.wrap.mob .sec01 .section_inner::after{content: '';position: absolute;bottom: 40px;width: 36px;height: 19px;background: url(../images/mo_ico_sec01.svg) no-repeat center;}
+.wrap.mob .sec01 .section_inner::after{content: '';position: absolute;left:50%;bottom: 40px;margin-left: -18px;width: 36px;height: 19px;background: url(../images/mo_ico_sec01.svg) no-repeat center;}
 .wrap.mob .sec01 p.strong{font-size: 60px;display: flex;align-items: center;justify-content: center;}
 .wrap.mob .sec01 p.strong:after{width: 48px;height: 48px;background-size: contain;}
 
@@ -250,6 +250,9 @@ ul.grp_check{display: flex;}
 .wrap.mob .sec03 .swiper-slide p{position: absolute;left:12px;bottom: 12px;font-weight: 700;font-size: 18px;line-height: 140%;color: #E9ECEF;}
 .wrap.mob .sec03 .swiper-pagination{padding: 0;height: 8px;width: 220px;margin: 30px auto 0;}
 .wrap.mob .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{background: #343A40;}
+
+.sec04 .txt_sec04{font-size: 15px;line-height: 21px;margin-top: 20px;}
+.sec04 .btn_cm{margin-top: 30px;}
 
 .wrap.mob footer p{font-size: 13px;line-height: 145%;}
 .wrap.mob footer .f_logo{font-weight: 500;font-size: 14px;margin-bottom: 15px;}
