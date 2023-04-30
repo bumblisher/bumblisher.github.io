@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="resource/css/reset.css">
     <link rel="stylesheet" href="resource/css/common.css">
     <script src="resource/js/jquery-3.4.1.min.js"></script>
@@ -81,6 +82,77 @@
                     <button class="btn_cm">자세히 보기</button>
                 </div>
             </div>
+            
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <ul>
+                            <li>
+                                <img src="/resource/images/img_swiper01.png" alt="">
+                                <p>마스코타펫</p>
+                            </li>
+                            <li>
+                                <img src="/resource/images/img_swiper02.png" alt="">
+                                <p>베베드시앙</p>
+                            </li>
+                            <li>
+                                <img src="/resource/images/img_swiper03.png" alt="">
+                                <p>동그라운드</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <ul>
+                            <li>
+                                <img src="/resource/images/img_swiper04.png" alt="">
+                                <p>쁘다마래</p>
+                            </li>
+                            <li>
+                                <img src="/resource/images/img_swiper05.png" alt="">
+                                <p>강아지를 부탁해</p>
+                            </li>
+                            <li>
+                                <img src="/resource/images/img_swiper06.png" alt="">
+                                <p>러블리독</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <ul>
+                            <li>
+                                <img src="/resource/images/img_swiper07.png" alt="">
+                                <p>카페청솔로9 동대구역점</p>
+                            </li>
+                            <li>
+                                <img src="/resource/images/img_swiper08.png" alt="">
+                                <p>네일또바</p>
+                            </li>
+                            <li>
+                                <img src="/resource/images/img_swiper09.png" alt="">
+                                <p>펫스토리</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        
+            <!-- Initialize Swiper -->
+            <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: "auto",
+                centeredSlides: true,
+                spaceBetween: 30,
+                grabCursor: true,
+                pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                },
+            });
+            </script>
         </section>
         <section id="sec04" class="sec04">
             <div class="section_inner">

@@ -63,9 +63,22 @@ footer .copy{color:#DEE2E6;font-size: 13px;margin-top: 20px;opacity: 0.5;}
 
 /* sec03 */
 .sec03{background:#E5EDFF;}
+.sec03 .section_inner{padding-bottom: 70px;}
 .sec03 .grp_sec03{display: flex;align-items: center;margin-top: 50px;}
 .sec03 .grp_sec03 p{font-size: 48px;font-weight: 400;line-height: 68px;color:#343A40}
 .sec03 .grp_sec03 .btn_cm{margin-left: auto;}
+
+.sec03 .swiper{padding-bottom: 150px;}
+.sec03 .swiper-slide{width: 1260px;}
+.sec03 .swiper-slide ul{display: flex;filter: drop-shadow(0px 35px 55px rgba(0, 0, 0, 0.25));}
+.sec03 .swiper-slide ul li{position: relative;width: 400px;height: 400px;overflow: hidden;border-radius: 20px;}
+.sec03 .swiper-slide ul li p{position: absolute;left:20px;bottom: 20px;font-weight: 700;font-size: 26px;line-height: 140%;color: #E9ECEF;}
+.sec03 .swiper-slide ul li+li{margin-left: 30px;}
+.sec03 .swiper-slide{opacity: 0.3;transition: opacity 0.7s;}
+.sec03 .swiper-slide-active{opacity: 1;}
+.sec03 .swiper-pagination{position: relative;top:auto;padding-top: 80px;}
+.sec03 .swiper-pagination-bullet{width: 80px;height: 8px;border-radius: 0;margin: 0 10px;}
+.sec03 .swiper-pagination-bullet-active{background:#343A40}
 
 /* sec04 */
 .sec04{background: #fff;}
