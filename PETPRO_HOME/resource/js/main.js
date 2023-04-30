@@ -22,19 +22,31 @@ $(function(){
 	});
 	$("#btnSec03").click(function(e){
 		e.preventDefault();
-		$("html,body").animate({scrollTop : sec03-100},400);
+		if($(this).parents(".wrap").hasClass("mob")){
+			$("html,body").animate({scrollTop : sec03-59},400);
+		}else{
+			$("html,body").animate({scrollTop : sec03-100},400);
+		}
 		$(".btn_menu").removeClass("on");
 		$("header").removeClass("active");
 	});
 	$("#btnSec04").click(function(e){
 		e.preventDefault();
-		$("html,body").animate({scrollTop : sec04-100},400);
+		if($(this).parents(".wrap").hasClass("mob")){
+			$("html,body").animate({scrollTop : sec04-59},400);
+		}else{
+			$("html,body").animate({scrollTop : sec04-100},400);
+		}
 		$(".btn_menu").removeClass("on");
 		$("header").removeClass("active");
 	});
 	$("#btnSec05").click(function(e){
 		e.preventDefault();
-		$("html,body").animate({scrollTop : sec05-100},400);
+		if($(this).parents(".wrap").hasClass("mob")){
+			$("html,body").animate({scrollTop : sec05-59},400);
+		}else{
+			$("html,body").animate({scrollTop : sec05-100},400);
+		}
 		$(".btn_menu").removeClass("on");
 		$("header").removeClass("active");
 	});
