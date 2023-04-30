@@ -10,17 +10,31 @@ $(function(){
 		$("header").toggleClass("active");
     });
 	// 메뉴이동
-	var sec02 = $("#sec02").offset().top;
 	var sec03 = $("#sec03").offset().top;
-	$("#btnSec02").click(function(e){
+	var sec04 = $("#sec04").offset().top;
+	var sec05 = $("#sec05").offset().top;
+
+	$("#btnSec01").click(function(e){
 		e.preventDefault();
-		$("html,body").animate({scrollTop : sec02},400);
+		$("html,body").animate({scrollTop : 0},400);
 		$(".btn_menu").removeClass("on");
 		$("header").removeClass("active");
 	});
 	$("#btnSec03").click(function(e){
 		e.preventDefault();
-		$("html,body").animate({scrollTop : sec03},400);
+		$("html,body").animate({scrollTop : sec03-100},400);
+		$(".btn_menu").removeClass("on");
+		$("header").removeClass("active");
+	});
+	$("#btnSec04").click(function(e){
+		e.preventDefault();
+		$("html,body").animate({scrollTop : sec04-100},400);
+		$(".btn_menu").removeClass("on");
+		$("header").removeClass("active");
+	});
+	$("#btnSec05").click(function(e){
+		e.preventDefault();
+		$("html,body").animate({scrollTop : sec05-100},400);
 		$(".btn_menu").removeClass("on");
 		$("header").removeClass("active");
 	});
