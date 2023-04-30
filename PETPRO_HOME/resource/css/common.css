@@ -296,7 +296,7 @@ ul.grp_check{display: flex;}
 .wrap.mob .grp_input input[type="text"],
 .wrap.mob .grp_input input[type="password"],
 .wrap.mob .grp_input select{height: 58px;font-size: 16px;}
-.wrap.mob .grp_input select{background-size: 17px;}
+.wrap.mob .grp_input select{background-size: 17px;-webkit-appearance: none;}
 .wrap.mob .grp_input textarea{height: 100px;font-size: 16px;}
 .wrap.mob .grp_check label{padding-left: 34px;font-size:16px;line-height: 26px;}
 .wrap.mob .grp_check label:before{width: 26px;height: 26px;}
@@ -309,5 +309,5 @@ ul.grp_check{display: flex;}
 .wrap.mob footer .f_btn button{width: 100%;}
 .wrap.mob footer .info{margin-top: 40px;}
 .wrap.mob footer .info .f_logo:before{width: 16px;height: 16px;background-size: contain;}
-.wrap.mob footer .info p{font-size: 13px;line-height: 150%;}
+.wrap.mob footer .info p{font-size: 13px;line-height: 150%;-webkit-appearance: none;}
 .wrap.mob footer .info p+p{margin-top: 10px;}
