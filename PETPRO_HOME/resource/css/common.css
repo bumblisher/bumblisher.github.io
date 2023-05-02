@@ -45,11 +45,11 @@ footer .copy{color:#DEE2E6;font-size: 13px;margin-top: 20px;opacity: 0.5;}
 .list_check li+li{margin-top: 10px;}
 
 /* sec01 */
-.sec01{background: #2962F6;height: 1024px;}
-.sec01 .section_inner{padding-top: 30px;padding: 0;height: 100%;background: url('../images/bg_sec01.svg') no-repeat bottom 203px right;}
+.sec01{background: #2962F6;height: 940px;}
+.sec01 .section_inner{padding-top: 30px;padding: 0;height: 100%;background: url('../images/bg_sec01.gif') no-repeat bottom 203px right;}
 .sec01 p{font-size: 26px;line-height: 150%;color:#fff;font-weight: 500;}
-.sec01 p.tit{font-weight: 700;font-size: 50px;padding-top: 390px;}
-.sec01 p.strong{font-weight: 900;font-size: 180px;margin-top: -10px;}
+.sec01 p.tit{font-weight: 700;font-size: 32px;padding-top: 390px;}
+.sec01 p.strong{font-weight: 900;font-size: 140px;margin-top: -10px;}
 .sec01 p.strong:after{content: '';display: inline-block;margin-left: 10px;width: 53px;height: 52px;background: url('../images/ico_sec01.svg') no-repeat center right;}
 
 /* sec02 */
