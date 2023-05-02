@@ -22,7 +22,7 @@ footer .info .f_logo{display: flex;align-items: center;}
 footer .info .f_logo:before{content:'';display: inline-block;width: 26px;height: 26px;margin-right: 8px;background: url(../images/ico_footer.svg) no-repeat center;}
 footer .info .f_logo+p{margin-top: 10px;}
 footer .info p{color:#DEE2E6;font-size: 13px;font-weight: 400;line-height: 150%;}
-footer .info p+p{margin-top: 15px;}
+footer .info p+p{margin-top: 6px;}
 footer .info .strong{font-weight: 700;}
 footer .f_btn{margin-left: auto;flex:none;width: 280px;}
 footer .f_btn button{width: 240px;height: 84px;padding-left: 25px;text-align: left;box-sizing: border-box;background: #2F3B6B url(../images/bg_footer01.svg) no-repeat center right 25px;font-weight: 700;font-size: 14px;line-height: 150%;color: #FFFFFF;border-radius: 10px;}
@@ -36,6 +36,7 @@ footer .copy{color:#DEE2E6;font-size: 13px;margin-top: 20px;opacity: 0.5;}
 .section_inner h2 .strong{font-weight: 900;}
 
 .btn_cm{font-weight: 700;font-size: 20px;line-height: 33px;padding: 20px 40px;box-sizing: border-box;color:#fff;background: #2962F6;border-radius: 10px;}
+.btn_cm:hover{background-color: #1C55EA;}
 
 .list_img{display: flex;}
 .list_img li{text-align: center;}
