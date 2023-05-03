@@ -57,7 +57,7 @@
         <div class="tit_main">
             <div>
                 <h2>마케팅지원</h2>
-                <p>설명글을 입력해 주세요.</p>
+                <p>알림톡을 발송, 조회할 수 있습니다</p>
             </div>
         </div>
         <div class="container">
@@ -69,60 +69,37 @@
                 </ul>
                 <div class="content">
                     <div class="box_top">
-                        <p class="tit">알림톡 발송하기</p>
-                        <div class="right"><button class="btn_cm">조회<span>3</span></button></div>
+                        <button class="back">알림톡 만들기</button>
                     </div>
-                    <div class="box_form">
-                        <div class="grp_form">
-                            <div class="cont">
-                                <p class="tit">신청자 성명</p>
-                                <input type="text">
-                            </div>
-                            <div class="cont">
-                                <p class="tit">연락처</p>
-                                <input type="text">
-                            </div>
-                            <div class="cont">
-                                <p class="tit">사은품 선택</p>
-                                <select type="text">
-                                    <option value="">선택</option>
-                                    <option value="">option01</option>
-                                    <option value="">option02</option>
-                                    <option value="">option03</option>
-                                </select>
-                            </div>
-                            <div class="cont">
-                                <p class="tit">상담완료일</p>
+                    <div class="grp_form sch">
+                        <div class="cont">
+                            <p class="tit">등록일</p>
+                            <div class="grp_flex">
+                                <div class="grp_cal">
+                                    <input type="text">
+                                    <button></button>
+                                </div>
+                                <span class="">-</span>
                                 <div class="grp_cal">
                                     <input type="text" name="" id="">
                                     <button></button>
                                 </div>
                             </div>
-                            <div class="cont">
-                                <p class="tit">상담원명</p>
-                                <input type="text">
-                            </div>
-                            <div class="cont">
-                                <p class="tit">전달할 메시지</p>
-                                <textarea name="" id=""></textarea>
-                            </div>
                         </div>
-                    </div>
-                    <button class="btn_cm">알림톡 발송하기</button>
-                </div>
-            </div>
-        </div>
-        <div class="popup bottom on">
-            <div class="pop_header">
-                <h2>발송한 알림톡 조회</h2>
-                <button class="btn_close"></button>
-            </div>
-            <div class="pop_cont">
-                <div class="grp_sch">
-                    <button class="btn_filter"></button>
-                    <div class="grp_flex">
-                        <input type="text" placeholder="검색어를 입력하세요">
-                        <button class="btn_sch">검색하기</button>
+                        <div class="cont">
+                            <select type="text">
+                                <option value="">전체</option>
+                                <option value="">option01</option>
+                                <option value="">option02</option>
+                                <option value="">option03</option>
+                            </select>
+                        </div>
+                        <div class="cont">
+                            <input type="text">
+                        </div>
+                        <div class="cont">
+                            <button class="btn_sch">검색하기</button>
+                        </div>
                     </div>
                 </div>
                 <div class="content">
@@ -130,75 +107,18 @@
                         <p>목록 (총 <span>3</span> 개)</p>
                         <div class="right"><button>선택 삭제</button></div>
                     </div>
-                    <ul class="tbl_list">
-                        <li>
-                            <div class="grp_flex">
-                                <div class="grp_check">
-                                    <input type="checkbox" name="chk01" id="chk01">
-                                    <label for="chk01"></label>
-                                </div>
-                            </div>
-                            <div class="grp_line">
-                                <p class="tit">010-0000-0000</p>
-                            </div>
-                            <div class="grp_line">
-                                <span>발송ID:</span>
-                                <span>발송결과</span>
-                            </div>
-                            <div class="grp_line">
-                                <span>발송종류:</span>
-                            </div>
-                            <div class="grp_line date">
-                                <span>발송일:2023-03-23 13:22:01</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="grp_flex">
-                                <div class="grp_check">
-                                    <input type="checkbox" name="chk02" id="chk02">
-                                    <label for="chk02"></label>
-                                </div>
-                            </div>
-                            <div class="grp_line">
-                                <p class="tit">010-0000-0000</p>
-                            </div>
-                            <div class="grp_line">
-                                <span>발송ID:</span>
-                                <span>발송결과</span>
-                            </div>
-                            <div class="grp_line">
-                                <span>발송종류:</span>
-                            </div>
-                            <div class="grp_line date">
-                                <span>발송일:2023-03-23 13:22:01</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="grp_flex">
-                                <div class="grp_check">
-                                    <input type="checkbox" name="chk03" id="chk03">
-                                    <label for="chk03"></label>
-                                </div>
-                            </div>
-                            <div class="grp_line">
-                                <p class="tit">010-0000-0000</p>
-                            </div>
-                            <div class="grp_line">
-                                <span>발송ID:</span>
-                                <span>발송결과</span>
-                            </div>
-                            <div class="grp_line">
-                                <span>발송종류:</span>
-                            </div>
-                            <div class="grp_line date">
-                                <span>발송일:2023-03-23 13:22:01</span>
-                            </div>
-                        </li>
-                    </ul>
+                    <ul class="tbl_list"></ul>
+                    <div class="box_pgn">
+                        <button>선택 삭제</button>
+                        <ul class="pagination_sic">
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="dim"></div>
     </div>
 </body>
 
