@@ -305,15 +305,15 @@ ul.grp_check{display: flex;}
 .wrap.mob .grp_input select{background-size: 17px;-webkit-appearance: none;color:#212529}
 .wrap.mob .grp_input textarea{height: 100px;font-size: 16px;}
 .wrap.mob .grp_check label{padding-left: 34px;font-size:16px;line-height: 26px;}
-.wrap.mob .grp_check label:before{width: 26px;height: 26px;}
+.wrap.mob .grp_check label:before{width: 26px;height: 26px;border-radius: 4px;}
 .wrap.mob .grp_check label:after{left: 6px;top: 6px;width: 12px;height: 6px;border-width: 0 0 2px 2px;}
 .wrap.mob .grp_check a{font-size: 14px;line-height: inherit;margin-left: 8px;}
 .wrap.mob .sec06 .grp_sec06 .txt_red{font-size: 18px;line-height: 20px;text-align: center;width: 100%;}
 
 .wrap.mob footer .section_inner{flex-direction: column;}
-.wrap.mob footer .f_btn{margin-left: 0;width: 100%;}
+.wrap.mob footer .f_btn{margin-left: 0;width: 100%;flex-direction: column;}
 .wrap.mob footer .f_btn button{width: 100%;background: #2F3B6B url(../images/mo_bg_footer01.svg) no-repeat center right 40px;}
-.wrap.mob footer .f_btn button+button{background: #2F3B6B url(../images/mo_bg_footer02.svg) no-repeat center right 40px;}
+.wrap.mob footer .f_btn button+button{background: #2F3B6B url(../images/mo_bg_footer02.svg) no-repeat center right 40px;margin: 20px 0 0;}
 .wrap.mob footer .info{margin-top: 40px;}
 .wrap.mob footer .info .f_logo:before{width: 16px;height: 16px;background-size: contain;}
 .wrap.mob footer .info p{font-size: 13px;line-height: 150%;-webkit-appearance: none;}
@@ -332,7 +332,7 @@ ul.grp_check{display: flex;}
 
 .form_box{background-color: #E5EDFF;border-radius: 20px;padding: 50px;margin-top: 50px;}
 .form_box h3{font-size: 36px;font-weight: 800;line-height: 140%;color:#2962F6;}
-.form_box h3:first-child{margin-top: 0;}
+.form_box h3:first-child{margin-top: 0 !important;}
 .form_box .list_form li{display: flex;padding: 35px 0;border-bottom: 1px solid #DEE2E6;}
 .form_box .list_form li:first-child{padding-top: 0;}
 .form_box .list_form li > .tit{font-size: 24px;line-height: 140%;font-weight: 700;flex:none;width: 308px;}
@@ -352,3 +352,33 @@ ul.grp_check{display: flex;}
 .form_box + .txt_sec{margin-top: 50px;font-size: 22px;font-weight: 700;}
 .txt_sec + .box_btn{margin-top: 50px;text-align: center;}
 .txt_sec + .box_btn .btn_cm{padding: 20px 80px;height: 80px;}
+
+/* 모바일 */
+.wrap.mob .section_inner .txt_sec{font-size: 15px;}
+.wrap.mob .section_inner h3{margin: 30px 0 20px;}
+.wrap.mob .m2_list_sec02{grid-template-columns: 1fr;}
+.wrap.mob .m2_list_sec02 li{display: flex;align-items: center;text-align: left;padding: 0 0 0 143px;height: 115px;font-size: 16px;}
+.wrap.mob .m2_list_sec02 li:nth-child(1){background-position: 30px center;background-size: 70px;}
+.wrap.mob .m2_list_sec02 li:nth-child(2){background-position: 35px center;background-size: 80px;}
+.wrap.mob .m2_list_sec02 li:nth-child(3){background-position: 30px center;background-size: 80px;}
+.wrap.mob .m2_list_sec02 li:nth-child(4){background-position: 45px center;background-size: 50px;}
+.wrap.mob .section_inner .grp_check.main_chk label{font-size: 16px;}
+.wrap.mob .form_box{margin: 50px -15px 0;border-radius: 0;padding:30px 15px}
+.wrap.mob .form_box .list_form li{flex-direction: column;padding: 30px 0;}
+.wrap.mob .form_box h3{font-size: 22px;}
+.wrap.mob .form_box .list_form li:first-child{padding-top: 0;}
+.wrap.mob .form_box .list_form li > .tit{font-size: 18px;width: auto;margin-bottom: 10px;}
+.wrap.mob .form_box .list_form li > .cont p{font-size: 15px;}
+.wrap.mob .form_box .list_form li > .cont p + .grp_form{margin-top: 15px;}
+.wrap.mob .form_box .list_form li > .cont .grp_form p{font-size: 16px;}
+.wrap.mob .form_box .list_form li > .cont input[type=text]{width: 100%;height: 50px;border-radius: 5px;font-size: 16px;}
+.wrap.mob .form_box .grp_radio2{flex-wrap: wrap;}
+.wrap.mob .form_box .grp_radio2 label{font-size: 16px;font-weight: 400;}
+.wrap.mob .grp_radio2 label:before{width: 24px;height: 24px;}
+.wrap.mob .grp_radio2 input[type="radio"]:checked + label:before{box-shadow: inset 0px 0px 0 5px #0063FF;}
+.wrap.mob .form_box > .txt{font-size: 16px;margin-top: 30px;}
+.wrap.mob .form_box textarea{height: 271px;font-size: 14px;border-radius: 10px;}
+.wrap.mob .form_box .list_form.inner li .grp_form+.grp_form{margin-top: 20px;}
+.wrap.mob .form_box + .txt_sec{margin-top: 30px;}
+.wrap.mob .txt_sec + .box_btn{margin-top: 30px;}
+.wrap.mob .txt_sec + .box_btn .btn_cm{height: 59px;width: 100%;}

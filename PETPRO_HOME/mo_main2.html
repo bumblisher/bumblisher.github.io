@@ -12,15 +12,16 @@
     <title>PETPRO</title>
 </head>
 <body>
-    <div class="wrap main2">
+    <div class="wrap main2 mob">
         <header>
             <div class="header_inner">
                 <h1 class="logo"><a href="#">PETPRO</a></h1>
+                <button class="btn_menu">메뉴<span></span><span></span><span></span></button>
                 <div class="grp_link">
-                    <a href="#" id="">PETPRO</a>
-                    <a href="#" id="">PARTNER</a>
-                    <a href="#" id="">ADVERTISER</a>
-                    <a href="#" id="">CONSULTING</a>
+                    <a href="#" id="btnSec01">PETPRO</a>
+                    <a href="#" id="btnSec03">PARTNER</a>
+                    <a href="#" id="btnSec04">ADVERTISER</a>
+                    <a href="#" id="btnSec05">CONSULTING</a>
                 </div>
             </div>
         </header>
@@ -47,9 +48,9 @@
                         광고비 차감</li>
                     <li>4. 월1회 무료디자인 제공</li>
                 </ul>
-                <p class="txt_sec strong mt50">본 신청서는 ㈜삼성펫프로 광고주 회원으로 무료등록되며 광고신청시 광고비를 과금합니다.<br>
-                    본 신청서는 광고진행 상담을 목적으로 합니다. 아래 신청서 내용을 상세하게 기재해 주세요.</p>
-                <div class="grp_form mt30">
+                <p class="txt_sec strong mt30">본 신청서는 ㈜삼성펫프로 광고주 회원으로 무료등록되며 <br>광고신청시 광고비를 과금합니다.<br>
+                    본 신청서는 광고진행 상담을 목적으로 합니다. <br>아래 신청서 내용을 상세하게 기재해 주세요.</p>
+                <div class="grp_form mt20">
                     <div class="grp_check main_chk">
                         <input type="checkbox" name="check01" id="check01">
                         <label for="check01" >위 내용을 확인하였습니다.</label>
@@ -61,7 +62,7 @@
                         <li>
                             <p class="tit">광고지역 선택</p>
                             <div class="cont">
-                                <p>희망하시는 광고지역을 선택해 주세요. 광고매장 3곳에 광고가 실행됩니다.<br>
+                                <p>희망하시는 광고지역을 선택해 주세요. 광고매장 3곳에 광고가 실행됩니다. 
                                     지역은 중복 선택이 가능합니다.</p>
                                 <div class="grp_form flex">
                                     <p>제1광고지역</p>
@@ -120,9 +121,9 @@
                                         <input type="radio" name="radio01" id="radio01-2">
                                         <label for="radio01-2" >10개 550,000</label>
                                         <input type="radio" name="radio01" id="radio01-3">
-                                        <label for="radio01-3" >20개 110,000</label>
+                                        <label for="radio01-3" class="ml0 mt15">20개 110,000</label>
                                         <input type="radio" name="radio01" id="radio01-4">
-                                        <label for="radio01-4" >상담 후 결정</label>
+                                        <label for="radio01-4" class="mt15">상담 후 결정</label>
                                     </div>
                                 </div>
                             </div>
@@ -207,18 +208,18 @@
                                         <input type="text" placeholder="연락처">
                                     </div>
                                 </div>
-                                <div class="grp_form flex">
+                                <div class="grp_form flex ">
                                     <p>신청자 소속</p>
                                     <div class="grp_input">
                                         <input type="text" placeholder="소속중인 보험대리점명을 기재해 주세요.">
-                                        <button class="btn_cm">명함 첨부</button>
                                     </div>
+                                    <button class="btn_cm mt10">명함 첨부</button>
                                 </div>
                             </div>
                         </li>
                     </ul>
                 </div>
-                <p class="txt_sec">신청서 접수 후 영업일 2일 이내에 담당자가 배정되어 연락드립니다.</p>
+                <p class="txt_sec tac">신청서 접수 후 영업일 2일 이내에<Br>담당자가 배정되어 연락드립니다.</p>
                 <div class="box_btn">
                     <button class="btn_cm">멤버십 신청하기</button>
                 </div>
@@ -226,17 +227,20 @@
         </section>
         <footer>
             <div class="section_inner">
-                <div class="info">
-                    <p class="f_logo">㈜삼성 펫프로 | 대표이사 주태성 | 사업자등록번호 : 351-86-02778</p>
-                    <p>보험대리점명 : (주)삼성펫프로 / 보험대리점등록번호 : 제2023010060호</p>
-                    <p>주소 : 인천광역시 연수구 아트센터대로  87 402동 307호</p>
-                    <p><span class="strong">상담센터 : 실시간 채팅</span> 또는 <span class="strong">전화상담</span> 평일 10:00 ~ 18: 00 
-                        <span class="strong" style="margin-left: 10px;">대표번호 : 1544-8620</span></p>
-                    <p>개인정보책임: 주태성   / 개인정보 수집·이용동의 </p>
-                </div>
                 <div class="f_btn">
                     <button>펫보험 판매교육<br>신청하기</button>
                     <button>펫보험 컨설팅<br>제안서</button>
+                </div>
+                <div class="info">
+                    <p class="f_logo">㈜삼성 펫프로 | 대표이사 주태성</p>
+                    <p>| 사업자등록번호 : 147-23-01608 <br>
+                        | 통신판매 : 제 2022-인천연수구-1311호<br>
+                        보험대리점명: (주)삼성 펫프로<br>
+                        보험대리점등록번호 : 제2023010060호</p>
+                    <p>주소 : 인천광역시 연수구 아트센터대로  87 402동 307호</p>
+                    <p><span class="strong">상담센터 : 실시간 채팅</span> 또는 <span class="strong">전화상담</span> 평일 10:00 ~ 18: 00<br>
+                        <span class="strong">대표번호 : 1544-8620</span></p>
+                    <p>개인정보책임: 주태성   / 개인정보 수집·이용동의 </p>
                 </div>
             </div>
         </footer>
