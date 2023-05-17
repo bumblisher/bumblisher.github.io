@@ -2,12 +2,16 @@ $(document).ready(function() {
 
     $('.nav_menu >li>a').on('click',function(){
         var indexG = $(this).parent().index();
+        var hasC = $(this).parent().hasClass("nodep");
 		var sub_menu = $(".nav_menu").children().eq(indexG).children('ul');
 
 		if(sub_menu.is(":visible")){
 			sub_menu.css("display","block");
             sub_menu.slideUp();
             $(".nav_menu").children().eq(indexG).removeClass("active");
+        }else if(hasC){
+            $('.nav_menu li ').removeClass("on");
+            $(this).parent().addClass("on")
         }
         else{
             sub_menu.slideDown();
@@ -19,7 +23,7 @@ $(document).ready(function() {
         
         var sub_menu2 = $(this).siblings("ul");
 
-        $('.nav_menu ul > li ').removeClass("on");
+        $('.nav_menu li ').removeClass("on");
         $(this).parent().addClass("on")
     
         if(sub_menu2.is(":visible")){
