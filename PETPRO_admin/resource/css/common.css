@@ -234,7 +234,7 @@ header > .right .btn_noti.on{background: url(../images/btn_noti_on.svg) center n
 .grp_flex > *+* { margin-left: 10px; } 
 .grp_flex.chk_col > label{flex:1;}
 
-.grp_tbl{width: 100%;margin-top: 15px;}
+.grp_tbl{width: 100%;/*margin-top: 15px;*/}
 .grp_tbl li+li{margin-top: 10px;}
 .grp_tbl li .grp_flex .tit{color:#000;width: 100px;}
 .grp_tbl li .grp_flex .tit+*{margin-left: 0;}

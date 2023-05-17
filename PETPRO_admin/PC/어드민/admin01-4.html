@@ -63,50 +63,28 @@
                     <p>설명글을 입력해 주세요.</p>
                 </div>
                 <ul class="tab_cont_list">
-                    <li><button>광고주 신청서 조회</button></li>
-                    <li class="on"><button>광고주 등록</button></li>
+                    <li class="on"><button>광고주 신청서 조회</button></li>
+                    <li><button>광고주 등록</button></li>
                     <li><button>광고주 조회</button></li>
                 </ul>
                 <div class="content">
+                    <div class="box_top">
+                        <button class="back">심사등록</button>
+                    </div>
                     <h3>신청자 정보</h3>
                     <div class="box_form">
                         <div class="grp_form" style="flex: 1.5;">
                             <div class="cont">
                                 <p class="tit">신청채널</p>
-                                <input type="text" placeholder="신청채널을 입력하세요">
-                            </div>
-                            <div class="cont">
-                                <p class="tit">아이디</p>
-                                <div class="grp_flex">
-                                    <span>A</span>
-                                    <input type="text">
-                                    <button class="btn_cm">중복확인</button>
-                                </div>
-                            </div>
-                            <div class="cont">
-                                <p class="tit">비밀번호</p>
-                                <div class="grp_flex">
-                                    <span>!</span>
-                                    <input type="password">
-                                </div>
+                                <input type="text">
                             </div>
                             <div class="cont">
                                 <p class="tit">광고주 성명</p>
-                                <input type="text" placeholder="광고주 성명을 입력하세요">
+                                <input type="text">
                             </div>
                             <div class="cont">
                                 <p class="tit">광고주 연락처</p>
-                                <div class="grp_flex">
-                                    <input type="text">
-                                    <button class="btn_cm">인증하기</button>
-                                </div>
-                            </div>
-                            <div class="cont">
-                                <p class="tit">인증번호</p>
-                                <div class="grp_flex">
-                                    <input type="text">
-                                    <button class="btn_cm">확인하기</button>
-                                </div>
+                                <input type="text">
                             </div>
                             <div class="cont">
                                 <ul class="grp_tbl">
@@ -170,8 +148,20 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                        <div class="grp_form" style="flex: 1.5;">
+                            <div class="cont">
+                                <p class="tit">광고기간</p>
+                                <div class="grp_flex">
+                                    <div class="grp_cal">
+                                        <input type="text" name="" id="" readonly>
+                                        <button></button>
+                                    </div>
+                                    <span class="">-</span>
+                                    <div class="grp_cal">
+                                        <input type="text" name="" id="" readonly>
+                                        <button></button>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="cont">
                                 <ul class="grp_tbl">
                                     <li class="top">
@@ -261,6 +251,8 @@
                                     <option value="">option03</option>
                                 </select>
                             </div>
+                        </div>
+                        <div class="grp_form" style="flex: 1.5;">
                             <div class="cont">
                                 <p class="tit">대행사</p>
                                 <select type="text">
@@ -311,18 +303,15 @@
                     </div>
                 </div>
                 <div class="content">
+                    <h3>심사 정보</h3>
                     <div class="box_form">
                         <div class="grp_form" style="flex:1.5">
                             <div class="cont">
-                                <p class="tit">접수채널</p>
+                                <p class="tit">심사자 성명</p>
                                 <input type="text">
                             </div>
                             <div class="cont">
-                                <p class="tit">등록사원</p>
-                                <input type="text">
-                            </div>
-                            <div class="cont">
-                                <p class="tit">심사일시</p>
+                                <p class="tit">신청채널</p>
                                 <div class="grp_cal">
                                     <input type="text" name="" id="" readonly>
                                     <button></button>
@@ -348,7 +337,8 @@
                     </div>
                 </div>
                 <div class="box_btn">
-                    <button class="btn_cm">등록하기</button>
+                    <button class="btn_cm gray">취소하기</button>
+                    <button class="btn_cm">수정하기</button>
                 </div>
             </div>
         </div>
