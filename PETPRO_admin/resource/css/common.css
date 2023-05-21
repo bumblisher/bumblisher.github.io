@@ -315,6 +315,7 @@ header > .right .btn_noti.on{background: url(../images/btn_noti_on.svg) center n
 .box_board table td button{padding: 5px 8px;font-size: 13px;font-weight: 500;color:#fff;background: #343A40;border-radius: 4px;}
 .box_board table td button.blue{background: #4C6EF5;}
 .box_board table td button.red{background: #D6336C;}
+.box_board table td button.white{background: #fff;border:1px solid #DEE2E6;color:#212529}
 .box_board table td > a{color:#4C6EF5}
 .box_board table th input[type=checkbox],
 .box_board table td input[type=checkbox]{width: 16px;height: 16px;}
