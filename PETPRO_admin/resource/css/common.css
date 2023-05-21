@@ -184,8 +184,10 @@ header > .right .btn_noti.on{background: url(../images/btn_noti_on.svg) center n
 .box_form.space{padding-right: 25%;}
 .box_form.space2{padding-right: 65%;}
 .box_form .grp_form{flex:1}
+.box_form .grp_form h4{margin: 30px 0 15px;}
 .box_form .grp_form .cont{padding-bottom: 15px;border-bottom:1px solid #E9ECEF;/*padding-right: 170px;*/} 
 .box_form .grp_form .cont:empty{border:0}
+.box_form .grp_form .cont:last-child{border-bottom: 0;}
 .box_form .grp_form .cont + h3{margin-top: 20px;}
 .box_form .grp_form .cont .grp_flex .tit+*{margin-left: 0;}
 .box_form +.box_form{margin-top: 50px;}
@@ -449,6 +451,7 @@ body.login .wrap{position: relative;padding: 0 20px;}
 .popup .pop_footer { height: 64px; padding:0; box-sizing: border-box; display: flex; align-items: center;justify-content: center;flex:none} 
 .popup .pop_footer > button {flex:1;height: 64px;border-radius: 0;font-size: 16px;font-weight: 400;}
 .popup .pop_footer > .btn_cm.gray{background-color: #CED4DA;color:#212529}
+.popup .pop_cont .box_list:first-child{margin-top: 0;}
 .popup .pop_cont .txt_red{font-size: 13px;color:#D6336C;text-align: center;margin-top: 15px;line-height: 140%;}
 .dim { display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 2000; background: rgba(0, 0, 0, 0.5); } 
 .popup.on { display: flex;flex-direction: column;max-height: 88vh;} 
