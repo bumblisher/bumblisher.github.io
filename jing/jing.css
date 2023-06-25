@@ -1,0 +1,86 @@
+.bigbox{
+    width: 100%;
+    height: 1200px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.box, .bumbox{
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:100px;
+    display: block;
+
+}
+.mb{
+    margin-left: 30px;
+}
+.title{
+    margin-top: 15px;
+    font-size: 30px;
+}
+.name{
+    margin-top: 15px;
+    margin-left: 3px;
+    display: inline-block;
+    margin-bottom: 5PX;
+}
+.mmb{
+    border-color: black;
+    border-radius: 5px;
+    width: 330px;
+    height: 27px;
+    padding-left: 10px;
+    border-width: 1px;
+}
+.mmb2{
+    border-color: gray;
+    border-radius: 5px;
+    width: 140px;
+    height: 27px;
+    padding-left: 10px;
+    margin-right: 20px;
+    display: inline-block;
+    border-width: 1px;
+    
+}
+.sp{
+    display: inline-block;
+}
+.ta{    
+    border-color: black;
+    border-radius: 5px;
+    width: 330px;
+    height: 27px;
+    border-width: 1px;
+    resize: none;
+    height: 125px;
+}
+.b{
+    background-color: rgba(255, 201, 4, 0.966);
+    width: 100px;
+    height: 27px;
+    border-radius: 5px;
+    margin-left: 135px;
+    border: 1px;
+    color: aliceblue;
+
+}
+
+
+
+
+
+/* 범의 영역 */
+.bumbox{padding: 30px}
+.bumbox h2{margin: 0 0 30px;}
+.bumbox h3{margin: 20px 0 5px 3px;}
+.bumbox input[type=text]{height: 40px;width:100%;margin:0;padding:5px;border:1px solid #000;box-sizing:border-box}
+.bumbox textarea{resize: none;width:100%;height: 80px;box-sizing: border-box;}
+.banban{display: flex;}
+.banban div{flex:2;margin-right: 10px;}
+.banban div:last-child{margin-right: 0;}
+.bumbox input[type=submit]{float:right}
