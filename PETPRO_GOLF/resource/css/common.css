@@ -11,6 +11,7 @@ header .header_inner{max-width: 1000px;width: 100%;margin: 0 auto;display: flex;
 footer{background-color: #232B4C;}
 footer .section_inner{position: relative;padding: 80px 0; width: 1000px;display: flex;}
 footer .info .f_logo{display: flex;align-items: center;}
+footer .info .f_logo br{display: none;}
 footer .info .f_logo:before{content:'';display: inline-block;width: 26px;height: 26px;margin-right: 8px;background: url(../images/ico_footer.svg) no-repeat center;}
 footer .info .f_logo+p{margin-top: 10px;}
 footer .info p{color:#DEE2E6;font-size: 20px;font-weight: 400;line-height: 150%;}
@@ -29,9 +30,10 @@ footer .copy{color:#DEE2E6;font-size: 13px;margin-top: 20px;opacity: 0.5;}
 
 
 /* sec01 */
-.sec01{height: 1080px;background:#D9E7FF url('../images/bg_sec01.svg') no-repeat bottom center;}
+.sec01{height: 1080px;position: relative;}
+.sec01:after{content: '';position: absolute;left:50%;bottom: 50px;margin-left: -187px;width: 373px;height: 601px;background: url(../images/mo_img_sec01.svg) no-repeat center bottom;background-size: contain;z-index: 10;}
 .sec01 .strong br{display: none;}
-.sec01 .section_inner{height: 100%;padding-top: 200px;}
+.sec01 .section_inner{height: 100%;padding-top: 200px;background:#D9E7FF url(../images/mo_bg_sec01.svg) no-repeat center bottom;max-width: inherit;background-size: contain;width: auto;}
 .sec01 p{font-size: 48px;font-weight: 600;line-height: 150%;color:#2962F6;text-align: center;letter-spacing: -1.44px;}
 .sec01 p.strong{font-weight: 800;font-size: 80px;margin-top: -10px;letter-spacing: -2.4px;}
 
@@ -207,4 +209,13 @@ ul.grp_check{display: flex;}
     .sec04 .txt{font-size: 22px;}
     .sec04 .list_txt li{font-size: 18px;}
     .sec04 .txt_sub{margin-top: 10px;font-size: 16px;}
+
+    footer .section_inner{width: 100%;flex-direction: column;padding:50px 20px}
+    footer .f_btn{order:-1;margin:0}
+    footer .f_btn button{width:100%;background-position: center right 45px;}
+    footer .info {margin-top: 30px;}
+    footer .info p{font-size: 13px;}
+    footer .info .f_logo{align-items: flex-start;}
+    footer .info .f_logo br{display: inline-block;}
+    footer .info .f_logo:before{flex:none;width:16px;height: 16px;background-size: contain;margin-right: 3px;}
 }
