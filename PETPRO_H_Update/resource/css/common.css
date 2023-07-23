@@ -59,9 +59,9 @@ footer .copy{color:#DEE2E6;font-size: 13px;margin-top: 20px;opacity: 0.5;}
 .sec01 .swiper-button-next{width: 60px;height: 60px;background: url('../images/ico_swiper_next.svg') no-repeat center;background-size: contain;margin-right: -100px;margin-top: -50px;}
 .sec01 .swiper-button-next:after{display: none;}
 .sec01 p{font-size: 22px;line-height: 150%;color:#fff;font-weight: 500;}
-.sec01 p.tit{font-weight: 700;font-size: 50px;padding-top: 240px;}
-.sec01 p.strong{font-weight: 900;font-size: 120px;margin-top: -10px;}
-.sec01 p.strong:after{content: '';display: inline-block;margin-left: 10px;width: 53px;height: 52px;background: url('../images/ico_sec01.svg') no-repeat center right;}
+.sec01 p.txt01{font-weight: 700;font-size: 50px;}
+.sec01 p.txt02{font-weight: 900;font-size: 120px;margin-top: -10px;}
+.sec01 p.txt02:after{content: '';display: inline-block;margin-left: 10px;width: 53px;height: 52px;background: url('../images/ico_sec01.svg') no-repeat center right;}
 
 /* sec02 */
 .sec02{background:#fff;}
