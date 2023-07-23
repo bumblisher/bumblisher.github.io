@@ -52,12 +52,13 @@ footer .copy{color:#DEE2E6;font-size: 13px;margin-top: 20px;opacity: 0.5;}
 .sec01{background: #2962F6 url(../images/bg_sec01_arrow.svg) no-repeat center bottom 20px;height: 980px;max-height: 100vh;min-height: 900px;}
 .sec01 .section_inner{position: relative;padding-top: 130px;height: 100%;}
 .sec01 .mySwiper{height:600px;position: relative;}
+.sec01 .mySwiper .swiper-slide{display: flex;align-items: flex-start;justify-content: center;flex-direction: column;}
 .sec01 .mySwiper .swiper-slide:nth-child(1){background: url('../images/bg_sec01.svg') no-repeat center right 30px;}
 .sec01 .swiper-button-prev{width: 60px;height: 60px;background: url('../images/ico_swiper_next.svg') no-repeat center;transform: rotate(180deg);background-size: contain;margin-left: -100px;margin-top: -50px;}
 .sec01 .swiper-button-prev:after{display: none;}
 .sec01 .swiper-button-next{width: 60px;height: 60px;background: url('../images/ico_swiper_next.svg') no-repeat center;background-size: contain;margin-right: -100px;margin-top: -50px;}
 .sec01 .swiper-button-next:after{display: none;}
-.sec01 p{font-size: 26px;line-height: 150%;color:#fff;font-weight: 500;}
+.sec01 p{font-size: 22px;line-height: 150%;color:#fff;font-weight: 500;}
 .sec01 p.tit{font-weight: 700;font-size: 50px;padding-top: 240px;}
 .sec01 p.strong{font-weight: 900;font-size: 120px;margin-top: -10px;}
 .sec01 p.strong:after{content: '';display: inline-block;margin-left: 10px;width: 53px;height: 52px;background: url('../images/ico_sec01.svg') no-repeat center right;}
