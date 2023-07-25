@@ -321,6 +321,7 @@ ul.grp_check{display: flex;}
 .wrap.mob .sec01 p.tit{padding-top: 98px;font-size: 23px;margin-bottom: 0;}
 .wrap.mob .sec01 p.strong{font-size: 60px;display: flex;align-items: center;justify-content: center;}
 .wrap.mob .sec01 p.strong:after{width: 48px;height: 48px;background-size: contain;}
+.wrap.mob .sec01 .swiper-pagination-bullet{width: 10px;height: 10px;}
 
 .wrap.mob .sec02 .list_sec02{grid-template-columns: 1fr;margin-top: 30px;gap: 15px;}
 .wrap.mob .sec02 .list_sec02 li{height: 160px;background-size: 35px;background-position: center right 25px;}
