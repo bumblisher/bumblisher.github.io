@@ -217,12 +217,12 @@
                     <span style="color: #868E96;">(지역별 조기 마감될 수 있으니, 꼭 확인해 주세요)</span></p>
                 <ul>
                     <li class="blue">서울: 80개 매장 (800대)</li>
-                    <li>경기: 30개 매장 (300대)</li>
-                    <li>인천: 30개 매장 (300대)</li>
-                    <li>대구: 20개 매장 (200대)</li>
-                    <li>울산: 10개 매장 (100대)</li>
-                    <li>부산: 20개 매장 (200대)</li>
-                    <li>대전: 10개 매장 (100대)</li>
+                    <li>경기: 30개 <br>매장 (300대)</li>
+                    <li>인천: 30개 <br>매장 (300대)</li>
+                    <li>대구: 20개 <br>매장 (200대)</li>
+                    <li>울산: 10개 <br>매장 (100대)</li>
+                    <li>부산: 20개 <br>매장 (200대)</li>
+                    <li>대전: 10개 <br>매장 (100대)</li>
                 </ul>
             </div>
         </section>
@@ -283,20 +283,14 @@
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
                 <!-- Swiper JS -->
                 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
             
                 <!-- Initialize Swiper -->
                 <script>
                 var swiper = new Swiper(".mySwiper", {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
+                    slidesPerView: "auto",
+                    spaceBetween: 15,
                     pagination: {
                     el: ".swiper-pagination",
                     clickable: true,

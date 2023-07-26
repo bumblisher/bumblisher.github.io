@@ -690,5 +690,13 @@ ul.grp_check{display: flex;}
 .wrap.mob.main4 .sec_free2 .section_inner p+p+p{font-size: 18px;}
 .wrap.mob.main4 .sec03 .tab_box .tab_btn{grid-template-columns: 1fr 1fr 1fr;}
 .wrap.mob.main4 .sec03 .tab_box .tab_cont .ly .cont{height: 120px;padding: 0 0 0 145px;background-position: left 25px center !important;background-size: 100px !important;}
+.wrap.mob.main4 .sec05 .section_inner{height: 860px;background-position:center bottom 20px;background-size: 300px;}
 .wrap.mob.main4 .sec04 .section_inner h2{font-size: 28px;}
-.wrap.mob.main4 .sec05 .section_inner ul{width: 100%;}
+.wrap.mob.main4 .sec05 .section_inner ul{width: 100%;gap: 10px;}
+.wrap.mob.main4 .sec05 .section_inner ul li{font-size: 13px;text-align: center;}
+.wrap.mob.main4 .sec05 .section_inner ul li.blue{font-size: 15px;}
+
+.main4 .sec_shop .section_inner{flex-direction: column;}
+.main4 .sec_shop .section_inner h2{margin: 0 0 50px;}
+.main4 .sec_shop .mySwiper{width: 100%;}
+.main4 .sec_shop .mySwiper .swiper-slide{width: 195px;}
