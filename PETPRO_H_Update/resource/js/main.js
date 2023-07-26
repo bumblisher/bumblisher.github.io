@@ -8,10 +8,10 @@ $(function(){
 	$(".tab_btn button").on("click", function(){
 		var idx = $(this).parent().index();
 
-		$(".tab_btn button").removeClass("on");
+		$(this).parents(".tab_box").find(".tab_btn button").removeClass("on");
 		$(this).addClass("on");
-		$(".tab_cont > li").removeClass("on");
-		$(".tab_cont > li").eq(idx).addClass("on");
+		$(this).parents(".tab_box").find(".tab_cont > li").removeClass("on");
+		$(this).parents(".tab_box").find(".tab_cont > li").eq(idx).addClass("on");
 	});
 	
 });
