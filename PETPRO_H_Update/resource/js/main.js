@@ -8,7 +8,6 @@ $(function(){
 	$(".tab_btn button").on("click", function(){
 		var idx = $(this).parent().index();
 
-		console.log(idx);
 		$(".tab_btn button").removeClass("on");
 		$(this).addClass("on");
 		$(".tab_cont > li").removeClass("on");
