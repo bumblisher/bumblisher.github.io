@@ -720,7 +720,6 @@ ul.grp_check{display: flex;}
 .main5 .sec02 .swiper-slide:nth-child(2){background:#E5EDFF url(../images/bg_main5_tab-2.svg) no-repeat right 75px center;}
 .main5 .sec02 .swiper-slide:nth-child(3){background:#E5EDFF url(../images/bg_main5_tab-3.svg) no-repeat right 75px center;}
 .main5 .sec02 button.btn_cm.kakao{font-size: 18px;font-weight: 700;;}
-
 .main5 .sub_h2{font-size: 26px;font-weight: 400;color: #343A40;margin-top: 15px;line-height: 150%;}
 .main5 .sub_h2 span{font-weight: 800;}
 .main5 h3.black{font-size: 26px;font-weight: 700;color: #000;margin-top: 40px;}
@@ -743,3 +742,27 @@ ul.grp_check{display: flex;}
 .main5 button.btn_cm.kakao:hover{background: #f0d90a;}
 .main5 .sec04{background: #E5EDFF;}
 .main5 .sec04 .section_inner h2{display: block;}
+
+/* main5 mob */
+.wrap.main5.mob{min-width: auto;}
+.wrap.main5.mob .sec03 .section_inner{padding-bottom: 50px;}
+.wrap.main5.mob .sec01 .section_inner{width: 100%;height: 100%;background: url(../images/mo_bg_main5_sec01.svg) no-repeat top 100px center;}
+.wrap.main5.mob .sec02 .section_inner h2{width: 100%;}
+.wrap.main5.mob .sec02 .swiper-slide{height: 530px;background-position: center bottom 150px;background-size: 250px;}
+.wrap.main5.mob .sec02 .swiper-slide:nth-child(2){background-position: center bottom 140px;background-size: 180px;}
+.wrap.main5.mob .sec02 .swiper-slide:nth-child(3){background-position: center bottom 140px;background-size: 230px;}
+.wrap.main5.mob .sec02 .swiper-slide p{font-size: 18px;}
+.wrap.main5.mob .sec02 .swiper-slide .txt{font-size: 26px;}
+.wrap.main5.mob .sec02 .swiper-slide .tit{font-size: 22px;}
+.wrap.main5.mob .sec02 .swiper-slide .btn_cm{margin-top: 210px;width: 100%;}
+.wrap.main5.mob .grp_radio {width: 100%;}
+.wrap.main5.mob .grp_radio label{flex:1}
+.wrap.main5.mob .sec03 .list{margin-top: 50px;}
+.wrap.main5.mob .sec03 .list li{font-size: 16px;padding-left: 90px;background-size: 60px;background-position: 15px center;height: 113px;}
+.wrap.main5.mob .sec03 .list li+li{margin-top: 10px;}
+.main5 .box_ipt .grp_form .grp_input .btn_cm.upload{font-size: 16px;}
+.main5 .box_ipt .grp_form .grp_input .btn_cm.upload:before{vertical-align: middle;}
+.main5 .box_ipt .grp_btn{flex-direction: column;}
+.main5 .box_ipt .grp_btn .btn_cm{width: 100%;height: 60px;}
+.main5 .box_ipt .grp_btn .btn_cm+.btn_cm{margin: 15px 0 0;}
+
