@@ -1,0 +1,444 @@
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resource/css/reset.css">
+    <link rel="stylesheet" href="../resource/css/common.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../resource/js/main.js"></script>
+    <title>PETPRO</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <aside>
+            <h1 class="logo"><a href="#">PETPRO</a></h1>
+            <p class="tit">Notice</p>
+            <ul class="nav_noti">
+                <li><a href="#">최근 공지 1</a></li>
+                <li><a href="#">최근 공지 2</a></li>
+            </ul>
+            <p class="tit">Menu</p>
+            <ul class="nav_menu">
+                <li class="active">
+                    <a href="#">회원등록</a>
+                    <ul>
+                        <li class="on"><a href="#">광고주 등록</a></li>
+                        <li><a href="#">광고파트너 등록</a></li>
+                        <li><a href="#">광고대행사 등록</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">정산관리</a>
+                    <ul>
+                        <li><a href="#">광고주</a></li>
+                        <li><a href="#">광고파트너</a></li>
+                        <li><a href="#">광고대행사</a></li>
+                    </ul>
+                </li>
+                <li class="nodep"><a href="#">결제관리</a></li>
+                <li>
+                    <a href="#">CS접수처리</a>
+                    <ul>
+                        <li><a href="#">광고파트너</a></li>
+                        <li><a href="#">광고주</a></li>
+                        <li><a href="#">센터</a></li>
+                    </ul>
+                </li>
+                <li class="nodep"><a href="#">공지사항</a></li>
+                <li class="nodep"><a href="#">이벤트</a></li>
+                <li class="nodep"><a href="#">광고배너</a></li>
+                <li>
+                    <a href="#">DATA</a>
+                    <ul>
+                        <li><a href="#">사원등록</a></li>
+                        <li><a href="#">광고소재</a></li>
+                        <li><a href="#">리워드 상품</a></li>
+                        <li><a href="#">신청지역</a></li>
+                        <li><a href="#">마케팅DB</a></li>
+                        <li><a href="#">RCS현황</a></li>
+                        <li><a href="#">알림톡 현황</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+        <div class="container">
+            <header>
+                <button class="btn_menu"></button>
+                <p>PETPRO POTAL</p>
+                <p>접속IP : 218.237.65.1</p>
+                <div class="right">
+                    <span class="name">최은희 (A등급)님</span>
+                    <span>이 로그인하셨습니다 </span>
+                    <div class="grp_topmenu">
+                        <button class="btn_noti">알림</button>
+                        <button>공지사항</button>
+                        <button>로그아웃</button>
+                    </div>
+                </div>
+            </header>
+            <div class="tab_main dashboard">
+                <div class="content">
+                    <h2>등록신청 및 CS접수 내역</h2>
+                    <div class="box_board">
+                        <table style="height: 210px;">
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>등록신청</th>
+                                    <th>CS접수</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="dash_num">
+                                            <span class="tit">광고주</span>
+                                            <div>
+                                                <span class="sub_tit">심사대기:</span>
+                                                <span class="num">00</span>
+                                                <span>건</span>
+                                            </div>
+                                            <div>
+                                                <span class="sub_tit">심사승인:</span>
+                                                <span class="num">00</span>
+                                                <span>건</span>
+                                            </div>
+                                        </div>
+                                        <div class="dash_num">
+                                            <span class="tit">광고파트너</span>
+                                            <div>
+                                                <span class="sub_tit">심사대기:</span>
+                                                <span class="num">00</span>
+                                                <span>건</span>
+                                            </div>
+                                            <div>
+                                                <span class="sub_tit">심사승인:</span>
+                                                <span class="num">00</span>
+                                                <span>건</span>
+                                            </div>
+                                        </div>
+                                        <div class="dash_num">
+                                            <span class="tit">광고대행사</span>
+                                            <div>
+                                                <span class="sub_tit">심사대기:</span>
+                                                <span class="num">00</span>
+                                                <span>건</span>
+                                            </div>
+                                            <div>
+                                                <span class="sub_tit">심사승인:</span>
+                                                <span class="num">00</span>
+                                                <span>건</span>
+                                            </div>
+                                        </div></td>
+                                    <td class="tac">
+                                        <div class="grp_flex" style="align-items:flex-start;flex-wrap: wrap;">
+                                            <div class="dash_num">
+                                                <span class="tit">광고주</span>
+                                                <div>
+                                                    <span class="sub_tit">미처리: 총</span>
+                                                    <span class="num bold">00</span>
+                                                    <span class="bold">건</span>
+                                                    <div class="dash_num">
+                                                        <span class="tit">광고파트너변경</span>
+                                                        <div>
+                                                            <span class="num">00</span>
+                                                            <span>건</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dash_num">
+                                                        <span class="tit">광고소재변경</span>
+                                                        <div>
+                                                            <span class="num">00</span>
+                                                            <span>건</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dash_num">
+                                                        <span class="tit">시스템 사용여부</span>
+                                                        <div>
+                                                            <span class="num">00</span>
+                                                            <span>건</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dash_num">
+                                                        <span class="tit">DB상담결과 변경</span>
+                                                        <div>
+                                                            <span class="num">00</span>
+                                                            <span>건</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dash_num">
+                                                        <span class="tit">탈퇴</span>
+                                                        <div>
+                                                            <span class="num">00</span>
+                                                            <span>건</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dash_num">
+                                                <span class="tit">광고파트너</span>
+                                                <div>
+                                                    <span class="sub_tit">미처리: 총</span>
+                                                    <span class="num bold">00</span>
+                                                    <span class="bold">건</span>
+                                                    <div class="dash_num">
+                                                        <span class="tit">파트너정보변경</span>
+                                                        <div>
+                                                            <span class="num">00</span>
+                                                            <span>건</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dash_num">
+                                                        <span class="tit">탈퇴</span>
+                                                        <div>
+                                                            <span class="num">00</span>
+                                                            <span>건</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="content">
+                    <h2>결제내역</h2>
+                    <div class="box_board">
+                        <table style="height: 210px;">
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>당일 광고매출(4월 12일)</th>
+                                    <th>당월 누적매출(4월)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><div class="box_num"><span class="num">000,000,000<span>원</span></span></div></td>
+                                    <td><div class="box_num"><span class="num">000,000,000<span>원</span></span></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="content">
+                    <h2>정산내역 상세 리스트
+                        <ul class="tab_sub">
+                            <li><button class="btn_tab on">광고주</button></li>
+                            <li><button class="btn_tab">광고파트너</button></li>
+                            <li><button class="btn_tab">광고대행사</button></li>
+                        </ul>
+                        <div class="right">
+                            <button>전체보기 (<span>5</span>)</button>
+                        </div>
+                    </h2>
+                    <div class="box_board">
+                        <table>
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>광고일</th>
+                                    <th>광고주</th>
+                                    <th>신청자 성명</th>
+                                    <th>정산금액</th>
+                                    <th>상담결과</th>
+                                    <th>변경</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>광고주광고주</td>
+                                    <td>최은희</td>
+                                    <td>10,000</td>
+                                    <td>부재중</td>
+                                    <td><button class="white">변경하기</button></td>
+                                </tr>
+                                <tr>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>광고주광고주</td>
+                                    <td>최은희</td>
+                                    <td>10,000</td>
+                                    <td>부재중</td>
+                                    <td><button class="white">변경하기</button></td>
+                                </tr>
+                                <tr>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>광고주광고주</td>
+                                    <td>최은희</td>
+                                    <td>10,000</td>
+                                    <td>부재중</td>
+                                    <td><button class="white">변경하기</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="display: none;">
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>광고일</th>
+                                    <th>광고파트너</th>
+                                    <th>신청자 성명</th>
+                                    <th>광고주</th>
+                                    <th>정산금액</th>
+                                    <th>상담결과</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>광고파트너</td>
+                                    <td>최은희</td>
+                                    <td>광고중</td>
+                                    <td>상담예약</td>
+                                    <td>10,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>광고파트너</td>
+                                    <td><a href="#">최은희</a></td>
+                                    <td>광고중</td>
+                                    <td>상담예약</td>
+                                    <td><a href="#">10,000</a></td>
+                                </tr>
+                                <tr>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>광고파트너</td>
+                                    <td>최은희</td>
+                                    <td>광고중</td>
+                                    <td>상담예약</td>
+                                    <td>10,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="display: none;">
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>광고일</th>
+                                    <th>광고대행사</th>
+                                    <th>광고주</th>
+                                    <th>광고파트너명</th>
+                                    <th>정산금액</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>광고대행사</td>
+                                    <td>광고주광고주</td>
+                                    <td>광고파트너</td>
+                                    <td>10,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>광고대행사</td>
+                                    <td>광고주광고주</td>
+                                    <td>광고파트너</td>
+                                    <td><a href="#">10,000</a></td>
+                                </tr>
+                                <tr>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>광고대행사</td>
+                                    <td>광고주광고주</td>
+                                    <td>광고파트너</td>
+                                    <td>10,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="content">
+                    <h2>결제내역 상세 리스트
+                        <div class="right">
+                            <button>전체보기 (<span>11</span>)</button>
+                        </div>
+                    </h2>
+                    <div class="box_board">
+                        <table>
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>결제일</th>
+                                    <th>광고주성명</th>
+                                    <th>연락처</th>
+                                    <th>결제금액</th>
+                                    <th>승인여부</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>광고주</td>
+                                    <td>010-3030-3030</td>
+                                    <td>10,000</td>
+                                    <td class="blue">승인</td>
+                                </tr>
+                                <tr>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>광고주</td>
+                                    <td>010-3030-3030</td>
+                                    <td>10,000</td>
+                                    <td class="red">미승인</td>
+                                </tr>
+                                <tr>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>광고주</td>
+                                    <td>010-3030-3030</td>
+                                    <td>10,000</td>
+                                    <td class="blue">승인</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

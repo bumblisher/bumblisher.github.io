@@ -1,0 +1,151 @@
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resource/css/reset.css">
+    <link rel="stylesheet" href="../resource/css/common.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../resource/js/main.js"></script>
+    <title>PETPRO</title>
+</head>
+
+<body class="mob">
+    <div class="wrap">
+        <header>
+            <button class="btn_aside"></button>
+            <h1 class="logo"><a href="#">PETPRO</a></h1>
+            <div class="right">
+                <button class="btn_noti">알림</button>
+            </div>
+        </header>
+        <aside>
+            <div class="aside_info">
+                <p><span class="name">최은희 (A등급)님</span>
+                    <span>이 로그인하셨습니다 </span></p>
+                <p>접속IP : 218.237.65.1</p>
+                <button class="btn_close"></button>
+            </div>
+            <p class="tit">Notice</p>
+            <ul class="nav_noti">
+                <li><a href="#">최근 공지 1</a></li>
+                <li><a href="#">최근 공지 2</a></li>
+            </ul>
+            <p class="tit">Menu</p>
+            <ul class="nav_menu">
+                <li class="active">
+                    <a href="#">광고주</a>
+                    <ul>
+                        <li class="on"><a href="#">회원정보 변경</a></li>
+                        <li><a href="#">광고상품 변경</a></li>
+                        <li><a href="#">광고 관리</a></li>
+                        <li><a href="#">마케팅 지원</a></li>
+                        <li><a href="#">광고비 관리</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">고객센터/문의하기</a></li>
+                        <li><a href="#">이벤트</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="grp_botmenu">
+                <button>공지사항</button>
+                <button>로그아웃</button>
+                <p class="txt_bot">© Samsung Petpro Corp.</p>
+            </div>
+        </aside>
+        <div class="tit_main">
+            <div>
+                <h2>광고파트너 해지</h2>
+                <p>설명글을 입력해 주세요.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="tab_main">
+                <div class="content">
+                    <h3>파트너 정보</h3>
+                    <div class="box_form">
+                        <div class="grp_form">
+                            <div class="cont">
+                                <p class="tit">아이디</p>
+                                <div class="grp_flex">
+                                    <span>P -</span>
+                                    <input type="text" readonly>
+                                </div>
+                            </div>
+                            <div class="cont">
+                                <p class="tit">비밀번호</p>
+                                <div class="grp_flex">
+                                    <span>! -</span>
+                                    <input type="password" readonly>
+                                </div>
+                            </div>
+                            <div class="cont">
+                                <p class="tit">파트너명</p>
+                                <input type="text" readonly>
+                            </div>
+                            <div class="cont">
+                                <p class="tit">파트너 연락처</p>
+                                <input type="text" readonly>
+                            </div>
+                            <div class="cont">
+                                <p class="tit">매장주소</p>
+                                <input type="text" readonly>
+                            </div>
+                            <div class="cont">
+                                <p class="tit">상세주소</p>
+                                <input type="text" readonly>
+                            </div>
+                            <div class="cont">
+                                <p class="tit">광고기간</p>
+                                <input type="text" readonly>
+                            </div>
+                            <div class="cont">
+                                <p class="tit">광고주 입금계좌</p>
+                                <input type="text" readonly>
+                            </div>
+                            <div class="cont">
+                                <p class="tit">대행사</p>
+                                <input type="text" readonly>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>해지 신청하기 <span>해지 신청 후 복구가 불가능합니다.</span></h3>
+                    <div class="box_form">
+                        <div class="grp_form">
+                            <div class="cont">
+                                <p class="tit">해지 신청일</p>
+                                <div class="grp_cal">
+                                    <input type="text" name="" id="">
+                                    <button></button>
+                                </div>
+                            </div>
+                            <div class="cont">
+                                <p class="tit">해지 신청사유</p>
+                                <textarea name="" id=""></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn_cm">신청하기</button>
+                </div>
+            </div>
+        </div>
+        <div class="popup on" style="width:300px">
+            <div class="pop_header">
+                <h2>정말 광고파트너를<br>
+                    해지하시겠어요?</h2>
+            </div>
+            <div class="pop_cont">
+            </div>
+            <div class="pop_footer">
+                <button class="btn_cm gray">아니오</button>
+                <button class="btn_cm blue">네</button>
+            </div>
+        </div>
+        <div class="dim"></div>
+    </div>
+</body>
+
+</html>
