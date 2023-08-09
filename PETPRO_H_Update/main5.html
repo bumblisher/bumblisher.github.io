@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="resource/css/reset.css">
+    <link rel="stylesheet" href="resource/css/common.css">
+    <script src="resource/js/jquery-3.4.1.min.js"></script>
+    <script src="resource/js/main.js"></script>
+    <title>PETPRO</title>
+</head>
+<body>
+    <div class="wrap main5">
+        <header>
+            <div class="header_inner">
+                <h1 class="logo"><a href="main5.html">PETPRO</a></h1>
+            </div>
+        </header>
+        <section id="sec01" class="sec01">
+            <div class="section_inner">
+                <p class="txt01">펫보험은 <br>
+                    우리아이들을 지키는<br>
+                    필수적 선택입니다</p>
+                <p>어느 날 나에게 따뜻한 선물로<br>
+                    찾아온 우리 아이들<br>
+                    오래오래 우리와 함께 하기를</p>
+            </div>
+        </section>
+        <section id="sec02" class="sec02">
+            <div class="section_inner">
+                <h2>
+                    <p>Types of pet insurance</p>
+                    <p class="tit"><span class="strong">펫보험 종류</span></p>
+                </h2>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p class="tit">우리아이 건강보험</p>
+                            <p class="txt">아이가 아플 때, 다쳤을 때<br>
+                                <span class="strong">동물병원 치료비 걱정 없이</span></p>
+                            <p>치료비 최대 80%까지 보장<br>
+                                치료비 걱정없는 보험</p>
+                            <button class="btn_cm kakao">바로 "톡" 상담</button>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="tit">우리아이 양육자금 보험</p>
+                            <p class="txt">보호자가 불의의 사고로<br>
+                                <span class="strong">아이 혼자 남겨져 있을 때</span></p>
+                            <p>치료비 최대 80%까지 보장<br>
+                                치료비 걱정없는 보험</p>
+                            <button class="btn_cm kakao">바로 "톡" 상담</button>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="tit">우리아이 의무보험</p>
+                            <p class="txt">우리아이 진짜 착한데 
+                                <span class="strong">맹견이라<br>의무보험 가입을 해야 할 때</span></p>
+                            <p>착한 우리 아이라도<br>
+                                타인을 위해 꼭 가입해야 하는 보험</p>
+                            <button class="btn_cm kakao">바로 "톡" 상담</button>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                
+                <!-- Swiper JS -->
+                <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+            
+                <!-- Initialize Swiper -->
+                <script>
+                var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 'auto',
+                    autoplay: {
+                        delay: 5000,
+                    },
+                    initialSlide: 0,
+                    spaceBetween: 50,
+                    centeredSlides: true,
+                    pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    // type : 'progressbar'
+                    },
+                });
+                </script>
+            </div>
+        </section>
+        <section class="sec_input bg">
+            <div class="section_inner">
+                <h2>
+                    <p>PET PRO</p>
+                    <p class="tit"><span class="strong">우리아이 보험료 알아보기</span></p>
+                </h2>
+                <p class="sub_h2">우리아이 보험료를 <span>문자, 카카오톡</span>을 통해 알려드립니다.</p>
+
+                <div class="box_ipt">
+                    <h3 class="black">아이의 정보를 입력해 주세요</h3>
+                    <div class="grp_flex">
+                        <div class="grp_form">
+                            <p>사랑하는 우리 아이는</p>
+                            <div class="grp_input">
+                                <div class="grp_radio img">
+                                    <input type="radio" name="radio01" id="radio01">
+                                    <label for="radio01">강아지</label>
+                                    <input type="radio" name="radio01" id="radio02">
+                                    <label for="radio02">고양이</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grp_form">
+                            <p>성별</p>
+                            <div class="grp_input">
+                                <div class="grp_radio">
+                                    <input type="radio" name="radio02" id="radio03">
+                                    <label for="radio03">남자 아이</label>
+                                    <input type="radio" name="radio02" id="radio04">
+                                    <label for="radio04">여자 아이</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grp_flex">
+                        <div class="grp_form">
+                            <p>생년월일</p>
+                            <div class="grp_input">
+                                <input type="text" placeholder="생년월일을 입력해 주세요. (예: 181225(YYMMDD))">
+                            </div>
+                        </div>
+                        <div class="grp_form">
+                            <p>품종</p>
+                            <div class="grp_input">
+                                <input type="text" placeholder="폼종을 입력해 주세요. (예: 푸들)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grp_flex">
+                        <div class="grp_form">
+                            <p>보호자 이름</p>
+                            <div class="grp_input">
+                                <input type="text" placeholder="보호자 이름을 입력해 주세요.">
+                            </div>
+                        </div>
+                        <div class="grp_form">
+                            <p>보호자 연락처</p>
+                            <div class="grp_input">
+                                <input type="text" placeholder="연락처를 입력해 주세요. (예: 01012345678)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grp_form ">
+                        <div class="grp_check tac">
+                            <input type="checkbox" name="check01" id="check01">
+                            <label for="check01">개인정보 수집·이용 동의</label>
+                            <a href="#">자세히보기</a>
+                        </div>
+                    </div>
+                    <div class="grp_form ">
+                        <p class="tac">㈜삼성펫프로에서 진행되는 서비스 및 소식에 대한 정보를 받으시겠습니까?</p>
+                        <div class="grp_radio2 tac">
+                            <input type="radio" name="radio05" id="radio05" checked>
+                            <label for="radio05" >예</label>
+                            <input type="radio" name="radio05" id="radio06">
+                            <label for="radio06" >아니오</label>
+                        </div>
+                    </div>
+                    <div class="grp_form mt30 tac">
+                        <button class="btn_cm" style="width:300px">문의하기</button>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section class="sec03">
+            <div class="section_inner">
+                <h2>
+                    <p>PET PRO HELPER</p>
+                    <p class="tit"><span class="strong">PET PRO HELPER란?</span></p>
+                </h2>
+                <p class="sub_h2">우리 <span>HELPER</span>들은 아이들과 함께 생활하는 보호자들입니다.<br>
+                    우리들이 <span>펫보험을 소개하고 안내해 드립니다.</span></p>
+                <ul class="list">
+                    <li><p>보호자들이 아이들 <span class="strong">치료비 부분 때문에 아이들을 버리지 않기를 바라는 마음</span></p></li>
+                    <li><p>아이들이 치료받을 때 <span class="strong">치료비 걱정 없이 치료받기를 바라는 마음</span></p></li>
+                    <li><p>보험 판매의 목적보다는 <span class="strong">아이들에게 맞는 보험</span>을 찾아드리고<br>
+                        <span class="strong">보험 내용을 이해하기 쉽게 설명드리는 역할</span></p></li>
+                </ul>
+            </div>
+        </section>
+        <section class="sec_input">
+            <div class="section_inner">
+                <h2>
+                    <p>PET PRO</p>
+                    <p class="tit"><span class="strong">동물병원 치료비 보상문의</span></p>
+                </h2>
+                <p class="sub_h2">동물병원에서 치료받은 영수증을 통해<br>
+                    펫보험 가입 시 <span>보상받을 수 있는 내용을 안내해 드립니다.</span></p>
+                <div class="box_ipt mt50">
+                    <div class="grp_flex">
+                        <div class="grp_form">
+                            <p>보호자 성명</p>
+                            <div class="grp_input">
+                                <input type="text" placeholder="보호자 이름을 입력해 주세요.">
+                            </div>
+                        </div>
+                        <div class="grp_form">
+                            <p>보호자 연락처 *</p>
+                            <div class="grp_input">
+                                <input type="text" placeholder="연락처를 입력해 주세요. (예: 01012345678)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grp_flex">
+                        <div class="grp_form">
+                            <p>아이 이름 *</p>
+                            <div class="grp_input">
+                                <input type="text" placeholder="아이 이름을 입력해 주세요. (예: 초코)">
+                            </div>
+                        </div>
+                        <div class="grp_form">
+                            <p>아이 품종 *</p>
+                            <div class="grp_input">
+                                <input type="text" placeholder="폼종을 입력해 주세요. (예: 푸들)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grp_flex">
+                        <div class="grp_form">
+                            <p>가입한 보험사</p>
+                            <div class="grp_input">
+                                <select name="" id="">
+                                    <option value="">삼성화재</option>
+                                    <option value="">펫보험 광고문의2</option>
+                                    <option value="">펫보험 광고문의3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="grp_form">
+                            <p>영수증 첨부 *</p>
+                            <div class="grp_input">
+                                <button class="btn_cm upload">치료비 영수증 첨수하기</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grp_btn">
+                        <button class="btn_cm kakao" style="width:300px">바로 “톡” 상담</button>
+                        <button class="btn_cm" style="width:300px">문의하기</button>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section class="sec04">
+            <div class="section_inner">
+                <h2>
+                    <p>pet insurance</p>
+                    <p class="tit"><span class="strong">보험사별 펫보험 소개</span></p>
+                </h2>
+                <p class="sub_h2"><span>Lorem ipsum</span> dolor sit amet consectetur. <br>
+                    Donec neque.</p>
+                <div style="height: 250px;"></div>
+            </div>
+        </section>
+        <footer>
+            <div class="section_inner">
+                <div class="info">
+                    <p class="f_logo">㈜삼성 펫프로 | 대표이사 주태성 <br>| 사업자등록번호 : 351-86-02778</p>
+                    <p>보험대리점명 : (주)삼성펫프로 / 보험대리점등록번호 : 제2023010060호</p>
+                    <p>주소 : 인천광역시 연수구 아트센터대로  87 402동 508호<br>
+                        광고센터 : 인천광역시 연수구 아트센터대로 87 402동 142호</p>
+                    <p><span class="strong">상담센터 : 실시간 채팅</span> 또는 <span class="strong">전화상담</span> 평일 10:00 ~ 18: 00<br>
+                        <span class="strong">대표번호 : 1544-8620</span></p>
+                    <p>개인정보책임: 최은희   / 개인정보 수집·이용동의 </p>
+                </div>
+                <div class="f_btn">
+                    <button>PETPRO119<br>
+                        펫보험 상담센터</button>
+                    <button>PETPRO114<br>
+                        펫보험 리워드 쇼핑몰</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
