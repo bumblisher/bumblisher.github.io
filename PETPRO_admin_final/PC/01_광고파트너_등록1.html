@@ -1,0 +1,218 @@
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resource/css/reset.css">
+    <link rel="stylesheet" href="../resource/css/common.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../resource/js/main.js"></script>
+    <title>PETPRO</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <aside>
+            <h1 class="logo"><a href="#">PETPRO</a></h1>
+            <p class="tit">Notice</p>
+            <ul class="nav_noti">
+                <li><a href="#">최근 공지 1</a></li>
+                <li><a href="#">최근 공지 2</a></li>
+            </ul>
+            <p class="tit">Menu</p>
+            <ul class="nav_menu">
+                <li class="active">
+                    <a href="#">회원등록</a>
+                    <ul>
+                        <li class="on"><a href="#">광고주 등록</a></li>
+                        <li><a href="#">광고파트너 등록</a></li>
+                        <li><a href="#">광고대행사 등록</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">정산관리</a>
+                    <ul>
+                        <li><a href="#">광고주</a></li>
+                        <li><a href="#">광고파트너</a></li>
+                        <li><a href="#">광고대행사</a></li>
+                    </ul>
+                </li>
+                <li class="nodep"><a href="#">결제관리</a></li>
+                <li>
+                    <a href="#">CS접수사항</a>
+                    <ul>
+                        <li><a href="#">광고파트너</a></li>
+                        <li><a href="#">광고주</a></li>
+                        <li><a href="#">센터</a></li>
+                        <li><a href="#">DB 퍼미션</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">DATA</a>
+                    <ul>
+                        <li><a href="#">사원등록</a></li>
+                        <li><a href="#">광고소재</a></li>
+                        <li><a href="#">리워드 상품</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">사이드배너</a></li>
+                        <li><a href="#">마케팅DB</a></li>
+                        <li><a href="#">RCS현황</a></li>
+                        <li><a href="#">알림톡 현황</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+        <div class="container">
+            <header>
+                <button class="btn_menu"></button>
+                <p>PETPRO POTAL</p>
+                <p>접속IP : 218.237.65.1</p>
+                <div class="right">
+                    <span class="name">최은희 (A등급)님</span>
+                    <span>이 로그인하셨습니다 </span>
+                    <div class="grp_topmenu">
+                        <button class="btn_noti">알림</button>
+                        <button>공지사항</button>
+                        <button>로그아웃</button>
+                    </div>
+                </div>
+            </header>
+            <div class="tab_main">
+                <ul class="tab_main_list">
+                    <li><a href="#">타이틀</a><button class="close"></button></li>
+                    <li><a href="#">타이틀</a><button class="close"></button></li>
+                    <li><a href="#" class="on">광고파트너 등록</a><button class="close"></button></li>
+                </ul>
+                <div class="tit_main">
+                    <h2>광고파트너 등록</h2>
+                    <p>광고파트너를 관리합니다.</p>
+                </div>
+                <ul class="tab_cont_list">
+                    <li class="on"><button>광고파트너 신청서 조회</button></li>
+                    <li><button>광고파트너 등록</button></li>
+                    <li><button>광고파트너 조회</button></li>
+                </ul>
+                <div class="content">
+                    <div class="grp_form sch">
+                        <div class="cont">
+                            <p class="tit">기간</p>
+                            <div class="grp_flex" style="flex:none"> 
+                                <div class="grp_cal">
+                                    <input type="text" name="" id="">
+                                    <button></button>
+                                </div>
+                                <span class="">-</span>
+                                <div class="grp_cal">
+                                    <input type="text" name="" id="">
+                                    <button></button>
+                                </div>
+                            </div>
+                            <p class="tit">신청채널</p>
+                            <div class="grp_flex"> 
+                                <input type="text" name="" id="" style="width: 250px;">
+                                <button class="btn_sch">검색하기</button>
+                                <button class="btn_sch white">초기화</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box_board">
+                        <div class="board_tit">
+                            <p>목록 (총 <span>3</span> 개)</p>
+                        </div>
+                        <table>
+                            <colgroup>
+                                <col style="width:50px">
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th><input class="" type="checkbox"></th>
+                                    <th>접수일</th>
+                                    <th>신청채널</th>
+                                    <th>광고주성명</th>
+                                    <th>연락처</th>
+                                    <th>사업장명</th>
+                                    <th>매장주소</th>
+                                    <th>주요판매상품</th>
+                                    <th>광고형결제기기</th>
+                                    <th>영업자</th>
+                                    <th>심사여부</th>
+                                    <th>등록</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input class="" type="checkbox"></td>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>신청채널</td>
+                                    <td><a href="#">광고파트너성명</a></td>
+                                    <td>010-3030-3030</td>
+                                    <td>맛있는치킨</td>
+                                    <td>매장주소주소주소<br>
+                                        매장주소주소주소</td>
+                                    <td>치킨</td>
+                                    <td>테이블오더SET</td>
+                                    <td>미선택</td>
+                                    <td><button class="blue">심사하기</button></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="" type="checkbox"></td>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>신청채널</td>
+                                    <td><a href="#">광고파트너성명</a></td>
+                                    <td>010-3030-3030</td>
+                                    <td>맛있는치킨</td>
+                                    <td>매장주소주소주소<br>
+                                        매장주소주소주소</td>
+                                    <td>치킨</td>
+                                    <td>테이블오더SET</td>
+                                    <td>미선택</td>
+                                    <td>심사완료: 심사승인</td>
+                                    <td><button>등록하기</button></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="" type="checkbox"></td>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>신청채널</td>
+                                    <td><a href="#">광고파트너성명</a></td>
+                                    <td>010-3030-3030</td>
+                                    <td>맛있는치킨</td>
+                                    <td>매장주소주소주소<br>
+                                        매장주소주소주소</td>
+                                    <td>치킨</td>
+                                    <td>테이블오더SET</td>
+                                    <td>미선택</td>
+                                    <td><button class="blue">심사하기</button></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="box_pgn">
+                            <button>선택삭제</button>
+                            <ul class="pagination_sic">
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
