@@ -25,14 +25,11 @@
                 <li class="active">
                     <a href="#">광고주</a>
                     <ul>
-                        <li class="on"><a href="#">회원정보 변경</a></li>
+                        <li class="on"><a href="#">비밀번호 변경</a></li>
                         <li><a href="#">광고상품 변경</a></li>
-                        <li><a href="#">광고 관리</a></li>
-                        <li><a href="#">마케팅 지원</a></li>
-                        <li><a href="#">광고비 관리</a></li>
+                        <li><a href="#">광고 현황</a></li>
+                        <li><a href="#">광고비 결제</a></li>
                         <li><a href="#">공지사항</a></li>
-                        <li><a href="#">고객센터/문의하기</a></li>
-                        <li><a href="#">이벤트</a></li>
                     </ul>
                 </li>
             </ul>
@@ -56,39 +53,53 @@
                 <ul class="tab_main_list">
                     <li><a href="#">타이틀</a><button class="close"></button></li>
                     <li><a href="#">타이틀</a><button class="close"></button></li>
-                    <li><a href="#" class="on">광고비 관리</a><button class="close"></button></li>
+                    <li><a href="#" class="on">광고 현황</a><button class="close"></button></li>
                 </ul>
                 <div class="tit_main">
-                    <h2>광고비 관리</h2>
-                    <p>광고비 사용,충전 내역을 확인하고, 광고비를 충전할 수 있습니다</p>
-                </div>
-                
-                <div class="content">
-                    <div class="board_box">
-                        <div>
-                            <p class="tit">광고비 잔액</p>
-                            <p><span class="blue">1,000,000</span>원</p>
-                            <button>광고비 충전</button>
-                        </div>
-                    </div>
+                    <h2>광고 현황</h2>
+                    <p>미처리상담내역,상담결과, 정산내역을 관리합니다.</p>
                 </div>
                 <ul class="tab_cont_list">
-                    <li><button>충전 내역</button></li>
-                    <li class="on"><button>사용 내역</button></li>
+                    <li><button>미처리 상담내역</button></li>
+                    <li class="on"><button>상담결과</button></li>
+                    <li><button>정산내역</button></li>
                 </ul>
-                <div class="content center">
+                <div class="content">
                     <div class="grp_form sch">
                         <div class="cont">
-                            <div class="grp_flex">
-                                <select type="text" style="width: 270px;">
-                                    <option value="">광고주명</option>
+                            <div class="box_noti red">
+                                <p class="txt">결과값 수정은 최대 1회만 가능합니다</p>
+                            </div>
+                        </div>
+                        <div class="cont">
+                            <p class="tit">기간</p>
+                            <div class="grp_flex fn">
+                                <div class="grp_cal">
+                                    <input type="text" name="" id="">
+                                    <button></button>
+                                </div>
+                                <span class="">-</span>
+                                <div class="grp_cal">
+                                    <input type="text" name="" id="">
+                                    <button></button>
+                                </div>
+                            </div>
+                            <p class="tit">상담결과</p>
+                            <div class="grp_flex fn">
+                                <select type="text" style="width: 200px;">
+                                    <option value="">선택</option>
                                     <option value="">option01</option>
                                     <option value="">option02</option>
                                     <option value="">option03</option>
                                 </select>
-                                <input type="text" style="width: 270px;">
-                                <button class="btn_sch">검색하기</button>
                             </div>
+                        </div>
+                        <div class="cont">
+                            <p class="tit">신청자 성명</p>
+                            <div class="grp_flex fn">
+                                <input type="text" style="width: 270px;">
+                            </div>
+                            <button class="btn_sch">검색하기</button>
                         </div>
                     </div>
                     <div class="box_board">
@@ -107,42 +118,42 @@
                             </colgroup>
                             <thead>
                                 <tr>
-                                    <th>광고일</th>
-                                    <th>광고파트너</th>
-                                    <th>DB생성수</th>
-                                    <th>정산DB수</th>
-                                    <th>불량DB수</th>
-                                    <th>사용광고비</th>
-                                    <th>잔액</th>
+                                    <th>생성일</th>
+                                    <th>광고상품</th>
+                                    <th>신청자 성명</th>
+                                    <th>연락처</th>
+                                    <th>메모</th>
+                                    <th>상담결과</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>2023-03-23 13:22:01</td>
-                                    <td>찐왕식당본점</td>
-                                    <td>DB생성수</td>
-                                    <td>정산DB수</td>
-                                    <td>불량DB수</td>
-                                    <td>0000</td>
-                                    <td>500,000</td>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>광고상품명</td>
+                                    <td>최은희</td>
+                                    <td>010-3030-3030</td>
+                                    <td>메모내용메모내용메모내용...</td>
+                                    <td>3회부재 거절</td>
+                                    <td><button class="gray">상담결과수정</button></td>
                                 </tr>
                                 <tr>
-                                    <td>2023-03-23 13:22:01</td>
-                                    <td>찐왕식당본점</td>
-                                    <td>DB생성수</td>
-                                    <td>정산DB수</td>
-                                    <td>불량DB수</td>
-                                    <td>0000</td>
-                                    <td>500,000</td>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>광고상품명</td>
+                                    <td>최은희</td>
+                                    <td>010-3030-3030</td>
+                                    <td>메모내용메모내용메모내용...</td>
+                                    <td>3회부재 거절</td>
+                                    <td><button class="gray">상담결과수정</button></td>
                                 </tr>
                                 <tr>
-                                    <td>2023-03-23 13:22:01</td>
-                                    <td>찐왕식당본점</td>
-                                    <td>DB생성수</td>
-                                    <td>정산DB수</td>
-                                    <td>불량DB수</td>
-                                    <td>0000</td>
-                                    <td>500,000</td>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>광고상품명</td>
+                                    <td>최은희</td>
+                                    <td>010-3030-3030</td>
+                                    <td>메모내용메모내용메모내용...</td>
+                                    <td>3회부재 거절</td>
+                                    <td><button class="gray">상담결과수정</button></td>
                                 </tr>
                             </tbody>
                         </table>

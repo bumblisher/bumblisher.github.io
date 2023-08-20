@@ -25,14 +25,11 @@
                 <li class="active">
                     <a href="#">광고주</a>
                     <ul>
-                        <li class="on"><a href="#">회원정보 변경</a></li>
+                        <li class="on"><a href="#">비밀번호 변경</a></li>
                         <li><a href="#">광고상품 변경</a></li>
-                        <li><a href="#">광고 관리</a></li>
-                        <li><a href="#">마케팅 지원</a></li>
-                        <li><a href="#">광고비 관리</a></li>
+                        <li><a href="#">광고 현황</a></li>
+                        <li><a href="#">광고비 결제</a></li>
                         <li><a href="#">공지사항</a></li>
-                        <li><a href="#">고객센터/문의하기</a></li>
-                        <li><a href="#">이벤트</a></li>
                     </ul>
                 </li>
             </ul>
@@ -56,25 +53,28 @@
                 <ul class="tab_main_list">
                     <li><a href="#">타이틀</a><button class="close"></button></li>
                     <li><a href="#">타이틀</a><button class="close"></button></li>
-                    <li><a href="#" class="on">마케팅 지원</a><button class="close"></button></li>
+                    <li><a href="#" class="on">광고 현황</a><button class="close"></button></li>
                 </ul>
                 <div class="tit_main">
-                    <h2>마케팅 지원</h2>
-                    <p>알림톡을 발송, 조회할 수 있습니다</p>
+                    <h2>광고 현황</h2>
+                    <p>미처리상담내역,상담결과, 정산내역을 관리합니다.</p>
                 </div>
                 <ul class="tab_cont_list">
-                    <li><button>사은품 안내</button></li>
-                    <li><button>상담 안내</button></li>
-                    <li class="on"><button>설계서 발송</button></li>
+                    <li class="on"><button>미처리 상담내역</button></li>
+                    <li><button>상담결과</button></li>
+                    <li><button>정산내역</button></li>
                 </ul>
                 <div class="content">
-                    <div class="box_top">
-                        <button class="back">알림톡 만들기</button>
-                    </div>
                     <div class="grp_form sch">
                         <div class="cont">
-                            <p class="tit">등록일</p>
-                            <div class="grp_flex">
+                            <div class="box_noti red">
+                                <p class="txt">생성일로 부터 다음날까지 상담결과값을 입력해주세요.
+                                    미입력시 DB는 자동 회수 됩니다.</p>
+                            </div>
+                        </div>
+                        <div class="cont">
+                            <p class="tit">기간</p>
+                            <div class="grp_flex fn">
                                 <div class="grp_cal">
                                     <input type="text" name="" id="">
                                     <button></button>
@@ -84,15 +84,8 @@
                                     <input type="text" name="" id="">
                                     <button></button>
                                 </div>
-                                <select type="text" style="width: 270px;">
-                                    <option value="">전체</option>
-                                    <option value="">광고주명</option>
-                                    <option value="">광고파트너</option>
-                                    <option value="">연락처</option>
-                                </select>
-                                <input type="text" style="width: 270px;">
-                                <button class="btn_sch">검색하기</button>
                             </div>
+                            <button class="btn_sch">검색하기</button>
                         </div>
                     </div>
                     <div class="box_board">
@@ -101,7 +94,8 @@
                         </div>
                         <table>
                             <colgroup>
-                                <col style="width:50px">
+                                <col>
+                                <col>
                                 <col>
                                 <col>
                                 <col>
@@ -110,15 +104,44 @@
                             </colgroup>
                             <thead>
                                 <tr>
-                                    <th><input class="" type="checkbox"></th>
-                                    <th>발송일</th>
-                                    <th>수신번호</th>
-                                    <th>발송종류</th>
-                                    <th>발신ID</th>
-                                    <th>발송결과</th>
+                                    <th>생성일</th>
+                                    <th>상담예약일</th>
+                                    <th>광고파트너</th>
+                                    <th>광고상품</th>
+                                    <th>신청자성명</th>
+                                    <th>퍼미션 상담내용</th>
+                                    <th>결과입력</th>
                                 </tr>
                             </thead>
-                            <tbody></tbody>
+                            <tbody>
+                                <tr>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>청량리왕찐빵</td>
+                                    <td>광고상품명</td>
+                                    <td>김수지</td>
+                                    <td>메모내용메모내용메모내용...</td>
+                                    <td><button class="blue">상담하기</button></td>
+                                </tr>
+                                <tr>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>청량리왕찐빵</td>
+                                    <td>광고상품명</td>
+                                    <td>김수지</td>
+                                    <td>메모내용메모내용메모내용...</td>
+                                    <td><button class="blue">상담하기</button></td>
+                                </tr>
+                                <tr>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>청량리왕찐빵</td>
+                                    <td>광고상품명</td>
+                                    <td>김수지</td>
+                                    <td>메모내용메모내용메모내용...</td>
+                                    <td><button class="blue">상담하기</button></td>
+                                </tr>
+                            </tbody>
                         </table>
                         <div class="box_pgn">
                             <button>선택삭제</button>

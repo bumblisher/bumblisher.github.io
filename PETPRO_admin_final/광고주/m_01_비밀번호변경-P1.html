@@ -1,0 +1,154 @@
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/resource/css/reset.css">
+    <link rel="stylesheet" href="/resource/css/common.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/resource/js/main.js"></script>
+    <title>PETPRO</title>
+</head>
+
+<body class="mob">
+    <div class="wrap">
+        <header>
+            <h1 class="logo"><a href="#">PETPRO</a></h1>
+            <div class="right">
+                <button class="btn_noti">알림</button>
+                <button class="btn_aside"></button>
+            </div>
+        </header>
+        <aside>
+            <div class="aside_info">
+                <p><span class="name">최은희 (A등급)님</span>
+                    <span>이 로그인하셨습니다 </span></p>
+                <p>접속IP : 218.237.65.1</p>
+                <button class="btn_close"></button>
+            </div>
+            <p class="tit">Notice</p>
+            <ul class="nav_noti">
+                <li><a href="#">최근 공지 1</a></li>
+                <li><a href="#">최근 공지 2</a></li>
+            </ul>
+            <p class="tit">Menu</p>
+            <ul class="nav_menu">
+                <li class="active">
+                    <a href="#">광고주</a>
+                    <ul>
+                        <li class="on"><a href="#">비밀번호 변경</a></li>
+                        <li><a href="#">광고상품 변경</a></li>
+                        <li><a href="#">광고 현황</a></li>
+                        <li><a href="#">광고비 결제</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="grp_botmenu">
+                <button>로그아웃</button>
+                <p class="txt_bot">© Samsung Petpro Corp.</p>
+            </div>
+        </aside>
+        <div class="tit_main">
+            <div>
+                <h2>비밀번호 변경</h2>
+                <p>비밀번호를 변경합니다.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="tab_main">
+                <div class="content">
+                    <p class="top_noti">회원정보 변경은 오른쪽 하단에 채팅상담을 통해 신청해주세요</p>
+                    <h3>회원 정보</h3>
+                    <div class="box_form">
+                        <div class="grp_form">
+                            <div class="cont">
+                                <p class="tit">아이디</p>
+                                <div class="grp_flex">
+                                    <span>A -</span>
+                                    <input type="text" readonly>
+                                </div>
+                            </div>
+                            <div class="cont">
+                                <p class="tit">비밀번호</p>
+                                <div class="grp_flex">
+                                    <span>! -</span>
+                                    <input type="password" readonly>
+                                </div>
+                            </div>
+                            <div class="cont">
+                                <p class="tit">광고주명</p>
+                                <input type="text" readonly>
+                            </div>
+                            <div class="cont">
+                                <p class="tit">광고주 연락처</p>
+                                <input type="text" readonly>
+                            </div>
+                            <div class="cont">
+                                <p class="tit">사업자 등록번호</p>
+                                <input type="text" readonly>
+                            </div>
+                            <div class="cont">
+                                <p class="tit">대행사</p>
+                                <select type="text" disabled>
+                                    <option value="">대행사</option>
+                                    <option value="">option01</option>
+                                    <option value="">option02</option>
+                                    <option value="">option03</option>
+                                </select>
+                            </div>
+                            <div class="cont">
+                                <p class="tit">관리시스템 사용여부</p>
+                                <select type="text" disabled>
+                                    <option value="">사용</option>
+                                    <option value="">option01</option>
+                                    <option value="">option02</option>
+                                    <option value="">option03</option>
+                                </select>
+                            </div>
+                            <div class="cont">
+                                <p class="tit">관리시스템 사용료</p>
+                                <input type="text" readonly>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>정보 변경하기</h3>
+                    <div class="box_form">
+                        <div class="grp_form">
+                            <div class="cont">
+                                <p class="tit">비밀번호 변경</p>
+                                <div class="grp_flex">
+                                    <span>! -</span>
+                                    <input type="password" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_btn">
+                    <button class="btn_cm">변경하기</button>
+                </div>
+            </div>
+        </div>
+        <div class="popup on" style="width:344px;">
+            <div class="pop_header">
+                <h2>비밀번호 변경완료</h2>
+            </div>
+            <div class="pop_cont">
+                <p class="txt tac">신청하신 내용이 아래와 같이 처리되었습니다.</p>
+                <ul class="box_list type2">
+                    <li><span class="tit">비밀번호 :</span><span>(예제 텍스트 / 미신청)</span></li>
+                </ul>
+            </div>
+            <div class="pop_footer">
+                <button class="btn_cm blue">확인</button>
+            </div>
+        </div>
+        <div class="dim"></div>
+    </div>
+</body>
+
+</html>

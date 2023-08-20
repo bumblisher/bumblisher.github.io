@@ -25,14 +25,11 @@
                 <li class="active">
                     <a href="#">광고주</a>
                     <ul>
-                        <li class="on"><a href="#">회원정보 변경</a></li>
+                        <li class="on"><a href="#">비밀번호 변경</a></li>
                         <li><a href="#">광고상품 변경</a></li>
-                        <li><a href="#">광고 관리</a></li>
-                        <li><a href="#">마케팅 지원</a></li>
-                        <li><a href="#">광고비 관리</a></li>
+                        <li><a href="#">광고 현황</a></li>
+                        <li><a href="#">광고비 결제</a></li>
                         <li><a href="#">공지사항</a></li>
-                        <li><a href="#">고객센터/문의하기</a></li>
-                        <li><a href="#">이벤트</a></li>
                     </ul>
                 </li>
             </ul>
@@ -56,23 +53,27 @@
                 <ul class="tab_main_list">
                     <li><a href="#">타이틀</a><button class="close"></button></li>
                     <li><a href="#">타이틀</a><button class="close"></button></li>
-                    <li><a href="#" class="on">광고 관리</a><button class="close"></button></li>
+                    <li><a href="#" class="on">광고비 결제</a><button class="close"></button></li>
                 </ul>
                 <div class="tit_main">
-                    <h2>광고 관리</h2>
-                    <p>광고현황, 상담내역, 정산내역을 관리할 수 있습니다</p>
+                    <h2>광고비 결제</h2>
+                    <p>결제내역을 조회하고 광고비를 결제할 수 있습니다.</p>
                 </div>
-                <ul class="tab_cont_list">
-                    <li class="on"><button>광고현황</button></li>
-                    <li><button>미처리<br>상담내역</button></li>
-                    <li><button>상담결과</button></li>
-                    <li><button>정산내역</button></li>
-                </ul>
+                
+                <div class="content">
+                    <div class="board_box">
+                        <div>
+                            <p class="tit">광고비 잔액</p>
+                            <p><span class="blue">1,000,000</span>원</p>
+                            <button>광고비 결제내역을</button>
+                        </div>
+                    </div>
+                </div>
                 <div class="content">
                     <div class="grp_form sch">
                         <div class="cont">
-                            <p class="tit">등록일</p>
-                            <div class="grp_flex"> 
+                            <div class="grp_flex">
+                                <p class="tit">결제일</p>
                                 <div class="grp_cal">
                                     <input type="text" name="" id="">
                                     <button></button>
@@ -82,13 +83,6 @@
                                     <input type="text" name="" id="">
                                     <button></button>
                                 </div>
-                                <select type="text" style="width: 270px;">
-                                    <option value="">생성일</option>
-                                    <option value="">광고주명</option>
-                                    <option value="">광고파트너</option>
-                                    <option value="">연락처</option>
-                                </select>
-                                <input type="text" style="width: 270px;">
                                 <button class="btn_sch">검색하기</button>
                             </div>
                         </div>
@@ -99,9 +93,6 @@
                         </div>
                         <table>
                             <colgroup>
-                                <col style="width:50px">
-                                <col>
-                                <col>
                                 <col>
                                 <col>
                                 <col>
@@ -110,51 +101,38 @@
                             </colgroup>
                             <thead>
                                 <tr>
-                                    <th><input class="" type="checkbox"></th>
-                                    <th>생성일</th>
-                                    <th>배정일</th>
-                                    <th>CRM결과</th>
-                                    <th>광고주명</th>
-                                    <th>광고파트너</th>
-                                    <th>광고소재</th>
-                                    <th>광고비잔액</th>
+                                    <th>순서</th>
+                                    <th>결제일</th>
+                                    <th>결제수단</th>
+                                    <th>기타</th>
+                                    <th>결제한 액수</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><input class="" type="checkbox"></td>
-                                    <td>2023-03-31 12:12:34</td>
-                                    <td>2023-03-31 12:12:34</td>
-                                    <td>CRM</td>
-                                    <td>본사</td>
-                                    <td>청량리소고기국밥</td>
-                                    <td>펫프로114 자체광고</td>
-                                    <td>광고비잔액</td>
+                                    <td>1</td>
+                                    <td>2023-03-23 13:22:01</td>
+                                    <td>신용카드</td>
+                                    <td>일시불</td>
+                                    <td>500,000원</td>
                                 </tr>
                                 <tr>
-                                    <td><input class="" type="checkbox"></td>
-                                    <td>2023-03-31 12:12:34</td>
-                                    <td>2023-03-31 12:12:34</td>
-                                    <td>CRM</td>
-                                    <td>본사</td>
-                                    <td>청량리소고기국밥</td>
-                                    <td>펫프로114 자체광고</td>
-                                    <td>광고비잔액</td>
+                                    <td>1</td>
+                                    <td>2023-03-23 13:22:01</td>
+                                    <td>신용카드</td>
+                                    <td>일시불</td>
+                                    <td>500,000원</td>
                                 </tr>
                                 <tr>
-                                    <td><input class="" type="checkbox"></td>
-                                    <td>2023-03-31 12:12:34</td>
-                                    <td>2023-03-31 12:12:34</td>
-                                    <td>CRM</td>
-                                    <td>본사</td>
-                                    <td>청량리소고기국밥</td>
-                                    <td>펫프로114 자체광고</td>
-                                    <td>광고비잔액</td>
+                                    <td>1</td>
+                                    <td>2023-03-23 13:22:01</td>
+                                    <td>신용카드</td>
+                                    <td>일시불</td>
+                                    <td>500,000원</td>
                                 </tr>
                             </tbody>
                         </table>
                         <div class="box_pgn">
-                            <button>선택삭제</button>
                             <ul class="pagination_sic">
                                 <li class="active"><a href="#">1</a></li>
                                 <li><a href="#">2</a></li>
