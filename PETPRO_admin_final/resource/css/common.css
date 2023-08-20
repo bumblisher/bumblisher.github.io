@@ -333,6 +333,8 @@ header > .right .btn_noti.on{background: url(../images/btn_noti_on.svg) center n
 .box_board .board_tit .right button.red{border:0;background: #1A78FE;color:#fff;}
 .box_board .board_tit .right button+button{margin-left: 10px;}
 .box_board .board_tit .right *+*{margin-left: 10px;}
+.box_board table td .num{font-size: 24px;font-weight: 700;color:#4C6EF5;}
+.box_board table td .num span{font-size: 16px;font-weight: 500;color:#495057;margin-left: 5px;}
 
 .box_board .board_box{display: flex;align-items: center;justify-content: center;border:3px solid #CED4DA;padding: 30px;flex-direction: column;margin-top: 15px;}
 .box_board .board_box > div{display: flex;align-items: center;width: 330px;}
@@ -665,6 +667,11 @@ body.welcome{background: #1A78FE url(../images/logo_welcome.svg) no-repeat cente
 .mob .box_form.bt{padding: 25px 20px 15px;margin: 30px -12px 0;border-top: 1px solid #E6E6E6;}
 
 .mob .box_list{padding:10px 14px}
+
+.mob .grp_num{display: flex;align-items: center;}
+.mob .grp_num .tit{font-size: 15px;font-weight: 700;color:#212529;flex:none}
+.mob .grp_num .num{margin-left: auto;font-size: 20px;font-weight: 500;color:#4C6EF5;}
+.mob .grp_num .num span{margin-left: 5px;color:#212529;font-size: 15px;}
 
 .mob .box_top{padding: 5px 10px;min-height: 48px;box-sizing: border-box;background-color: #fff;padding:0 0 10px;margin-bottom: 20px;border-bottom:1px solid #8E8E93}
 .mob .box_top .tit{font-size: 18px;font-weight: 600;}

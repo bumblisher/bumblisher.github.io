@@ -53,75 +53,98 @@
                 <ul class="tab_main_list">
                     <li><a href="#">타이틀</a><button class="close"></button></li>
                     <li><a href="#">타이틀</a><button class="close"></button></li>
-                    <li><a href="#" class="on">비밀번호 변경</a><button class="close"></button></li>
+                    <li><a href="#" class="on">파트너 정보 변경</a><button class="close"></button></li>
                 </ul>
                 <div class="tit_main">
-                    <h2>비밀번호 변경</h2>
-                    <p>비밀번호를 변경합니다.</p>
+                    <h2>파트너 정보 변경</h2>
+                    <p>파트너 회원정보를 변경합니다.</p>
                 </div>
+                
                 <div class="content">
-                    <p class="top_noti">회원정보 변경은 오른쪽 하단에 채팅상담을 통해 신청해주세요</p>
-                    <h3>회원 정보</h3>
+                    <p class="top_noti">비밀번호와 지급받으실 계좌만 신청가능합니다<br>
+                        지급계좌 변경시 다음 광고비 입금일에 반영됩니다</p>
+                    <h3>파트너 정보</h3>
                     <div class="box_form">
                         <div class="grp_form">
                             <div class="cont">
+                                <p class="tit">신청채널</p>
+                                <input type="text" >
+                            </div>
+                            <div class="cont">
                                 <p class="tit">아이디</p>
                                 <div class="grp_flex">
-                                    <span>A</span>
-                                    <input type="text" readonly>
+                                    <span>T</span>
+                                    <input type="text" >
                                 </div>
                             </div>
                             <div class="cont">
                                 <p class="tit">비밀번호</p>
                                 <div class="grp_flex">
                                     <span>!</span>
-                                    <input type="password" readonly>
+                                    <input type="password" >
                                 </div>
                             </div>
                             <div class="cont">
-                                <p class="tit">광고주명</p>
-                                <input type="text" readonly>
+                                <p class="tit">광고파트너성명</p>
+                                <input type="text" >
                             </div>
                             <div class="cont">
-                                <p class="tit">광고주 연락처</p>
-                                <input type="text" readonly>
+                                <p class="tit">광고파트너 연락처</p>
+                                <input type="text" >
+                            </div>
+                            <div class="cont">
+                                <p class="tit">영업자</p>
+                                <input type="text" >
                             </div>
                         </div>
                         <div class="grp_form">
-                            <div class="cont">
-                                <p class="tit">사업자 등록번호</p>
-                                <input type="text" readonly>
+                            <div class="cont inner">
+                                <div class="grp_flex">
+                                    <p class="tit">매장주소</p>
+                                    <div class="grp_flex">
+                                        <input type="text" placeholder="시/도">
+                                        <input type="text" placeholder="구/군">
+                                        <input type="text" placeholder="동">
+                                    </div>
+                                </div>
+                                <div class="grp_flex">
+                                    <p class="tit">상세주소</p>
+                                    <input type="text" >
+                                </div>
+                            </div>
+                            <div class="cont inner">
+                                <div class="grp_flex">
+                                    <p class="tit">파트너 지급계좌</p>
+                                    <input type="text" placeholder="" style="width: 110px;">
+                                    <input type="text" placeholder="" >
+                                </div>
+                                <div class="grp_flex">
+                                    <p class="tit"></p>
+                                    <input type="text" placeholder="" >
+                                </div>
                             </div>
                             <div class="cont">
-                                <p class="tit">대행사</p>
-                                <select type="text" disabled>
-                                    <option value="">대행사</option>
-                                    <option value="">option01</option>
-                                    <option value="">option02</option>
-                                    <option value="">option03</option>
-                                </select>
+                                <p class="tit">광고비 정산일</p>
+                                <input type="text" >
                             </div>
                             <div class="cont">
-                                <p class="tit">관리시스템<br>
-                                    사용여부</p>
-                                <select type="text" disabled>
-                                    <option value="">사용</option>
-                                    <option value="">option01</option>
-                                    <option value="">option02</option>
-                                    <option value="">option03</option>
-                                </select>
+                                <p class="tit">광고형 결제기기</p>
+                                <input type="text" >
                             </div>
                             <div class="cont">
-                                <p class="tit">관리시스템<br>
-                                    사용료</p>
-                                <input type="text" readonly>
+                                <p class="tit">수량</p>
+                                <input type="text" >
+                            </div>
+                            <div class="cont">
+                                <p class="tit vat">제품번호</p>
+                                <textarea name="" id="" style="height: 150px;"></textarea>
                             </div>
                         </div>
                         <div class="grp_form" style="flex:1.5"></div>
                     </div>
                 </div>
                 <div class="content">
-                    <h3>정보 변경하기</h3>
+                    <h3>정보 변경하기 <span>변경하실 항목을 선택후 변경하기를 클릭해 주세요</span></h3>
                     <div class="box_form">
                         <div class="grp_form">
                             <div class="cont">
@@ -132,6 +155,25 @@
                                 <div class="grp_flex">
                                     <span>!</span>
                                     <input type="password" >
+                                </div>
+                            </div>
+                            <div class="cont inner">
+                                <div class="grp_flex">
+                                    <div class="grp_check tit">
+                                        <input type="checkbox" name="chk02" id="chk02">
+                                        <label for="chk02">파트너 지급계좌</label>
+                                    </div>
+                                    <select type="text" style="width: 110px;" disabled>
+                                        <option value="">은행명</option>
+                                        <option value="">option01</option>
+                                        <option value="">option02</option>
+                                        <option value="">option03</option>
+                                    </select>
+                                    <input type="text" placeholder="" >
+                                </div>
+                                <div class="grp_flex">
+                                    <p class="tit"></p>
+                                    <input type="text" placeholder="" >
                                 </div>
                             </div>
                         </div>
@@ -145,21 +187,6 @@
                 </div>
             </div>
         </div>
-        <div class="popup on" style="width:344px;">
-            <div class="pop_header">
-                <h2>비밀번호 변경완료</h2>
-            </div>
-            <div class="pop_cont">
-                <p class="txt tac">신청하신 내용이 아래와 같이 처리되었습니다.</p>
-                <ul class="box_list type2">
-                    <li><span class="tit">비밀번호 :</span><span>(예제 텍스트 / 미신청)</span></li>
-                </ul>
-            </div>
-            <div class="pop_footer">
-                <button class="btn_cm blue">확인</button>
-            </div>
-        </div>
-        <div class="dim"></div>
     </div>
 </body>
 
