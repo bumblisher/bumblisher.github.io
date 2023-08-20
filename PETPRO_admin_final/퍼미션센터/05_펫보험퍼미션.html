@@ -53,13 +53,13 @@
                 <ul class="tab_main_list">
                     <li><a href="#">타이틀</a><button class="close"></button></li>
                     <li><a href="#">타이틀</a><button class="close"></button></li>
-                    <li><a href="#" class="on">접수현황</a><button class="close"></button></li>
+                    <li><a href="#" class="on">펫보험 퍼미션</a><button class="close"></button></li>
                 </ul>
                 <div class="tit_main">
-                    <h2>접수현황</h2>
+                    <h2>펫보험 퍼미션</h2>
                 </div>
                 <div class="content">
-                    <div class="grp_form sch">
+                    <div class="grp_form sch type2">
                         <div class="cont">
                             <p class="tit">기간</p>
                             <div class="grp_flex fn">
@@ -72,18 +72,36 @@
                                     <input type="text" name="" id="">
                                     <button></button>
                                 </div>
-                                <select type="text" style="width: 200px;">
-                                    <option value="">선택</option>
-                                    <option value="">option01</option>
-                                    <option value="">option02</option>
-                                    <option value="">option03</option>
-                                </select>
-                                <input type="text" style="width: 270px;">
-                                <button class="btn_sch">검색하기</button>
-                                <button class="btn_sch white">초기화</button>
+                                <button class="btn_sch white">선택</button>
                             </div>
                         </div>
+                        <div class="cont">
+                            <p class="tit">상담결과</p>
+                            <div class="grp_flex fn">
+                                <div class="grp_flex fn">
+                                    <select type="text" style="width: 200px;">
+                                        <option value="">선택</option>
+                                        <option value="">option01</option>
+                                        <option value="">option02</option>
+                                        <option value="">option03</option>
+                                    </select>
+                                    <button class="btn_sch">검색하기</button>
+                                    <button class="btn_sch white">초기화</button>
+                                    <button class="btn_sch kakao">알림톡 발송하기</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cont">
+                            <ul class="list_count">
+                                <li>
+                                    <p>인입DB</p>
+                                    <span class="num">32</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+                </div>
+                <div class="content mt10">
                     <div class="box_board">
                         <div class="board_tit">
                             <p>목록 (총 <span>3</span> 개)</p>
@@ -96,41 +114,58 @@
                                 <col>
                                 <col>
                                 <col>
+                                <col>
                             </colgroup>
                             <thead>
                                 <tr>
-                                    <th>생성일</th>
-                                    <th>광고파트너</th>
-                                    <th>광고기기S/N</th>
-                                    <th>광고상품</th>
+                                    <th>생성일시</th>
+                                    <th>광고ID</th>
+                                    <th>신청자성명</th>
                                     <th>신청자연락처</th>
-                                    <th>상담원배정</th>
+                                    <th>강아지&고양이</th>
+                                    <th>품종</th>
+                                    <th>아이이름</th>
+                                    <th>생년월일</th>
+                                    <th>성별</th>
+                                    <th>결과입력</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>2023-03-31 12:12:34</td>
-                                    <td>광고파트너명</td>
-                                    <td>JMB00000000</td>
-                                    <td>광고상품명</td>
-                                    <td>010-3030-3030</td>
-                                    <td>김지수</td>
+                                    <td>광고ID</td>
+                                    <td>이순희</td>
+                                    <td>010-1234-1234</td>
+                                    <td>강아지</td>
+                                    <td>말티즈</td>
+                                    <td>보리</td>
+                                    <td>2016년 3월</td>
+                                    <td>여아</td>
+                                    <td><button class="blue">결과입력</button></td>
                                 </tr>
                                 <tr>
                                     <td>2023-03-31 12:12:34</td>
-                                    <td>광고파트너명</td>
-                                    <td>JMB00000000</td>
-                                    <td>광고상품명</td>
-                                    <td>010-3030-3030</td>
-                                    <td><button class="blue">미배정</button></td>
+                                    <td>광고ID</td>
+                                    <td>이순희</td>
+                                    <td>010-1234-1234</td>
+                                    <td>강아지</td>
+                                    <td>말티즈</td>
+                                    <td>보리</td>
+                                    <td>2016년 3월</td>
+                                    <td>여아</td>
+                                    <td><button class="blue">결과입력</button></td>
                                 </tr>
                                 <tr>
                                     <td>2023-03-31 12:12:34</td>
-                                    <td>광고파트너명</td>
-                                    <td>JMB00000000</td>
-                                    <td>광고상품명</td>
-                                    <td>010-3030-3030</td>
-                                    <td><button class="blue">미배정</button></td>
+                                    <td>광고ID</td>
+                                    <td>이순희</td>
+                                    <td>010-1234-1234</td>
+                                    <td>강아지</td>
+                                    <td>말티즈</td>
+                                    <td>보리</td>
+                                    <td>2016년 3월</td>
+                                    <td>여아</td>
+                                    <td><button class="blue">결과입력</button></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -145,28 +180,6 @@
                 </div>
             </div>
         </div>
-        <div class="popup on" style="width:460px;">
-            <div class="pop_header">
-                <h2>배정상담원 선택하기</h2>
-            </div>
-            <div class="pop_cont">
-                <div class="grp_form list">
-                    <div class="cont">
-                        <p class="tit">담당자 검색</p>
-                        <div class="grp_flex">
-                            <input type="text">
-                            <button class="btn_cm">검색</button>
-                        </div>
-                    </div>
-                </div>
-                <ul class="grp_rdo"></ul>
-            </div>
-            <div class="pop_footer">
-                <button class="btn_cm gray">취소</button>
-                <button class="btn_cm blue">담당자 배정하기</button>
-            </div>
-        </div>
-        <div class="dim"></div>
     </div>
 </body>
 

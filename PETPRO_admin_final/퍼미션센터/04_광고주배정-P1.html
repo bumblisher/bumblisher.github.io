@@ -53,13 +53,13 @@
                 <ul class="tab_main_list">
                     <li><a href="#">타이틀</a><button class="close"></button></li>
                     <li><a href="#">타이틀</a><button class="close"></button></li>
-                    <li><a href="#" class="on">접수현황</a><button class="close"></button></li>
+                    <li><a href="#" class="on">광고주 배정</a><button class="close"></button></li>
                 </ul>
                 <div class="tit_main">
-                    <h2>접수현황</h2>
+                    <h2>광고주 배정</h2>
                 </div>
                 <div class="content">
-                    <div class="grp_form sch">
+                    <div class="grp_form sch type2">
                         <div class="cont">
                             <p class="tit">기간</p>
                             <div class="grp_flex fn">
@@ -72,24 +72,79 @@
                                     <input type="text" name="" id="">
                                     <button></button>
                                 </div>
+                                <button class="btn_sch">검색하기</button>
+                                <button class="btn_sch white">초기화</button>
+                            </div>
+                        </div>
+                        <div class="cont">
+                            <ul class="list_count">
+                                <li>
+                                    <p>TOTAL</p>
+                                    <span class="num">10</span>
+                                </li>
+                                <li>
+                                    <p>배정완료</p>
+                                    <span class="num">5</span>
+                                </li>
+                                <li>
+                                    <p>미배정건</p>
+                                    <span class="num">5</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="content mt10">
+                    <h3>배정하기</h4>
+                    <div class="grp_form sch type2">
+                        <div class="cont">
+                            <p class="tit">광고상품</p>
+                            <div class="grp_flex fn">
                                 <select type="text" style="width: 200px;">
                                     <option value="">선택</option>
                                     <option value="">option01</option>
                                     <option value="">option02</option>
                                     <option value="">option03</option>
                                 </select>
-                                <input type="text" style="width: 270px;">
-                                <button class="btn_sch">검색하기</button>
-                                <button class="btn_sch white">초기화</button>
                             </div>
                         </div>
+                        <div class="cont">
+                            <p class="tit">배정조건</p>
+                            <div class="grp_flex fn">
+                                <div class="grp_check">
+                                    <input type="checkbox" name="chk01" id="chk01">
+                                    <label for="chk01">광고주별 공통배분</label>
+                                </div>
+                                <div class="grp_check">
+                                    <input type="checkbox" name="chk02" id="chk02">
+                                    <label for="chk02">선택광고주 배분</label>
+                                </div>
+                                <input type="text" style="width: 270px;" placeholder="배정할 수를 입력하세요.">
+                                <button class="btn_sch">배정</button>
+                            </div>
+                        </div>
+                        <div class="cont">
+                            <ul class="list_count">
+                                <li>
+                                    <p>광고주</p>
+                                    <span class="num">000 <span>명</span></span>
+                                </li>
+                                <li>
+                                    <p>미배정건</p>
+                                    <span class="num">5</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+                </div>
+                <div class="content mt10">
                     <div class="box_board">
                         <div class="board_tit">
-                            <p>목록 (총 <span>3</span> 개)</p>
+                            <p>미배정건 목록 (총 <span>3</span> 개)</p>
                         </div>
                         <table>
                             <colgroup>
+                                <col>
                                 <col>
                                 <col>
                                 <col>
@@ -103,6 +158,7 @@
                                     <th>광고파트너</th>
                                     <th>광고기기S/N</th>
                                     <th>광고상품</th>
+                                    <th>신청자성명</th>
                                     <th>신청자연락처</th>
                                     <th>상담원배정</th>
                                 </tr>
@@ -113,14 +169,7 @@
                                     <td>광고파트너명</td>
                                     <td>JMB00000000</td>
                                     <td>광고상품명</td>
-                                    <td>010-3030-3030</td>
                                     <td>김지수</td>
-                                </tr>
-                                <tr>
-                                    <td>2023-03-31 12:12:34</td>
-                                    <td>광고파트너명</td>
-                                    <td>JMB00000000</td>
-                                    <td>광고상품명</td>
                                     <td>010-3030-3030</td>
                                     <td><button class="blue">미배정</button></td>
                                 </tr>
@@ -129,6 +178,16 @@
                                     <td>광고파트너명</td>
                                     <td>JMB00000000</td>
                                     <td>광고상품명</td>
+                                    <td>김지수</td>
+                                    <td>010-3030-3030</td>
+                                    <td><button class="blue">미배정</button></td>
+                                </tr>
+                                <tr>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>광고파트너명</td>
+                                    <td>JMB00000000</td>
+                                    <td>광고상품명</td>
+                                    <td>김지수</td>
                                     <td>010-3030-3030</td>
                                     <td><button class="blue">미배정</button></td>
                                 </tr>
@@ -147,14 +206,14 @@
         </div>
         <div class="popup on" style="width:460px;">
             <div class="pop_header">
-                <h2>배정상담원 선택하기</h2>
+                <h2>광고주 선택하기</h2>
             </div>
             <div class="pop_cont">
                 <div class="grp_form list">
                     <div class="cont">
-                        <p class="tit">담당자 검색</p>
+                        <p class="tit">광고주 검색</p>
                         <div class="grp_flex">
-                            <input type="text">
+                            <input type="text" placeholder="광고주명을 입력하세요.">
                             <button class="btn_cm">검색</button>
                         </div>
                     </div>
@@ -163,7 +222,7 @@
             </div>
             <div class="pop_footer">
                 <button class="btn_cm gray">취소</button>
-                <button class="btn_cm blue">담당자 배정하기</button>
+                <button class="btn_cm blue">광고주 배정하기</button>
             </div>
         </div>
         <div class="dim"></div>

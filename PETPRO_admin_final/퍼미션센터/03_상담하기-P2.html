@@ -53,13 +53,13 @@
                 <ul class="tab_main_list">
                     <li><a href="#">타이틀</a><button class="close"></button></li>
                     <li><a href="#">타이틀</a><button class="close"></button></li>
-                    <li><a href="#" class="on">접수현황</a><button class="close"></button></li>
+                    <li><a href="#" class="on">상담하기</a><button class="close"></button></li>
                 </ul>
                 <div class="tit_main">
-                    <h2>접수현황</h2>
+                    <h2>상담하기</h2>
                 </div>
                 <div class="content">
-                    <div class="grp_form sch">
+                    <div class="grp_form sch type2">
                         <div class="cont">
                             <p class="tit">기간</p>
                             <div class="grp_flex fn">
@@ -72,25 +72,56 @@
                                     <input type="text" name="" id="">
                                     <button></button>
                                 </div>
-                                <select type="text" style="width: 200px;">
-                                    <option value="">선택</option>
-                                    <option value="">option01</option>
-                                    <option value="">option02</option>
-                                    <option value="">option03</option>
-                                </select>
-                                <input type="text" style="width: 270px;">
-                                <button class="btn_sch">검색하기</button>
-                                <button class="btn_sch white">초기화</button>
+                                <button class="btn_sch white">선택</button>
                             </div>
                         </div>
+                        <div class="cont">
+                            <p class="tit">검색어</p>
+                            <div class="grp_flex fn">
+                                <div class="grp_flex fn">
+                                    <select type="text" style="width: 200px;">
+                                        <option value="">선택</option>
+                                        <option value="">option01</option>
+                                        <option value="">option02</option>
+                                        <option value="">option03</option>
+                                    </select>
+                                    <input type="text" style="width: 270px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cont">
+                            <p class="tit">상담결과</p>
+                            <div class="grp_flex fn">
+                                <div class="grp_flex fn">
+                                    <select type="text" style="width: 200px;">
+                                        <option value="">선택</option>
+                                        <option value="">option01</option>
+                                        <option value="">option02</option>
+                                        <option value="">option03</option>
+                                    </select>
+                                    <button class="btn_sch">검색하기</button>
+                                    <button class="btn_sch white">초기화</button>
+                                    <button class="btn_sch kakao">알림톡 발송하기</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cont">
+                            <ul class="list_count">
+                                <li>
+                                    <p>배정DB</p>
+                                    <span class="num">32</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+                </div>
+                <div class="content mt10">
                     <div class="box_board">
                         <div class="board_tit">
                             <p>목록 (총 <span>3</span> 개)</p>
                         </div>
                         <table>
                             <colgroup>
-                                <col>
                                 <col>
                                 <col>
                                 <col>
@@ -103,8 +134,9 @@
                                     <th>광고파트너</th>
                                     <th>광고기기S/N</th>
                                     <th>광고상품</th>
+                                    <th>신청자성명</th>
                                     <th>신청자연락처</th>
-                                    <th>상담원배정</th>
+                                    <th>광고주배정</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -113,14 +145,7 @@
                                     <td>광고파트너명</td>
                                     <td>JMB00000000</td>
                                     <td>광고상품명</td>
-                                    <td>010-3030-3030</td>
                                     <td>김지수</td>
-                                </tr>
-                                <tr>
-                                    <td>2023-03-31 12:12:34</td>
-                                    <td>광고파트너명</td>
-                                    <td>JMB00000000</td>
-                                    <td>광고상품명</td>
                                     <td>010-3030-3030</td>
                                     <td><button class="blue">미배정</button></td>
                                 </tr>
@@ -129,6 +154,16 @@
                                     <td>광고파트너명</td>
                                     <td>JMB00000000</td>
                                     <td>광고상품명</td>
+                                    <td>김지수</td>
+                                    <td>010-3030-3030</td>
+                                    <td><button class="blue">미배정</button></td>
+                                </tr>
+                                <tr>
+                                    <td>2023-03-31 12:12:34</td>
+                                    <td>광고파트너명</td>
+                                    <td>JMB00000000</td>
+                                    <td>광고상품명</td>
+                                    <td>김지수</td>
                                     <td>010-3030-3030</td>
                                     <td><button class="blue">미배정</button></td>
                                 </tr>
@@ -152,21 +187,21 @@
             <div class="pop_cont">
                 <div class="grp_form list">
                     <div class="cont">
-                        <p class="tit">생성일</p>
+                        <p class="tit">생성일시</p>
                         <div class="grp_flex">
                             <span>2023-03-31 13:35:03</span>
                         </div>
                     </div>
                     <div class="cont">
-                        <p class="tit">광고상품명</p>
+                        <p class="tit">광고파트너</p>
                         <div class="grp_flex">
-                            <span>광고상품명</span>
+                            <span>광고파트너명</span>
                         </div>
                     </div>
                     <div class="cont">
-                        <p class="tit">고객명</p>
+                        <p class="tit">광고상품</p>
                         <div class="grp_flex">
-                            <span>최은희</span>
+                            <span>광고상품명</span>
                         </div>
                     </div>
                     <div class="cont">
@@ -175,23 +210,8 @@
                             <span>010-3030-3030</span>
                         </div>
                     </div>
-                    <div class="cont">
-                        <p class="tit">퍼미션 상담내용</p>
-                        <div class="grp_flex">
-                            <textarea name="" id="" placeholder="메모내용메모내용메모내용(500자 제한)" style="height: 130px;"></textarea>
-                        </div>
-                    </div>
                 </div>
                 <div class="grp_form list">
-                    <div class="cont">
-                        <p class="tit">상담예약일</p>
-                        <div class="grp_flex">
-                            <div class="grp_cal" style="width: 100%;">
-                                <input type="text" name="" id="">
-                                <button></button>
-                            </div>
-                        </div>
-                    </div>
                     <div class="cont">
                         <p class="tit">결과선택</p>
                         <div class="grp_flex">
@@ -203,9 +223,24 @@
                         </div>
                     </div>
                     <div class="cont">
-                        <p class="tit">상담상세</p>
+                        <p class="tit vat">신청자 성명</p>
+                        <div class="grp_flex">
+                            <input type="text" placeholder="신청자 성명을 입력하세요.">
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <p class="tit vat">상담내용</p>
                         <div class="grp_flex">
                             <textarea name="" id=""></textarea>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <p class="tit">상담예약일</p>
+                        <div class="grp_flex">
+                            <div class="grp_cal" style="width: 100%;">
+                                <input type="text" name="" id="">
+                                <button></button>
+                            </div>
                         </div>
                     </div>
                 </div>

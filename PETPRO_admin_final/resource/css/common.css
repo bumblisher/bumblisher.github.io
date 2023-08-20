@@ -233,6 +233,7 @@ header > .right .btn_noti.on{background: url(../images/btn_noti_on.svg) center n
 .grp_form .cont.inner .grp_flex .tit+*{margin-left: 0;}
 .grp_form .cont.inner .grp_flex+.grp_flex{margin-top: 10px;}
 .grp_form .cont.bd0{border:0}
+.grp_form .grp_flex.vat{align-self: flex-start;}
 
 .grp_form.sch{padding-bottom: 30px;border-bottom: 1px solid #DEE2E6;margin-bottom: 30px;}
 .grp_form.sch .tit{width: auto;margin-right: 20px;}
@@ -240,6 +241,8 @@ header > .right .btn_noti.on{background: url(../images/btn_noti_on.svg) center n
 .grp_form.sch .btn_sch{margin-left: 15px;background: #212529;color:#fff;font-size: 14px;font-weight: 500;min-width: 100px;height: 40px;border-radius: 6px;padding: 0 15px;flex:none}
 .grp_form.sch .btn_sch.white{border:1px solid #CED4DA;background-color: #fff;color:#212529;}
 .grp_form.sch .btn_sch.blue{background-color: #1A78FE;color:#fff;}
+.grp_form.sch .btn_sch.kakao{background-color: #FFE812;color:#000}
+.grp_form.sch.type2{padding: 0;margin: 0;border:0}
 
 .grp_flex { display: flex; align-items: center; flex: 1; }
 .grp_flex.fn {flex: none;}
@@ -296,6 +299,17 @@ header > .right .btn_noti.on{background: url(../images/btn_noti_on.svg) center n
 .box_num .tit span{font-size: 18px;font-weight: 500;color:#ADB5BD;margin-left: 5px;}
 .box_num .num{font-size: 28px;font-weight: 700;color:#1A78FE;margin-left: 20px;}
 .box_num .num span{font-size: 20px;font-weight: 500;color:#212529;margin-left: 5px;}
+
+.grp_rdo{border-top: 1px solid #E9ECEF;border-bottom: 1px solid #E9ECEF;padding:15px 0;margin-top: 15px;}
+.grp_rdo li+li{margin-top: 10px;}
+.grp_rdo:empty::before{content: '조회된 결과가 없습니다.';font-size: 13px;color:#848484;text-align: center;display: block;}
+
+.list_count {display: flex;align-items: center;border: 1px dashed #ddd;padding: 6px;border-radius: 4px;}
+.list_count li{display: flex;align-items: center;}
+.list_count li p{font-size: 18px;color:#212529;margin-right: 10px;font-weight: 600;}
+.list_count li span{font-size: 15px;color:#1A78FE;font-weight: 600;}
+.list_count li span span{color:#242424}
+.list_count li+li{margin-left: 50px;}
 
 .btn_formbox{display: flex;margin-bottom: 30px;}
 .btn_formbox .btn_cm{flex:1;height: 50px;font-size: 15px;}
