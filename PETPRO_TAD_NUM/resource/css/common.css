@@ -28,7 +28,7 @@
 .right .numbox .numpad button:nth-child(10){grid-column: 2 / 3;}
 .right .numbox .numpad .back{grid-column: 3 / 4;background: #2F313F url('../images/ico_del.svg') no-repeat center;}
 .right .numbox .numpad button:active,
-.right .numbox .numpad button:target{background-color: #0064FF;}
+.right .numbox .numpad button:target{background-color: #0064FF;-webkit-tap-highlight-color:#0064FF}
 .right .chkbox{margin-top: 15px;padding-top: 15px;border-top:1px solid #24242F}
 .right .chkbox .txt_check{font-size: 11px;font-weight: 500;line-height: 140%;color:#DEE2E6;margin-top: 9px;}
 .right .btn_cm {margin-top: 20px;width: 100%;height: 32px; font-size: 11px;font-weight: 700;color: #fff; background: #0064FF; border-radius: 5px;}
