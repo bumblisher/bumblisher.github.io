@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/* 메인 */
+.wrap {display: flex;min-width:800px;height: 100%;background-color: #0064FF} 
+
+.logo{display: block;width:135px;height: 18px;background: url('../images/logo.svg') no-repeat center;}
+.logo a{display: block;height: 100%;font-size: 0;}
+
+.left{flex:1;color:#fff;padding:35px;position: relative;}
+.left::after{content:'';position: absolute;right:-20px;top:0;background: url('../images/img_main.svg') no-repeat left center;width: 324px;height: 571px;}
+
+.left .tit{font-family: ONEMob;font-size: 32px;font-weight: bold;line-height: 130%;margin-top: 50px;}
+.left .txt{font-family: ONEMob;font-size: 16px;line-height: 150%;margin-top: 20px;}
+.left .circle{font-family: ONEMob;margin-top: 50px;text-align: center;padding-top: 52px;width: 167px;height: 167px;background: #000;border-radius: 50%;box-sizing: border-box;font-size: 16px;line-height: 150%;}
+.left .circle strong{font-family: ONEMob;display: inline-block;font-weight: bold;}
+
+.right{width: 320px;flex:none;background: #000;color:#fff;padding: 39px 20px;box-sizing: border-box;}
+.right .tit{font-family: ONEMob;font-weight: bold;font-size: 24px;line-height: 150%;}
+.right .tit_sub{font-family: ONEMob;font-weight: bold;font-size: 16px;line-height: 150%;}
+.right .txt{font-family: ONEMob;font-weight: bold;font-size: 12px;line-height: 150%;margin-top: 10px;}
+.right .numbox{margin-top: 30px;}
+.right .numbox .tit_num{font-size: 14px;font-weight: bold;line-height: 150%;}
+.right .numbox .grp_ipt{width: 100%;display: flex;height: 36px;border:1px solid #0064FF;border-radius: 6px;background: #2F313F;align-items: center;justify-content: center;margin-top: 10px;}
+.right .numbox .grp_ipt span{font-weight: 600;font-size: 17px;}
+.right .numbox .grp_ipt span+span{margin-left: 12px;}
+.right .numbox .numpad{display: grid;grid-template-columns: repeat(3, 1fr);gap: 3px;margin-top: 7px;}
+.right .numbox .numpad button{height: 38px;border-radius: 3px;background: #2F313F;color: #fff;font-weight: 700;font-size: 20px;}
+.right .numbox .numpad button:nth-child(10){grid-column: 2 / 3;}
+.right .numbox .numpad .back{grid-column: 3 / 4;background: #2F313F url('../images/ico_del.svg') no-repeat center;}
+.right .numbox .numpad button:active{background-color: #0064FF;}
+.right .chkbox{margin-top: 15px;padding-top: 15px;border-top:1px solid #24242F}
+.right .chkbox .txt_check{font-size: 11px;font-weight: 500;line-height: 140%;color:#DEE2E6;margin-top: 9px;}
+.right .btn_cm {margin-top: 20px;width: 100%;height: 32px; font-size: 11px;font-weight: 700;color: #fff; background: #0064FF; border-radius: 5px;}
+
+.grp_check { display: flex; align-items: center; } 
+.grp_check > a { margin-left: auto; position: relative; width: 20px; height: 20px; } 
+.grp_check > a:before { content: ''; position: absolute; left: 5px; top: 6px; width: 7px; height: 7px; border: 2px solid #232323; border-width: 0 0 2px 2px; transform: rotate(-135deg); } 
+.grp_check > a.txt_link { width: auto; height: auto; margin-left: 5px; } 
+.grp_check > a.txt_link::before { display: none; } 
+.grp_check input[type="checkbox"] { display: none; } 
+.grp_check label { position: relative; display:inline-flex; align-items: center; /*padding-left: 25px;*/ font-size: 16px; color:#fff; cursor: pointer;} 
+.grp_check label:before { content:''; flex:none; display: inline-block;margin-right: 10px; width:20px; height: 20px; border:1px solid #DEE2E6; border-radius: 3px; box-sizing: border-box; background: #fff; } 
+.grp_check input:disabled + label:before{background-color: #E9ECEF;}
+.grp_check input[type="checkbox"]:checked + label:after { content: ''; position: absolute; left: 4px; top: 50%;margin-top: -5px; width: 9px; height: 4px; border: 2px solid #1A78FE; border-width: 0 0 3px 3px; transform: rotate(-45deg); } 
+
+
+/* popup */
+.dim{display: none;position: fixed;top:0;bottom: 0;left: 0;right: 0;z-index: 99;background: #000;opacity: 0.7}
+.popup{display: none;position: fixed;top:50%;left:50%;transform: translate(-50%, -50%);min-width: 240px;min-height: 180px;z-index: 100;background: #FFFFFF;border: 1px solid #DEE2E6;box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 20px 20px rgba(0, 0, 0, 0.08);border-radius: 8px;padding:20px 20px 70px;box-sizing: border-box;}
+.popup.on{display: block;}
+.popup.on ~ .dim{display: block;}
+.pop_tit{position: relative;display: flex;align-items: center;justify-content: center;font-weight: 700;font-size: 18px;line-height: 140%;text-align: center;}
+.pop_tit .btn_close{position: absolute;right:0;top:0;width: 30px;height: 30px;border-radius: 50%;background:#E9ECEF url(../images/ico_close.png) no-repeat center;}
+.pop_cont{margin-top: 10px;}
+.pop_cont p{font-size: 13px;font-weight: 600;color:#495057;line-height: 140%;text-align: center;}
+.pop_cont .bot_btn{display: flex;position: absolute;bottom: -1px;left:-1px;right:-1px;border-radius:0 0 8px 8px;overflow: hidden;height: 50px;}
+.pop_cont .bot_btn button{flex: 1;background: #ADB5BD;font-size: 15px;letter-spacing: -0.6px;color:#fff;font-weight: 700;}
+.pop_cont .bot_btn button.blue{font-weight: 400;background: #2962F6;}
