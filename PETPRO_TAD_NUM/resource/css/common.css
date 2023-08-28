@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* 메인 */
-.wrap {display: flex;min-width:800px;max-width: 1440px;height: 100%;background-color: #0064FF} 
+.wrap {display: flex;width:800px;height:620px;background-color: #0064FF;/*min-width:800px;max-width: 1440px;height: 100%;*/} 
 
 .logo{display: block;width:135px;height: 18px;background: url('../images/logo.svg') no-repeat center;}
 .logo a{display: block;height: 100%;font-size: 0;}
