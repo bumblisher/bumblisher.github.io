@@ -9,13 +9,19 @@
 .left{flex:1;color:#fff;padding:35px;position: relative;}
 .left::after{content:'';position: absolute;right:-20px;top:0;background: url('../images/img_main.svg') no-repeat left center;width: 324px;height: 571px;}
 
+.wrap.type2 .left::after{right:-20px;top:10px;background: url('../images/img_main2.svg') no-repeat left center;width: 409px;height: 612px;}
+.wrap.type2 .left .txt{font-size: 18px;}
+
+.wrap .left.img{padding:0}
+.wrap .left.img::after{display: none;}
+
 .left .tit{font-family: ONEMob;font-size: 32px;font-weight: bold;line-height: 130%;margin-top: 50px;letter-spacing: -1.5px;}
 .left .txt{font-family: ONEMob;font-size: 16px;line-height: 150%;margin-top: 20px;letter-spacing: -1px;}
 .left .circle{font-family: ONEMob;margin-top: 50px;text-align: center;padding-top: 52px;width: 167px;height: 167px;background: #000;border-radius: 50%;box-sizing: border-box;font-size: 16px;line-height: 150%;}
 .left .circle strong{font-family: ONEMob;display: inline-block;font-weight: bold;}
 
 .right{width: 320px;flex:none;background: #000;color:#fff;padding: 39px 20px;box-sizing: border-box;}
-.right .tit{font-family: ONEMob;font-weight: bold;font-size: 24px;line-height: 150%;}
+.right .tit{font-family: ONEMob;font-weight: bold;font-size: 24px;line-height: 150%;letter-spacing: -2px;}
 .right .tit_sub{font-family: ONEMob;font-weight: bold;font-size: 16px;line-height: 150%;}
 .right .txt{font-family: ONEMob;font-weight: bold;font-size: 12px;line-height: 150%;margin-top: 10px;}
 .right .numbox{margin-top: 30px;}
@@ -48,8 +54,6 @@
 .grp_check input:disabled + label:before{background-color: #E9ECEF;}
 .grp_check input[type="checkbox"]:checked + label:after { content: ''; position: absolute; left: 4px; top: 50%;margin-top: -5px; width: 9px; height: 4px; border: 2px solid #1A78FE; border-width: 0 0 3px 3px; transform: rotate(-45deg); } 
 
-.wrap.type2 .left::after{right:-20px;top:10px;background: url('../images/img_main2.svg') no-repeat left center;width: 409px;height: 612px;}
-.wrap.type2 .left .txt{font-size: 18px;}
 
 
 
