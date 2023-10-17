@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family:'Pretendard';
+    font-style: 900;
+	font-weight: 900;
+    src : url(../font/Pretendard-Black.woff2) format("woff2");
+}
+@font-face{
+    font-family:'Pretendard';
+    font-style: 800;
+	font-weight: 800;
+    src : url(../font/Pretendard-ExtraBold.woff2) format("woff2");
+}
+@font-face{
+    font-family:'Pretendard';
+    font-style: bold;
+	font-weight: 700;
+    src : url(../font/Pretendard-Bold.woff2) format("woff2");
+}
+@font-face{
+    font-family:'Pretendard';
+    font-style: 600;
+	font-weight: 600;
+    src : url(../font/Pretendard-SemiBold.woff2) format("woff2");
+}
+@font-face{
+    font-family:'Pretendard';
+    font-style: 500;
+	font-weight: 500;
+    src : url(../font/Pretendard-Medium.woff2) format("woff2");
+}
+
+@font-face{
+    font-family:'Pretendard';
+    font-style: normal;
+	font-weight: 400;
+    src : url(../font/Pretendard-Regular.woff2) format("woff2");
+            
+}
+
+@font-face{
+    font-family:'Pretendard';
+    font-style: 100;
+	font-weight: 100;
+    src : url(../font/Pretendard-Light.woff2) format("woff2");
+            
+}
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby,  summary,section,
+time, mark, audio, video, button, input, select, textarea {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	letter-spacing: -0.2px;
+	vertical-align: baseline;
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Pretendard !important;
+	font-weight: 500;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html, body {
+	height:100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+button {
+	cursor: pointer;
+}
+
+.tac{text-align: center !important;}
+.tal{text-align: left !important;}
+.tar{text-align: right !important;}
+.cl_red{color:#ff0000 !important}
+.cl_blue{color:#1A78FE !important}
+.bold{font-weight: 600;}
+
+.mt0{margin-top: 0 !important;}
+.mt5{margin-top: 5px !important;}
+.mt10{margin-top: 10px !important;}
+.mt15{margin-top: 15px !important;}
+.mt20{margin-top: 20px !important;}
+.mt30{margin-top: 30px !important;}
+.mt40{margin-top: 40px !important;}
+.mt50{margin-top: 50px !important;}
+.ml0{margin-left: 0 !important;}
