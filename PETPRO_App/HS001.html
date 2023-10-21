@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="resource/css/reset.css">
+    <link rel="stylesheet" href="resource/css/common.css">
+    <script src="resource/js/jquery-3.4.1.min.js"></script>
+    <script src="resource/js/main.js"></script>
+    <title>PETPRO</title>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <nav>
+                <a href="#" id="" class="">홈</a>
+                <a href="#" id="" class="">펫보험</a>
+                <a href="#" id="" class="on">동물병원</a>
+            </nav>
+        </header>
+        <div class="contents">
+            <div class="contents_inner">
+                <ul class="tab">
+                    <li class="on"><a href="#"><span>추천병원</span></a></li>
+                    <li><a href="#"><span>보험금 청구</span></a></li>
+                    <li><a href="#"><span>질병백과</span></a></li>
+                </ul>
+                <article class="mt20">
+                    <div class="grp_h3">
+                        <h3>추천병원</h3>
+                        <a href="#" class="btn_all">전체보기</a>
+                    </div>
+                    <a href="#" class="grp_hospi swiper-slide">
+                        <div class="grp_badge">
+                            <p class="badge">서울시 광진구</p>
+                        </div>
+                        <img src="resource/images/bg_hospi01.svg" alt="">
+                        <p class="tit">사랑 동물병원</p>
+                        <p class="txt">서브 텍스트 동물병원 소개 내용</p>
+                    </a>
+                </article>
+                <article>
+                    <div class="grp_h3">
+                        <h3>보험금 청구</h3>
+                        <a href="#" class="btn_all">전체보기</a>
+                    </div>
+                    <ul class="list_step">
+                        <li>
+                            <p class="tit">보험금 청구</p>
+                            <p class="txt">사고 및 진료내역을 입력해서<br>
+                                보험금을 청구해 주세요.</p>
+                            <button>사고 및 진료내역 입력</button>
+                        </li>
+                        <li>
+                            <p class="tit">단계단계</p>
+                            <p class="txt">Lorem ipsum dolor sit amet egestas <br>
+                                quis malesuada cursus velit.</p>
+                        </li>
+                        <li>
+                            <p class="tit">단계단계</p>
+                            <p class="txt">Lorem ipsum dolor sit amet egestas <br>
+                                quis malesuada cursus velit.</p>
+                        </li>
+                        <li>
+                            <p class="tit">단계단계</p>
+                            <p class="txt">Lorem ipsum dolor sit amet egestas <br>
+                                quis malesuada cursus velit.</p>
+                        </li>
+                    </ul>
+                </article>
+                <article>
+                    <div class="grp_h3">
+                        <h3>펫프로 파트너</h3>
+                        <a href="#" class="btn_all">전체보기</a>
+                    </div>
+                    <div class="swiper sw_partner">
+                        <div class="swiper-wrapper">
+                            <a href="#" class="grp_hospi swiper-slide">
+                                <div class="grp_badge">
+                                    <p class="badge sky">펫 미용</p>
+                                    <p class="badge">지역</p>
+                                </div>
+                                <img src="resource/images/bg_partner01.svg" alt="">
+                                <p class="tit">해피까까</p>
+                                <p class="txt">서브텍스트 상점 정보</p>
+                            </a>
+                            <a href="#" class="grp_hospi swiper-slide">
+                                <div class="grp_badge">
+                                    <p class="badge sky">펫 미용</p>
+                                    <p class="badge">지역</p>
+                                </div>
+                                <img src="resource/images/bg_partner02.svg" alt="">
+                                <p class="tit">해피까까</p>
+                                <p class="txt">서브텍스트 상점 정보</p>
+                            </a>
+                            <a href="#" class="grp_hospi swiper-slide">
+                                <div class="grp_badge">
+                                    <p class="badge sky">펫 미용</p>
+                                    <p class="badge">지역</p>
+                                </div>
+                                <img src="resource/images/bg_partner01.svg" alt="">
+                                <p class="tit">해피까까</p>
+                                <p class="txt">서브텍스트 상점 정보</p>
+                            </a>
+                            <a href="#" class="grp_hospi swiper-slide">
+                                <div class="grp_badge">
+                                    <p class="badge sky">펫 미용</p>
+                                    <p class="badge">지역</p>
+                                </div>
+                                <img src="resource/images/bg_partner02.svg" alt="">
+                                <p class="tit">해피까까</p>
+                                <p class="txt">서브텍스트 상점 정보</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Swiper JS -->
+                    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+                
+                    <!-- Initialize Swiper -->
+                    <script>
+                    var swiper = new Swiper(".sw_partner", {
+                        slidesPerView: 'auto',
+                        initialSlide: 0,
+                        spaceBetween: 14,
+                    });
+                    </script>
+                </article>
+                <article>
+                    <div class="grp_h3">
+                        <h3>질병백과</h3>
+                        <a href="#" class="btn_all">전체보기</a>
+                    </div>
+                    <div class="swiper sw_wiki">
+                        <div class="swiper-wrapper">
+                            <div class="grp_wiki swiper-slide">
+                                <p class="tit">결막염</p>
+                                <p class="sub_tit">질병소개</p>
+                                <p class="txt">결막은 개의 눈 흰자 부위에 제일 앞부분에 위치한 
+                                    부위다. 각막은 검은자위를, 결막은 흰자를 보호하는
+                                    부위로 생각하면 된다. 결막염은 이 부위에 염증이 
+                                    발생하는 것을 말한다.</p>
+                                <a href="#">자세히 보기</a>
+                            </div>
+                            <div class="grp_wiki swiper-slide">
+                                <p class="tit">결막염</p>
+                                <p class="sub_tit">질병소개</p>
+                                <p class="txt">결막은 개의 눈 흰자 부위에 제일 앞부분에 위치한 
+                                    부위다. 각막은 검은자위를, 결막은 흰자를 보호하는
+                                    부위로 생각하면 된다. 결막염은 이 부위에 염증이 
+                                    발생하는 것을 말한다.</p>
+                                <a href="#">자세히 보기</a>
+                            </div>
+                            <div class="grp_wiki swiper-slide">
+                                <p class="tit">결막염</p>
+                                <p class="sub_tit">질병소개</p>
+                                <p class="txt">결막은 개의 눈 흰자 부위에 제일 앞부분에 위치한 
+                                    부위다. 각막은 검은자위를, 결막은 흰자를 보호하는
+                                    부위로 생각하면 된다. 결막염은 이 부위에 염증이 
+                                    발생하는 것을 말한다.</p>
+                                <a href="#">자세히 보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Swiper JS -->
+                    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+                
+                    <!-- Initialize Swiper -->
+                    <script>
+                    var swiper = new Swiper(".sw_wiki", {
+                        slidesPerView: 'auto',
+                        initialSlide: 0,
+                        spaceBetween: 14,
+                    });
+                    </script>
+                </article>
+                <article>
+                    <h3>자주 묻는 질문</h3>
+                    <ul class="list_acco">
+                        <li>
+                            <button>
+                                <p class="tit">보험금 현장 접수 과정이 어떻게 되나요?</p>
+                                <p class="cont">Lorem ipsum dolor sit amet consectetur. Egestas quis malesuada cursus velit et semper quis mauris maecenas. Mauris consectetur volutpat blandit ipsum massa. Ac aliquam tortor nunc tincidunt ac erat at vitae bibendum at in faucibus.</p>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <p class="tit">동물병원에서 현장접수에 대해 모르겠다고 합니다.</p>
+                                <p class="cont">Lorem ipsum dolor sit amet consectetur. Egestas quis malesuada cursus velit et semper quis mauris maecenas. Mauris consectetur volutpat blandit ipsum massa. Ac aliquam tortor nunc tincidunt ac erat at vitae bibendum at in faucibus.</p>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <p class="tit">기타 질문 기타 질문</p>
+                                <p class="cont">Lorem ipsum dolor sit amet consectetur. Egestas quis malesuada cursus velit et semper quis mauris maecenas. Mauris consectetur volutpat blandit ipsum massa. Ac aliquam tortor nunc tincidunt ac erat at vitae bibendum at in faucibus.</p>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <p class="tit">기타 질문 기타 질문</p>
+                                <p class="cont">Lorem ipsum dolor sit amet consectetur. Egestas quis malesuada cursus velit et semper quis mauris maecenas. Mauris consectetur volutpat blandit ipsum massa. Ac aliquam tortor nunc tincidunt ac erat at vitae bibendum at in faucibus.</p>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <p class="tit">기타 질문 기타 질문</p>
+                                <p class="cont">Lorem ipsum dolor sit amet consectetur. Egestas quis malesuada cursus velit et semper quis mauris maecenas. Mauris consectetur volutpat blandit ipsum massa. Ac aliquam tortor nunc tincidunt ac erat at vitae bibendum at in faucibus.</p>
+                            </button>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+        <div class="nav_bar">
+            <nav>
+                <a href="#" id="" class="">알림</a>
+                <a href="#" id="" class="">보상문의</a>
+                <a href="#" id="" class="">가입보험</a>
+                <a href="#" id="" class="">내정보</a>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>

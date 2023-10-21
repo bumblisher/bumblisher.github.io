@@ -154,10 +154,19 @@ header nav a:after{content:'';display:block;width: 5px;height: 5px;border-radius
 .sw_home .swiper-slide:last-child{margin-right: 20px;}
 .sw_home .grp_hospi .tit{font-size: 14px;}
 
+.sw_partner{margin-right:-20px;}
+.sw_partner .swiper-slide{width: 251px;}
+.sw_partner .swiper-slide:last-child{margin-right: 20px;}
+.sw_partner .grp_hospi .tit{font-size: 15px;}
+.sw_partner .grp_hospi .txt{font-size: 13px;}
+
 .grp_hospi{position: relative;}
-.grp_hospi .badge{position: absolute;top:10px;left: 10px;padding:6px 10px 4px;height: 24px;border-radius: 35px;background:#2962F6;box-sizing: border-box;font-size: 11px;font-weight: 600;color:#fff;}
-.grp_hospi img{display: block;}
+.grp_hospi .grp_badge{position: absolute;top:10px;left: 10px;display: flex;align-items: center;}
+.grp_hospi .badge{padding:6px 10px 4px;height: 24px;border-radius: 35px;background:#2962F6;box-sizing: border-box;font-size: 11px;font-weight: 600;color:#fff;margin-right: 5px;}
+.grp_hospi .badge.sky{background: #E5EDFF;color:#2962F6;}
+.grp_hospi img{display: block;width: 100%;}
 .grp_hospi .tit{color:#212529;font-size: 18px;font-weight: 700;margin-top: 10px;}
+.grp_hospi .txt{font-size: 15px;font-weight: 600;color:#ADB5BD;margin-top: 5px;}
 
 .box_chat{flex:1;border-radius: 10px;display: flex;align-items: center;justify-content: center;background: #F1F3F5;font-size: 15px;color:#868E96;margin-bottom: 15px;}
 
@@ -165,6 +174,48 @@ header nav a:after{content:'';display:block;width: 5px;height: 5px;border-radius
 .pop_alert p{font-size: 14px;line-height: 130%;color:#636363;}
 .pop_alert .tit{display: flex;align-items: center;font-size: 15px;font-weight: 700;margin-bottom: 5px;color:#212529}
 .pop_alert .tit .btn_close{display: inline-block;width: 15px;height: 15px;background: url(../images/btn_close.svg) no-repeat center;margin-left: auto;}
+
+.tab{position: sticky;top: 0px;display: flex;align-items: center;background: #fff;z-index: 10;padding-top: 10px;margin: -10px -20px 0;border-bottom: 1px solid #E9ECEF;border-radius: 20px 20px 0 0;}
+.tab li{flex:1;text-align: center;}
+.tab li a{display: flex;align-items: center;justify-content: center;height: 39px;font-size: 16px;font-weight: 500;color:#ADB5BD;}
+.tab li.on a{color:#2962F6;font-weight: 700;}
+.tab li.on a span{font-weight: 700;border-bottom: 2px solid #2962F6;padding: 9px 0;}
+
+.grp_h3{display: flex;align-items: center;margin-bottom: 15px;}
+.grp_h3 h3{margin-bottom: 0;}
+.grp_h3 .btn_all{display: inline-block;margin-left: auto;font-size: 14px;font-weight: 500;color:#868E96;}
+
+.list_step{counter-reset: ct_step;}
+.list_step li{position: relative;margin-left: 40px;background-color: #F1F3F5;border-radius: 6px;padding:15px;}
+.list_step li+li{margin-top: 20px;}
+.list_step li:before{counter-increment: ct_step;content: counter(ct_step);position: absolute;top: 0;left:-40px;display: flex;align-items: center;justify-content: center;width: 25px;height: 25px;font-size: 15px;font-weight: 500;color:#fff;background: #2962F6;border-radius: 50%;}
+.list_step li .tit{font-size: 15px;font-weight: 700;color:#212529}
+.list_step li .txt{margin-top: 10px;font-size: 14px;line-height: 150%;color:#868E96}
+.list_step li button{display: flex;align-items: center;justify-content: center;width: 100%;height: 45px;margin-top: 10px;padding:10px 30px;background: #E5EDFF;color:#2962F6;font-size: 14px;font-weight: 600;border-radius: 8px;box-sizing: border-box;}
+
+.sw_wiki{margin-right:-20px;}
+.sw_wiki .swiper-slide{width: 310px;}
+.sw_wiki .swiper-slide:last-child{margin-right: 20px;}
+.grp_wiki{border-radius: 8px;background: #E5EDFF;padding: 15px;box-sizing: border-box;}
+.grp_wiki .tit{font-size: 18px;font-weight: 700;color:#2962F6;}
+.grp_wiki .sub_tit{font-size: 15px;font-weight: 500;color:#212529;margin-top: 10px;}
+.grp_wiki .txt{margin-top: 5px;font-size: 14px;line-height: 150%;color:#495057}
+.grp_wiki a{margin-top: 15px;display: flex;align-items: center;justify-content: center;width: 100%;height: 40px;border-radius: 6px;background: #fff;color:#343A40;font-size: 13px;font-weight: 600;}
+
+
+.list_acco li button{display: block;padding: 15px 0;background: #fff;width: 100%;}
+.list_acco li+li{border-top:1px solid #E9ECEF}
+.list_acco li .tit{display: flex;align-items: center;font-size: 15px;font-weight: 600;color:#212529;width: 100%;text-align: left;}
+.list_acco li .tit:after{content:'';display: inline-block;width: 25px;height: 25px;margin-left: auto;background: url(../images/ico_acco.svg) no-repeat center;}
+.list_acco li .cont{display: none;margin-top: 15px;font-size: 13px;color:#495057;line-height: 130%;text-align: left;}
+.list_acco li.on {margin: 0 -20px;}
+.list_acco li.on button{background: #E5EDFF;padding:15px 20px}
+.list_acco li.on .tit:after{transform: rotate(-180deg);}
+.list_acco li.on + li{border-top: 0;}
+.list_acco li.on + li.on{border-top: 1px solid #ddd;}
+
+
+
 
 footer{background-color: #232B4C;}
 footer .section_inner{position: relative;padding: 50px 0; width: 1000px;display: flex;}
