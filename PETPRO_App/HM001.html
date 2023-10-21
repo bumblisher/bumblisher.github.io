@@ -21,7 +21,78 @@
             </nav>
         </header>
         <div class="contents">
-
+            <div class="contents_inner">
+                <div class="schbox chat">
+                    <input type="text">
+                    <button></button>
+                </div>
+                <div class="schlink">
+                    <a href="#">보험가입 안내</a>
+                    <a href="#">펫보험이란?</a>
+                    <a href="#">보상예시 보기</a>
+                </div>
+                <div class="home_banner">
+                    <p class="tit">광고배너 제목입니다.</p>
+                    <p>광고배너 내용을 넣어주세요.</p>
+                </div>
+                <article>
+                    <h3>펫보험</h3>
+                    <ul class="home_cont">
+                        <li><p class="img"></p><p>콘텐츠1</p></li>
+                        <li><p class="img"></p><p>콘텐츠2</p></li>
+                        <li><p class="img"></p><p>콘텐츠3</p></li>
+                        <li><p class="img"></p><p>콘텐츠4</p></li>
+                    </ul>
+                    <button class="btn_more">더보기</button>
+                </article>
+                <article>
+                    <h3>보상문의</h3>
+                    <ul class="list_board">
+                        <li class="type1"><a href="#"><p>보상문의 제목입니다.</p><span>23-10-04</span></a></li>
+                        <li class="type2"><a href="#"><p>보상문의 제목입니다.</p><span>23-10-04</span></a></li>
+                        <li class="type1"><a href="#"><p>보상문의 제목입니다.</p><span>23-10-04</span></a></li>
+                    </ul>
+                </article>
+                <article class="full">
+                    <h3>추천 동물병원</h3>
+                    <div class="swiper sw_home">
+                        <div class="swiper-wrapper">
+                            <a href="#" class="grp_hospi swiper-slide">
+                                <p class="badge">서울시 광진구</p>
+                                <img src="resource/images/bg_hospi01.svg" alt="">
+                                <p class="tit">사랑 동물병원</p>
+                            </a>
+                            <a href="#" class="grp_hospi swiper-slide">
+                                <p class="badge">서울시 광진구</p>
+                                <img src="resource/images/bg_hospi02.svg" alt="">
+                                <p class="tit">사랑 동물병원</p>
+                            </a>
+                            <a href="#" class="grp_hospi swiper-slide">
+                                <p class="badge">서울시 광진구</p>
+                                <img src="resource/images/bg_hospi01.svg" alt="">
+                                <p class="tit">사랑 동물병원</p>
+                            </a>
+                            <a href="#" class="grp_hospi swiper-slide">
+                                <p class="badge">서울시 광진구</p>
+                                <img src="resource/images/bg_hospi02.svg" alt="">
+                                <p class="tit">사랑 동물병원</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Swiper JS -->
+                    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+                
+                    <!-- Initialize Swiper -->
+                    <script>
+                    var swiper = new Swiper(".sw_home", {
+                        slidesPerView: 'auto',
+                        initialSlide: 0,
+                        spaceBetween: 14,
+                    });
+                    </script>
+                </article>
+            </div>
         </div>
         <div class="nav_bar">
             <nav>
