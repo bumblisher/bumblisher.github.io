@@ -48,7 +48,7 @@ article.full{margin: 0px -20px 0;padding:20px;border-top: 10px solid #F1F3F5;}
 .schlink a + a{margin-left: 20px;}
 .schlink a + a::before{content: '';position: absolute;left:-10px;top:4px;height: 10px;border-left: 1px solid #DEE2E6;}
 
-.home_banner{display: flex;flex-direction: column;justify-content: center;height: 100px;margin-top: 30px;padding:0 90px 0 30px;box-sizing: border-box;background:#E5EDFF url(../images/bg_home_banner.svg) center right 30px no-repeat;border-radius: 10px;}
+.home_banner{display: flex;flex-direction: column;justify-content: center;height: 100px;margin-top: 30px;padding:0 90px 0 30px;box-sizing: border-box;background:#E5EDFF url(../images/bg_home_banner.png) center right 30px no-repeat;background-size: 60px 83px;border-radius: 10px;}
 .home_banner p{font-size: 14px;font-weight: 500;line-height: 130%;color:#868E96;}
 .home_banner p.tit{font-size: 17px;font-weight: 700;color:#212529;margin-bottom: 5px;;}
 .home_banner + article{margin-top: 30px;}
@@ -56,8 +56,8 @@ article.full{margin: 0px -20px 0;padding:20px;border-top: 10px solid #F1F3F5;}
 .home_cont{display: grid;grid-template-columns: 1fr 1fr;gap: 15px;}
 .home_cont p{font-size: 14px;font-weight: 600;}
 .home_cont .img{display: block;width: 100%;height: 100px;margin-bottom: 10px;background:#FFDEEB url(../images/img_home01.png) center bottom no-repeat;background-size: 86px 91px;border-radius: 6px;}
-.home_cont li:nth-child(2) .img{background:#D0EBFF url(../images/img_home02.svg) center bottom no-repeat;}
-.home_cont li:nth-child(3) .img{background:#CEF6EA url(../images/img_home03.svg) center bottom no-repeat;}
+.home_cont li:nth-child(2) .img{background:#D0EBFF url(../images/img_home02.png) center bottom no-repeat;background-size: 86px 92px;}
+.home_cont li:nth-child(3) .img{background:#CEF6EA url(../images/img_home03.png) center bottom no-repeat;background-size: 68px 92px;}
 .home_cont li:nth-child(4) .img{background:#f3d9fa url(../images/img_home04.svg) center bottom no-repeat;}
 
 .btn_more{width: 100%;height: 45px;margin-top: 15px;display: flex;align-items: center;justify-content: center;border:1px solid #DEE2E6;border-radius: 6px;background: #fff;color:#343A40;font-size: 15px;font-weight: 600;}
