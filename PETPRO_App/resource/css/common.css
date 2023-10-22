@@ -15,11 +15,11 @@ header nav a:after{content:'';display:block;width: 5px;height: 5px;border-radius
 .contents{display: flex;flex-direction: column;max-width: 500px;min-height: calc(100% - 90px);margin: -20px auto 0;padding: 0 0 70px;box-sizing: border-box;background: #fff;border-radius: 20px 20px 0 0;box-shadow:  0px 0px 10px 0px rgba(0, 0, 0, 0.05);}
 .contents_inner{padding:20px;display: flex;flex-direction: column;height: 100%;box-sizing: border-box;flex:1}
 .contents_inner > *{flex:none}
-.contents_inner article{margin-top: 50px;}
-.contents_inner article.full{margin: 0px -20px 0;padding:20px;border-top: 10px solid #F1F3F5;}
 .contents_inner h2{font-size: 28px;font-weight: 600;color:#000}
 .contents_inner h3{font-size: 18px;font-weight: 700;margin-bottom: 15px;}
 
+article{margin-top: 50px;}
+article.full{margin: 0px -20px 0;padding:20px;border-top: 10px solid #F1F3F5;}
 
 .nav_bar{position: fixed;bottom:0;left:0;right:0;height: 70px;background: #FFF;box-shadow: 0px -1px 10px 0px rgba(0, 0, 0, 0.05);z-index: 100;}
 .nav_bar nav {display: flex;align-items: center;width: 100%;height: 100%;}
@@ -303,6 +303,9 @@ ul.grp_check{display: flex;}
 .list_item{display: grid;grid-template-columns: 1fr 1fr;gap:10px;}
 .list_item li a{border:1px solid #DEE2E6;display: flex;align-items: center;justify-content: center;height: 40px;box-sizing: border-box;border-radius: 6px;color:#212529;font-size: 14px;font-weight: 500;}
 
+.txt_list_item{margin-top: 20px;font-size: 15px;font-weight: 400;line-height: 150%;color:#3C3C3C;padding-bottom: 20px;}
+.tit_list_item{font-size: 16px;font-weight: 600;color:#3C3C3C;margin-bottom: 20px;}
+
 .grp_hash{display: flex;align-items: center;}
 .grp_hash button{font-size: 22px;font-weight: 600;color:#ADB5BD;background: transparent;}
 .grp_hash button.on{color:#212529;font-weight: 700;}
@@ -320,8 +323,32 @@ ul.grp_check{display: flex;}
 .list_nearhos li .grp2 p + p{margin-left: 10px;}
 .list_nearhos li + li{margin-top: 17px;}
 
+.list_dep{margin: 0 -20px;}
+.list_dep li .grp_text{display: flex;align-items: center;padding: 10px 20px;}
+.list_dep li .grp_text .tit{font-size: 16px;font-weight: 600;color:#212529}
+.list_dep li .grp_text .right{display: inline-flex;align-items: center;margin-left: auto;}
+.list_dep li .grp_text .right span{font-size: 16px;font-weight: 600;color:#212529}
+.list_dep li .grp_text .right .num{color:#2962F6;margin-right: 6px;}
+.list_dep li .grp_text.dep2{padding:10px 28px;background: #F1F3F5;}
+.list_dep li .grp_text.dep2+.grp_text.dep2{padding-top: 0;}
+.list_dep li .grp_text.dep2 .tit{font-size: 15px;font-weight: 400;color:#343A40}
+.list_dep li .grp_text.dep2 .right span{font-size: 15px;font-weight: 400;color:#343A40}
 
 
+/* login */
+.wrap.login{background: #2962F6;display: flex;flex-direction: column;justify-content: center;align-items: center;min-height: 500px;}
+.wrap.login h1.logo{width: 176px;height: 30px;background: url(../images/logo.svg) no-repeat center;}
+.wrap.login .txt{margin-top: 20px;font-size: 28px;font-weight: 500;line-height: 140%;color:#fff;text-align: center;}
+.wrap.login .txt strong{font-weight: 700;}
+.wrap.login .btnbox{width: 100%;margin-top: 80px;padding: 0 20px;display: flex;flex-direction: column;align-items: center;box-sizing: border-box;}
+.wrap.login .tooltip{padding: 8px 5px;background: url(../images/bg_tooltip.svg) no-repeat center;width: 175px;height: 44px;box-sizing: border-box;font-size: 14px;font-weight: 500;text-align: center;}
+.wrap.login .btnbox button{display: flex;align-items: center;justify-content: center;width: 100%;height: 60px;border-radius: 6px;margin-top: 15px;font-size: 14px;font-weight: 700;letter-spacing: 0.7px;}
+.wrap.login .btnbox button.kakao{background: #FEE500;color:#181600}
+.wrap.login .btnbox button.kakao:before{content: '';display: inline-block;width: 30px;height: 30px;background: url(../images/ico_login_kakao.svg) no-repeat center;margin-right: 5px;}
+.wrap.login .btnbox button.naver{background: #03C75A;color:#F6F1FB}
+.wrap.login .btnbox button.naver:before{content: '';display: inline-block;width: 30px;height: 30px;background: url(../images/ico_login_naver.svg) no-repeat center;margin-right: 5px;}
+
+/* popup */
 .popup { display: none; width: 540px; position: fixed; left: 50%; top: 50%; background: #fff; z-index: 10001;box-shadow: 0px 4px 30px 10px rgba(0, 0, 0, 0.1); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); border-radius: 10px; overflow: hidden; } 
 .dim { display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 2000; background: rgba(0, 0, 0, 0.5); } 
 .popup.on { display: flex;flex-direction: column;max-height: 88vh;} 
