@@ -55,7 +55,7 @@ header nav a:after{content:'';display:block;width: 5px;height: 5px;border-radius
 
 .home_cont{display: grid;grid-template-columns: 1fr 1fr;gap: 15px;}
 .home_cont p{font-size: 14px;font-weight: 600;}
-.home_cont .img{display: block;width: 100%;height: 100px;margin-bottom: 10px;background:#FFDEEB url(../images/img_home01.png) center bottom no-repeat;background-size: 86px;border-radius: 6px;}
+.home_cont .img{display: block;width: 100%;height: 100px;margin-bottom: 10px;background:#FFDEEB url(../images/img_home01.png) center bottom no-repeat;background-size: 86px !important;border-radius: 6px;}
 .home_cont li:nth-child(2) .img{background:#D0EBFF url(../images/img_home02.svg) center bottom no-repeat;}
 .home_cont li:nth-child(3) .img{background:#CEF6EA url(../images/img_home03.svg) center bottom no-repeat;}
 .home_cont li:nth-child(4) .img{background:#f3d9fa url(../images/img_home04.svg) center bottom no-repeat;}
