@@ -170,6 +170,7 @@ header nav a:after{content:'';display:block;width: 5px;height: 5px;border-radius
 .sub_h2{margin-top: 10px;font-size: 15px;font-weight: 500;line-height: 150%;color:#848484}
 
 .btn_cm{display: flex;align-items: center;justify-content: center;width: 100%;height: 60px;box-sizing: border-box;border-radius: 6px;padding:8px;background: #2962F6;color:#fff;font-size: 16px;font-weight: 600;}
+.btn_cm.sky{background: #E5EDFF;color:#2962F6;}
 .btn_cm.white{height: 50px;background: #fff;color:#2962F6;border:1px solid #2962F6}
 .btn_cm.white.add:before{content:'';display: inline-block;width: 22px;height: 22px;margin-right: 5px;background: url(../images/ico_btn_white_add.svg) no-repeat center;}
 .btn_cm.kakao{background: #FEE500;color:#181600;font-size: 14px;letter-spacing: 0.7px;font-weight: 700;}
@@ -288,6 +289,10 @@ ul.grp_check{display: flex;}
 .page_cont{padding: 20px;flex:1;overflow: auto;}
 .page_cont h3{font-size: 18px;font-weight: 600;color:#000;margin-bottom: 15px;}
 .page_cont .grp_h3 h3{margin-bottom: 0;}
+.page_cont h3.type2{font-size: 22px;color:#1B1B1B;font-weight: 700;}
+.page_cont h3.type2 + p{font-size: 15px;font-weight: 500;line-height: 150%;color:#848484;margin-top: 10px;}
+
+.page_btn{flex: none;padding:20px}
 
 .list_tab{display: flex;align-items: center;overflow: auto;padding-bottom: 10px;margin:20px -20px 10px 0;}
 .list_tab li+li{margin-left: 10px;}
@@ -303,3 +308,36 @@ ul.grp_check{display: flex;}
 .grp_hash button.on{color:#212529;font-weight: 700;}
 .grp_hash button + button{margin-left: 15px;}
 .txt_hash{margin-top: 5px;font-size: 16px;font-weight: 600;line-height: 150%;color:#868E96}
+
+.list_nearhos{margin-top: 20px;}
+.list_nearhos li{border:1px solid #DEE2E6;border-radius: 6px;padding:10px;}
+.list_nearhos li .grp{display: flex;align-items: center;}
+.list_nearhos li .grp img{flex:none;width: 70px;height: 70px;margin-right: 10px;}
+.list_nearhos li .grp p{margin-top: 5px;font-size: 14px;font-weight: 500;line-height: 130%;color:#868E96}
+.list_nearhos li .grp p.tit{font-size: 16px;font-weight: 700;color:#212529;}
+.list_nearhos li .grp2{display: flex;align-items: center;flex-wrap: nowrap;margin-top: 10px;}
+.list_nearhos li .grp2 p{font-size: 13px;font-weight: 600;line-height: 130%;color:#2962F6;background: #E5EDFF;border-radius: 35px;padding:6px 10px 4px;}
+.list_nearhos li .grp2 p + p{margin-left: 10px;}
+.list_nearhos li + li{margin-top: 17px;}
+
+
+
+.popup { display: none; width: 540px; position: fixed; left: 50%; top: 50%; background: #fff; z-index: 10001;box-shadow: 0px 4px 30px 10px rgba(0, 0, 0, 0.1); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); border-radius: 10px; overflow: hidden; } 
+.dim { display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 2000; background: rgba(0, 0, 0, 0.5); } 
+.popup.on { display: flex;flex-direction: column;max-height: 88vh;} 
+.popup.on ~ .dim { display: flex;flex-direction: column;} 
+.popup .pop_header { position: relative; padding:20px;box-sizing: border-box;flex:none} 
+.popup .pop_header.pb0{padding-bottom: 0;}
+.popup .pop_header h2 { color: #212529; font-size: 18px; text-align: center;font-weight: 700;line-height: 140%;} 
+.popup .pop_header .btn_close { position: absolute; top: 15px; right: 20px; width: 30px; height: 30px; background: transparent; } 
+.popup .pop_header .btn_close:before,
+.popup .pop_header .btn_close:after { content:''; position: absolute; top: 50%; width: 22px; height: 2px; background-color: #000; margin-left: -11px; } 
+.popup .pop_header .btn_close:before { transform: rotate(135deg) translateX(0%); } 
+.popup .pop_header .btn_close:after { transform: rotate(45deg) translateX(0%); } 
+.popup .pop_header + .pop_cont{margin-top: -10px;}
+.popup .pop_cont { overflow: auto; padding: 10px 20px 30px; box-sizing: border-box; font-size: 16px;line-height: 24px;flex:1;overflow: auto;} 
+.popup .pop_cont.pd0{padding: 0;}
+.popup .pop_cont .txt{font-size: 15px;font-weight: 400;line-height: 150%;}
+.popup .pop_footer { height: 50px; padding:0; box-sizing: border-box; display: flex; align-items: center;justify-content: center;flex:none} 
+.popup .pop_footer > button {flex:1;height: 50px;border-radius: 0;font-size: 16px;font-weight: 400;}
+.popup .pop_footer > .btn_cm.gray{background-color: #CED4DA;color:#212529}
