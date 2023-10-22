@@ -279,12 +279,28 @@ ul.grp_check{display: flex;}
 .grp_check.small label::before{width: 24px;height: 24px;border-radius: 4px;}
 .grp_check.small label:after {left:6px;top:6px}
 
+.grid_chk{display: grid;grid-template-columns: 1fr 1fr 1fr;gap: 10px;}
+.grid_chk label{position: relative;display: block;padding:15px 10px;border: 1px solid #DEE2E6;border-radius: 6px;box-sizing: border-box;}
+.grid_chk label input{opacity: 0;position: absolute;top:5px;right: 5px;display: block;width: 25px;height: 25px;background:#E5EDFF url(../images/ico_check.svg) no-repeat center;-webkit-appearance: none;border-radius: 50%}
+.grid_chk label img{display: block;width: 45px;height: 45px;margin: 0 auto;}
+.grid_chk label span{display: block;text-align: center;margin-top: 15px;font-size: 15px;font-weight: 600;color:#212529}
+.grid_chk label:has(input:checked){border-color:#2962F6}
+.grid_chk label:has(input:checked) input{opacity: 1;background:#2962F6 url(../images/ico_check_on.svg) no-repeat center;}
+
+.grid_chk li.all{grid-column: 1/4}
+.grid_chk li.all label{display: flex;align-items: center;justify-content: center;box-sizing: border-box;}
+.grid_chk li.all label input{position: static;width: 22px;height: 22px;opacity: 1;background:transparent url(../images/ico_checkall.svg) no-repeat center;margin-right: 5px;}
+.grid_chk li.all span{margin-top: 0;}
+.grid_chk li.all label:has(input:checked) input{background:transparent url(../images/ico_checkall_on.svg) no-repeat center;}
+.grid_chk li.all label:has(input:checked) span{color:#2962F6}
+
 
 /* page */
 .wrap.page{display: flex;flex-direction: column;}
 .page_tit{flex:none;position: relative;display: flex;align-items: center;justify-content: center;height: 60px;box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.05);z-index: 100;}
 .page_tit .tit{font-size: 18px;font-weight: 600;color:#212529;}
 .page_tit .btn_back{position: absolute;left:20px;width: 30px;height: 30px;background: url(../images/ico_arrow.svg) no-repeat center;transform: rotate(-180deg);}
+.page_tit .btn_close{position: absolute;right:20px;width: 30px;height: 30px;background: url(../images/ico_close.svg) no-repeat center;transform: rotate(-180deg);}
 
 .page_cont{padding: 20px;flex:1;overflow: auto;}
 .page_cont h3{font-size: 18px;font-weight: 600;color:#000;margin-bottom: 15px;}
