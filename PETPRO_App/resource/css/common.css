@@ -55,7 +55,7 @@ header nav a:after{content:'';display:block;width: 5px;height: 5px;border-radius
 
 .home_cont{display: grid;grid-template-columns: 1fr 1fr;gap: 15px;}
 .home_cont p{font-size: 14px;font-weight: 600;}
-.home_cont .img{display: block;width: 100%;height: 100px;margin-bottom: 10px;background:#FFDEEB url(../images/img_home01.png) center bottom no-repeat;border-radius: 6px;}
+.home_cont .img{display: block;width: 100%;height: 100px;margin-bottom: 10px;background:#FFDEEB url(../images/img_home01.png) center bottom no-repeat;background-size: 86px;border-radius: 6px;}
 .home_cont li:nth-child(2) .img{background:#D0EBFF url(../images/img_home02.svg) center bottom no-repeat;}
 .home_cont li:nth-child(3) .img{background:#CEF6EA url(../images/img_home03.svg) center bottom no-repeat;}
 .home_cont li:nth-child(4) .img{background:#f3d9fa url(../images/img_home04.svg) center bottom no-repeat;}
@@ -104,7 +104,8 @@ header nav a:after{content:'';display:block;width: 5px;height: 5px;border-radius
 
 .grp_h3{display: flex;align-items: center;margin-bottom: 15px;}
 .grp_h3 h3{margin-bottom: 0;}
-.grp_h3 .btn_all{display: inline-block;margin-left: auto;font-size: 14px;font-weight: 500;color:#868E96;}
+.grp_h3 .btn_all{display: inline-flex;align-items: center;margin-left: auto;font-size: 14px;font-weight: 500;color:#868E96;}
+.grp_h3 .btn_all.arrow:after{content: '';display: inline-block;width: 25px;height: 25px;margin-left: auto;background: url(../images/ico_arrow.svg) no-repeat center;}
 .grp_h3 .btn_add{display: inline-block;margin-left: auto;background: #DBE4FF url(../images/ico_add.svg) no-repeat left 5px center;padding:5px 8px 5px 25px;border-radius: 5px;font-size: 13px;font-weight: 600;color:#4C6EF5}
 
 .list_step{counter-reset: ct_step;}
@@ -294,6 +295,11 @@ ul.grp_check{display: flex;}
 .list_tab li a{display: inline-block;font-size: 15px;font-weight: 600;color:#2962F6;padding:10px 15px;flex:none;white-space: nowrap;border-radius: 19px;background: #E5EDFF;}
 .list_tab li.on a{background: #2962F6;color:#fff}
 
-
 .list_item{display: grid;grid-template-columns: 1fr 1fr;gap:10px;}
 .list_item li a{border:1px solid #DEE2E6;display: flex;align-items: center;justify-content: center;height: 40px;box-sizing: border-box;border-radius: 6px;color:#212529;font-size: 14px;font-weight: 500;}
+
+.grp_hash{display: flex;align-items: center;}
+.grp_hash button{font-size: 22px;font-weight: 600;color:#ADB5BD;background: transparent;}
+.grp_hash button.on{color:#212529;font-weight: 700;}
+.grp_hash button + button{margin-left: 15px;}
+.txt_hash{margin-top: 5px;font-size: 16px;font-weight: 600;line-height: 150%;color:#868E96}
