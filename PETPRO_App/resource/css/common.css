@@ -368,7 +368,8 @@ ul.grp_check{display: flex;}
 .chk_agree label input:checked{opacity: 1;background:#2962F6 url(../images/ico_check_on.svg) no-repeat center;}
 
 
-.list_tab{display: flex;align-items: center;overflow: auto;padding-bottom: 10px;margin:20px -20px 10px 0;}
+.list_tab{display: flex;align-items: center;overflow: auto;padding-bottom: 10px;margin:20px -20px 10px;}
+.list_tab li:first-child{margin-left: 20px;}
 .list_tab li+li{margin-left: 10px;}
 .list_tab li:last-child{margin-right: 20px;}
 .list_tab li a{display: inline-block;font-size: 15px;font-weight: 600;color:#2962F6;padding:10px 15px;flex:none;white-space: nowrap;border-radius: 19px;background: #E5EDFF;}
